@@ -1,0 +1,76 @@
+/* Two-up displays, for e.g. contextualised content. */
+
+/* Modules:
+
+- Text & Content
+- Text & Content GS ('Golden Section')
+- Text & Content Reverse
+- Text & Content GS Reverse
+
+*/
+
+.media-component {
+	/* layout */
+	width: 100%;
+	height: 62vh;
+
+	/* theming */
+
+	@include show-outline;
+
+}
+
+.media-component--gs {
+	/* layout */
+	.media-component__section {
+		width: 38.2%;
+
+		&:first-child, &:last-child {
+			width: 61.2%;
+		}
+
+	}
+
+	/* theming */
+
+}
+
+.media-component--reverse {
+	/* layout */
+	.media-component__section {
+		float: left;
+
+		&:first-child {
+			float: right;
+		}
+	}
+
+	/* theming */
+	
+}
+
+.media-component__section {
+	/* layout */
+	height: 100%;
+	width: 50%;
+	float: right;
+	box-sizing: border-box;
+	padding: 0 1em;
+	&:first-child {
+		display: table;
+		height: 61.8%;
+		float: left;
+	}
+
+	&:last-child {
+		height: auto;
+	}
+
+	.title-block {
+		display: table-cell;
+		vertical-align: bottom;
+		padding-bottom: 2.61em - 1em;
+	}
+
+	/* theming */
+}

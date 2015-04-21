@@ -1,0 +1,12 @@
+/* Animations */
+
+@mixin transition($transition) {
+	-webkit-transition: $transition;
+	transition: $transition;
+}
+
+/* Development */
+
+@mixin show-outline {
+	outline: 1px dotted #777;
+}

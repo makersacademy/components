@@ -1,0 +1,76 @@
+<!doctype HTML>
+<html>
+	<head>
+		
+	</head>
+	<body>
+		
+		<div id="main_container" class="main">
+			
+			<h1>Submit the form!</h1>
+
+			<form id="ajax_form" method="post">
+				
+				<label for="name">Enter your name:</label>
+				<input name="name" type="text" /> Sinatra -> params[:name]
+
+				<input type="submit" value="Submit" />
+
+			</form>
+
+
+			<div id="form_result">
+				
+			</div>
+
+		</div>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+		<script type="text/javascript">
+
+			// Want to use jQuery so jQuery comes first in the load order ^^^
+
+			$(document).ready(function() {
+
+				var $form = $('#ajax_form');
+				var $result = $('#form_result');
+
+				$form.on('submit', function(event) {
+
+					console.log('form submitted');
+
+					event.preventDefault;
+
+					$.ajax({
+						url: "/",
+						data: {
+							name: $form.find('input[name="name"]').value
+						}
+					}).done(function(data) {
+						$result.prepend(data);
+					}).fail(function(serverData) {
+						$result.prepend("Error: " + serverData.statusText);
+					}).always(function() {
+						$result.prepend("Your Result: ")
+					});
+
+					$.post('/', {
+						name: $form.find('input[name="name"]').value
+					});
+
+					$.get('/').done(function(data) {
+
+					});
+
+					return false;
+
+
+				});
+
+			});
+
+		</script>
+
+	</body>
+</html>

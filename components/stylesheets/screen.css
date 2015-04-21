@@ -1,0 +1,512 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../../../../Users/Sam/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../../Users/Sam/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../../Users/Sam/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../../Users/Sam/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../../Users/Sam/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../../Users/Sam/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../../Users/Sam/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../../Users/Sam/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../../Users/Sam/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* Typography */
+/* Color */
+/* All colors are from https://drive.google.com/drive/u/0/#folders/0B3zMV1alL-hBREJ3Qjd0ZlVfUm8/0B3zMV1alL-hBVmlHSENfV0FUeWc/0B3zMV1alL-hBX1BOaHNjaDBxV00 */
+/* black */
+/* dark blue */
+/* dark turquoise */
+/* off-white */
+/* white */
+/* red */
+/* Animation */
+/* Animations */
+/* Development */
+/* typography */
+/* line 3, ../sass/typography/_typography.scss */
+a {
+  font-family: Helvetica, sans-serif;
+}
+
+/* atoms */
+/* line 1, ../sass/atoms/_title.scss */
+.title {
+  /* layout */
+  /* theme */
+  font-size: 2.61em;
+}
+
+/* Optional Titles, such as subtitles 
+and leader statements. */
+/* line 4, ../sass/atoms/_opt-title.scss */
+.opt-title {
+  /* layout */
+  /* theme */
+  font-size: 1.618em;
+}
+
+/* line 1, ../sass/atoms/_body.scss */
+.body {
+  /* layout */
+  /* theme */
+  font-size: 1em;
+}
+
+/* Calls to Action, designed to get 
+the user moving either horizontally 
+(across content), or to have them 
+complete the vertical path (the 
+action goal). */
+/* Modules:
+
+- Horizontal
+- Vertical
+- Horizontal Big
+- Vertical Big
+
+*/
+/* line 16, ../sass/atoms/_cta.scss */
+.cta {
+  /* layout */
+  display: inline-block;
+  max-width: 6.85em;
+  padding: 1em;
+  /* theme */
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  border: 2px solid;
+  border-radius: 0.5em;
+}
+
+/* line 29, ../sass/atoms/_cta.scss */
+.cta--horizontal {
+  /* layout */
+  /* theme */
+  color: #00333F;
+}
+/* line 35, ../sass/atoms/_cta.scss */
+.cta--horizontal:hover {
+  background: rgba(0, 51, 63, 0.2);
+}
+
+/* line 40, ../sass/atoms/_cta.scss */
+.cta--vertical {
+  /* layout */
+  /* theme */
+  color: #AA1925;
+}
+/* line 46, ../sass/atoms/_cta.scss */
+.cta--vertical:hover {
+  background: rgba(170, 25, 37, 0.2);
+}
+
+/* line 51, ../sass/atoms/_cta.scss */
+.cta--big {
+  /* layout */
+  max-width: 11.1em;
+  font-size: 1.618em;
+  /* theme */
+}
+
+/* compounds */
+/* Title and some copy. 
+Think 'informative' messages. */
+/* Modules:
+
+- Center
+- Left
+- Right
+
+!!! can contain opt-titles !!!
+
+*/
+/* line 14, ../sass/compounds/_title-block.scss */
+.title-block {
+  /* layout */
+  max-width: 29em;
+  padding: 0 1em;
+  /* theme */
+}
+/* line 18, ../sass/compounds/_title-block.scss */
+.title-block .title, .title-block .body, .title-block .opt-title {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 29em;
+}
+
+/* line 29, ../sass/compounds/_title-block.scss */
+.title-block--left .title, .title-block--left .body, .title-block--left .opt-title {
+  text-align: left;
+  margin: 0;
+}
+
+/* line 36, ../sass/compounds/_title-block.scss */
+.title-block--right .title, .title-block--right .body, .title-block--right .opt-title {
+  text-align: right;
+  margin: 0;
+}
+
+/* Block container for CTA configurations. */
+/* Modules:
+
+- Single
+- Inline
+- Stacked
+- Bar
+
+!!! can contain cta--bigs !!!
+
+*/
+/* line 14, ../sass/compounds/_cta-block.scss */
+.cta-block {
+  /* layout */
+  text-align: center;
+  /* theming */
+}
+
+/* line 22, ../sass/compounds/_cta-block.scss */
+.cta-block--left {
+  text-align: left;
+}
+
+/* line 26, ../sass/compounds/_cta-block.scss */
+.cta-block--right {
+  text-align: right;
+}
+
+/* line 30, ../sass/compounds/_cta-block.scss */
+.cta-block--inline {
+  /* layout */
+  /* theming */
+}
+/* line 35, ../sass/compounds/_cta-block.scss */
+.cta-block--inline .cta {
+  display: inline-block;
+  /* margins for central CTAs only */
+}
+/* line 39, ../sass/compounds/_cta-block.scss */
+.cta-block--inline .cta:nth-child(2n) {
+  margin: 0 2.61em;
+}
+/* line 42, ../sass/compounds/_cta-block.scss */
+.cta-block--inline .cta:last-child {
+  margin-right: 0;
+}
+
+/* line 48, ../sass/compounds/_cta-block.scss */
+.cta-block--stacked {
+  /* layout */
+  /* theming */
+}
+/* line 53, ../sass/compounds/_cta-block.scss */
+.cta-block--stacked .cta {
+  display: block;
+  /* margins for central CTAs only */
+}
+/* line 57, ../sass/compounds/_cta-block.scss */
+.cta-block--stacked .cta:nth-child(2n) {
+  margin: 1em 0;
+}
+/* line 60, ../sass/compounds/_cta-block.scss */
+.cta-block--stacked .cta:last-child {
+  margin-bottom: 0;
+}
+
+/* line 67, ../sass/compounds/_cta-block.scss */
+.cta-block--bar {
+  /* layout */
+  /* theming */
+}
+/* line 72, ../sass/compounds/_cta-block.scss */
+.cta-block--bar .cta {
+  float: left;
+  /* border radii change only for 
+  inner children */
+  border-radius: 0;
+  border-left-width: 1px;
+  border-right-width: 1px;
+}
+/* line 81, ../sass/compounds/_cta-block.scss */
+.cta-block--bar .cta:first-child {
+  border-left-width: 2px;
+  border-top-left-radius: 0.5em;
+  border-bottom-left-radius: 0.5em;
+}
+/* line 87, ../sass/compounds/_cta-block.scss */
+.cta-block--bar .cta:last-child {
+  border-right-width: 2px;
+  border-top-right-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+
+/* molecules */
+/* Large titles and some copy. 
+Think 'shouty' messages. */
+/* Modules:
+
+- Text & CTA
+- Text & Capture
+- Text & Content
+
+*/
+/* Construction:
+
+	.holler-block
+	 _______________
+	|               |
+	|   __section   |
+	|               |
+	|---------------|
+	|   __section   |
+	|_______________|
+
+*/
+/* line 25, ../sass/molecules/_holler-block.scss */
+.holler-block {
+  /* layout */
+  width: 100%;
+  height: 62vh;
+  position: relative;
+  /* theme */
+  outline: 1px dotted gray;
+  /* for demo purposes */
+}
+/* line 31, ../sass/molecules/_holler-block.scss */
+.holler-block > .holler-block__section:first-child {
+  display: table;
+  height: 61.8%;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 29em;
+}
+/* line 39, ../sass/molecules/_holler-block.scss */
+.holler-block .title-block {
+  display: table-cell;
+  vertical-align: bottom;
+  padding-bottom: 2.61em;
+}
+/* line 45, ../sass/molecules/_holler-block.scss */
+.holler-block .cta-block {
+  margin: 0 auto;
+}
+
+/* Two-up displays, for e.g. contextualised content. */
+/* Modules:
+
+- Text & Content
+- Text & Content GS ('Golden Section')
+- Text & Content Reverse
+- Text & Content GS Reverse
+
+*/
+/* line 12, ../sass/molecules/_media-component.scss */
+.media-component {
+  /* layout */
+  width: 100%;
+  height: 62vh;
+  /* theming */
+  outline: 1px dotted #777;
+}
+
+/* line 23, ../sass/molecules/_media-component.scss */
+.media-component--gs {
+  /* layout */
+  /* theming */
+}
+/* line 25, ../sass/molecules/_media-component.scss */
+.media-component--gs .media-component__section {
+  width: 38.2%;
+}
+/* line 28, ../sass/molecules/_media-component.scss */
+.media-component--gs .media-component__section:first-child, .media-component--gs .media-component__section:last-child {
+  width: 61.2%;
+}
+
+/* line 38, ../sass/molecules/_media-component.scss */
+.media-component--reverse {
+  /* layout */
+  /* theming */
+}
+/* line 40, ../sass/molecules/_media-component.scss */
+.media-component--reverse .media-component__section {
+  float: left;
+}
+/* line 43, ../sass/molecules/_media-component.scss */
+.media-component--reverse .media-component__section:first-child {
+  float: right;
+}
+
+/* line 52, ../sass/molecules/_media-component.scss */
+.media-component__section {
+  /* layout */
+  height: 100%;
+  width: 50%;
+  float: right;
+  box-sizing: border-box;
+  padding: 0 1em;
+  /* theming */
+}
+/* line 59, ../sass/molecules/_media-component.scss */
+.media-component__section:first-child {
+  display: table;
+  height: 61.8%;
+  float: left;
+}
+/* line 65, ../sass/molecules/_media-component.scss */
+.media-component__section:last-child {
+  height: auto;
+}
+/* line 69, ../sass/molecules/_media-component.scss */
+.media-component__section .title-block {
+  display: table-cell;
+  vertical-align: bottom;
+  padding-bottom: 1.61em;
+}
+
+/* Any number of horizontal blocks 
+in a slider arrangement. */
+/* Modules:
+
+- Slider
+
+*/
+/* line 10, ../sass/molecules/_slider-block.scss */
+.slider-block {
+  /* layout */
+  height: 62vh;
+  position: relative;
+  /* theming */
+  overflow: hidden;
+}
+/* line 15, ../sass/molecules/_slider-block.scss */
+.slider-block .holler-block, .slider-block .media-component {
+  float: left;
+}
+
+/* Slider controls */
+/* line 25, ../sass/molecules/_slider-block.scss */
+.slick-prev, .slick-next {
+  /* layout */
+  position: absolute;
+  top: 50%;
+  margin-top: -1.61em;
+  height: 2.61em;
+  width: 2.61em;
+  /* theming */
+  border: none;
+  color: transparent;
+  background: transparent;
+}
+/* line 38, ../sass/molecules/_slider-block.scss */
+.slick-prev:focus, .slick-next:focus {
+  outline: none;
+}
+/* line 42, ../sass/molecules/_slider-block.scss */
+.slick-prev:after, .slick-next:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 2.61em;
+  width: 2.61em;
+  color: #AA1925;
+  cursor: pointer;
+}
+
+/* line 53, ../sass/molecules/_slider-block.scss */
+.slick-prev {
+  left: 0;
+}
+/* line 55, ../sass/molecules/_slider-block.scss */
+.slick-prev:after {
+  content: "<";
+}
+
+/* line 60, ../sass/molecules/_slider-block.scss */
+.slick-next {
+  right: 0;
+}
+/* line 62, ../sass/molecules/_slider-block.scss */
+.slick-next:after {
+  content: ">";
+}
+
+/* setup */
+/* Things to contain other things */
+/* line 3, ../sass/layout/_containers.scss */
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+  padding-top: 2.61em;
+}
+/* line 8, ../sass/layout/_containers.scss */
+.container > .title-block {
+  margin: 0 auto;
+}
+
+/* line 31, ../sass/screen.scss */
+.label {
+  display: block;
+  font-family: sans-serif;
+  color: #aaa;
+  font-weight: light;
+  margin-top: 1em;
+  padding: 1em 0;
+}
