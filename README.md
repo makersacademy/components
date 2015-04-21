@@ -8,8 +8,8 @@ It's component-based. That means that any given interface (including e.g. print 
 
 In this system, we call these components _modules_. There is a hierarchy to modules:
 
-- **Atoms** are the most basic modules. They exist to perform a single function. For example, the [Call to Action](components/atoms/cta.html). Multiple atoms can be combined to create Compounds.
-- **Compounds** are intermediate modules. These are collections of atoms in abstract, but often useful, combinations. For example, the [Call to Action Block](components/modules/cta-block.html). Multiple compounds can be combined to create Molecules.
+- **Atoms** are the most basic modules. They exist to perform a single function. For example, the [Call to Action](components/components/atoms/cta.html). Multiple atoms can be combined to create Compounds.
+- **Compounds** are intermediate modules. These are collections of atoms in abstract, but often useful, combinations. For example, the [Call to Action Block](components/components/modules/cta-block.html). Multiple compounds can be combined to create Molecules.
 - **Molecules** are high-level modules. These are collections of compounds in a template format, and are designed to be placed straight in to pages. They are generally full-pagewidth, and are designed to maintain a vertical (downwards) flow. You should use molecules to build new pages. There are few molecules by design: this keeps styling consistent and on-brand.
 
 ### What's the HTML like?
@@ -29,7 +29,7 @@ HTML classes are structured using a [Block-Element-Modifier (BEM)](http://csswiz
 </div>
 ```
 
-Thus, a `.title-block` class can have modifiers - in this case, aligning its contents to the left with the `--left` class modifier - and elements within it can be specifically styled - in this case, the `.title` [Title Atom](components/atoms/title.html) can be addressed with the `.title-block__title` class, and the `.body` [Body Atom](components/atoms/body.html) can be addressed with the `.title-block__body` class. This class naming helps to avoid issues of Specificity when certain combinations are especially common, by avoiding the use of CSS inheritance selectors.
+Thus, a `.title-block` class can have modifiers - in this case, aligning its contents to the left with the `--left` class modifier - and elements within it can be specifically styled - in this case, the `.title` [Title Atom](components/components/atoms/title.html) can be addressed with the `.title-block__title` class, and the `.body` [Body Atom](components/components/atoms/body.html) can be addressed with the `.title-block__body` class. This class naming helps to avoid issues of Specificity when certain combinations are especially common, by avoiding the use of CSS inheritance selectors.
 
 > CSS inheritance selectors are not to be totally avoided - for example, molecules can sometimes set specific `display` properties for their child compounds. In general, though, this should be refactored out to avoid selector chains.
 
