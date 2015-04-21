@@ -36,14 +36,20 @@ Thus, a `.title-block` class can have modifiers - in this case, aligning its con
 This style of doing the HTML is extremely amenable to a conventional template structure for views server-side. One could easily imagine doing something like this to quickly spin up a flexible CTA block:
 
 ```erb
-<%= render partial: "components/compounds/cta-block", locals: { { :text => "Apply now", :link => apply_path], { :text => "See more", :link => clients_path } }, as: :ctas } %>
+<%= render partial: "components/compounds/cta-block", locals: { 
+	{ :text => "Apply now", :link => apply_path }, 
+	{ :text => "See more", :link => clients_path } 
+}, as: :ctas } %>
 ```
 
 And in the cta-block.erb file:
 
 ```erb
 <% ctas.each do | cta | %>
-    <%= render partial: "components/atoms/cta", locals: { :text => cta.fetch(:text, "Untitled"), :link => cta.fetch(:link, "#") } %>
+    <%= render partial: "components/atoms/cta", locals: { 
+    	:text => cta.fetch(:text, "Untitled"), 
+    	:link => cta.fetch(:link, "#") 
+    } %>
 <% end %>
 ```
 
