@@ -6,4 +6,5 @@ and leader statements. */
 
 	/* theme */
 	font-size: $font-size-1;
+	@include default-header-font-styling;
 }

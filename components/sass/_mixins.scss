@@ -1,3 +1,17 @@
+/* Typography */
+
+@mixin default-header-font-styling {
+	font-family: $font-stack-1;
+	text-transform: lowercase;
+	font-variant: small-caps;
+	letter-spacing: 0.2em;
+}
+
+@mixin default-body-font-styling {
+	font-family: $font-stack-1;
+	line-height: 1.5;
+}
+
 /* Animations */
 
 @mixin transition($transition) {
