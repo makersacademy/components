@@ -77,12 +77,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* white */
 /* red */
 /* Animation */
+/* Typography */
 /* Animations */
 /* Development */
 /* typography */
 /* line 3, ../sass/typography/_typography.scss */
 a {
-  font-family: Helvetica, sans-serif;
+  font-family: Futura, Helvetica, Arial, sans-serif;
 }
 
 /* atoms */
@@ -90,7 +91,11 @@ a {
 .title {
   /* layout */
   /* theme */
-  font-size: 2.61em;
+  font-family: Futura, Helvetica, Arial, sans-serif;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  letter-spacing: 0.2em;
+  font-size: 4.24em;
 }
 
 /* Optional Titles, such as subtitles 
@@ -100,6 +105,10 @@ and leader statements. */
   /* layout */
   /* theme */
   font-size: 1.618em;
+  font-family: Futura, Helvetica, Arial, sans-serif;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  letter-spacing: 0.2em;
 }
 
 /* line 1, ../sass/atoms/_body.scss */
@@ -107,6 +116,8 @@ and leader statements. */
   /* layout */
   /* theme */
   font-size: 1em;
+  font-family: Futura, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
 }
 
 /* Calls to Action, designed to get 
@@ -126,7 +137,6 @@ action goal). */
 .cta {
   /* layout */
   display: inline-block;
-  max-width: 6.85em;
   padding: 1em;
   /* theme */
   -webkit-transition: all 0.2s ease-in-out;
@@ -136,29 +146,29 @@ action goal). */
   border-radius: 0.5em;
 }
 
-/* line 29, ../sass/atoms/_cta.scss */
+/* line 28, ../sass/atoms/_cta.scss */
 .cta--horizontal {
   /* layout */
   /* theme */
   color: #00333F;
 }
-/* line 35, ../sass/atoms/_cta.scss */
+/* line 34, ../sass/atoms/_cta.scss */
 .cta--horizontal:hover {
   background: rgba(0, 51, 63, 0.2);
 }
 
-/* line 40, ../sass/atoms/_cta.scss */
+/* line 39, ../sass/atoms/_cta.scss */
 .cta--vertical {
   /* layout */
   /* theme */
   color: #AA1925;
 }
-/* line 46, ../sass/atoms/_cta.scss */
+/* line 45, ../sass/atoms/_cta.scss */
 .cta--vertical:hover {
   background: rgba(170, 25, 37, 0.2);
 }
 
-/* line 51, ../sass/atoms/_cta.scss */
+/* line 50, ../sass/atoms/_cta.scss */
 .cta--big {
   /* layout */
   max-width: 11.1em;
@@ -404,17 +414,17 @@ Think 'shouty' messages. */
   padding: 0 1em;
   /* theming */
 }
-/* line 59, ../sass/molecules/_media-component.scss */
+/* line 60, ../sass/molecules/_media-component.scss */
 .media-component__section:first-child {
   display: table;
   height: 61.8%;
   float: left;
 }
-/* line 65, ../sass/molecules/_media-component.scss */
+/* line 66, ../sass/molecules/_media-component.scss */
 .media-component__section:last-child {
   height: auto;
 }
-/* line 69, ../sass/molecules/_media-component.scss */
+/* line 70, ../sass/molecules/_media-component.scss */
 .media-component__section .title-block {
   display: table-cell;
   vertical-align: bottom;
