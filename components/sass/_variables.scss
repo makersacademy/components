@@ -17,9 +17,16 @@ $color-3: #00333F; 	/* dark turquoise */
 $color-4: #EFF7F2; 	/* off-white */
 $color-5: #FFFFFF; 	/* white */
 $color-6: #AA1925; 	/* red */
+$color-7: #afafaf;  /* grey */
 
 /* Animation */
 
 $transition-standard: all 0.3s ease-in-out;
 $transition-faster: all 0.2s ease-in-out;
 $transition-slower: all 0.4s ease-in-out;
+
+/* Borders */
+
+$default-border-style: solid;
+$default-border-width: 2px;
+$default-border-radius: 0.5em;

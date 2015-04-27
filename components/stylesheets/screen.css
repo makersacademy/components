@@ -76,9 +76,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* off-white */
 /* white */
 /* red */
+/* grey */
 /* Animation */
+/* Borders */
 /* Typography */
 /* Animations */
+/* Sitewide element Styles */
 /* Development */
 /* typography */
 /* line 3, ../sass/typography/_typography.scss */
@@ -139,41 +142,136 @@ action goal). */
   display: inline-block;
   padding: 1em;
   /* theme */
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 0.5em;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
-  border: 2px solid;
-  border-radius: 0.5em;
 }
 
-/* line 28, ../sass/atoms/_cta.scss */
+/* line 27, ../sass/atoms/_cta.scss */
 .cta--horizontal {
   /* layout */
   /* theme */
   color: #00333F;
 }
-/* line 34, ../sass/atoms/_cta.scss */
+/* line 33, ../sass/atoms/_cta.scss */
 .cta--horizontal:hover {
   background: rgba(0, 51, 63, 0.2);
 }
 
-/* line 39, ../sass/atoms/_cta.scss */
+/* line 38, ../sass/atoms/_cta.scss */
 .cta--vertical {
   /* layout */
   /* theme */
   color: #AA1925;
 }
-/* line 45, ../sass/atoms/_cta.scss */
+/* line 44, ../sass/atoms/_cta.scss */
 .cta--vertical:hover {
   background: rgba(170, 25, 37, 0.2);
 }
 
-/* line 50, ../sass/atoms/_cta.scss */
+/* line 49, ../sass/atoms/_cta.scss */
 .cta--big {
   /* layout */
   max-width: 11.1em;
   font-size: 1.618em;
   /* theme */
+}
+
+/* line 57, ../sass/atoms/_cta.scss */
+.cta--submit {
+  /* layout */
+  cursor: pointer;
+  /* theme */
+  background: transparent;
+  color: #AA1925;
+  border-color: #AA1925;
+  font-size: 1em;
+  font-family: Futura, Helvetica, Arial, sans-serif;
+  line-height: 1em;
+}
+/* line 69, ../sass/atoms/_cta.scss */
+.cta--submit:hover {
+  background: rgba(170, 25, 37, 0.2);
+}
+/* line 73, ../sass/atoms/_cta.scss */
+.cta--submit:focus {
+  outline: none;
+}
+
+/* For allowing users to enter values. */
+/* Modules:
+
+- Text Input
+- Telephone Input
+- Email Input
+- Radio Input
+- Textarea Input
+- Select Input
+
+*/
+/* line 14, ../sass/atoms/_input.scss */
+.input {
+  /* layout */
+  display: block;
+  padding: 0.618em;
+  /* theme */
+  font-size: 1em;
+  font-family: Futura, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  background: transparent;
+}
+/* line 24, ../sass/atoms/_input.scss */
+.input:focus {
+  outline: none;
+}
+/* line 28, ../sass/atoms/_input.scss */
+.input::-webkit-input-placeholder {
+  color: #afafaf;
+}
+/* line 32, ../sass/atoms/_input.scss */
+.input:-moz-placeholder {
+  /* Firefox 18- */
+  color: #afafaf;
+}
+/* line 36, ../sass/atoms/_input.scss */
+.input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #afafaf;
+}
+/* line 40, ../sass/atoms/_input.scss */
+.input:-ms-input-placeholder {
+  color: #afafaf;
+}
+
+/* line 45, ../sass/atoms/_input.scss */
+.input--text {
+  /* layout */
+  /* theme */
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 0.5em;
+  border-color: #AA1925;
+}
+
+/* line 53, ../sass/atoms/_input.scss */
+.input--radio {
+  /* layout */
+  display: inline-block;
+  /* theme */
+}
+
+/* line 60, ../sass/atoms/_input.scss */
+.input--textarea {
+  /* layout */
+  resize: none;
+  /* theme */
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 0.5em;
+  border-color: #AA1925;
 }
 
 /* compounds */
@@ -511,7 +609,7 @@ in a slider arrangement. */
   margin: 0 auto;
 }
 
-/* line 31, ../sass/screen.scss */
+/* line 32, ../sass/screen.scss */
 .label {
   display: block;
   font-family: sans-serif;
