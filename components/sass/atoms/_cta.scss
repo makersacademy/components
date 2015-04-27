@@ -19,10 +19,9 @@ action goal). */
 	padding: 1em;
 
 	/* theme */
+	@include default-border($default-border-radius);
 	@include transition($transition-faster);
 	text-decoration: none;
-	border: 2px solid;
-	border-radius: 0.5em;
 }
 
 .cta--horizontal {
@@ -53,4 +52,25 @@ action goal). */
 	font-size: $font-size-1;
 
 	/* theme */
+}
+
+.cta--submit {
+	/* layout */
+	cursor: pointer;
+
+	/* theme */
+	background: transparent;
+	color: $color-6;
+	border-color: $color-6;
+	font-size: $font-size-base;
+	font-family: $font-stack-1;
+	line-height: $font-size-base;
+
+	&:hover {
+		background: rgba($color-6, 0.2);
+	}
+
+	&:focus {
+		outline: none;
+	}
 }
