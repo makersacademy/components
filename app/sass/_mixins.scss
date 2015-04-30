@@ -1,0 +1,80 @@
+/* --- structure --- */
+
+@mixin vertical-holder {
+  display: table;
+}
+
+@mixin vertical-element($align) {
+  display: table-cell;
+  vertical-align: $align;
+}
+
+/* Typography */
+
+@mixin default-header-font-styling {
+	font-family: $font-stack-1;
+	text-transform: lowercase;
+	font-variant: small-caps;
+	letter-spacing: 0.2em;
+  font-weight: 500;
+}
+
+@mixin default-body-font-styling {
+	font-family: $font-stack-1;
+	line-height: 1.5;
+  font-weight: 400;
+}
+
+@mixin default-cta-font-styling {
+  font-family: $font-stack-1;
+  line-height: 1.5;
+  font-weight: 500;
+  text-shadow: 0px 0px 3px rgba($color-5, 0.1);
+}
+
+/* Animations */
+
+@mixin transition($transition) {
+	-webkit-transition: $transition;
+	transition: $transition;
+}
+
+/* Sitewide element Styles */
+@mixin default-border($radius) {
+	border-width: $default-border-width;
+	border-style: $default-border-style;
+	border-radius: $radius;
+}
+
+/* Overrides */
+@mixin border-box {
+  box-sizing: border-box;
+}
+
+@mixin content-box {
+  box-sizing: content-box;
+}
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+/* accessible visually hidden from
+http://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
+@mixin visually-hidden {
+  position: absolute !important;
+  height: 1px; width: 1px; 
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* Development */
+
+@mixin show-outline {
+	outline: 1px dotted #777;
+}

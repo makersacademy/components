@@ -1,0 +1,48 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "singularitygs";
+
+/* load order is important here */
+@import "_globals";
+@import "_functions";
+@import "_variables";
+@import "_mixins";
+
+@import "typography/typography";
+
+/* atoms */
+@import "atoms/_title";
+@import "atoms/_opt-title";
+@import "atoms/_body";
+@import "atoms/_cta";
+@import "atoms/_input";
+@import "atoms/_image";
+
+/* compounds */
+@import "compounds/_title-block";
+@import "compounds/_cta-block";
+@import "compounds/_input-block";
+@import "compounds/_form-block";
+@import "compounds/_image-block";
+
+/* molecules */
+@import "molecules/_holler-block";
+@import "molecules/_media-component";
+@import "molecules/_slider-block";
+@import "molecules/_three-up-block";
+
+/* setup */
+@import "layout/_containers";
+
+.label {
+	display:block;
+	font-family: sans-serif;
+	color: #aaa;
+	font-weight: light;
+	margin-top:1em;
+	padding: 1em 0;
+}

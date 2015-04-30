@@ -1,0 +1,24 @@
+/* --- Utility functions --- */
+@function power($number, $exp) {
+  $value: 1;
+  @if $exp > 0 {
+    @for $i from 1 through $exp {
+      $value: $value * $number;
+    }
+  }
+  @else if $exp < 0 {
+    @for $i from 1 through -$exp {
+      $value: $value / $number;
+    }
+  }
+  @return $value;
+}
+
+/* --- Layout --- */
+
+@function rhythm-increment($incr) {
+  @if $incr == 0 {
+    @return 1;
+  }
+  @return power($layout-ratio, $incr);
+}

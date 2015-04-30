@@ -1,0 +1,69 @@
+/* Any number of horizontal blocks 
+in a slider arrangement. */
+
+/* Modules:
+
+- Slider
+
+*/
+
+.slider-block {
+	/* --- structure --- */
+	height: 62vh;
+	position: relative;
+
+	.holler-block, .media-component {
+		float: left;
+	}
+
+	/* --- theming --- */
+	overflow: hidden;
+
+	/* --- child layout --- */
+}
+
+/* Slider controls */
+
+.slick-prev, .slick-next {
+	/* --- structure --- */
+	position: absolute;
+	top: 50%;
+	margin-top: -1 * (2.61em - 1em);
+	height: 2.61em;
+	width: 2.61em;
+
+	/* --- theming --- */
+	border: none;
+	color: transparent;
+	background: transparent;
+
+	&:focus {
+		outline: none;
+	}
+
+	&:after {
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 2.61em;
+		width: 2.61em;
+		color: $color-6;
+		cursor: pointer;
+	}
+
+	/* --- child layout --- */
+}
+
+.slick-prev {
+	left: 0;
+	&:after {
+		content: "<";
+	}
+}
+
+.slick-next {
+	right: 0;
+	&:after {
+		content: ">";
+	}
+}

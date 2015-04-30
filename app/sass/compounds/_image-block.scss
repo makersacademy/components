@@ -1,0 +1,109 @@
+/* Ways of displaying images. */
+
+/* Modules:
+
+- Centered
+- Full
+- 1-up Grid
+- 2-up Grid
+- 4-up Grid
+- 6-up Grid
+
+*/
+
+.image-block {
+  /* --- structure --- */
+  padding: rhythm-increment(1) + em 1em;
+
+  /* --- theming --- */
+
+  /* --- child layout --- */
+}
+
+.image-block--centered {
+  /* --- structure --- */
+
+  /* --- theming --- */
+
+  /* --- child layout --- */
+  .image {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.image-block--full {
+  /* --- structure --- */
+
+  /* --- theming --- */
+
+  /* --- child layout --- */
+  .image {
+    width: 100%;
+  }
+
+  .image--portrait {
+    width: auto;
+    height: 100%;
+  }
+
+  .image--landscape {
+    height: auto;
+  }
+}
+
+.image-block--grid {
+  /* --- structure --- */
+  @include clearfix;
+
+  /* --- theming --- */
+
+  /* --- child layout --- */
+  .image {
+    float: left;
+  }
+}
+
+.image-block--1grid {
+  /* --- structure --- */
+
+  /* --- theming --- */
+
+  /* --- child layout --- */
+  .image {
+    width: 100%;
+  }
+}
+
+.image-block--2grid {
+  /* --- structure --- */
+
+  /* --- theming --- */
+
+  /* --- child layout --- */
+  .image {
+    width: 50%;
+  }
+}
+
+.image-block--4grid {
+  /* --- structure --- */
+
+  /* --- theming --- */
+
+  /* --- child layout --- */
+  .image {
+    width: 25%;
+  }
+}
+
+.image-block--6grid {
+  /* --- structure --- */
+
+  /* --- theming --- */
+
+  /* --- child layout --- */
+  .image {
+    width: 16.66%;
+  }
+}

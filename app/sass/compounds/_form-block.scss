@@ -1,0 +1,49 @@
+/* For collecting content from visitors. */
+
+/* Modules:
+
+- Simple
+- with Fieldsets
+- Center-aligning
+
+!!! can contain __fieldsets !!!
+
+*/
+
+.form-block {
+  /* --- structure --- */
+
+  /* --- theming --- */
+
+  /* --- child layout --- */
+  
+  .input-block {
+    margin-bottom: 1em;
+  }
+}
+
+.form-block--center {
+  /* --- structure --- */
+  text-align: center;
+
+  /* --- theming --- */
+
+  /* --- child layout --- */
+
+  .input-block {
+    display: inline-block;
+  }
+}
+
+.form-block__fieldset {
+  /* --- structure --- */
+
+  /* --- theming --- */
+}
+
+.form-block__fieldset__opt-title {
+  /* --- structure --- */
+  margin-bottom: rhythm-increment(0) + em;
+
+  /* --- theming --- */
+}

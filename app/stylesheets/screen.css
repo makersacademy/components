@@ -1,0 +1,1092 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../../../../Users/Sam/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../../Users/Sam/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../../Users/Sam/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../../Users/Sam/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../../Users/Sam/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../../Users/Sam/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../../Users/Sam/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../../Users/Sam/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../../Users/Sam/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* load order is important here */
+/* High-level critical variables */
+/* --- structure --- */
+/* --- Utility functions --- */
+/* --- Layout --- */
+/* --- Typography --- */
+/* font sizes use the typographic rhythm
+   declared in _functions.scss */
+/* --- Color --- */
+/* all colors are from 
+   https://drive.google.com/drive/u/0/#folders/0B3zMV1alL-hBREJ3Qjd0ZlVfUm8/0B3zMV1alL-hBVmlHSENfV0FUeWc/0B3zMV1alL-hBX1BOaHNjaDBxV00 */
+/* black */
+/* dark blue */
+/* dark turquoise */
+/* off-white */
+/* white */
+/* red */
+/* color extensions */
+/* grey */
+/* dark grey */
+/* --- Animation --- */
+/* --- Borders --- */
+/* --- structure --- */
+/* Typography */
+/* Animations */
+/* Sitewide element Styles */
+/* Overrides */
+/* accessible visually hidden from
+http://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
+/* Development */
+/* typography */
+/* line 3, ../sass/typography/_typography.scss */
+a {
+  font-family: "futura-pt", Futura, Helvetica, Arial, sans-serif;
+}
+
+/* atoms */
+/* Main site header copy. */
+/* Modules:
+
+- Regular
+- Wide
+
+!!! can contain __numbers when using Futura
+
+*/
+/* line 13, ../sass/atoms/_title.scss */
+.title {
+  /* --- structure --- */
+  max-width: 29em;
+  /* --- theming --- */
+  font-family: "futura-pt", Futura, Helvetica, Arial, sans-serif;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  letter-spacing: 0.2em;
+  font-weight: 500;
+  font-size: 4.2358em;
+}
+
+/* line 23, ../sass/atoms/_title.scss */
+.title--wide {
+  /* --- structure --- */
+  max-width: 56em;
+}
+
+/* the following class is relevant only
+   if using a small-caps font that does
+   not handle numbers appropriately */
+/* line 32, ../sass/atoms/_title.scss */
+.title__numbers {
+  font-size: 0.7em;
+}
+
+/* Optional Titles, such as subtitles 
+and leader statements. */
+/* line 4, ../sass/atoms/_opt-title.scss */
+.opt-title {
+  /* --- structure --- */
+  /* theme */
+  font-size: 1.618em;
+  font-family: "futura-pt", Futura, Helvetica, Arial, sans-serif;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  letter-spacing: 0.2em;
+  font-weight: 500;
+}
+
+/* line 1, ../sass/atoms/_body.scss */
+.body {
+  /* --- structure --- */
+  max-width: 29em;
+  /* theme */
+  font-size: 1em;
+  font-family: "futura-pt", Futura, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+/* line 10, ../sass/atoms/_body.scss */
+.body--big {
+  font-size: 1.618em;
+}
+
+/* Calls to Action, designed to get 
+the user moving either horizontally 
+(across content), or to have them 
+complete the vertical path (the 
+action goal). */
+/* Modules:
+
+- Horizontal
+- Vertical
+- Horizontal Big
+- Vertical Big
+
+*/
+/* line 16, ../sass/atoms/_cta.scss */
+.cta {
+  /* --- structure --- */
+  display: inline-block;
+  padding: 0.618em;
+  min-width: 10em;
+  text-align: center;
+  /* theme */
+  font-family: "futura-pt", Futura, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 500;
+  text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.1);
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 0.5em;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+/* line 31, ../sass/atoms/_cta.scss */
+.cta--horizontal {
+  /* --- structure --- */
+  /* theme */
+  color: #00333F;
+}
+/* line 37, ../sass/atoms/_cta.scss */
+.cta--horizontal:hover {
+  background: rgba(0, 51, 63, 0.2);
+}
+
+/* line 42, ../sass/atoms/_cta.scss */
+.cta--vertical {
+  /* --- structure --- */
+  /* theme */
+  color: #AA1925;
+}
+/* line 48, ../sass/atoms/_cta.scss */
+.cta--vertical:hover {
+  background: rgba(170, 25, 37, 0.2);
+}
+
+/* line 53, ../sass/atoms/_cta.scss */
+.cta--big {
+  /* --- structure --- */
+  max-width: 11.1em;
+  font-size: 1.618em;
+  /* theme */
+}
+
+/* line 61, ../sass/atoms/_cta.scss */
+.cta--submit {
+  /* --- structure --- */
+  cursor: pointer;
+  /* theme */
+  background: transparent;
+  color: #AA1925;
+  border-color: #AA1925;
+  font-family: "futura-pt", Futura, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 500;
+  text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.1);
+  font-size: 1em;
+}
+/* line 72, ../sass/atoms/_cta.scss */
+.cta--submit:hover {
+  background: rgba(170, 25, 37, 0.2);
+}
+/* line 76, ../sass/atoms/_cta.scss */
+.cta--submit:focus {
+  outline: none;
+}
+
+/* For allowing users to enter values. */
+/* Modules:
+
+- Text Input
+- Telephone Input
+- Email Input
+- Radio Input
+- Textarea Input
+- Select Input
+
+*/
+/* line 14, ../sass/atoms/_input.scss */
+.input {
+  /* --- structure --- */
+  display: block;
+  padding: 0.618em;
+  box-sizing: border-box;
+  /* theme */
+  font-size: 1em;
+  font-family: "futura-pt", Futura, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background: transparent;
+  /* IE hack for input padding 
+  http://stackoverflow.com/questions/607198/padding-a-text-input-in-ie-possible */
+  overflow: visible;
+}
+/* line 28, ../sass/atoms/_input.scss */
+.input:focus {
+  outline: none;
+}
+/* line 32, ../sass/atoms/_input.scss */
+.input::-webkit-input-placeholder {
+  color: #afafaf;
+}
+/* line 36, ../sass/atoms/_input.scss */
+.input:-moz-placeholder {
+  /* Firefox 18- */
+  color: #afafaf;
+}
+/* line 40, ../sass/atoms/_input.scss */
+.input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #afafaf;
+}
+/* line 44, ../sass/atoms/_input.scss */
+.input:-ms-input-placeholder {
+  color: #afafaf;
+}
+
+/* line 49, ../sass/atoms/_input.scss */
+.input--text {
+  /* --- structure --- */
+  /* theme */
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 0.5em;
+  border-color: #444;
+}
+
+/* line 57, ../sass/atoms/_input.scss */
+.input--radio {
+  /* --- structure --- */
+  display: inline-block;
+  /* theme */
+}
+
+/* line 64, ../sass/atoms/_input.scss */
+.input--textarea {
+  /* --- structure --- */
+  resize: none;
+  /* theme */
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 0.5em;
+  border-color: #444;
+}
+
+/* Images for, uh, looking at. */
+/* Modules:
+
+- Portrait
+- Landscape
+- Circle
+
+*/
+/* line 11, ../sass/atoms/_image.scss */
+.image {
+  /* --- structure --- */
+  /* --- theming --- */
+}
+
+/* line 17, ../sass/atoms/_image.scss */
+.image--portrait {
+  /* --- structure --- */
+  /* --- theming --- */
+}
+
+/* line 23, ../sass/atoms/_image.scss */
+.image--landscape {
+  /* --- structure --- */
+  /* --- theming --- */
+}
+
+/* line 29, ../sass/atoms/_image.scss */
+.image--rounded {
+  /* --- structure --- */
+  /* --- theming --- */
+  border-radius: 50%;
+}
+
+/* compounds */
+/* Title and some copy. 
+Think 'informative' messages. */
+/* Modules:
+
+- Center
+- Left
+- Right
+
+!!! can contain opt-titles !!!
+
+*/
+/* line 14, ../sass/compounds/_title-block.scss */
+.title-block {
+  /* --- structure --- */
+  padding: 0 1em;
+  /* --- theming --- */
+  /* --- child layout --- */
+}
+/* line 21, ../sass/compounds/_title-block.scss */
+.title-block .title, .title-block .body, .title-block .opt-title {
+  text-align: center;
+  margin: 0 auto;
+}
+/* line 26, ../sass/compounds/_title-block.scss */
+.title-block .title {
+  margin-bottom: 0.5em;
+}
+
+/* line 32, ../sass/compounds/_title-block.scss */
+.title-block--left {
+  text-align: left;
+  /* --- child layout --- */
+}
+/* line 36, ../sass/compounds/_title-block.scss */
+.title-block--left .title, .title-block--left .body, .title-block--left .opt-title {
+  text-align: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+/* line 42, ../sass/compounds/_title-block.scss */
+.title-block--left .body {
+  display: inline-block;
+}
+
+/* line 47, ../sass/compounds/_title-block.scss */
+.title-block--right {
+  text-align: right;
+  /* --- child layout --- */
+}
+/* line 51, ../sass/compounds/_title-block.scss */
+.title-block--right .title, .title-block--right .body, .title-block--right .opt-title {
+  text-align: right;
+  margin-left: 0;
+  margin-right: 0;
+}
+/* line 57, ../sass/compounds/_title-block.scss */
+.title-block--right .body {
+  display: inline-block;
+}
+
+/* Block container for CTA configurations. */
+/* Modules:
+
+- Single
+- Single left-aligned
+- Single right-aligned
+- Inline
+- Stacked
+- Bar
+
+!!! can contain cta--bigs !!!
+
+*/
+/* line 16, ../sass/compounds/_cta-block.scss */
+.cta-block {
+  /* --- structure --- */
+  text-align: center;
+  padding: 0 1em;
+  /* --- theming --- */
+  /* --- child layout --- */
+}
+
+/* line 27, ../sass/compounds/_cta-block.scss */
+.cta-block--left {
+  text-align: left;
+}
+
+/* line 31, ../sass/compounds/_cta-block.scss */
+.cta-block--right {
+  text-align: right;
+}
+
+/* line 35, ../sass/compounds/_cta-block.scss */
+.cta-block--inline {
+  /* --- structure --- */
+  /* --- theming --- */
+  /* --- child layout --- */
+}
+/* line 42, ../sass/compounds/_cta-block.scss */
+.cta-block--inline .cta {
+  display: inline-block;
+  /* margins for central CTAs only */
+}
+/* line 46, ../sass/compounds/_cta-block.scss */
+.cta-block--inline .cta:nth-child(2n) {
+  margin: 0 2.61em;
+}
+/* line 49, ../sass/compounds/_cta-block.scss */
+.cta-block--inline .cta:last-child {
+  margin-right: 0;
+}
+
+/* line 55, ../sass/compounds/_cta-block.scss */
+.cta-block--stacked {
+  /* --- structure --- */
+  /* --- theming --- */
+  /* --- child layout --- */
+}
+/* line 62, ../sass/compounds/_cta-block.scss */
+.cta-block--stacked .cta {
+  display: block;
+  /* margins for central CTAs only */
+}
+/* line 66, ../sass/compounds/_cta-block.scss */
+.cta-block--stacked .cta:nth-child(2n) {
+  margin: 1em 0;
+}
+/* line 69, ../sass/compounds/_cta-block.scss */
+.cta-block--stacked .cta:last-child {
+  margin-bottom: 0;
+}
+
+/* line 76, ../sass/compounds/_cta-block.scss */
+.cta-block--bar {
+  /* --- structure --- */
+  /* --- theming --- */
+  /* --- child layout --- */
+}
+/* line 83, ../sass/compounds/_cta-block.scss */
+.cta-block--bar .cta {
+  float: left;
+  /* border radii change only for 
+  inner children */
+  border-radius: 0;
+  border-left-width: 1px;
+  border-right-width: 1px;
+}
+/* line 92, ../sass/compounds/_cta-block.scss */
+.cta-block--bar .cta:first-child {
+  border-left-width: 2px;
+  border-top-left-radius: 0.5em;
+  border-bottom-left-radius: 0.5em;
+}
+/* line 98, ../sass/compounds/_cta-block.scss */
+.cta-block--bar .cta:last-child {
+  border-right-width: 2px;
+  border-top-right-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+
+/* For separating inputs within forms. */
+/* Modules:
+
+- Regular
+- Two-up
+- Inline ('Capture')
+
+*/
+/* line 11, ../sass/compounds/_input-block.scss */
+.input-block {
+  /* --- structure --- */
+  /* --- theming --- */
+}
+
+/* line 17, ../sass/compounds/_input-block.scss */
+.input-block--two-up {
+  /* --- structure --- */
+  /* --- theming --- */
+  /* --- child layout --- */
+}
+/* line 59, ../sass/_mixins.scss */
+.input-block--two-up:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 25, ../sass/compounds/_input-block.scss */
+.input-block--two-up .input {
+  width: 46%;
+  float: left;
+}
+/* line 28, ../sass/compounds/_input-block.scss */
+.input-block--two-up .input:first-of-type {
+  margin-right: 4%;
+}
+/* line 31, ../sass/compounds/_input-block.scss */
+.input-block--two-up .input:last-of-type {
+  margin-left: 4%;
+}
+
+/* line 37, ../sass/compounds/_input-block.scss */
+.input-block--inline-submit {
+  /* --- structure --- */
+  /* --- theming --- */
+  /* --- child layout --- */
+}
+/* line 59, ../sass/_mixins.scss */
+.input-block--inline-submit:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 45, ../sass/compounds/_input-block.scss */
+.input-block--inline-submit .input, .input-block--inline-submit .cta--submit {
+  float: left;
+}
+/* line 49, ../sass/compounds/_input-block.scss */
+.input-block--inline-submit .input {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right-width: 0;
+}
+/* line 55, ../sass/compounds/_input-block.scss */
+.input-block--inline-submit .cta--submit {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-color: #444;
+}
+
+/* line 62, ../sass/compounds/_input-block.scss */
+.input-block__label {
+  /* --- structure --- */
+  /* --- theming --- */
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* For collecting content from visitors. */
+/* Modules:
+
+- Simple
+- with Fieldsets
+- Center-aligning
+
+!!! can contain __fieldsets !!!
+
+*/
+/* line 13, ../sass/compounds/_form-block.scss */
+.form-block {
+  /* --- structure --- */
+  /* --- theming --- */
+  /* --- child layout --- */
+}
+/* line 20, ../sass/compounds/_form-block.scss */
+.form-block .input-block {
+  margin-bottom: 1em;
+}
+
+/* line 25, ../sass/compounds/_form-block.scss */
+.form-block--center {
+  /* --- structure --- */
+  text-align: center;
+  /* --- theming --- */
+  /* --- child layout --- */
+}
+/* line 33, ../sass/compounds/_form-block.scss */
+.form-block--center .input-block {
+  display: inline-block;
+}
+
+/* line 38, ../sass/compounds/_form-block.scss */
+.form-block__fieldset {
+  /* --- structure --- */
+  /* --- theming --- */
+}
+
+/* line 44, ../sass/compounds/_form-block.scss */
+.form-block__fieldset__opt-title {
+  /* --- structure --- */
+  margin-bottom: 1em;
+  /* --- theming --- */
+}
+
+/* Ways of displaying images. */
+/* Modules:
+
+- Centered
+- Full
+- 1-up Grid
+- 2-up Grid
+- 4-up Grid
+- 6-up Grid
+
+*/
+/* line 14, ../sass/compounds/_image-block.scss */
+.image-block {
+  /* --- structure --- */
+  padding: 1.618em 1em;
+  /* --- theming --- */
+  /* --- child layout --- */
+}
+
+/* line 23, ../sass/compounds/_image-block.scss */
+.image-block--centered {
+  /* --- structure --- */
+  /* --- theming --- */
+  /* --- child layout --- */
+}
+/* line 29, ../sass/compounds/_image-block.scss */
+.image-block--centered .image {
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 35, ../sass/compounds/_image-block.scss */
+.image-block--full {
+  /* --- structure --- */
+  /* --- theming --- */
+  /* --- child layout --- */
+}
+/* line 41, ../sass/compounds/_image-block.scss */
+.image-block--full .image {
+  width: 100%;
+}
+/* line 45, ../sass/compounds/_image-block.scss */
+.image-block--full .image--portrait {
+  width: auto;
+  height: 100%;
+}
+/* line 50, ../sass/compounds/_image-block.scss */
+.image-block--full .image--landscape {
+  height: auto;
+}
+
+/* line 55, ../sass/compounds/_image-block.scss */
+.image-block--grid {
+  /* --- structure --- */
+  /* --- theming --- */
+  /* --- child layout --- */
+}
+/* line 59, ../sass/_mixins.scss */
+.image-block--grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 62, ../sass/compounds/_image-block.scss */
+.image-block--grid .image {
+  float: left;
+}
+
+/* line 67, ../sass/compounds/_image-block.scss */
+.image-block--1grid {
+  /* --- structure --- */
+  /* --- theming --- */
+  /* --- child layout --- */
+}
+/* line 73, ../sass/compounds/_image-block.scss */
+.image-block--1grid .image {
+  width: 100%;
+}
+
+/* line 78, ../sass/compounds/_image-block.scss */
+.image-block--2grid {
+  /* --- structure --- */
+  /* --- theming --- */
+  /* --- child layout --- */
+}
+/* line 84, ../sass/compounds/_image-block.scss */
+.image-block--2grid .image {
+  width: 50%;
+}
+
+/* line 89, ../sass/compounds/_image-block.scss */
+.image-block--4grid {
+  /* --- structure --- */
+  /* --- theming --- */
+  /* --- child layout --- */
+}
+/* line 95, ../sass/compounds/_image-block.scss */
+.image-block--4grid .image {
+  width: 25%;
+}
+
+/* line 100, ../sass/compounds/_image-block.scss */
+.image-block--6grid {
+  /* --- structure --- */
+  /* --- theming --- */
+  /* --- child layout --- */
+}
+/* line 106, ../sass/compounds/_image-block.scss */
+.image-block--6grid .image {
+  width: 16.66%;
+}
+
+/* molecules */
+/* Large titles and some copy. 
+Think 'shouty' messages. */
+/* Modules:
+
+- Text & CTA
+- Text & Capture
+- Text & Capture Fullheight
+- Text & Content
+
+*/
+/* Construction:
+
+	.holler-block
+	 _______________
+	|               |
+	|   __section   |
+	|               |
+	|---------------|
+	|   __section   |
+	|_______________|
+
+*/
+/* line 26, ../sass/molecules/_holler-block.scss */
+.holler-block {
+  /* --- structure --- */
+  width: 100%;
+  height: 62vh;
+  position: relative;
+  /* --- theming --- */
+  outline: 1px dotted gray;
+  /* for demo purposes */
+  /* --- child layout --- */
+}
+/* line 36, ../sass/molecules/_holler-block.scss */
+.holler-block > .holler-block__section:first-child {
+  display: table;
+  height: 61.8%;
+  width: 100%;
+  margin: 0 auto;
+}
+/* line 43, ../sass/molecules/_holler-block.scss */
+.holler-block .title-block {
+  display: table-cell;
+  vertical-align: bottom;
+  padding-bottom: 2.61em;
+}
+/* line 49, ../sass/molecules/_holler-block.scss */
+.holler-block .cta-block {
+  margin: 0 auto;
+}
+
+/* line 54, ../sass/molecules/_holler-block.scss */
+.holler-block--full {
+  height: 100vh;
+}
+
+/* Two-up displays, for e.g. contextualised content. */
+/* Modules:
+
+- Text & Content
+- Text & Content GS ('Golden Section')
+- Text & Content Reverse
+- Text & Content GS Reverse
+
+*/
+/* line 12, ../sass/molecules/_media-component.scss */
+.media-component {
+  /* --- structure --- */
+  width: 100%;
+  height: 62vh;
+  /* --- theming --- */
+  outline: 1px dotted #777;
+  /* --- child layout --- */
+}
+
+/* line 25, ../sass/molecules/_media-component.scss */
+.media-component--gs {
+  /* --- structure --- */
+  /* --- theming --- */
+  /* --- child layout --- */
+}
+/* line 31, ../sass/molecules/_media-component.scss */
+.media-component--gs .media-component__section {
+  width: 38.2%;
+}
+/* line 34, ../sass/molecules/_media-component.scss */
+.media-component--gs .media-component__section:first-child, .media-component--gs .media-component__section:last-child {
+  width: 61.8%;
+}
+
+/* line 42, ../sass/molecules/_media-component.scss */
+.media-component--reverse {
+  /* --- structure --- */
+  /* --- theming --- */
+  /* --- child layout --- */
+}
+/* line 48, ../sass/molecules/_media-component.scss */
+.media-component--reverse .media-component__section {
+  float: left;
+}
+/* line 51, ../sass/molecules/_media-component.scss */
+.media-component--reverse .media-component__section:first-child {
+  float: right;
+}
+
+/* line 58, ../sass/molecules/_media-component.scss */
+.media-component__section {
+  /* --- structure --- */
+  height: 100%;
+  width: 50%;
+  float: right;
+  box-sizing: border-box;
+  padding: 0 1em;
+  /* --- theming --- */
+  /* --- child layout --- */
+}
+/* line 69, ../sass/molecules/_media-component.scss */
+.media-component__section:first-child {
+  display: table;
+  height: 61.8%;
+  float: left;
+}
+/* line 75, ../sass/molecules/_media-component.scss */
+.media-component__section:last-child {
+  height: auto;
+}
+/* line 79, ../sass/molecules/_media-component.scss */
+.media-component__section .title-block {
+  display: table-cell;
+  vertical-align: bottom;
+  padding-bottom: 2.61em;
+}
+
+/* Any number of horizontal blocks 
+in a slider arrangement. */
+/* Modules:
+
+- Slider
+
+*/
+/* line 10, ../sass/molecules/_slider-block.scss */
+.slider-block {
+  /* --- structure --- */
+  height: 62vh;
+  position: relative;
+  /* --- theming --- */
+  overflow: hidden;
+  /* --- child layout --- */
+}
+/* line 15, ../sass/molecules/_slider-block.scss */
+.slider-block .holler-block, .slider-block .media-component {
+  float: left;
+}
+
+/* Slider controls */
+/* line 27, ../sass/molecules/_slider-block.scss */
+.slick-prev, .slick-next {
+  /* --- structure --- */
+  position: absolute;
+  top: 50%;
+  margin-top: -1.61em;
+  height: 2.61em;
+  width: 2.61em;
+  /* --- theming --- */
+  border: none;
+  color: transparent;
+  background: transparent;
+  /* --- child layout --- */
+}
+/* line 40, ../sass/molecules/_slider-block.scss */
+.slick-prev:focus, .slick-next:focus {
+  outline: none;
+}
+/* line 44, ../sass/molecules/_slider-block.scss */
+.slick-prev:after, .slick-next:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 2.61em;
+  width: 2.61em;
+  color: #AA1925;
+  cursor: pointer;
+}
+
+/* line 57, ../sass/molecules/_slider-block.scss */
+.slick-prev {
+  left: 0;
+}
+/* line 59, ../sass/molecules/_slider-block.scss */
+.slick-prev:after {
+  content: "<";
+}
+
+/* line 64, ../sass/molecules/_slider-block.scss */
+.slick-next {
+  right: 0;
+}
+/* line 66, ../sass/molecules/_slider-block.scss */
+.slick-next:after {
+  content: ">";
+}
+
+/* Three sets of similarly-structured content. 
+Think 'feature lists', or content too small 
+to warrant a slider. */
+/* Modules:
+
+- Titles
+- Titles flank CTA
+- Images flank CTA
+- Central content
+
+*/
+/* Construction:
+
+  .three-up-block
+   ___________________________________
+  |           |           |           |
+  |           |           |           |
+  | __section | __section | __section |
+  |           |           |           |
+  |           |           |           |
+  |___________|___________|___________|
+
+*/
+/* line 27, ../sass/molecules/_three-up-block.scss */
+.three-up-block {
+  /* --- structure --- */
+  width: 100%;
+  height: 62vh;
+  position: relative;
+  /* --- theming --- */
+  /* --- child layout --- */
+}
+/* line 59, ../sass/_mixins.scss */
+.three-up-block:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 37, ../sass/molecules/_three-up-block.scss */
+.three-up-block > .three-up-block__section {
+  float: left;
+  display: table;
+  height: 62vh;
+  width: 33.333%;
+}
+/* line 44, ../sass/molecules/_three-up-block.scss */
+.three-up-block .title-block, .three-up-block .cta-block {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 49, ../sass/molecules/_three-up-block.scss */
+.three-up-block .image-block {
+  height: 62vh;
+  box-sizing: border-box;
+}
+/* line 54, ../sass/molecules/_three-up-block.scss */
+.three-up-block .image {
+  height: 100%;
+}
+
+/* line 60, ../sass/molecules/_three-up-block.scss */
+.three-up-block--full {
+  /* ---structure --- */
+  height: 100vh;
+  /* --- child layout --- */
+}
+/* line 65, ../sass/molecules/_three-up-block.scss */
+.three-up-block--full > .three-up-block__section {
+  height: 100vh;
+}
+/* line 69, ../sass/molecules/_three-up-block.scss */
+.three-up-block--full .image-block {
+  height: 100vh;
+}
+
+/* line 74, ../sass/molecules/_three-up-block.scss */
+.three-up-block--small {
+  /* ---structure --- */
+  height: 38vh;
+  /* --- child layout --- */
+}
+/* line 79, ../sass/molecules/_three-up-block.scss */
+.three-up-block--small > .three-up-block__section {
+  height: 38vh;
+}
+/* line 83, ../sass/molecules/_three-up-block.scss */
+.three-up-block--small .image-block {
+  height: 38vh;
+}
+
+/* setup */
+/* Constrain components to the central banner */
+/* line 3, ../sass/layout/_containers.scss */
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
+  height: 100%;
+}
+/* line 8, ../sass/layout/_containers.scss */
+.container > .title-block {
+  margin: 0 auto;
+}
+
+/* line 13, ../sass/layout/_containers.scss */
+.container--full {
+  max-width: none;
+  width: 100%;
+}
+
+/* line 41, ../sass/screen.scss */
+.label {
+  display: block;
+  font-family: sans-serif;
+  color: #aaa;
+  font-weight: light;
+  margin-top: 1em;
+  padding: 1em 0;
+}

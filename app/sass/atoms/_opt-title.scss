@@ -1,0 +1,10 @@
+/* Optional Titles, such as subtitles 
+and leader statements. */
+
+.opt-title {
+	/* --- structure --- */
+
+	/* theme */
+	font-size: $font-size-1;
+	@include default-header-font-styling;
+}
