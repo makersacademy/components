@@ -1,0 +1,79 @@
+/* Calls to Action, designed to get 
+the user moving either horizontally 
+(across content), or to have them 
+complete the vertical path (the 
+action goal). */
+
+/* Modules:
+
+- Horizontal
+- Vertical
+- Horizontal Big
+- Vertical Big
+
+*/
+
+.cta {
+	/* --- structure --- */
+	display: inline-block;
+	padding: 0.618em;
+	min-width: 10em;
+	text-align: center;
+
+	/* theme */
+	@include default-cta-font-styling;
+	@include default-border($default-border-radius);
+	@include transition($transition-faster);
+	font-size: $font-size-base;
+	text-decoration: none;
+}
+
+.cta--horizontal {
+	/* --- structure --- */
+
+	/* theme */
+	color: $color-3;
+
+	&:hover {
+		background: rgba($color-3, 0.2);
+	}
+}
+
+.cta--vertical {
+	/* --- structure --- */
+
+	/* theme */
+	color: $color-6;
+
+	&:hover {
+		background: rgba($color-6, 0.2);
+	}
+}
+
+.cta--big {
+	/* --- structure --- */
+	max-width: 11.1em;
+	font-size: $font-size-1;
+
+	/* theme */
+}
+
+.cta--submit {
+	/* --- structure --- */
+	cursor: pointer;
+
+	/* theme */
+	background: transparent;
+	color: $color-6;
+	border-color: $color-6;
+	@include default-cta-font-styling;
+	font-size: $font-size-base;
+
+	&:hover {
+		background: rgba($color-6, 0.2);
+	}
+
+	&:focus {
+		outline: none;
+	}
+}

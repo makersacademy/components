@@ -14,6 +14,10 @@ In this system, we call these components _modules_. There is a hierarchy to modu
 - **Compounds** are intermediate modules. These are collections of atoms in abstract, but often useful, combinations. For example, the [Call to Action Block](components/components/compounds/cta-block.html). Multiple compounds can be combined to create Molecules.
 - **Molecules** are high-level modules. These are collections of compounds in a template format, and are designed to be placed straight in to pages. They are generally full-pagewidth, and are designed to maintain a vertical (downwards) flow. You should use molecules to build new pages. There are few molecules by design: this keeps styling consistent and on-brand.
 
+#### Some rules
+- Molecules can have fixed heights, all other patterns cannot.
+- Layout (such as height and alignment) is set by the 'parent' module. For example, the CTA atom is laid out by the CTA block compound. The CTA block compound's layout out by containing molecules, such as the Three-up block.
+
 ### What's the HTML like?
 
 Semantic HTML is used where appropriate. For example, `<section>` is used to delineate content within a container. `<div>` is used too, when content is more general-purpose. The real focus has been on creating a descriptive **class structure**.
@@ -59,7 +63,13 @@ And in the cta-block.erb file:
 
 Since we're using BEM syntax, the CSS is quite legible. It is also highly amenable to component-izing. In this example repository, a CSS structure is suggested: Sass files are arranged in the same way as HTML partials.
 
-Components are designed to stand alone, so _layout_ is rarely abstracted. However, _theming_ is highly abstracted. Almost all theming can occur via mixins, which are `include`d inside CSS classes. Almost all mixins should take as their argument a Sass variable. This way, the entire site can be 're-skinned' from the suggested _variables.scss file (layout is broadly unaffected). For example, the animation mixin (declared in [_mixins.scss](components/sass/_mixins.scss):
+Each class in the SCSS source files separates the concerns of:
+
+1. _structure_, which is the internal properties of that component alone,
+2. _theming_, which is the presentational aspect of a components, and
+3. _child layout_, which is the arrangement of child components within the class.
+
+Components are designed to stand alone, so _structure_ and _child layout_ are rarely abstracted. However, _theming_ is highly abstracted. Almost all theming can occur via mixins, which are `include`d inside CSS classes. Almost all mixins should take as their argument a Sass variable. This way, the entire site can be 're-skinned' from the suggested _variables.scss file (layout is broadly unaffected). For example, the animation mixin (declared in [_mixins.scss](components/sass/_mixins.scss):
 
 ```scss
 @mixin transition($transition) {
@@ -75,6 +85,8 @@ $transition-standard: all 0.3s ease-in-out;
 $transition-faster: all 0.2s ease-in-out;
 $transition-slower: all 0.4s ease-in-out;
 ```
+
+> There is an argument to further separate concerns further, by introducing `--full`, `--small`, `--backgrounded`, `--background-imaged` as classes. This would make setting common structural heights easier in the short-term. Thoughts are appreciated!
 
 ### What's the UX like?
 

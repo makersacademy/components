@@ -1,0 +1,67 @@
+/* For separating inputs within forms. */
+
+/* Modules:
+
+- Regular
+- Two-up
+- Inline ('Capture')
+
+*/
+
+.input-block {
+  /* --- structure --- */
+
+  /* --- theming --- */
+}
+
+.input-block--two-up {
+  /* --- structure --- */
+  @include clearfix;
+
+  /* --- theming --- */
+
+  /* --- child layout --- */
+
+  .input {
+    width: 46%;
+    float: left;
+    &:first-of-type {
+      margin-right: 4%;
+    }
+    &:last-of-type {
+      margin-left: 4%;
+    }
+  }
+}
+
+.input-block--inline-submit {
+  /* --- structure --- */
+  @include clearfix;
+
+  /* --- theming --- */
+
+  /* --- child layout --- */
+
+  .input, .cta--submit {
+    float: left;
+  }
+
+  .input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right-width: 0;
+  }
+
+  .cta--submit {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-color: $color-8;
+  }
+}
+
+.input-block__label {
+  /* --- structure --- */
+
+  /* --- theming --- */
+  @include visually-hidden;
+}

@@ -1,0 +1,60 @@
+/* Title and some copy. 
+Think 'informative' messages. */
+
+/* Modules:
+
+- Center
+- Left
+- Right
+
+!!! can contain opt-titles !!!
+
+*/
+
+.title-block {
+	/* --- structure --- */
+	padding: 0 1em;
+
+	/* --- theming --- */
+
+	/* --- child layout --- */
+	.title, .body, .opt-title {
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.title {
+		margin-bottom: 0.5em;
+	}
+	
+}
+
+.title-block--left {
+	text-align: left;
+
+	/* --- child layout --- */
+	.title, .body, .opt-title {
+		text-align: left;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.body {
+		display: inline-block;
+	}
+}
+
+.title-block--right {
+	text-align: right;
+
+	/* --- child layout --- */
+	.title, .body, .opt-title {
+		text-align: right;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.body {
+		display: inline-block;
+	}
+}

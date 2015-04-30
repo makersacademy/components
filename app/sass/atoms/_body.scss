@@ -1,0 +1,12 @@
+.body {
+	/* --- structure --- */
+  max-width: 29em;
+
+	/* theme */
+	font-size: $font-size-base;
+	@include default-body-font-styling;
+}
+
+.body--big {
+  font-size: $font-size-1;
+}

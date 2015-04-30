@@ -1,0 +1,86 @@
+/* Three sets of similarly-structured content. 
+Think 'feature lists', or content too small 
+to warrant a slider. */
+
+/* Modules:
+
+- Titles
+- Titles flank CTA
+- Images flank CTA
+- Central content
+
+*/
+
+/* Construction:
+
+  .three-up-block
+   ___________________________________
+  |           |           |           |
+  |           |           |           |
+  | __section | __section | __section |
+  |           |           |           |
+  |           |           |           |
+  |___________|___________|___________|
+
+*/
+
+.three-up-block {
+  /* --- structure --- */
+  @include clearfix;
+  width: 100%;
+  height: 62vh;
+  position:relative;
+
+  /* --- theming --- */
+
+  /* --- child layout --- */
+  & > .three-up-block__section {
+    float: left;
+    display: table;
+    height: 62vh;
+    width: 33.333%;
+  }
+
+  .title-block, .cta-block {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .image-block {
+    height: 62vh;
+    @include border-box;
+  }
+
+  .image {
+    height: 100%;
+  }
+
+}
+
+.three-up-block--full {
+  /* ---structure --- */
+  height: 100vh;
+
+  /* --- child layout --- */
+  & > .three-up-block__section {
+    height: 100vh;
+  }
+
+  .image-block {
+    height: 100vh;
+  }
+}
+
+.three-up-block--small {
+  /* ---structure --- */
+  height: 38vh;
+
+  /* --- child layout --- */
+  & > .three-up-block__section {
+    height: 38vh;
+  }
+
+  .image-block {
+    height: 38vh;
+  }
+}

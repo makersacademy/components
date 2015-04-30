@@ -1,0 +1,16 @@
+/* Constrain components to the central banner */
+
+.container {
+	margin: 0 auto;
+	max-width: 1140px;
+  height: 100%;
+
+	& > .title-block {
+		margin: 0 auto;
+	}
+}
+
+.container--full {
+  max-width: none;
+  width: 100%;
+}
