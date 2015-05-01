@@ -3,8 +3,10 @@ and leader statements. */
 
 .opt-title {
 	/* --- structure --- */
+  padding: 0 0.16em;
 
-	/* theme */
+	/* --- theme --- */
 	font-size: $font-size-1;
 	@include default-header-font-styling;
+  color: $color-7;
 }

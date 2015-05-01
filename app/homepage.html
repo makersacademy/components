@@ -3,8 +3,9 @@
   <head>
 <script src="//use.typekit.net/snz4plr.js"></script>
 <script>try{Typekit.load();}catch(e){}</script>
-    <link href="../../stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-    <link href="../../stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/fonts.css" media="all" rel="stylesheet" type="text/css" />
+<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
     <!--[if IE]>
         <link href="stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <![endif]-->
@@ -18,9 +19,12 @@
         
         <!-- BEGIN top splash -->
 
-        <div class="holler-block holler-block--full">
+        <div class="holler-block holler-block--full holler-block--backgrounded" style="background-image: url('test-assets/splash-bg.jpg');">
           <section class="holler-block__section">
             <div class="title-block">
+              <div class="image-block image-block--centered">
+                <img class="image image--portrait image-block__image" src="test-assets/makers-brandmark.png" alt="Makers Academy logo">
+              </div>
               <h1 class="title title--wide title-block__title">
                 Learn to Code in <span class="title__numbers">12</span> weeks
               </h1>
@@ -67,7 +71,14 @@
               </div>
             </section>
             <section class="media-component__section">
-              Some Content
+              <div class="slider-block">
+                <div class="image-block image-block--centered">
+                  <img class="image image--portrait image-block__image" src="http://placehold.it/200x323&text=Hi" alt="A gray box with the text 'Hi'">
+                </div>
+                <div class="image-block image-block--centered">
+                  <img class="image image--portrait image-block__image" src="http://placehold.it/200x323&text=Hi" alt="A gray box with the text 'Hi'">
+                </div>
+              </div>
             </section>
             <section class="media-component__section">
               <div class="cta-block cta-block--left">
@@ -82,7 +93,7 @@
 
         <!-- BEGIN hiring partners -->
 
-        <div class="holler-block">
+        <div class="holler-block holler-block--backgrounded" style="background-image: url('test-assets/hiring-bg.jpg');">
           <div class="holler-block__section">
             <div class="title-block">
               <h3 class="opt-title opt-title--above title-block__leader">
@@ -99,8 +110,26 @@
             </div>
           </div>
           <div class="holler-block__section">
-            <div class="content-block">
-              
+            <div class="container">
+              <div class="three-up-block">
+                <section class="three-up-block__section">
+                  <div class="image-block image-block--grid image-block--1grid">
+                    <img class="image image--landscape image-block__image" src="test-assets/deloitte-logo.png" alt="Deloitte logo" />
+                    <img class="image image--landscape image-block__image" src="test-assets/springer-logo.png" alt="Springer logo" />
+                  </div>
+                </section>
+                <section class="three-up-block__section">
+                  <div class="cta-block">
+                    <a href="#" class="cta cta--horizontal">See more partners</a>
+                  </div>
+                </section>
+                <section class="three-up-block__section">
+                  <div class="image-block image-block--grid image-block--1grid">
+                    <img class="image image--landscape image-block__image" src="test-assets/ctm-logo.png" alt="Compare the Market logo" />
+                    <img class="image image--landscape image-block__image" src="test-assets/thoughtworks-logo.png" alt="Thoughtworks logo" />
+                  </div>
+                </section>
+              </div>
             </div>
           </div>
         </div>
@@ -129,7 +158,14 @@
               </div>
             </section>
             <section class="media-component__section">
-              Some Content
+              <div class="slider-block">
+                <div class="image-block image-block--centered">
+                  <img class="image image--portrait image-block__image" src="http://placehold.it/200x323&text=Hi" alt="A gray box with the text 'Hi'">
+                </div>
+                <div class="image-block image-block--centered">
+                  <img class="image image--portrait image-block__image" src="http://placehold.it/200x323&text=Hi" alt="A gray box with the text 'Hi'">
+                </div>
+              </div>
             </section>
             <section class="media-component__section">
               <div class="cta-block cta-block--right">
@@ -145,7 +181,7 @@
 
         <!-- BEGIN apply -->
 
-        <div class="holler-block">
+        <div class="holler-block holler-block--backgrounded" style="background-image: url('test-assets/apply-bg.jpg');">
           <div class="holler-block__section">
             <div class="title-block">
               <h1 class="title title-block__title">
@@ -171,12 +207,12 @@
 
         <!-- BEGIN footer -->
 
-        <div class="three-up-block three-up-block--small">
+        <div class="three-up-block three-up-block--small three-up-block--backgrounded">
           <section class="three-up-block__section">
           </section>
           <section class="three-up-block__section">
             <div class="image-block image-block--centered">
-              <img class="image image--portrait image-block__image" src="http://placehold.it/200x400&text=MA" alt="Makers Academy Logo">
+              <img class="image image--portrait image-block__image" src="test-assets/footer-brand.png" alt="Makers Academy Logo">
             </div>
           </section>
           <section class="three-up-block__section">
@@ -197,5 +233,13 @@
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <!-- slick -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.0/slick.min.js"></script>
+
+    <script type="text/javascript">
+      $('.slider-block').slick();
+    </script>
+    <!-- END slick -->
   </body>
 </html>

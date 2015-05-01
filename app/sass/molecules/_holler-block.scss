@@ -30,27 +30,46 @@ Think 'shouty' messages. */
 	position:relative;
 
 	/* --- theming --- */
-	outline: 1px dotted gray; /* for demo purposes */
+	overflow: hidden;
 
 	/* --- child layout --- */
-	& > .holler-block__section:first-child {
-		display: table;
-		height: 61.8%;
-		width: 100%;
-		margin: 0 auto;
-	}
 
 	.title-block {
 		display: table-cell;
 		vertical-align: bottom;
-		padding-bottom: 2.61em;
 	}
 
-	.cta-block {
+	.cta-block, .form-block {
+		padding-top: 2.61em;
 		margin: 0 auto;
 	}
 }
 
 .holler-block--full {
 	height: 100vh;
+}
+
+.holler-block--backgrounded {
+	background-color: $color-2;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	* {
+		color: $color-5 !important;
+		border-color: $color-5 !important;
+	}
+}
+
+.holler-block__section {
+	display: table;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.holler-block__section:first-child {
+	height: 61.8%;
+}
+
+.holler-block__section:last-child {
+	height: 38.2%;
 }

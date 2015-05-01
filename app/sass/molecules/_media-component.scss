@@ -17,8 +17,12 @@
 	/* --- theming --- */
 
 	@include show-outline;
+	overflow: hidden;
 
 	/* --- child layout --- */
+	.slider-block {
+		height: 62vh;
+	}
 
 }
 
@@ -79,6 +83,9 @@
 	.title-block {
 		display: table-cell;
 		vertical-align: bottom;
-		padding-bottom: 2.61em;
+	}
+
+	.cta-block {
+		padding-top: rhythm-increment(2) + em;
 	}
 }
