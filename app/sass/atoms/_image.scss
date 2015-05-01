@@ -10,6 +10,7 @@
 
 .image {
   /* --- structure --- */
+  @include border-box;
 
   /* --- theming --- */
 }

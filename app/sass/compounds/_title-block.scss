@@ -6,6 +6,7 @@ Think 'informative' messages. */
 - Center
 - Left
 - Right
+- With Image
 
 !!! can contain opt-titles !!!
 
@@ -21,6 +22,10 @@ Think 'informative' messages. */
 	.title, .body, .opt-title {
 		text-align: center;
 		margin: 0 auto;
+	}
+
+	.opt-title--below {
+	  margin-bottom: rhythm-increment(0) + em;
 	}
 
 	.title {

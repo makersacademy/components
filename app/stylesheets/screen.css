@@ -91,6 +91,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* --- Borders --- */
 /* --- structure --- */
 /* Typography */
+/* Iconography, using Linea */
 /* Animations */
 /* Sitewide element Styles */
 /* Overrides */
@@ -99,6 +100,12 @@ http://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
 /* Development */
 /* typography */
 /* line 3, ../sass/typography/_typography.scss */
+html {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* line 8, ../sass/typography/_typography.scss */
 a {
   font-family: "futura-pt", Futura, Helvetica, Arial, sans-serif;
 }
@@ -121,12 +128,14 @@ a {
   font-family: "futura-pt", Futura, Helvetica, Arial, sans-serif;
   text-transform: lowercase;
   font-variant: small-caps;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.15em;
   font-weight: 500;
+  line-height: 0.8;
   font-size: 4.2358em;
+  color: #AA1925;
 }
 
-/* line 23, ../sass/atoms/_title.scss */
+/* line 24, ../sass/atoms/_title.scss */
 .title--wide {
   /* --- structure --- */
   max-width: 56em;
@@ -135,7 +144,7 @@ a {
 /* the following class is relevant only
    if using a small-caps font that does
    not handle numbers appropriately */
-/* line 32, ../sass/atoms/_title.scss */
+/* line 33, ../sass/atoms/_title.scss */
 .title__numbers {
   font-size: 0.7em;
 }
@@ -145,13 +154,16 @@ and leader statements. */
 /* line 4, ../sass/atoms/_opt-title.scss */
 .opt-title {
   /* --- structure --- */
-  /* theme */
+  padding: 0 0.16em;
+  /* --- theme --- */
   font-size: 1.618em;
   font-family: "futura-pt", Futura, Helvetica, Arial, sans-serif;
   text-transform: lowercase;
   font-variant: small-caps;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.15em;
   font-weight: 500;
+  line-height: 0.8;
+  color: #afafaf;
 }
 
 /* line 1, ../sass/atoms/_body.scss */
@@ -346,22 +358,23 @@ action goal). */
 /* line 11, ../sass/atoms/_image.scss */
 .image {
   /* --- structure --- */
+  box-sizing: border-box;
   /* --- theming --- */
 }
 
-/* line 17, ../sass/atoms/_image.scss */
+/* line 18, ../sass/atoms/_image.scss */
 .image--portrait {
   /* --- structure --- */
   /* --- theming --- */
 }
 
-/* line 23, ../sass/atoms/_image.scss */
+/* line 24, ../sass/atoms/_image.scss */
 .image--landscape {
   /* --- structure --- */
   /* --- theming --- */
 }
 
-/* line 29, ../sass/atoms/_image.scss */
+/* line 30, ../sass/atoms/_image.scss */
 .image--rounded {
   /* --- structure --- */
   /* --- theming --- */
@@ -376,55 +389,60 @@ Think 'informative' messages. */
 - Center
 - Left
 - Right
+- With Image
 
 !!! can contain opt-titles !!!
 
 */
-/* line 14, ../sass/compounds/_title-block.scss */
+/* line 15, ../sass/compounds/_title-block.scss */
 .title-block {
   /* --- structure --- */
   padding: 0 1em;
   /* --- theming --- */
   /* --- child layout --- */
 }
-/* line 21, ../sass/compounds/_title-block.scss */
+/* line 22, ../sass/compounds/_title-block.scss */
 .title-block .title, .title-block .body, .title-block .opt-title {
   text-align: center;
   margin: 0 auto;
 }
-/* line 26, ../sass/compounds/_title-block.scss */
+/* line 27, ../sass/compounds/_title-block.scss */
+.title-block .opt-title--below {
+  margin-bottom: 1em;
+}
+/* line 31, ../sass/compounds/_title-block.scss */
 .title-block .title {
   margin-bottom: 0.5em;
 }
 
-/* line 32, ../sass/compounds/_title-block.scss */
+/* line 37, ../sass/compounds/_title-block.scss */
 .title-block--left {
   text-align: left;
   /* --- child layout --- */
 }
-/* line 36, ../sass/compounds/_title-block.scss */
+/* line 41, ../sass/compounds/_title-block.scss */
 .title-block--left .title, .title-block--left .body, .title-block--left .opt-title {
   text-align: left;
   margin-left: 0;
   margin-right: 0;
 }
-/* line 42, ../sass/compounds/_title-block.scss */
+/* line 47, ../sass/compounds/_title-block.scss */
 .title-block--left .body {
   display: inline-block;
 }
 
-/* line 47, ../sass/compounds/_title-block.scss */
+/* line 52, ../sass/compounds/_title-block.scss */
 .title-block--right {
   text-align: right;
   /* --- child layout --- */
 }
-/* line 51, ../sass/compounds/_title-block.scss */
+/* line 56, ../sass/compounds/_title-block.scss */
 .title-block--right .title, .title-block--right .body, .title-block--right .opt-title {
   text-align: right;
   margin-left: 0;
   margin-right: 0;
 }
-/* line 57, ../sass/compounds/_title-block.scss */
+/* line 62, ../sass/compounds/_title-block.scss */
 .title-block--right .body {
   display: inline-block;
 }
@@ -549,7 +567,7 @@ Think 'informative' messages. */
   /* --- theming --- */
   /* --- child layout --- */
 }
-/* line 59, ../sass/_mixins.scss */
+/* line 83, ../sass/_mixins.scss */
 .input-block--two-up:after {
   content: "";
   display: table;
@@ -575,7 +593,7 @@ Think 'informative' messages. */
   /* --- theming --- */
   /* --- child layout --- */
 }
-/* line 59, ../sass/_mixins.scss */
+/* line 83, ../sass/_mixins.scss */
 .input-block--inline-submit:after {
   content: "";
   display: table;
@@ -672,99 +690,101 @@ Think 'informative' messages. */
 .image-block {
   /* --- structure --- */
   padding: 1.618em 1em;
+  box-sizing: border-box;
   /* --- theming --- */
   /* --- child layout --- */
 }
 
-/* line 23, ../sass/compounds/_image-block.scss */
+/* line 24, ../sass/compounds/_image-block.scss */
 .image-block--centered {
   /* --- structure --- */
   /* --- theming --- */
   /* --- child layout --- */
 }
-/* line 29, ../sass/compounds/_image-block.scss */
+/* line 30, ../sass/compounds/_image-block.scss */
 .image-block--centered .image {
   display: block;
   margin: 0 auto;
+  padding: 1em;
 }
 
-/* line 35, ../sass/compounds/_image-block.scss */
+/* line 37, ../sass/compounds/_image-block.scss */
 .image-block--full {
   /* --- structure --- */
   /* --- theming --- */
   /* --- child layout --- */
 }
-/* line 41, ../sass/compounds/_image-block.scss */
+/* line 43, ../sass/compounds/_image-block.scss */
 .image-block--full .image {
   width: 100%;
 }
-/* line 45, ../sass/compounds/_image-block.scss */
+/* line 47, ../sass/compounds/_image-block.scss */
 .image-block--full .image--portrait {
   width: auto;
   height: 100%;
 }
-/* line 50, ../sass/compounds/_image-block.scss */
+/* line 52, ../sass/compounds/_image-block.scss */
 .image-block--full .image--landscape {
   height: auto;
 }
 
-/* line 55, ../sass/compounds/_image-block.scss */
+/* line 57, ../sass/compounds/_image-block.scss */
 .image-block--grid {
   /* --- structure --- */
   /* --- theming --- */
   /* --- child layout --- */
 }
-/* line 59, ../sass/_mixins.scss */
+/* line 83, ../sass/_mixins.scss */
 .image-block--grid:after {
   content: "";
   display: table;
   clear: both;
 }
-/* line 62, ../sass/compounds/_image-block.scss */
+/* line 64, ../sass/compounds/_image-block.scss */
 .image-block--grid .image {
   float: left;
 }
 
-/* line 67, ../sass/compounds/_image-block.scss */
+/* line 69, ../sass/compounds/_image-block.scss */
 .image-block--1grid {
   /* --- structure --- */
   /* --- theming --- */
   /* --- child layout --- */
 }
-/* line 73, ../sass/compounds/_image-block.scss */
+/* line 75, ../sass/compounds/_image-block.scss */
 .image-block--1grid .image {
-  width: 100%;
+  width: 90%;
 }
 
-/* line 78, ../sass/compounds/_image-block.scss */
+/* line 80, ../sass/compounds/_image-block.scss */
 .image-block--2grid {
   /* --- structure --- */
   /* --- theming --- */
   /* --- child layout --- */
 }
-/* line 84, ../sass/compounds/_image-block.scss */
+/* line 86, ../sass/compounds/_image-block.scss */
 .image-block--2grid .image {
   width: 50%;
 }
 
-/* line 89, ../sass/compounds/_image-block.scss */
+/* line 91, ../sass/compounds/_image-block.scss */
 .image-block--4grid {
   /* --- structure --- */
   /* --- theming --- */
   /* --- child layout --- */
 }
-/* line 95, ../sass/compounds/_image-block.scss */
+/* line 97, ../sass/compounds/_image-block.scss */
 .image-block--4grid .image {
   width: 25%;
 }
 
-/* line 100, ../sass/compounds/_image-block.scss */
+/* line 102, ../sass/compounds/_image-block.scss */
 .image-block--6grid {
   /* --- structure --- */
   /* --- theming --- */
   /* --- child layout --- */
 }
-/* line 106, ../sass/compounds/_image-block.scss */
+/* line 108, ../sass/compounds/_image-block.scss */
 .image-block--6grid .image {
   width: 16.66%;
 }
@@ -799,31 +819,53 @@ Think 'shouty' messages. */
   height: 62vh;
   position: relative;
   /* --- theming --- */
-  outline: 1px dotted gray;
-  /* for demo purposes */
+  overflow: hidden;
   /* --- child layout --- */
 }
-/* line 36, ../sass/molecules/_holler-block.scss */
-.holler-block > .holler-block__section:first-child {
-  display: table;
-  height: 61.8%;
-  width: 100%;
-  margin: 0 auto;
-}
-/* line 43, ../sass/molecules/_holler-block.scss */
+/* line 37, ../sass/molecules/_holler-block.scss */
 .holler-block .title-block {
   display: table-cell;
   vertical-align: bottom;
-  padding-bottom: 2.61em;
 }
-/* line 49, ../sass/molecules/_holler-block.scss */
-.holler-block .cta-block {
+/* line 42, ../sass/molecules/_holler-block.scss */
+.holler-block .cta-block, .holler-block .form-block {
+  padding-top: 2.61em;
   margin: 0 auto;
 }
 
-/* line 54, ../sass/molecules/_holler-block.scss */
+/* line 48, ../sass/molecules/_holler-block.scss */
 .holler-block--full {
   height: 100vh;
+}
+
+/* line 52, ../sass/molecules/_holler-block.scss */
+.holler-block--backgrounded {
+  background-color: #062533;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+/* line 57, ../sass/molecules/_holler-block.scss */
+.holler-block--backgrounded * {
+  color: #FFFFFF !important;
+  border-color: #FFFFFF !important;
+}
+
+/* line 63, ../sass/molecules/_holler-block.scss */
+.holler-block__section {
+  display: table;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* line 69, ../sass/molecules/_holler-block.scss */
+.holler-block__section:first-child {
+  height: 61.8%;
+}
+
+/* line 73, ../sass/molecules/_holler-block.scss */
+.holler-block__section:last-child {
+  height: 38.2%;
 }
 
 /* Two-up displays, for e.g. contextualised content. */
@@ -842,40 +884,45 @@ Think 'shouty' messages. */
   height: 62vh;
   /* --- theming --- */
   outline: 1px dotted #777;
+  overflow: hidden;
   /* --- child layout --- */
 }
+/* line 23, ../sass/molecules/_media-component.scss */
+.media-component .slider-block {
+  height: 62vh;
+}
 
-/* line 25, ../sass/molecules/_media-component.scss */
+/* line 29, ../sass/molecules/_media-component.scss */
 .media-component--gs {
   /* --- structure --- */
   /* --- theming --- */
   /* --- child layout --- */
 }
-/* line 31, ../sass/molecules/_media-component.scss */
+/* line 35, ../sass/molecules/_media-component.scss */
 .media-component--gs .media-component__section {
   width: 38.2%;
 }
-/* line 34, ../sass/molecules/_media-component.scss */
+/* line 38, ../sass/molecules/_media-component.scss */
 .media-component--gs .media-component__section:first-child, .media-component--gs .media-component__section:last-child {
   width: 61.8%;
 }
 
-/* line 42, ../sass/molecules/_media-component.scss */
+/* line 46, ../sass/molecules/_media-component.scss */
 .media-component--reverse {
   /* --- structure --- */
   /* --- theming --- */
   /* --- child layout --- */
 }
-/* line 48, ../sass/molecules/_media-component.scss */
+/* line 52, ../sass/molecules/_media-component.scss */
 .media-component--reverse .media-component__section {
   float: left;
 }
-/* line 51, ../sass/molecules/_media-component.scss */
+/* line 55, ../sass/molecules/_media-component.scss */
 .media-component--reverse .media-component__section:first-child {
   float: right;
 }
 
-/* line 58, ../sass/molecules/_media-component.scss */
+/* line 62, ../sass/molecules/_media-component.scss */
 .media-component__section {
   /* --- structure --- */
   height: 100%;
@@ -886,21 +933,24 @@ Think 'shouty' messages. */
   /* --- theming --- */
   /* --- child layout --- */
 }
-/* line 69, ../sass/molecules/_media-component.scss */
+/* line 73, ../sass/molecules/_media-component.scss */
 .media-component__section:first-child {
   display: table;
   height: 61.8%;
   float: left;
 }
-/* line 75, ../sass/molecules/_media-component.scss */
+/* line 79, ../sass/molecules/_media-component.scss */
 .media-component__section:last-child {
   height: auto;
 }
-/* line 79, ../sass/molecules/_media-component.scss */
+/* line 83, ../sass/molecules/_media-component.scss */
 .media-component__section .title-block {
   display: table-cell;
   vertical-align: bottom;
-  padding-bottom: 2.61em;
+}
+/* line 88, ../sass/molecules/_media-component.scss */
+.media-component__section .cta-block {
+  padding-top: 2.61792em;
 }
 
 /* Any number of horizontal blocks 
@@ -913,19 +963,35 @@ in a slider arrangement. */
 /* line 10, ../sass/molecules/_slider-block.scss */
 .slider-block {
   /* --- structure --- */
-  height: 62vh;
   position: relative;
   /* --- theming --- */
   overflow: hidden;
   /* --- child layout --- */
 }
-/* line 15, ../sass/molecules/_slider-block.scss */
+/* line 14, ../sass/molecules/_slider-block.scss */
 .slider-block .holler-block, .slider-block .media-component {
   float: left;
 }
+/* line 22, ../sass/molecules/_slider-block.scss */
+.slider-block .image-block {
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* line 29, ../sass/molecules/_slider-block.scss */
+.slick-list {
+  height: 100%;
+}
+
+/* line 33, ../sass/molecules/_slider-block.scss */
+.slick-track {
+  display: table;
+  height: 100%;
+}
 
 /* Slider controls */
-/* line 27, ../sass/molecules/_slider-block.scss */
+/* line 40, ../sass/molecules/_slider-block.scss */
 .slick-prev, .slick-next {
   /* --- structure --- */
   position: absolute;
@@ -939,37 +1005,54 @@ in a slider arrangement. */
   background: transparent;
   /* --- child layout --- */
 }
-/* line 40, ../sass/molecules/_slider-block.scss */
+/* line 53, ../sass/molecules/_slider-block.scss */
 .slick-prev:focus, .slick-next:focus {
   outline: none;
 }
-/* line 44, ../sass/molecules/_slider-block.scss */
-.slick-prev:after, .slick-next:after {
+/* line 57, ../sass/molecules/_slider-block.scss */
+.slick-prev:before, .slick-next:before {
+  font-family: "linea-arrows-10" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   position: absolute;
   left: 0;
   top: 0;
-  height: 2.61em;
-  width: 2.61em;
-  color: #AA1925;
+  height: 1em;
+  width: 1em;
+  color: #afafaf;
   cursor: pointer;
+  font-size: 2.61792em;
+}
+/* line 70, ../sass/molecules/_slider-block.scss */
+.slick-prev:hover:before, .slick-next:hover:before {
+  color: #AA1925;
 }
 
-/* line 57, ../sass/molecules/_slider-block.scss */
+/* line 77, ../sass/molecules/_slider-block.scss */
 .slick-prev {
   left: 0;
 }
-/* line 59, ../sass/molecules/_slider-block.scss */
-.slick-prev:after {
-  content: "<";
+/* line 79, ../sass/molecules/_slider-block.scss */
+.slick-prev:before {
+  content: "\e03f";
 }
 
-/* line 64, ../sass/molecules/_slider-block.scss */
+/* line 84, ../sass/molecules/_slider-block.scss */
 .slick-next {
   right: 0;
 }
-/* line 66, ../sass/molecules/_slider-block.scss */
-.slick-next:after {
-  content: ">";
+/* line 86, ../sass/molecules/_slider-block.scss */
+.slick-next:before {
+  content: "\e04b";
 }
 
 /* Three sets of similarly-structured content. 
@@ -981,6 +1064,10 @@ to warrant a slider. */
 - Titles flank CTA
 - Images flank CTA
 - Central content
+
+Modifiers:
+
+-- Backgrounded
 
 */
 /* Construction:
@@ -995,71 +1082,81 @@ to warrant a slider. */
   |___________|___________|___________|
 
 */
-/* line 27, ../sass/molecules/_three-up-block.scss */
+/* line 31, ../sass/molecules/_three-up-block.scss */
 .three-up-block {
   /* --- structure --- */
   width: 100%;
-  height: 62vh;
+  height: 100%;
   position: relative;
   /* --- theming --- */
+  overflow: hidden;
   /* --- child layout --- */
 }
-/* line 59, ../sass/_mixins.scss */
+/* line 83, ../sass/_mixins.scss */
 .three-up-block:after {
   content: "";
   display: table;
   clear: both;
 }
-/* line 37, ../sass/molecules/_three-up-block.scss */
+/* line 42, ../sass/molecules/_three-up-block.scss */
 .three-up-block > .three-up-block__section {
   float: left;
   display: table;
-  height: 62vh;
+  height: 100%;
   width: 33.333%;
 }
-/* line 44, ../sass/molecules/_three-up-block.scss */
-.three-up-block .title-block, .three-up-block .cta-block {
+/* line 49, ../sass/molecules/_three-up-block.scss */
+.three-up-block .title-block, .three-up-block .cta-block, .three-up-block .image-block {
   display: table-cell;
   vertical-align: middle;
+  padding: 0;
 }
-/* line 49, ../sass/molecules/_three-up-block.scss */
-.three-up-block .image-block {
-  height: 62vh;
-  box-sizing: border-box;
-}
-/* line 54, ../sass/molecules/_three-up-block.scss */
+/* line 55, ../sass/molecules/_three-up-block.scss */
 .three-up-block .image {
-  height: 100%;
+  max-height: 100%;
 }
 
-/* line 60, ../sass/molecules/_three-up-block.scss */
+/* line 61, ../sass/molecules/_three-up-block.scss */
 .three-up-block--full {
   /* ---structure --- */
   height: 100vh;
   /* --- child layout --- */
 }
-/* line 65, ../sass/molecules/_three-up-block.scss */
+/* line 66, ../sass/molecules/_three-up-block.scss */
 .three-up-block--full > .three-up-block__section {
   height: 100vh;
 }
-/* line 69, ../sass/molecules/_three-up-block.scss */
+/* line 70, ../sass/molecules/_three-up-block.scss */
 .three-up-block--full .image-block {
   height: 100vh;
 }
 
-/* line 74, ../sass/molecules/_three-up-block.scss */
+/* line 75, ../sass/molecules/_three-up-block.scss */
 .three-up-block--small {
   /* ---structure --- */
   height: 38vh;
   /* --- child layout --- */
 }
-/* line 79, ../sass/molecules/_three-up-block.scss */
+/* line 80, ../sass/molecules/_three-up-block.scss */
 .three-up-block--small > .three-up-block__section {
   height: 38vh;
 }
-/* line 83, ../sass/molecules/_three-up-block.scss */
+/* line 84, ../sass/molecules/_three-up-block.scss */
 .three-up-block--small .image-block {
   height: 38vh;
+}
+
+/* line 89, ../sass/molecules/_three-up-block.scss */
+.three-up-block--backgrounded {
+  background-color: #AA1925;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+/* line 94, ../sass/molecules/_three-up-block.scss */
+.three-up-block--backgrounded * {
+  color: #FFFFFF !important;
+  border-color: #FFFFFF !important;
 }
 
 /* setup */

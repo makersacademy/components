@@ -14,6 +14,7 @@
 .image-block {
   /* --- structure --- */
   padding: rhythm-increment(1) + em 1em;
+  @include border-box;
 
   /* --- theming --- */
 
@@ -29,6 +30,7 @@
   .image {
     display: block;
     margin: 0 auto;
+    padding: rhythm-increment(0) + em;
   }
 }
 
@@ -71,7 +73,7 @@
 
   /* --- child layout --- */
   .image {
-    width: 100%;
+    width: 90%;
   }
 }
 

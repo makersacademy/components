@@ -9,7 +9,6 @@ in a slider arrangement. */
 
 .slider-block {
 	/* --- structure --- */
-	height: 62vh;
 	position: relative;
 
 	.holler-block, .media-component {
@@ -20,6 +19,20 @@ in a slider arrangement. */
 	overflow: hidden;
 
 	/* --- child layout --- */
+	.image-block {
+		height: 100%;
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+
+.slick-list {
+	height: 100%;
+}
+
+.slick-track {
+	@include vertical-holder;
+	height: 100%;
 }
 
 /* Slider controls */
@@ -41,14 +54,21 @@ in a slider arrangement. */
 		outline: none;
 	}
 
-	&:after {
+	&:before {
+		@include icon;
+		@include transition($transition-faster);
 		position: absolute;
 		left: 0;
 		top: 0;
-		height: 2.61em;
-		width: 2.61em;
-		color: $color-6;
+		height: rhythm-increment(0) + em;
+		width: rhythm-increment(0) + em;
+		color: $color-7;
 		cursor: pointer;
+		font-size: $font-size-2;
+	}
+
+	&:hover:before {
+		color: $color-6;
 	}
 
 	/* --- child layout --- */
@@ -56,14 +76,14 @@ in a slider arrangement. */
 
 .slick-prev {
 	left: 0;
-	&:after {
-		content: "<";
+	&:before {
+		@include icon-arrow-left;
 	}
 }
 
 .slick-next {
 	right: 0;
-	&:after {
-		content: ">";
+	&:before {
+		@include icon-arrow-right;
 	}
 }
