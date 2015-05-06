@@ -13,12 +13,33 @@
 
 .image-block {
   /* --- structure --- */
-  padding: rhythm-increment(1) + em 1em;
   @include border-box;
+  position: relative;
 
   /* --- theming --- */
 
   /* --- child layout --- */
+  .caption {
+    position: absolute;
+    bottom: rhythm-increment(0) + em;
+    width: 100%;
+
+    color: $color-5;
+    text-shadow: 1px 1px 1px $color-8;
+
+    /* --- mobile --- */
+    @include respond-to(mobile) {
+      display: none;
+    }
+  }
+
+  .caption--right {
+    right: 1em;
+  }
+
+  .caption--left {
+    left: 1em;
+  }
 }
 
 .image-block--centered {
@@ -30,7 +51,6 @@
   .image {
     display: block;
     margin: 0 auto;
-    padding: rhythm-increment(0) + em;
   }
 }
 

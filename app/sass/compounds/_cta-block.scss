@@ -21,15 +21,27 @@
 	/* --- theming --- */
 
 	/* --- child layout --- */
-
+	
+	/* --- mobile --- */
+	@include respond-to(mobile) {
+		padding: 0;
+	}
 }
 
 .cta-block--left {
 	text-align: left;
+	/* --- mobile --- */
+	@include respond-to(mobile) {
+		text-align: center;
+	}
 }
 
 .cta-block--right {
 	text-align: right;
+	/* --- mobile --- */
+	@include respond-to(mobile) {
+		text-align: center;
+	}
 }
 
 .cta-block--inline {
@@ -48,6 +60,19 @@
 		}
 		&:last-child {
 			margin-right: 0;
+		}
+
+		/* --- mobile --- */
+		@include respond-to(mobile) {
+			display: block;
+			max-width: 10em;
+			margin: 0 auto 1em auto;
+			&:nth-child(2n) {
+				margin: 0 auto 1em auto;
+			}
+			&:last-child {
+				margin-right: auto;
+			}
 		}
 	}
 }

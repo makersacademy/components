@@ -1,9 +1,15 @@
+/* --- Breakpoints --- */
+$mobile: 1024px;
+$massive: 2440px;
+
 /* --- Typography --- */
 
 $font-stack-1: "futura-pt", Futura, Helvetica, Arial, sans-serif;
 
 /* font sizes use the typographic rhythm
    declared in _functions.scss */
+
+$root-font-size: 16px; /* set on the body only */
 
 $font-size-base: 1em;
 $font-size-1: rhythm-increment(1) + em;

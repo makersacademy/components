@@ -21,10 +21,10 @@
     <div class="container">
 
       <div class="title-block">
-        <h1 class="title title-block__title">Image</h1>
+        <h1 class="title title-block__title">Caption</h1>
         <h3 class="opt-title opt-title--below title-block__subtitle">Atom</h3>
         <p class="body title-block__body">
-          Images for, uh, looking at.
+          Captions for beneath Images.
         </p>
       </div>
       
@@ -32,14 +32,22 @@
       <div class="example">
         <!-- BEGIN examples -->
         
-        <span class="label">Portrait</span>
-        <img class="image image--portrait" src="http://placehold.it/200x323" alt="A gray box with the text '200 x 323'">
+        <span class="label">Center</span>
+        <figcaption class="caption">
+          <p class="body caption__body">Lorem Ipsum Dolor</p>
+        </figcaption>
 
-        <span class="label">Landscape</span>
-        <img class="image image--landscape" src="http://placehold.it/200x323" alt="A gray box with the text '323 x 200'">
+        <span class="label">Left</span>
+        <figcaption class="caption caption--left">
+          <p class="body caption__body">Lorem Ipsum Dolor</p>
+          <p class="body caption__body">I am a multi-line caption</p>
+        </figcaption>
 
-        <span class="label">Rounded</span>
-        <img class="image image--rounded" src="http://placehold.it/200x323" alt="A gray rounded box with the text '200 x 323'">
+        <span class="label">Right</span>
+        <figcaption class="caption caption--right">
+          <p class="body caption__body">Lorem Ipsum Dolor</p>
+          <p class="body caption__body">I too am on multiple lines</p>
+        </figcaption>
 
         <!-- END examples -->
       </div>
