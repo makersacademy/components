@@ -26,6 +26,11 @@ action goal). */
 	@include transition($transition-faster);
 	font-size: $font-size-base;
 	text-decoration: none;
+
+	/* --- mobile --- */
+	@include respond-to(mobile) {
+		background-color: rgba($color-5, 0.4);
+	}
 }
 
 .cta--horizontal {
@@ -56,6 +61,11 @@ action goal). */
 	font-size: $font-size-1;
 
 	/* theme */
+
+	/* --- mobile --- */
+	@include respond-to(mobile) {
+		font-size: $font-size-base;
+	}
 }
 
 .cta--submit {

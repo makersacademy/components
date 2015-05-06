@@ -21,6 +21,7 @@
 @import "atoms/_cta";
 @import "atoms/_input";
 @import "atoms/_image";
+@import "atoms/_caption";
 
 /* compounds */
 @import "compounds/_title-block";
@@ -34,6 +35,7 @@
 @import "molecules/_media-component";
 @import "molecules/_slider-block";
 @import "molecules/_three-up-block";
+@import "molecules/_two-up-block";
 
 /* setup */
 @import "layout/_containers";

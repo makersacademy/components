@@ -11,18 +11,22 @@
 .image {
   /* --- structure --- */
   @include border-box;
+  max-width: 100%;
 
   /* --- theming --- */
 }
 
 .image--portrait {
   /* --- structure --- */
+  max-height: 100%;
+  max-width: none;
 
   /* --- theming --- */
 }
 
 .image--landscape {
   /* --- structure --- */
+  max-width: 100%;
 
   /* --- theming --- */
 }

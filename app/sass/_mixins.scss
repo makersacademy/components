@@ -97,6 +97,21 @@ http://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
   clip: rect(1px, 1px, 1px, 1px);
 }
 
+/* Media Query abstractions */
+
+@mixin respond-to($media) {
+  @if $media == mobile {
+    @media only screen and (max-width: $mobile) { @content; }
+  }
+  @else if $media == regular {
+    @media only screen and (min-width: $mobile + 1) and (max-width: $massive - 1) { @content; }
+  }
+  @else if $media == massive {
+    @media only screen and (min-width: $massive) { @content; }
+  }
+}
+
+
 /* Development */
 
 @mixin show-outline {

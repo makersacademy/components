@@ -43,6 +43,11 @@ Think 'shouty' messages. */
 		padding-top: 2.61em;
 		margin: 0 auto;
 	}
+
+	/* --- mobile --- */
+	@include respond-to(mobile) {
+		height: 100vh;
+	}
 }
 
 .holler-block--full {
@@ -68,8 +73,16 @@ Think 'shouty' messages. */
 
 .holler-block__section:first-child {
 	height: 61.8%;
+	/* --- mobile --- */
+	@include respond-to(mobile) {
+		height: 50%;
+	}
 }
 
 .holler-block__section:last-child {
 	height: 38.2%;
+	/* --- mobile --- */
+	@include respond-to(mobile) {
+		height: 50%;
+	}
 }

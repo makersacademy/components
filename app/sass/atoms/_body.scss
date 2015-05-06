@@ -9,4 +9,8 @@
 
 .body--big {
   font-size: $font-size-1;
+  /* --- mobile --- */
+  @include respond-to(mobile) {
+    font-size: $font-size-base;
+  }
 }
