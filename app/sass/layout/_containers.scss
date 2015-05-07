@@ -8,6 +8,11 @@
 	& > .title-block {
 		margin: 0 auto;
 	}
+
+  @include respond-to(shallow-screen) {
+    max-width: 870px;
+  }
+
 }
 
 .container--full {

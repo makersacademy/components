@@ -109,6 +109,9 @@ http://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
   @else if $media == massive {
     @media only screen and (min-width: $massive) { @content; }
   }
+  @else if $media == shallow-screen {
+    @media only screen and (max-height: $shallow-screen) { @content; }
+  }
 }
 
 

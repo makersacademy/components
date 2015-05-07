@@ -84,6 +84,11 @@
   .image {
     float: left;
   }
+
+  /* --- mobile --- */
+  @include respond-to(mobile) {
+    
+  }
 }
 
 .image-block--1grid {
@@ -93,7 +98,14 @@
 
   /* --- child layout --- */
   .image {
-    width: 90%;
+    width: 100%;
+  }
+
+  /* --- mobile --- */
+  @include respond-to(mobile) {
+    .image {
+      width: 50%;
+    }
   }
 }
 

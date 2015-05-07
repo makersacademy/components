@@ -71,6 +71,7 @@ action goal). */
 .cta--submit {
 	/* --- structure --- */
 	cursor: pointer;
+	min-width: 0;
 
 	/* theme */
 	background: transparent;
