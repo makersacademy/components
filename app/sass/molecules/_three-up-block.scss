@@ -39,12 +39,6 @@ Modifiers:
   overflow: hidden;
 
   /* --- child layout --- */
-  & > .three-up-block__section {
-    float: left;
-    display: table;
-    height: 100%;
-    width: 33.333%;
-  }
 
   .title-block, .cta-block, .image-block {
     display: table-cell;
@@ -58,6 +52,19 @@ Modifiers:
 
 }
 
+.three-up-block__section {
+  float: left;
+  display: table;
+  height: 100%;
+  width: 33.333%;
+  /* --- mobile --- */
+  @include respond-to(mobile) {
+    float: none;
+    width: 100%;
+    height: 33%;
+  }
+}
+
 .three-up-block--full {
   /* ---structure --- */
   height: 100vh;
@@ -65,6 +72,9 @@ Modifiers:
   /* --- child layout --- */
   & > .three-up-block__section {
     height: 100vh;
+    @include respond-to(mobile) {
+      height: 33vh;
+    }
   }
 
   .image-block {
@@ -79,10 +89,16 @@ Modifiers:
   /* --- child layout --- */
   & > .three-up-block__section {
     height: 38vh;
+    @include respond-to(mobile) {
+      height: 12.7vh;
+    }
   }
 
   .image-block {
     height: 38vh;
+    @include respond-to(mobile) {
+      height: 12.7vh;
+    }
   }
 }
 

@@ -85,4 +85,14 @@ Think 'shouty' messages. */
 	@include respond-to(mobile) {
 		height: 50%;
 	}
+
+	/* hacky child molecules...this needs 
+		 re-thinking */
+
+	.three-up-block__section {
+		height: 24vh;
+		@include respond-to(mobile) {
+			height: 33%;
+		}
+	}
 }
