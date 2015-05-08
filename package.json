@@ -1,0 +1,22 @@
+{
+  "name": "style_guide",
+  "version": "1.0.0",
+  "description": "Makers Academy style guide",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/makersacademy/style_guide.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/makersacademy/style_guide/issues"
+  },
+  "homepage": "https://github.com/makersacademy/style_guide",
+  "devDependencies": {
+    "bower": "^1.4.1"
+  }
+}
