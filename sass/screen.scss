@@ -14,21 +14,21 @@
 
 @import "typography/typography";
 
-/* atoms */
-@import "atoms/_title";
-@import "atoms/_opt-title";
-@import "atoms/_body";
-@import "atoms/_cta";
-@import "atoms/_input";
-@import "atoms/_image";
-@import "atoms/_caption";
+/* quarks */
+@import "quarks/_title";
+@import "quarks/_opt-title";
+@import "quarks/_body";
+@import "quarks/_cta";
+@import "quarks/_input";
+@import "quarks/_image";
+@import "quarks/_caption";
 
-/* compounds */
-@import "compounds/_title-block";
-@import "compounds/_cta-block";
-@import "compounds/_input-block";
-@import "compounds/_form-block";
-@import "compounds/_image-block";
+/* atoms */
+@import "atoms/_title-block";
+@import "atoms/_cta-block";
+@import "atoms/_input-block";
+@import "atoms/_form-block";
+@import "atoms/_image-block";
 
 /* molecules */
 @import "molecules/_holler-block";

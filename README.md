@@ -8,15 +8,15 @@ A living document of styles at Makers Academy, with example HTML and CSS for con
 
 It's component-based. That means that any given interface (including e.g. print interfaces) can be constructed from components.
 
-In this system, we call these components _modules_. There is a hierarchy to modules:
+Components can have huge numbers of different layouts, thematic variations, and so on. Only some of these variations are available to be used inside other components, or within pages. These 'public interfaces' are called _modules_. There is a hierarchy to modules:
 
-- **Atoms** are the most basic modules. They exist to perform a single function. For example, the [Call to Action](components/components/atoms/cta.html). Multiple atoms can be combined to create Compounds.
-- **Compounds** are intermediate modules. These are collections of atoms in abstract, but often useful, combinations. For example, the [Call to Action Block](components/components/compounds/cta-block.html). Multiple compounds can be combined to create Molecules.
-- **Molecules** are high-level modules. These are collections of compounds in a template format, and are designed to be placed straight in to pages. They are generally full-pagewidth, and are designed to maintain a vertical (downwards) flow. You should use molecules to build new pages. There are few molecules by design: this keeps styling consistent and on-brand.
+- **Quarks** are the most basic modules. They exist to perform a single function. For example, the [Call to Action](components/components/quarks/cta.html). Multiple Quarks can be combined to create Atoms.
+- **Atoms** are intermediate modules. These are collections of quarks in abstract, but often useful, combinations. For example, the [Call to Action Block](components/components/quarks/cta-block.html). Multiple atoms can be combined to create molecules.
+- **Molecules** are high-level modules. These are collections of atoms in a template format, and are designed to be placed straight in to pages. They are generally full-pagewidth, and are designed to maintain a vertical (downwards) flow. You should use Molecules to build new pages. There are few molecules by design: this keeps styling consistent and on-brand.
 
 #### Some rules
 - Molecules can have fixed heights, all other patterns cannot.
-- Layout (such as height and alignment) is set by the 'parent' module. For example, the CTA atom is laid out by the CTA block compound. The CTA block compound's layout out by containing molecules, such as the Three-up block.
+- Layout (such as height and alignment) is set by the 'parent' module. For example, the CTA quark is laid out by the CTA block atom. The CTA block atom's layout is determined by parent molecules, such as the Three-up block.
 
 ### What's the HTML like?
 
@@ -35,14 +35,14 @@ HTML classes are structured using a [Block-Element-Modifier (BEM)](http://csswiz
 </div>
 ```
 
-Thus, a `.title-block` class can have modifiers - in this case, aligning its contents to the left with the `--left` class modifier - and elements within it can be specifically styled - in this case, the `.title` [Title Atom](components/components/atoms/title.html) can be addressed with the `.title-block__title` class, and the `.body` [Body Atom](components/components/atoms/body.html) can be addressed with the `.title-block__body` class. This class naming helps to avoid issues of Specificity when certain combinations are especially common, by avoiding the use of CSS inheritance selectors.
+Thus, a `.title-block` class can have modifiers - in this case, aligning its contents to the left with the `--left` class modifier - and elements within it can be specifically styled - in this case, the `.title` [Title quark](components/components/quarks/title.html) can be addressed with the `.title-block__title` class, and the `.body` [Body quark](components/components/quarks/body.html) can be addressed with the `.title-block__body` class. This class naming helps to avoid issues of Specificity when certain combinations are especially common, by avoiding the use of CSS inheritance selectors.
 
-> CSS inheritance selectors are not to be totally avoided - for example, molecules can sometimes set specific `display` properties for their child compounds. In general, though, this should be refactored out to avoid selector chains.
+> CSS inheritance selectors are not to be totally avoided - for example, molecules can sometimes set specific `display` properties for their child quarks. In general, though, this should be refactored out to avoid selector chains.
 
 This style of doing the HTML is extremely amenable to a conventional template structure for views server-side. One could easily imagine doing something like this to quickly spin up a flexible CTA block:
 
 ```erb
-<%= render partial: "components/compounds/cta-block", locals: { 
+<%= render partial: "components/quarks/cta-block", locals: { 
   { :text => "Apply now", :link => apply_path }, 
   { :text => "See more", :link => clients_path } 
 }, as: :ctas } %>
@@ -52,7 +52,7 @@ And in the cta-block.erb file:
 
 ```erb
 <% ctas.each do | cta | %>
-    <%= render partial: "components/atoms/cta", locals: { 
+    <%= render partial: "components/quarks/cta", locals: { 
       :text => cta.fetch(:text, "Untitled"), 
       :link => cta.fetch(:link, "#") 
     } %>

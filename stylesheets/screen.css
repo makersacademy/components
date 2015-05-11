@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, ../../../../../../../../../Users/Sam/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../../../Users/Sam/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,45 +24,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../../../Users/Sam/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../../Users/Sam/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../../../Users/Sam/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../../Users/Sam/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../../../Users/Sam/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../../Users/Sam/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../../../Users/Sam/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../../Users/Sam/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../../../Users/Sam/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../../Users/Sam/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../../../Users/Sam/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../../Users/Sam/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../../../Users/Sam/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../../Users/Sam/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../../../Users/Sam/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../../Users/Sam/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -118,7 +118,7 @@ body {
   font-size: 16px;
 }
 
-/* atoms */
+/* quarks */
 /* Main site header copy. */
 /* Modules:
 
@@ -128,7 +128,7 @@ body {
 !!! can contain __numbers when using Futura
 
 */
-/* line 13, ../sass/atoms/_title.scss */
+/* line 13, ../sass/quarks/_title.scss */
 .title {
   /* --- structure --- */
   max-width: 29em;
@@ -144,13 +144,13 @@ body {
   /* --- mobile --- */
 }
 @media only screen and (max-width: 1024px) {
-  /* line 13, ../sass/atoms/_title.scss */
+  /* line 13, ../sass/quarks/_title.scss */
   .title {
     font-size: 2.61792em;
   }
 }
 
-/* line 29, ../sass/atoms/_title.scss */
+/* line 29, ../sass/quarks/_title.scss */
 .title--wide {
   /* --- structure --- */
   max-width: 56em;
@@ -159,14 +159,14 @@ body {
 /* the following class is relevant only
    if using a small-caps font that does
    not handle numbers appropriately */
-/* line 38, ../sass/atoms/_title.scss */
+/* line 38, ../sass/quarks/_title.scss */
 .title__numbers {
   font-size: 0.7em;
 }
 
 /* Optional Titles, such as subtitles 
 and leader statements. */
-/* line 4, ../sass/atoms/_opt-title.scss */
+/* line 4, ../sass/quarks/_opt-title.scss */
 .opt-title {
   /* --- structure --- */
   padding: 0 0.16em;
@@ -181,7 +181,7 @@ and leader statements. */
   color: #afafaf;
 }
 
-/* line 1, ../sass/atoms/_body.scss */
+/* line 1, ../sass/quarks/_body.scss */
 .body {
   /* --- structure --- */
   max-width: 29em;
@@ -192,13 +192,13 @@ and leader statements. */
   font-weight: 400;
 }
 
-/* line 10, ../sass/atoms/_body.scss */
+/* line 10, ../sass/quarks/_body.scss */
 .body--big {
   font-size: 1.618em;
   /* --- mobile --- */
 }
 @media only screen and (max-width: 1024px) {
-  /* line 10, ../sass/atoms/_body.scss */
+  /* line 10, ../sass/quarks/_body.scss */
   .body--big {
     font-size: 1em;
   }
@@ -217,7 +217,7 @@ action goal). */
 - Vertical Big
 
 */
-/* line 16, ../sass/atoms/_cta.scss */
+/* line 16, ../sass/quarks/_cta.scss */
 .cta {
   /* --- structure --- */
   display: inline-block;
@@ -239,35 +239,35 @@ action goal). */
   /* --- mobile --- */
 }
 @media only screen and (max-width: 1024px) {
-  /* line 16, ../sass/atoms/_cta.scss */
+  /* line 16, ../sass/quarks/_cta.scss */
   .cta {
     background-color: rgba(255, 255, 255, 0.4);
   }
 }
 
-/* line 36, ../sass/atoms/_cta.scss */
+/* line 36, ../sass/quarks/_cta.scss */
 .cta--horizontal {
   /* --- structure --- */
   /* theme */
   color: #00333F;
 }
-/* line 42, ../sass/atoms/_cta.scss */
+/* line 42, ../sass/quarks/_cta.scss */
 .cta--horizontal:hover {
   background: rgba(0, 51, 63, 0.2);
 }
 
-/* line 47, ../sass/atoms/_cta.scss */
+/* line 47, ../sass/quarks/_cta.scss */
 .cta--vertical {
   /* --- structure --- */
   /* theme */
   color: #AA1925;
 }
-/* line 53, ../sass/atoms/_cta.scss */
+/* line 53, ../sass/quarks/_cta.scss */
 .cta--vertical:hover {
   background: rgba(170, 25, 37, 0.2);
 }
 
-/* line 58, ../sass/atoms/_cta.scss */
+/* line 58, ../sass/quarks/_cta.scss */
 .cta--big {
   /* --- structure --- */
   max-width: 11.1em;
@@ -276,13 +276,13 @@ action goal). */
   /* --- mobile --- */
 }
 @media only screen and (max-width: 1024px) {
-  /* line 58, ../sass/atoms/_cta.scss */
+  /* line 58, ../sass/quarks/_cta.scss */
   .cta--big {
     font-size: 1em;
   }
 }
 
-/* line 71, ../sass/atoms/_cta.scss */
+/* line 71, ../sass/quarks/_cta.scss */
 .cta--submit {
   /* --- structure --- */
   cursor: pointer;
@@ -297,11 +297,11 @@ action goal). */
   text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.1);
   font-size: 1em;
 }
-/* line 83, ../sass/atoms/_cta.scss */
+/* line 83, ../sass/quarks/_cta.scss */
 .cta--submit:hover {
   background: rgba(170, 25, 37, 0.2);
 }
-/* line 87, ../sass/atoms/_cta.scss */
+/* line 87, ../sass/quarks/_cta.scss */
 .cta--submit:focus {
   outline: none;
 }
@@ -317,7 +317,7 @@ action goal). */
 - Select Input
 
 */
-/* line 14, ../sass/atoms/_input.scss */
+/* line 14, ../sass/quarks/_input.scss */
 .input {
   /* --- structure --- */
   display: block;
@@ -333,30 +333,30 @@ action goal). */
   http://stackoverflow.com/questions/607198/padding-a-text-input-in-ie-possible */
   overflow: visible;
 }
-/* line 28, ../sass/atoms/_input.scss */
+/* line 28, ../sass/quarks/_input.scss */
 .input:focus {
   outline: none;
 }
-/* line 32, ../sass/atoms/_input.scss */
+/* line 32, ../sass/quarks/_input.scss */
 .input::-webkit-input-placeholder {
   color: #afafaf;
 }
-/* line 36, ../sass/atoms/_input.scss */
+/* line 36, ../sass/quarks/_input.scss */
 .input:-moz-placeholder {
   /* Firefox 18- */
   color: #afafaf;
 }
-/* line 40, ../sass/atoms/_input.scss */
+/* line 40, ../sass/quarks/_input.scss */
 .input::-moz-placeholder {
   /* Firefox 19+ */
   color: #afafaf;
 }
-/* line 44, ../sass/atoms/_input.scss */
+/* line 44, ../sass/quarks/_input.scss */
 .input:-ms-input-placeholder {
   color: #afafaf;
 }
 
-/* line 49, ../sass/atoms/_input.scss */
+/* line 49, ../sass/quarks/_input.scss */
 .input--text {
   /* --- structure --- */
   /* theme */
@@ -366,14 +366,14 @@ action goal). */
   border-color: #444;
 }
 
-/* line 57, ../sass/atoms/_input.scss */
+/* line 57, ../sass/quarks/_input.scss */
 .input--radio {
   /* --- structure --- */
   display: inline-block;
   /* theme */
 }
 
-/* line 64, ../sass/atoms/_input.scss */
+/* line 64, ../sass/quarks/_input.scss */
 .input--textarea {
   /* --- structure --- */
   resize: none;
@@ -392,7 +392,7 @@ action goal). */
 - Circle
 
 */
-/* line 11, ../sass/atoms/_image.scss */
+/* line 11, ../sass/quarks/_image.scss */
 .image {
   /* --- structure --- */
   box-sizing: border-box;
@@ -400,7 +400,7 @@ action goal). */
   /* --- theming --- */
 }
 
-/* line 19, ../sass/atoms/_image.scss */
+/* line 19, ../sass/quarks/_image.scss */
 .image--portrait {
   /* --- structure --- */
   max-height: 100%;
@@ -408,14 +408,14 @@ action goal). */
   /* --- theming --- */
 }
 
-/* line 27, ../sass/atoms/_image.scss */
+/* line 27, ../sass/quarks/_image.scss */
 .image--landscape {
   /* --- structure --- */
   max-width: 100%;
   /* --- theming --- */
 }
 
-/* line 34, ../sass/atoms/_image.scss */
+/* line 34, ../sass/quarks/_image.scss */
 .image--rounded {
   /* --- structure --- */
   /* --- theming --- */
@@ -432,7 +432,7 @@ action goal). */
 !!! contains p tags !!!
 
 */
-/* line 13, ../sass/atoms/_caption.scss */
+/* line 13, ../sass/quarks/_caption.scss */
 .caption {
   /* --- structure --- */
   box-sizing: border-box;
@@ -446,27 +446,27 @@ action goal). */
   color: #444;
   /* --- child layout --- */
 }
-/* line 25, ../sass/atoms/_caption.scss */
+/* line 25, ../sass/quarks/_caption.scss */
 .caption .caption__body {
   max-width: none;
   display: block;
 }
 
-/* line 31, ../sass/atoms/_caption.scss */
+/* line 31, ../sass/quarks/_caption.scss */
 .caption--left {
   /* --- structure --- */
   text-align: left;
   /* --- theming --- */
 }
 
-/* line 37, ../sass/atoms/_caption.scss */
+/* line 37, ../sass/quarks/_caption.scss */
 .caption--right {
   /* --- structure --- */
   text-align: right;
   /* --- theming --- */
 }
 
-/* compounds */
+/* atoms */
 /* Title and some copy. 
 Think 'informative' messages. */
 /* Modules:
@@ -479,7 +479,7 @@ Think 'informative' messages. */
 !!! can contain opt-titles !!!
 
 */
-/* line 15, ../sass/compounds/_title-block.scss */
+/* line 15, ../sass/atoms/_title-block.scss */
 .title-block {
   /* --- structure --- */
   padding: 0 1em;
@@ -487,48 +487,48 @@ Think 'informative' messages. */
   /* --- child layout --- */
   /* --- mobile --- */
 }
-/* line 22, ../sass/compounds/_title-block.scss */
+/* line 22, ../sass/atoms/_title-block.scss */
 .title-block .title, .title-block .body, .title-block .opt-title {
   text-align: center;
   margin: 0 auto;
 }
-/* line 27, ../sass/compounds/_title-block.scss */
+/* line 27, ../sass/atoms/_title-block.scss */
 .title-block .opt-title--below {
   margin-bottom: 1em;
 }
-/* line 31, ../sass/compounds/_title-block.scss */
+/* line 31, ../sass/atoms/_title-block.scss */
 .title-block .title {
   margin-bottom: 0.5em;
 }
-/* line 35, ../sass/compounds/_title-block.scss */
+/* line 35, ../sass/atoms/_title-block.scss */
 .title-block .image-block {
   margin-bottom: 1.618em;
 }
 @media only screen and (max-width: 1024px) {
-  /* line 41, ../sass/compounds/_title-block.scss */
+  /* line 41, ../sass/atoms/_title-block.scss */
   .title-block .image-block {
     display: none;
   }
 }
 
-/* line 48, ../sass/compounds/_title-block.scss */
+/* line 48, ../sass/atoms/_title-block.scss */
 .title-block--left {
   text-align: left;
   /* --- child layout --- */
   /* --- mobile --- */
 }
-/* line 52, ../sass/compounds/_title-block.scss */
+/* line 52, ../sass/atoms/_title-block.scss */
 .title-block--left .title, .title-block--left .body, .title-block--left .opt-title {
   text-align: left;
   margin-left: 0;
   margin-right: 0;
 }
-/* line 58, ../sass/compounds/_title-block.scss */
+/* line 58, ../sass/atoms/_title-block.scss */
 .title-block--left .body {
   display: inline-block;
 }
 @media only screen and (max-width: 1024px) {
-  /* line 64, ../sass/compounds/_title-block.scss */
+  /* line 64, ../sass/atoms/_title-block.scss */
   .title-block--left .title, .title-block--left .body, .title-block--left .opt-title {
     text-align: center;
     margin-left: auto;
@@ -536,7 +536,7 @@ Think 'informative' messages. */
   }
 }
 
-/* line 72, ../sass/compounds/_title-block.scss */
+/* line 72, ../sass/atoms/_title-block.scss */
 .title-block--right {
   text-align: right;
   /* --- child layout --- */
@@ -544,29 +544,29 @@ Think 'informative' messages. */
   	 overflowing set container widths */
   /* --- mobile --- */
 }
-/* line 76, ../sass/compounds/_title-block.scss */
+/* line 76, ../sass/atoms/_title-block.scss */
 .title-block--right .title, .title-block--right .body, .title-block--right .opt-title {
   text-align: right;
   margin-left: 0;
   margin-right: 0;
 }
-/* line 84, ../sass/compounds/_title-block.scss */
+/* line 84, ../sass/atoms/_title-block.scss */
 .title-block--right .title {
   max-width: 0em;
   text-indent: -0.15em;
 }
-/* line 89, ../sass/compounds/_title-block.scss */
+/* line 89, ../sass/atoms/_title-block.scss */
 .title-block--right .body {
   display: inline-block;
 }
 @media only screen and (max-width: 1024px) {
-  /* line 95, ../sass/compounds/_title-block.scss */
+  /* line 95, ../sass/atoms/_title-block.scss */
   .title-block--right .title, .title-block--right .body, .title-block--right .opt-title {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 101, ../sass/compounds/_title-block.scss */
+  /* line 101, ../sass/atoms/_title-block.scss */
   .title-block--right .title {
     max-width: 29em;
     text-indent: 0;
@@ -586,7 +586,7 @@ Think 'informative' messages. */
 !!! can contain cta--bigs !!!
 
 */
-/* line 16, ../sass/compounds/_cta-block.scss */
+/* line 16, ../sass/atoms/_cta-block.scss */
 .cta-block {
   /* --- structure --- */
   text-align: center;
@@ -596,100 +596,100 @@ Think 'informative' messages. */
   /* --- mobile --- */
 }
 @media only screen and (max-width: 1024px) {
-  /* line 16, ../sass/compounds/_cta-block.scss */
+  /* line 16, ../sass/atoms/_cta-block.scss */
   .cta-block {
     padding: 0;
   }
 }
 
-/* line 31, ../sass/compounds/_cta-block.scss */
+/* line 31, ../sass/atoms/_cta-block.scss */
 .cta-block--left {
   text-align: left;
   /* --- mobile --- */
 }
 @media only screen and (max-width: 1024px) {
-  /* line 31, ../sass/compounds/_cta-block.scss */
+  /* line 31, ../sass/atoms/_cta-block.scss */
   .cta-block--left {
     text-align: center;
   }
 }
 
-/* line 39, ../sass/compounds/_cta-block.scss */
+/* line 39, ../sass/atoms/_cta-block.scss */
 .cta-block--right {
   text-align: right;
   /* --- mobile --- */
 }
 @media only screen and (max-width: 1024px) {
-  /* line 39, ../sass/compounds/_cta-block.scss */
+  /* line 39, ../sass/atoms/_cta-block.scss */
   .cta-block--right {
     text-align: center;
   }
 }
 
-/* line 47, ../sass/compounds/_cta-block.scss */
+/* line 47, ../sass/atoms/_cta-block.scss */
 .cta-block--inline {
   /* --- structure --- */
   /* --- theming --- */
   /* --- child layout --- */
 }
-/* line 54, ../sass/compounds/_cta-block.scss */
+/* line 54, ../sass/atoms/_cta-block.scss */
 .cta-block--inline .cta {
   display: inline-block;
   /* margins for central CTAs only */
   /* --- mobile --- */
 }
-/* line 58, ../sass/compounds/_cta-block.scss */
+/* line 58, ../sass/atoms/_cta-block.scss */
 .cta-block--inline .cta:nth-child(2n) {
   margin: 0 2.61em;
 }
-/* line 61, ../sass/compounds/_cta-block.scss */
+/* line 61, ../sass/atoms/_cta-block.scss */
 .cta-block--inline .cta:last-child {
   margin-right: 0;
 }
 @media only screen and (max-width: 1024px) {
-  /* line 54, ../sass/compounds/_cta-block.scss */
+  /* line 54, ../sass/atoms/_cta-block.scss */
   .cta-block--inline .cta {
     display: block;
     max-width: 10em;
     margin: 0 auto 1em auto;
   }
-  /* line 70, ../sass/compounds/_cta-block.scss */
+  /* line 70, ../sass/atoms/_cta-block.scss */
   .cta-block--inline .cta:nth-child(2n) {
     margin: 0 auto 1em auto;
   }
-  /* line 73, ../sass/compounds/_cta-block.scss */
+  /* line 73, ../sass/atoms/_cta-block.scss */
   .cta-block--inline .cta:last-child {
     margin-right: auto;
   }
 }
 
-/* line 80, ../sass/compounds/_cta-block.scss */
+/* line 80, ../sass/atoms/_cta-block.scss */
 .cta-block--stacked {
   /* --- structure --- */
   /* --- theming --- */
   /* --- child layout --- */
 }
-/* line 87, ../sass/compounds/_cta-block.scss */
+/* line 87, ../sass/atoms/_cta-block.scss */
 .cta-block--stacked .cta {
   display: block;
   /* margins for central CTAs only */
 }
-/* line 91, ../sass/compounds/_cta-block.scss */
+/* line 91, ../sass/atoms/_cta-block.scss */
 .cta-block--stacked .cta:nth-child(2n) {
   margin: 1em 0;
 }
-/* line 94, ../sass/compounds/_cta-block.scss */
+/* line 94, ../sass/atoms/_cta-block.scss */
 .cta-block--stacked .cta:last-child {
   margin-bottom: 0;
 }
 
-/* line 101, ../sass/compounds/_cta-block.scss */
+/* line 101, ../sass/atoms/_cta-block.scss */
 .cta-block--bar {
   /* --- structure --- */
   /* --- theming --- */
   /* --- child layout --- */
 }
-/* line 108, ../sass/compounds/_cta-block.scss */
+/* line 108, ../sass/atoms/_cta-block.scss */
 .cta-block--bar .cta {
   float: left;
   /* border radii change only for 
@@ -698,13 +698,13 @@ Think 'informative' messages. */
   border-left-width: 1px;
   border-right-width: 1px;
 }
-/* line 117, ../sass/compounds/_cta-block.scss */
+/* line 117, ../sass/atoms/_cta-block.scss */
 .cta-block--bar .cta:first-child {
   border-left-width: 2px;
   border-top-left-radius: 0.5em;
   border-bottom-left-radius: 0.5em;
 }
-/* line 123, ../sass/compounds/_cta-block.scss */
+/* line 123, ../sass/atoms/_cta-block.scss */
 .cta-block--bar .cta:last-child {
   border-right-width: 2px;
   border-top-right-radius: 0.5em;
@@ -719,13 +719,13 @@ Think 'informative' messages. */
 - Inline ('Capture')
 
 */
-/* line 11, ../sass/compounds/_input-block.scss */
+/* line 11, ../sass/atoms/_input-block.scss */
 .input-block {
   /* --- structure --- */
   /* --- theming --- */
 }
 
-/* line 17, ../sass/compounds/_input-block.scss */
+/* line 17, ../sass/atoms/_input-block.scss */
 .input-block--two-up {
   /* --- structure --- */
   /* --- theming --- */
@@ -737,21 +737,21 @@ Think 'informative' messages. */
   display: table;
   clear: both;
 }
-/* line 25, ../sass/compounds/_input-block.scss */
+/* line 25, ../sass/atoms/_input-block.scss */
 .input-block--two-up .input {
   width: 46%;
   float: left;
 }
-/* line 28, ../sass/compounds/_input-block.scss */
+/* line 28, ../sass/atoms/_input-block.scss */
 .input-block--two-up .input:first-of-type {
   margin-right: 4%;
 }
-/* line 31, ../sass/compounds/_input-block.scss */
+/* line 31, ../sass/atoms/_input-block.scss */
 .input-block--two-up .input:last-of-type {
   margin-left: 4%;
 }
 
-/* line 37, ../sass/compounds/_input-block.scss */
+/* line 37, ../sass/atoms/_input-block.scss */
 .input-block--inline-submit {
   /* --- structure --- */
   /* --- theming --- */
@@ -763,24 +763,24 @@ Think 'informative' messages. */
   display: table;
   clear: both;
 }
-/* line 45, ../sass/compounds/_input-block.scss */
+/* line 45, ../sass/atoms/_input-block.scss */
 .input-block--inline-submit .input, .input-block--inline-submit .cta--submit {
   float: left;
 }
-/* line 49, ../sass/compounds/_input-block.scss */
+/* line 49, ../sass/atoms/_input-block.scss */
 .input-block--inline-submit .input {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   border-right-width: 0;
 }
-/* line 55, ../sass/compounds/_input-block.scss */
+/* line 55, ../sass/atoms/_input-block.scss */
 .input-block--inline-submit .cta--submit {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   border-color: #444;
 }
 
-/* line 62, ../sass/compounds/_input-block.scss */
+/* line 62, ../sass/atoms/_input-block.scss */
 .input-block__label {
   /* --- structure --- */
   /* --- theming --- */
@@ -803,36 +803,36 @@ Think 'informative' messages. */
 !!! can contain __fieldsets !!!
 
 */
-/* line 13, ../sass/compounds/_form-block.scss */
+/* line 13, ../sass/atoms/_form-block.scss */
 .form-block {
   /* --- structure --- */
   /* --- theming --- */
   /* --- child layout --- */
 }
-/* line 20, ../sass/compounds/_form-block.scss */
+/* line 20, ../sass/atoms/_form-block.scss */
 .form-block .input-block {
   margin-bottom: 1em;
 }
 
-/* line 25, ../sass/compounds/_form-block.scss */
+/* line 25, ../sass/atoms/_form-block.scss */
 .form-block--center {
   /* --- structure --- */
   text-align: center;
   /* --- theming --- */
   /* --- child layout --- */
 }
-/* line 33, ../sass/compounds/_form-block.scss */
+/* line 33, ../sass/atoms/_form-block.scss */
 .form-block--center .input-block {
   display: inline-block;
 }
 
-/* line 38, ../sass/compounds/_form-block.scss */
+/* line 38, ../sass/atoms/_form-block.scss */
 .form-block__fieldset {
   /* --- structure --- */
   /* --- theming --- */
 }
 
-/* line 44, ../sass/compounds/_form-block.scss */
+/* line 44, ../sass/atoms/_form-block.scss */
 .form-block__fieldset__opt-title {
   /* --- structure --- */
   margin-bottom: 1em;
@@ -850,7 +850,7 @@ Think 'informative' messages. */
 - 6-up Grid
 
 */
-/* line 14, ../sass/compounds/_image-block.scss */
+/* line 14, ../sass/atoms/_image-block.scss */
 .image-block {
   /* --- structure --- */
   box-sizing: border-box;
@@ -858,7 +858,7 @@ Think 'informative' messages. */
   /* --- theming --- */
   /* --- child layout --- */
 }
-/* line 22, ../sass/compounds/_image-block.scss */
+/* line 22, ../sass/atoms/_image-block.scss */
 .image-block .caption {
   position: absolute;
   bottom: 1em;
@@ -868,53 +868,53 @@ Think 'informative' messages. */
   /* --- mobile --- */
 }
 @media only screen and (max-width: 1024px) {
-  /* line 22, ../sass/compounds/_image-block.scss */
+  /* line 22, ../sass/atoms/_image-block.scss */
   .image-block .caption {
     display: none;
   }
 }
-/* line 36, ../sass/compounds/_image-block.scss */
+/* line 36, ../sass/atoms/_image-block.scss */
 .image-block .caption--right {
   right: 1em;
 }
-/* line 40, ../sass/compounds/_image-block.scss */
+/* line 40, ../sass/atoms/_image-block.scss */
 .image-block .caption--left {
   left: 1em;
 }
 
-/* line 45, ../sass/compounds/_image-block.scss */
+/* line 45, ../sass/atoms/_image-block.scss */
 .image-block--centered {
   /* --- structure --- */
   /* --- theming --- */
   /* --- child layout --- */
 }
-/* line 51, ../sass/compounds/_image-block.scss */
+/* line 51, ../sass/atoms/_image-block.scss */
 .image-block--centered .image {
   display: block;
   margin: 0 auto;
 }
 
-/* line 57, ../sass/compounds/_image-block.scss */
+/* line 57, ../sass/atoms/_image-block.scss */
 .image-block--full {
   /* --- structure --- */
   /* --- theming --- */
   /* --- child layout --- */
 }
-/* line 63, ../sass/compounds/_image-block.scss */
+/* line 63, ../sass/atoms/_image-block.scss */
 .image-block--full .image {
   width: 100%;
 }
-/* line 67, ../sass/compounds/_image-block.scss */
+/* line 67, ../sass/atoms/_image-block.scss */
 .image-block--full .image--portrait {
   width: auto;
   height: 100%;
 }
-/* line 72, ../sass/compounds/_image-block.scss */
+/* line 72, ../sass/atoms/_image-block.scss */
 .image-block--full .image--landscape {
   height: auto;
 }
 
-/* line 77, ../sass/compounds/_image-block.scss */
+/* line 77, ../sass/atoms/_image-block.scss */
 .image-block--grid {
   /* --- structure --- */
   /* --- theming --- */
@@ -927,58 +927,58 @@ Think 'informative' messages. */
   display: table;
   clear: both;
 }
-/* line 84, ../sass/compounds/_image-block.scss */
+/* line 84, ../sass/atoms/_image-block.scss */
 .image-block--grid .image {
   float: left;
 }
 
-/* line 94, ../sass/compounds/_image-block.scss */
+/* line 94, ../sass/atoms/_image-block.scss */
 .image-block--1grid {
   /* --- structure --- */
   /* --- theming --- */
   /* --- child layout --- */
   /* --- mobile --- */
 }
-/* line 100, ../sass/compounds/_image-block.scss */
+/* line 100, ../sass/atoms/_image-block.scss */
 .image-block--1grid .image {
   width: 100%;
 }
 @media only screen and (max-width: 1024px) {
-  /* line 106, ../sass/compounds/_image-block.scss */
+  /* line 106, ../sass/atoms/_image-block.scss */
   .image-block--1grid .image {
     width: 50%;
   }
 }
 
-/* line 112, ../sass/compounds/_image-block.scss */
+/* line 112, ../sass/atoms/_image-block.scss */
 .image-block--2grid {
   /* --- structure --- */
   /* --- theming --- */
   /* --- child layout --- */
 }
-/* line 118, ../sass/compounds/_image-block.scss */
+/* line 118, ../sass/atoms/_image-block.scss */
 .image-block--2grid .image {
   width: 50%;
 }
 
-/* line 123, ../sass/compounds/_image-block.scss */
+/* line 123, ../sass/atoms/_image-block.scss */
 .image-block--4grid {
   /* --- structure --- */
   /* --- theming --- */
   /* --- child layout --- */
 }
-/* line 129, ../sass/compounds/_image-block.scss */
+/* line 129, ../sass/atoms/_image-block.scss */
 .image-block--4grid .image {
   width: 25%;
 }
 
-/* line 134, ../sass/compounds/_image-block.scss */
+/* line 134, ../sass/atoms/_image-block.scss */
 .image-block--6grid {
   /* --- structure --- */
   /* --- theming --- */
   /* --- child layout --- */
 }
-/* line 140, ../sass/compounds/_image-block.scss */
+/* line 140, ../sass/atoms/_image-block.scss */
 .image-block--6grid .image {
   width: 16.66%;
 }
