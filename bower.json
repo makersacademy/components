@@ -1,0 +1,19 @@
+{
+  "name": "makers-styles",
+  "version": "0.1.0",
+  "homepage": "https://github.com/makersacademy/style_guide",
+  "authors": [
+    "Sam Morgan <samm@makersacademy.com>"
+  ],
+  "description": "Global style components for Makers Academy",
+  "main": "app/stylesheets/screen.css",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test-assets",
+    "*.html",
+    "config.rb"
+  ]
+}
