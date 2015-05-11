@@ -32,18 +32,6 @@ Think 'shouty' messages. */
 	/* --- theming --- */
 	overflow: hidden;
 
-	/* --- child layout --- */
-
-	.title-block {
-		display: table-cell;
-		vertical-align: bottom;
-	}
-
-	.cta-block, .form-block {
-		padding-top: 2.61em;
-		margin: 0 auto;
-	}
-
 	/* --- mobile --- */
 	@include respond-to(mobile) {
 		height: 100vh;
@@ -52,6 +40,10 @@ Think 'shouty' messages. */
 
 .holler-block--full {
 	height: 100vh;
+}
+
+.holler-block--small {
+	height: 38vh;
 }
 
 .holler-block--backgrounded {
@@ -69,6 +61,18 @@ Think 'shouty' messages. */
 	display: table;
 	width: 100%;
 	margin: 0 auto;
+
+	/* --- child layout --- */
+
+	& > .title-block {
+		display: table-cell;
+		vertical-align: bottom;
+	}
+
+	& > .cta-block, & > .form-block {
+		padding-top: 2.61em;
+		margin: 0 auto;
+	}
 }
 
 .holler-block__section:first-child {
@@ -93,6 +97,29 @@ Think 'shouty' messages. */
 		height: 24vh;
 		@include respond-to(mobile) {
 			height: 33%;
+		}
+	}
+}
+
+.holler-block--equal .holler-block__section {
+	height: 50% !important;
+	& > .title-block {
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+
+.holler-block--reverse {
+	.holler-block__section {
+		&:first-child {
+			height: 38.2%;
+		}
+		&:last-child {
+			height: 61.8%;
+		}
+		& > .title-block {
+			display: table-cell;
+			vertical-align: middle;
 		}
 	}
 }
