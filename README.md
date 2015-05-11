@@ -113,4 +113,5 @@ To achieve the main UX aims, Design:
 
 1. Fork this repo
 2. Try to obey the style guides set out in this README and elsewhere in the repo: if you want to break a guide, do so with good reason
-3. Submit a PR for revision by the Makers Academy team.
+3. If you need to make a new component, read [this](developer-guide.md)
+4. Submit a PR for revision by the Makers Academy team.
