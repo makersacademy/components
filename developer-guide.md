@@ -14,11 +14,11 @@ This is a guide to doing new things, or changing existing things, within the sty
 
 ![Sketches for Media Component](guide-img/sketches.jpg)
 
-When sketching a component, try to use other components that exist. For example, say you need a two-up Radio Button list/Title and header. Since it's going to be placed directly on a page, it should be a _molecule_. 
+When sketching a component, try to use other components that exist. For example, say you need a two-up Radio Button list/Title and header. Since it's going to be placed directly on a page, it should be a _molecule_. We already have a **two-up block** molecule, so we'll add another _module_ ('public interface') to that.
 
-In this case, it makes sense to add an extra module to the **two-up block** molecule. This module will have an **input block** atom in one side, and a **title block** atom in the other. 
+This module will have an **input block** atom in one side, and a **title block** atom in the other. 
 
-Pick the appropriate atom modules: for the **input block**, choose a 'radio list' module, and for the **title block**, choose the 'center' module. If the modules you need don't exist, you will need to create new atoms, made up of quarks.
+We'll fill this molecule with existing atom components where possible. Pick the appropriate atom modules: for the **input block**, choose a 'list' module, and for the **title block**, choose the 'center' module. If the modules you need don't exist, you will need to create new atoms, made up of quarks.
 
 Here's a sketch for the Radio List/Title molecule:
 
@@ -38,7 +38,7 @@ When adding HTML, try to use `Block__Element--Modifier` syntax. For our new Radi
   <!-- two-up blocks always contain two __sections -->
   <section class="two-up-block__section">
     <!-- the radio list atom -->
-    <div class="input-block">
+    <div class="input-block input-block--list">
       <!-- the radio list's 'input--radio' quarks -->
       <input class="input input--radio" type="radio" name="capture-radio" value="Radio 1..." />
       <input class="input input--radio" type="radio" name="capture-radio" value="Radio 2..." />
@@ -89,6 +89,7 @@ Care has been taken to ensure that you won't have to write much CSS, but you mig
     padding: 1em;
     .input--radio {
       // this is bad: we're reaching 'through' too many components.
+      font-size: 1.2em; // :(
     }
   }
 }
@@ -107,6 +108,7 @@ Should become:
   padding: 1em;
   .input--radio {
     // this is OK: we're only one level deep
+    font-size: 1.2em; // :)
   }
 }
 ```

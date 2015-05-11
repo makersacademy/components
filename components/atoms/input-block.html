@@ -22,12 +22,17 @@
 			
 			<div class="container">
 
-				<div class="title-block">
-					<h1 class="title title-block__title">Input Block</h1>
-					<h3 class="opt-title opt-title--below title-block__subtitle">atom</h3>
-					<p class="body title-block__body">
-						For separating inputs within forms.
-					</p>
+				<div class="holler-block">
+					<div class="holler-block__section">
+						<div class="title-block">
+							<h1 class="title title-block__title">Input Block</h1>
+							<h3 class="opt-title opt-title--below title-block__subtitle">atom</h3>
+							<p class="body title-block__body">
+								For separating inputs within forms.
+							</p>
+						</div>
+					</div>
+					<div class="holler-block__section"></div>
 				</div>
 				
 				<h3>Modules</h3>
@@ -35,10 +40,18 @@
 					
 					<!-- BEGIN examples -->
 
-					<span class="label">Regular Input Block</span>
+					<span class="label">Single Input Block</span>
 					<div class="input-block">
 						<label class="label input-block__label">Capture something...</label>
 						<input class="input input--text" type="text" name="capture" placeholder="Capture something..." />
+					</div>
+
+					<span class="label">Input Block List</span>
+					<div class="input-block input-block--list">
+						<label class="label input-block__label">Capture something (1)...</label>
+						<input class="input input--text" type="text" name="capture_1" placeholder="Capture something..." />
+						<label class="label input-block__label">Capture something (2)...</label>
+						<input class="input input--text" type="text" name="capture_2" placeholder="Capture something else..." />
 					</div>
 
 					<span class="label">Two-up Input Block</span>
