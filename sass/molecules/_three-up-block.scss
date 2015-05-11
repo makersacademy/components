@@ -40,7 +40,7 @@ Modifiers:
 
   /* --- child layout --- */
 
-  .title-block, .cta-block, .image-block {
+  & > .title-block, & > .cta-block, & > .image-block {
     display: table-cell;
     vertical-align: middle;
     padding: 0;

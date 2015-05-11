@@ -31,6 +31,14 @@
   /* --- theming --- */
 }
 
+.image--brand {
+  /* --- structure --- */
+  height: rhythm-increment(3) + em;
+  width: rhythm-increment(5) + em;
+
+  /* --- theming --- */
+}
+
 .image--rounded {
   /* --- structure --- */
 

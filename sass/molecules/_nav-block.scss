@@ -1,0 +1,60 @@
+/* Items with equal value in a list. */
+
+/* Modules:
+
+- Stacked
+- Inline
+
+*/
+
+.nav-block {
+  /* --- structure --- */
+  @include clearfix;
+  height: rhythm-increment(3) + em;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  /* --- theming --- */
+  background: rgba($color-5, 0.8);
+  box-shadow:  0px 2px 1px 0px rgba($color-7, 0.2);
+
+  /* --- child layout --- */
+  .image-block {
+    float: left;
+  }
+
+  /* --- mobile --- */
+  @include respond-to(mobile) {
+    display: none;
+  }
+}
+
+.nav-block__list-block {
+  float: right;
+  .list-item {
+    line-height: rhythm-increment(3) + em;
+  }
+  a {
+    margin: 0 rhythm-increment(1) + em;
+    color: $color-8;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  /* override when first-child (i.e. no brand) */
+  &:first-child {
+    float: left;
+  }
+}
+
+.nav-block__cta-block {
+  float: right;
+  line-height: rhythm-increment(3) + em;
+  .cta {
+    background-color: rgba($color-5, 0.4);
+  }
+}
+
