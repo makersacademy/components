@@ -726,6 +726,17 @@ Think 'informative' messages. */
 }
 
 /* line 17, ../sass/atoms/_input-block.scss */
+.input-block--list {
+  /* --- structure --- */
+  /* --- theming --- */
+  /* --- child layout --- */
+}
+/* line 23, ../sass/atoms/_input-block.scss */
+.input-block--list .input {
+  margin-bottom: 1em;
+}
+
+/* line 28, ../sass/atoms/_input-block.scss */
 .input-block--two-up {
   /* --- structure --- */
   /* --- theming --- */
@@ -737,21 +748,21 @@ Think 'informative' messages. */
   display: table;
   clear: both;
 }
-/* line 25, ../sass/atoms/_input-block.scss */
+/* line 36, ../sass/atoms/_input-block.scss */
 .input-block--two-up .input {
   width: 46%;
   float: left;
 }
-/* line 28, ../sass/atoms/_input-block.scss */
+/* line 39, ../sass/atoms/_input-block.scss */
 .input-block--two-up .input:first-of-type {
   margin-right: 4%;
 }
-/* line 31, ../sass/atoms/_input-block.scss */
+/* line 42, ../sass/atoms/_input-block.scss */
 .input-block--two-up .input:last-of-type {
   margin-left: 4%;
 }
 
-/* line 37, ../sass/atoms/_input-block.scss */
+/* line 48, ../sass/atoms/_input-block.scss */
 .input-block--inline-submit {
   /* --- structure --- */
   /* --- theming --- */
@@ -763,24 +774,24 @@ Think 'informative' messages. */
   display: table;
   clear: both;
 }
-/* line 45, ../sass/atoms/_input-block.scss */
+/* line 56, ../sass/atoms/_input-block.scss */
 .input-block--inline-submit .input, .input-block--inline-submit .cta--submit {
   float: left;
 }
-/* line 49, ../sass/atoms/_input-block.scss */
+/* line 60, ../sass/atoms/_input-block.scss */
 .input-block--inline-submit .input {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   border-right-width: 0;
 }
-/* line 55, ../sass/atoms/_input-block.scss */
+/* line 66, ../sass/atoms/_input-block.scss */
 .input-block--inline-submit .cta--submit {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   border-color: #444;
 }
 
-/* line 62, ../sass/atoms/_input-block.scss */
+/* line 73, ../sass/atoms/_input-block.scss */
 .input-block__label {
   /* --- structure --- */
   /* --- theming --- */
