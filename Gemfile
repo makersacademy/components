@@ -1,3 +1,4 @@
-gem "sass", "~>3.3"
-gem "compass", "~>1.0"
-gem "singularitygs", "~>1.4"
+source 'https://rubygems.org'
+
+# Specify your gem's dependencies in makers_styles.gemspec
+gemspec
