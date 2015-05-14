@@ -35,7 +35,7 @@ HTML classes are structured using a [Block-Element-Modifier (BEM)](http://csswiz
 </div>
 ```
 
-Thus, a `.title-block` class can have modifiers - in this case, aligning its contents to the left with the `--left` class modifier - and elements within it can be specifically styled - in this case, the `.title` [Title quark](components/components/quarks/title.html) can be addressed with the `.title-block__title` class, and the `.body` [Body quark](components/components/quarks/body.html) can be addressed with the `.title-block__body` class. This class naming helps to avoid issues of Specificity when certain combinations are especially common, by avoiding the use of CSS inheritance selectors.
+Thus, a `.title-block` class can have modifiers - in this case, aligning its contents to the left with the `--left` class modifier - and elements within it can be specifically styled - in this case, the `.title` [Title quark](components/quarks/title.html) can be addressed with the `.title-block__title` class, and the `.body` [Body quark](components/quarks/body.html) can be addressed with the `.title-block__body` class. This class naming helps to avoid issues of Specificity when certain combinations are especially common, by avoiding the use of CSS inheritance selectors.
 
 > CSS inheritance selectors are not to be totally avoided - for example, molecules can sometimes set specific `display` properties for their child quarks. In general, though, this should be refactored out to avoid selector chains.
 
