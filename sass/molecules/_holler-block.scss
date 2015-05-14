@@ -101,6 +101,9 @@ Think 'shouty' messages. */
 		@include respond-to(mobile) {
 			height: 33%;
 		}
+		@include respond-to(shallow-screen) {
+			height: 31.8vh;
+		}
 	}
 }
 

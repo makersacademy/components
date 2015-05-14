@@ -98,7 +98,10 @@
 
   /* --- child layout --- */
   .image {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
+    float: none;
+    display: block;
   }
 
   /* --- mobile --- */

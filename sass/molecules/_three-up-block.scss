@@ -65,6 +65,11 @@ Modifiers:
   }
 }
 
+.three-up-block__section__cta-block {
+  display: table-cell;
+  vertical-align: middle;
+}
+
 .three-up-block--full {
   /* ---structure --- */
   height: 100vh;
