@@ -30,6 +30,9 @@
 	@include respond-to(mobile) {
 		height: 100vh;
 	}
+	@include respond-to(shallow-screen) {
+		height: 80vh;
+	}
 
 }
 
