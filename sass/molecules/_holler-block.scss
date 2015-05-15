@@ -36,6 +36,9 @@ Think 'shouty' messages. */
 	@include respond-to(mobile) {
 		height: 100vh;
 	}
+	@include respond-to(shallow-screen) {
+		height: 80vh;
+	}
 }
 
 .holler-block--full {
@@ -95,9 +98,17 @@ Think 'shouty' messages. */
 
 	.three-up-block__section {
 		height: 24vh;
+		@include respond-to(shallow-screen) {
+			height: 30.7vh;
+		}
 		@include respond-to(mobile) {
 			height: 33%;
 		}
+	}
+
+	.image-block--grid {
+		display:table-cell;
+		vertical-align: middle;
 	}
 }
 

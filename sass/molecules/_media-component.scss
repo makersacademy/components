@@ -21,14 +21,23 @@
 	/* --- child layout --- */
 	.slider-block {
 		height: 62vh;
+		@include respond-to(shallow-screen) {
+			height: 80vh;
+		}
 		.image--portrait {
-			height: 62vh;	
+			height: 62vh;
+			@include respond-to(shallow-screen) {
+				height: 80vh;
+			}
 		}
 	}
 
 	/* --- mobile --- */
 	@include respond-to(mobile) {
 		height: 100vh;
+	}
+	@include respond-to(shallow-screen) {
+		height: 80vh;
 	}
 
 }
