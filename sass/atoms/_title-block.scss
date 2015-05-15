@@ -32,17 +32,16 @@ Think 'informative' messages. */
 		margin-bottom: 0.5em;
 	}
 
-	.image-block {
-		margin-bottom: rhythm-increment(1) + em;
-	}
-
 	/* --- mobile --- */
-	@include respond-to(mobile) {
-	  .image-block {
-	  	display: none;
-	  }
-	}
+
 	
+}
+
+.title-block__image-block {
+	margin-bottom: rhythm-increment(1) + em;
+	.image--portrait {
+		height: auto !important;
+	}
 }
 
 .title-block--left {
