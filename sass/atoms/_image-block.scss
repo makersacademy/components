@@ -108,6 +108,7 @@
   @include respond-to(mobile) {
     .image {
       width: 50%;
+      float: left;
     }
   }
 }
