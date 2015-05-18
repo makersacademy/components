@@ -1,0 +1,17 @@
+<% # Includes any number of _cta quarks %>
+
+<div class="<%= component_modifiers("cta-block", modifiers) %>">
+
+  <% ctas.each do | cta | %>
+    <%=
+    partial "components/quarks/cta", locals: {
+      text: cta[:text],
+      link: cta[:link],
+      modifiers: cta[:modifiers]
+    }
+    %>
+  <% end %>
+
+</div>
+
+

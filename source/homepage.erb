@@ -94,16 +94,20 @@
             </div>
           </div>
         </section>
+        
         <section class="media-component__section">
-          <div class="cta-block cta-block--left">
-            <%= 
-            partial "components/quarks/cta", locals: {
-              text: "Read Grad Stories",
-              link: "#",
-              modifiers: ["horizontal"]
-            }
-            %>
-          </div>
+          <%= 
+          partial "components/atoms/cta-block", locals: {
+            modifiers: ["left"],
+            ctas: [
+              { 
+                text: "Read Grad Stories",
+                link: "#",
+                modifiers: ["horizontal"]
+              }
+            ]
+          }
+          %>
         </section>
 
       </div>
