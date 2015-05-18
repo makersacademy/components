@@ -96,7 +96,13 @@
         </section>
         <section class="media-component__section">
           <div class="cta-block cta-block--left">
-            <a href="#" class="cta cta--horizontal">Read Grad Stories</a>
+            <%= 
+            partial "components/quarks/cta", locals: {
+              text: "Read Grad Stories",
+              link: "#",
+              modifiers: ["horizontal"]
+            }
+            %>
           </div>
         </section>
 
