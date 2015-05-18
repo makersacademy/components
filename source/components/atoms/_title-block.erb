@@ -1,0 +1,38 @@
+<% # Includes _image-block atom, and _title, _body, _opt-title quarks %>
+<% component ||= "title-block" %>
+
+<div class="<%= component_classes locals.fetch(:parent, nil), component, locals.fetch(:modifiers, []) %>">
+
+  <% if defined? leader %>
+    <%= partial 'components/quarks/opt-title', locals: {
+      parent: component,
+      text: leader[:text],
+      modifiers: ["above"] << leader[:modifiers]
+    }
+    %>
+  <% end %>
+
+  <%= partial 'components/quarks/title', locals: {
+    parent: component,
+    text: title[:text],
+    modifiers: title[:modifiers]
+  } %>
+
+  <% if defined? subtitle %>
+    <%= partial 'components/quarks/opt-title', locals: {
+      parent: component,
+      text: subtitle[:text],
+      modifiers: ["below"] << subtitle[:modifiers]
+    }
+    %>
+  <% end %>
+
+  <%= partial 'components/quarks/body', locals: {
+    parent: component,
+    text: body[:text],
+    modifiers: body[:modifiers]
+  } %>  
+
+</div>
+
+

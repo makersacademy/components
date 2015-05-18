@@ -1,5 +1,5 @@
-require_relative 'helpers/component_modifiers_helper'
+require_relative 'helpers/component_classes_helper'
 
 module MakersStyles::Helpers
-  include ComponentModifiersHelper
+  include ComponentClassesHelper
 end

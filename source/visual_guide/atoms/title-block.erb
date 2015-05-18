@@ -1,0 +1,104 @@
+<div class="container">
+	
+	<h1>'Title' Block</h1>
+	<h2>atom</h2>
+	<p>Title and some copy. Think 'informative' messages.</p>
+	
+	<h3>Modules</h3>
+	<div class="example">
+		
+		<!-- BEGIN examples -->
+
+		<span class="label">Center</span>
+		<%= partial 'components/atoms/title-block', locals: {
+			title: {
+				text: lorem.words(2),
+				modifiers: []
+			},
+			body: {
+				text: lorem.sentences(4),
+				modifiers: []
+			}
+		} %>
+
+		<span class="label">Left</span>
+		<%= partial 'components/atoms/title-block', locals: {
+			modifiers: ["left"],
+			title: {
+				text: lorem.words(2),
+				modifiers: []
+			},
+			body: {
+				text: lorem.sentences(4),
+				modifiers: []
+			}
+		} %>
+
+		<span class="label">Right</span>
+		<%= partial 'components/atoms/title-block', locals: {
+			modifiers: ["right"],
+			title: {
+				text: lorem.words(2),
+				modifiers: []
+			},
+			body: {
+				text: lorem.sentences(4),
+				modifiers: []
+			}
+		} %>
+
+		<span class="label">Opt (shown right-aligned)</span>
+		<%= partial 'components/atoms/title-block', locals: {
+			modifiers: ["right"],
+			leader: {
+				text: lorem.words(1)
+			},
+			title: {
+				text: lorem.words(2),
+				modifiers: []
+			},
+			subtitle: {
+				text: lorem.words(3)
+			},
+			body: {
+				text: lorem.sentences(4),
+				modifiers: []
+			}
+		} %>
+
+		<span class="label">With Image</span>
+		<div class="title-block">
+			<div class="image-block image-block--centered title-block__image-block">
+			  <img class="image image--portrait image-block__image" src="http://placehold.it/200x323&text=Hi" alt="A gray box with the text 'Hi'">
+			</div>
+			<h1 class="title title-block__title">
+				Title
+			</h1>
+			<p class="body title-block__body">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, vero, repudiandae, vitae quibusdam eius iure porro facilis esse enim praesentium explicabo perspiciatis quidem quaerat! Necessitatibus, provident eveniet doloremque soluta delectus?
+			</p>
+		</div>
+
+		<!-- END examples -->
+
+	</div>
+	
+	<div class="content">
+		<div class="usage">
+			...How to use...
+		</div>
+		<div class="code">
+			<div class="html">
+				<pre>
+					
+				</pre>
+			</div>
+			<div class="css">
+				<pre></pre>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+		

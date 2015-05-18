@@ -1,10 +1,12 @@
 <% # Includes any number of _cta quarks %>
+<% component ||= "cta-block" %>
 
-<div class="<%= component_modifiers("cta-block", locals.fetch(:modifiers, [])) %>">
+<div class="<%= component_classes locals.fetch(:parent, nil), component, locals.fetch(:modifiers, []) %>">
 
   <% ctas.each do | cta | %>
     <%=
     partial "components/quarks/cta", locals: {
+      parent: component,
       text: cta[:text],
       link: cta[:link],
       modifiers: cta[:modifiers]
