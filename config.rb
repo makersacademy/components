@@ -22,6 +22,8 @@ require 'singularitygs'
 # With alternative layout
 # page "/path/to/file.html", :layout => :otherlayout
 #
+page "html-structure.html", :layout => :null
+
 # A path which all have the same layout
 # with_layout :admin do
 #   page "/admin/*"
