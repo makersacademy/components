@@ -1,6 +1,9 @@
 # Bring in the Singularity Grid
 require 'singularitygs'
 
+# Bring in the helpers
+require 'makers_styles/helpers'
+
 ###
 # Compass
 ###
@@ -37,6 +40,8 @@ page "html-structure.html", :layout => :null
 # Helpers
 ###
 
+helpers MakersStyles::Helpers
+
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
 
@@ -51,8 +56,6 @@ page "html-structure.html", :layout => :null
 #     "Helping"
 #   end
 # end
-
-#sass_dir = 'sass'
 
 set :css_dir, 'stylesheets'
 

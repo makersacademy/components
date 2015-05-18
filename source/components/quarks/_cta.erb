@@ -1,3 +1,1 @@
-<% class_string = modifiers.inject("") { | str, mod | str << " cta--#{mod}" } %>
-
-<%= link_to "#{text}", "#{link}", class: "cta" << class_string %>
+<%= link_to "#{text}", "#{link}", class: "#{component_modifiers("cta", modifiers)}" %>
