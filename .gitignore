@@ -4,3 +4,4 @@ node_modules
 bower_components
 *.gem
 Gemfile.lock
+.DS_Store
