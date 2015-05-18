@@ -182,7 +182,8 @@ and leader statements. */
   color: #afafaf;
 }
 
-/* line 1, ../sass/quarks/_body.scss */
+/* Extended written things. */
+/* line 3, ../sass/quarks/_body.scss */
 .body {
   /* --- structure --- */
   max-width: 29em;
@@ -193,13 +194,13 @@ and leader statements. */
   font-weight: 400;
 }
 
-/* line 10, ../sass/quarks/_body.scss */
+/* line 12, ../sass/quarks/_body.scss */
 .body--big {
   font-size: 1.618em;
   /* --- mobile --- */
 }
 @media only screen and (max-width: 1024px) {
-  /* line 10, ../sass/quarks/_body.scss */
+  /* line 12, ../sass/quarks/_body.scss */
   .body--big {
     font-size: 1em;
   }

@@ -1,6 +1,6 @@
 <% # Includes any number of _cta quarks %>
 
-<div class="<%= component_modifiers("cta-block", modifiers) %>">
+<div class="<%= component_modifiers("cta-block", locals.fetch(:modifiers, [])) %>">
 
   <% ctas.each do | cta | %>
     <%=

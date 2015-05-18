@@ -1,1 +1,1 @@
-<%= link_to "#{text}", "#{link}", class: "#{component_modifiers("cta", modifiers)}" %>
+<%= link_to "#{text}", "#{link}", class: "#{component_modifiers("cta", locals.fetch(:modifiers, []))}" %>
