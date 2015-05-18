@@ -574,21 +574,20 @@ Think 'informative' messages. */
 }
 /* line 83, ../sass/atoms/_title-block.scss */
 .title-block--right .title {
-  max-width: 0em;
   text-indent: -0.15em;
 }
-/* line 88, ../sass/atoms/_title-block.scss */
+/* line 87, ../sass/atoms/_title-block.scss */
 .title-block--right .body {
   display: inline-block;
 }
 @media only screen and (max-width: 1024px) {
-  /* line 94, ../sass/atoms/_title-block.scss */
+  /* line 93, ../sass/atoms/_title-block.scss */
   .title-block--right .title, .title-block--right .body, .title-block--right .opt-title {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 100, ../sass/atoms/_title-block.scss */
+  /* line 99, ../sass/atoms/_title-block.scss */
   .title-block--right .title {
     max-width: 29em;
     text-indent: 0;

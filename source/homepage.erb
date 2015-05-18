@@ -60,19 +60,19 @@
       <div class="container">
       
         <section class="media-component__section">
-          <div class="title-block title-block--left media-component__section__title-block">
-            <h3 class="opt-title opt-title--above title-block__leader">
-              Meet
-            </h3>
-            <h1 class="title title-block__title">
-              Our Grads
-            </h1>
-            <p class="body title-block__body">
-              We&rsquo;ve graduated over 300 beginners into their dream
-              jobs as junior developers. Some were looking for a
-              career change, others to define themselves.
-            </p>
-          </div>
+          <%= partial 'components/atoms/title-block', locals: {
+            parent: "media-component__section",
+            modifiers: ["left"],
+            leader: {
+              text: "Meet"
+            },
+            title: {
+              text: "Our Grads"
+            },
+            body: {
+              text: "We&rsquo;ve graduated over 300 beginners into their dream jobs as junior developers. Some were looking for a career change, others to define themselves."
+            }
+          } %>
         </section>
         <section class="media-component__section">
           <div class="slider-block">

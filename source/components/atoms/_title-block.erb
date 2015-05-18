@@ -15,7 +15,7 @@
   <%= partial 'components/quarks/title', locals: {
     parent: component,
     text: title[:text],
-    modifiers: title[:modifiers]
+    modifiers: [] << title[:modifiers]
   } %>
 
   <% if defined? subtitle %>
@@ -30,7 +30,7 @@
   <%= partial 'components/quarks/body', locals: {
     parent: component,
     text: body[:text],
-    modifiers: body[:modifiers]
+    modifiers: [] << body[:modifiers]
   } %>  
 
 </div>
