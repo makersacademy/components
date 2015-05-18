@@ -1,0 +1,119 @@
+/* Three sets of similarly-structured content. 
+Think 'feature lists', or content too small 
+to warrant a slider. */
+
+/* Modules:
+
+- Titles
+- Titles flank CTA
+- Images flank CTA
+- Central content
+
+Modifiers:
+
+-- Backgrounded
+
+*/
+
+/* Construction:
+
+  .three-up-block
+   ___________________________________
+  |           |           |           |
+  |           |           |           |
+  | __section | __section | __section |
+  |           |           |           |
+  |           |           |           |
+  |___________|___________|___________|
+
+*/
+
+.three-up-block {
+  /* --- structure --- */
+  @include clearfix;
+  width: 100%;
+  height: 100%;
+  position:relative;
+
+  /* --- theming --- */
+  overflow: hidden;
+
+  /* --- child layout --- */
+
+  & > .title-block, & > .cta-block, & > .image-block {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0;
+  }
+
+  .image {
+    max-height: 100%;
+  }
+
+}
+
+.three-up-block__section {
+  float: left;
+  display: table;
+  height: 100%;
+  width: 33.333%;
+  /* --- mobile --- */
+  @include respond-to(mobile) {
+    float: none;
+    width: 100%;
+    height: 33%;
+  }
+}
+
+.three-up-block__section__cta-block {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.three-up-block--full {
+  /* ---structure --- */
+  height: 100vh;
+
+  /* --- child layout --- */
+  & > .three-up-block__section {
+    height: 100vh;
+    @include respond-to(mobile) {
+      height: 33vh;
+    }
+  }
+
+  .image-block {
+    height: 100vh;
+  }
+}
+
+.three-up-block--small {
+  /* ---structure --- */
+  height: 38vh;
+
+  /* --- child layout --- */
+  & > .three-up-block__section {
+    height: 38vh;
+    @include respond-to(mobile) {
+      height: 12.7vh;
+    }
+  }
+
+  .image-block {
+    height: 38vh;
+    @include respond-to(mobile) {
+      height: 12.7vh;
+    }
+  }
+}
+
+.three-up-block--backgrounded {
+  background-color: $color-6;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  * {
+    color: $color-5 !important;
+    border-color: $color-5 !important;
+  }
+}

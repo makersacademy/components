@@ -1,0 +1,169 @@
+---
+title: MA Style Guide
+---
+
+
+<!-- BEGIN index page -->
+
+<div class="page">
+  <nav class="nav-block">
+    <div class="container">
+      <ul class="list-block list-block--inline nav-block__list-block">
+        <li class="list-item">
+          <a href="#">Nav 1</a>
+        </li>
+        <li class="list-item">
+          <a href="#">Nav 2</a>
+        </li>
+        <li class="list-item">
+          <a href="#">Nav 3</a>
+        </li>
+      </ul>
+      <div class="cta-block nav-block__cta-block">
+        <a href="#" class="cta cta--vertical">Do Thing</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="holler-block holler-block--backgrounded">
+    <section class="holler-block__section">
+      <div class="title-block">
+        <h1 class="title title-block__title">
+          MA Style Guide
+        </h1>
+        <p class="body title-block__body">
+          Consistent styles to provide a limited set of templates for building pages. Includes a CSS framework and some HTML styles.
+        </p>
+      </div>
+    </section>
+    <section class="holler-block__section">
+      <div class="cta-block">
+        <a href="homepage.html" class="cta cta--horizontal">See it in action</a>
+      </div>
+    </section>
+  </div>
+
+  <div class="holler-block holler-block--full holler-block--reverse">
+    <section class="holler-block__section">
+      <div class="title-block">
+        <h1 class="title title-block__title">
+          Patterns
+        </h1>
+        <p class="body title-block__body">
+          Quarks (UI visual_guide) -> Atoms (Groups of visual_guide) -> molecules (template blocks) -> Pages (groups of template blocks). Interfaces should be built using consistent molecules.
+        </p>
+      </div>
+    </section>
+    <section class="holler-block__section">
+      <div class="three-up-block">
+        <div class="three-up-block__section">
+          <div class="holler-block">
+            <div class="holler-block__section">
+              <div class="title-block">
+                <div class="image-block image-block--centered">
+                  <img class="image image--landscape image-block__image" src="assets/icons-quark.png" alt="Makers Academy logo">
+                </div>
+                <h1 class="title title-block__title">
+                  Quarks
+                </h1>
+                <p class="body title-block__body">
+                  Quarks are individual UI visual_guide. They can be combined together to make Atoms.
+                </p>
+              </div>
+            </div>
+            <div class="holler-block__section">
+              <div class="cta-block">
+                <a href="homepage.html" class="cta cta--horizontal">See Quarks</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="three-up-block__section">
+          <div class="holler-block">
+            <div class="holler-block__section">
+              <div class="title-block">
+                <div class="image-block image-block--centered">
+                  <img class="image image--landscape image-block__image" src="assets/icons-atom.png" alt="Makers Academy logo">
+                </div>
+                <h1 class="title title-block__title">
+                  Atoms
+                </h1>
+                <p class="body title-block__body">
+                  Atoms are collections of Quarks. They can be dropped into molecules to create Templates.
+                </p>
+              </div>
+            </div>
+            <div class="holler-block__section">
+              <div class="cta-block">
+                <a href="homepage.html" class="cta cta--horizontal">See Atoms</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="three-up-block__section">
+          <div class="holler-block">
+            <div class="holler-block__section">
+              <div class="title-block">
+                <div class="image-block image-block--centered">
+                  <img class="image image--landscape image-block__image" src="assets/icons-molecule.png" alt="Makers Academy logo">
+                </div>
+                <h1 class="title title-block__title">
+                  Molecules
+                </h1>
+                <p class="body title-block__body">
+                  Molecules are collections of Atoms. They can be used as templates, and define the high-level structure of Pages.
+                </p>
+              </div>
+            </div>
+            <div class="holler-block__section">
+              <div class="cta-block">
+                <a href="homepage.html" class="cta cta--horizontal">See Molecules</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </section>
+  </div>
+
+  <h2>Molecules</h2>
+  <p></p>
+  <ul>
+    <li><%= link_to "Nav Block", "visual_guide/molecules/nav-block.html" %></li>
+    <li><%= link_to "Media Component", "visual_guide/molecules/media-component.html" %></li>
+    <li><%= link_to "Holler Block", "visual_guide/molecules/holler-block.html" %></li>
+    <li><%= link_to "Three-up Block", "visual_guide/molecules/three-up-block.html" %></li>
+    <li><%= link_to "Slider Block", "visual_guide/molecules/slider-block.html" %></li>
+    <li><%= link_to "Two-up Block", "visual_guide/molecules/two-up-block.html" %></li>
+  </ul>
+
+  <h2>Atoms</h2>
+  <p></p>
+  <ul>
+    <li><%= link_to "Title Block", "visual_guide/atoms/title-block.html" %></li>
+    <li><%= link_to "CTA Block", "visual_guide/atoms/cta-block.html" %></li>
+    <li><%= link_to "Form Block", "visual_guide/atoms/form-block.html" %></li>
+    <li><%= link_to "Input Block", "visual_guide/atoms/input-block.html" %></li>
+    <li><%= link_to "Image Block", "visual_guide/atoms/image-block.html" %></li>
+  </ul>
+
+  <h2>Quarks</h2>
+  <p></p>
+  <ul>
+    <li><%= link_to "Calls to Action", "visual_guide/quarks/cta.html" %></li>
+    <li><%= link_to "Titles", "visual_guide/quarks/title.html" %></li>
+    <li><%= link_to "Optional-Titles", "visual_guide/quarks/opt-title.html" %></li>
+    <li><%= link_to "Inputs", "visual_guide/quarks/input.html" %></li>
+    <li><%= link_to "Images", "visual_guide/quarks/image.html" %></li>
+    <li><%= link_to "Captions", "visual_guide/quarks/caption.html" %></li>
+  </ul>
+
+  <h2>Other</h2>
+  <p>Other things pertinent to the website redesign.</p>
+  <ul>
+    <li><a href="html-structure.html">Site front page (HTML)</a></li>
+    <li><a href="homepage.html">Site front page (using visual_guide)</a></li>
+  </ul>
+</div>
+
+<!-- END index page -->

@@ -1,0 +1,111 @@
+/* Any number of horizontal blocks 
+in a slider arrangement. */
+
+/* Modules:
+
+- Slider
+
+*/
+
+.slider-block {
+	/* --- structure --- */
+	position: relative;
+
+	.holler-block, .media-component {
+		float: left;
+	}
+
+	/* --- theming --- */
+	overflow: hidden;
+
+	/* --- child layout --- */
+	
+}
+
+.slick-list {
+	height: 100%;
+}
+
+.slick-track {
+	@include vertical-holder;
+	height: 100%;
+}
+
+/* Slider controls */
+
+.slick-prev, .slick-next {
+	/* --- structure --- */
+	position: absolute;
+	top: 50%;
+	margin-top: -1 * (2.61em - 1em);
+	height: 2.61em;
+	width: 2.61em;
+
+	/* --- theming --- */
+	border: none;
+	color: transparent;
+	background: transparent;
+
+	&:focus {
+		outline: none;
+	}
+
+	&:before {
+		@include icon;
+		@include transition($transition-faster);
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: rhythm-increment(0) + em;
+		width: rhythm-increment(0) + em;
+		color: $color-7;
+		cursor: pointer;
+		font-size: $font-size-2;
+	}
+
+	&:hover:before {
+		color: $color-6;
+	}
+
+	/* --- child layout --- */
+}
+
+.slick-prev {
+	left: 1em;
+	&:before {
+		@include icon-arrow-left;
+	}
+}
+
+.slick-next {
+	right: 0;
+	&:before {
+		@include icon-arrow-right;
+	}
+}
+
+.slider-block__image-block {
+	height: 100%;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.slider-block__title-block {
+	height: 100%;
+	display: table-cell;
+	vertical-align: middle;
+	.opt-title {
+		margin-bottom: rhythm-increment(0) + em;
+		@respond-to(mobile) {
+			margin-bottom: 0;
+		}
+	}
+	.body {
+		height: 33%;
+		width: 90%;
+		max-width: 14em;
+		@respond-to(mobile) {
+			opacity:0;
+		}
+	}
+}

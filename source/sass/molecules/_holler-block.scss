@@ -1,0 +1,136 @@
+/* Large titles and some copy. 
+Think 'shouty' messages. */
+
+/* Modules:
+
+- Text & CTA
+- Text & Capture
+- Text & Capture Fullheight
+- Text & Content
+
+*/
+
+/* Construction:
+
+	.holler-block
+	 _______________
+	|               |
+	|   __section   |
+	|               |
+	|---------------|
+	|   __section   |
+	|_______________|
+
+*/
+
+.holler-block {
+	/* --- structure --- */
+	width: 100%;
+	height: 62vh;
+	position:relative;
+
+	/* --- theming --- */
+	overflow: hidden;
+
+	/* --- mobile --- */
+	@include respond-to(mobile) {
+		height: 100vh;
+	}
+	@include respond-to(shallow-screen) {
+		height: 80vh;
+	}
+}
+
+.holler-block--full {
+	height: 100vh;
+}
+
+.holler-block--small {
+	height: 38vh;
+}
+
+.holler-block--backgrounded {
+	background-color: $color-2;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	* {
+		color: $color-5 !important;
+		border-color: $color-5 !important;
+	}
+}
+
+.holler-block__section {
+	display: table;
+	width: 100%;
+	margin: 0 auto;
+
+	/* --- child layout --- */
+
+	& > .title-block {
+		display: table-cell;
+		vertical-align: bottom;
+	}
+
+	& > .cta-block, & > .form-block {
+		padding-top: 2.61em;
+		margin: 0 auto;
+	}
+}
+
+.holler-block__section:first-child {
+	height: 61.8%;
+	/* --- mobile --- */
+	@include respond-to(mobile) {
+		height: 50%;
+	}
+}
+
+.holler-block__section:last-child {
+	height: 38.2%;
+	/* --- mobile --- */
+	@include respond-to(mobile) {
+		height: 50%;
+	}
+
+	/* hacky child molecules...this needs 
+		 re-thinking */
+
+	.three-up-block__section {
+		height: 24vh;
+		@include respond-to(shallow-screen) {
+			height: 30.7vh;
+		}
+		@include respond-to(mobile) {
+			height: 33%;
+		}
+	}
+
+	.image-block--grid {
+		display:table-cell;
+		vertical-align: middle;
+	}
+}
+
+.holler-block--equal .holler-block__section {
+	height: 50% !important;
+	& > .title-block {
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+
+.holler-block--reverse {
+	.holler-block__section {
+		&:first-child {
+			height: 38.2%;
+		}
+		&:last-child {
+			height: 61.8%;
+		}
+		& > .title-block {
+			display: table-cell;
+			vertical-align: middle;
+		}
+	}
+}

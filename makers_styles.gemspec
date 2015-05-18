@@ -18,7 +18,8 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_runtime_dependency "middleman-core", [">= 3.3.12"]
+  spec.add_development_dependency "middleman", ["~>3.3.12"]
+  spec.add_development_dependency "middleman-livereload", ["~>3.1.0"]
   spec.add_development_dependency "compass", "~>1.0"
   spec.add_development_dependency "singularitygs", "~>1.4"
   spec.add_development_dependency "sass", "~>3.3"
