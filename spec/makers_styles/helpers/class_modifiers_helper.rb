@@ -1,7 +1,7 @@
-require 'makers_styles/helpers/component_modifiers_helper.rb'
+require 'makers_styles/helpers/component_modifiers_helper'
 
 class ComponentModifiersHelperWrapper
-  include MakersStyles::Helpers::ComponentModifiersHelper
+  include ComponentModifiersHelper
 end
 
 describe ComponentModifiersHelperWrapper do
