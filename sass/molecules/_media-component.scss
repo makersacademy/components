@@ -24,22 +24,27 @@
 		@include respond-to(shallow-screen) {
 			height: 80vh;
 		}
+		@include respond-to(mobile) {
+			height: 50vh;
+		}
 		.image--portrait {
 			height: 62vh;
 			@include respond-to(shallow-screen) {
 				height: 80vh;
 			}
+			@include respond-to(mobile) {
+				height: 50vh;
+			}
 		}
 	}
 
 	/* --- mobile --- */
-	@include respond-to(mobile) {
-		height: 100vh;
-	}
 	@include respond-to(shallow-screen) {
 		height: 80vh;
 	}
-
+	@include respond-to(mobile) {
+		height: 100vh;
+	}
 }
 
 .media-component--gs {
@@ -97,11 +102,6 @@
 
 	/* --- child layout --- */
 
-	.title-block {
-		display: table-cell;
-		vertical-align: bottom;
-	}
-
 	.cta-block {
 		padding-top: rhythm-increment(2) + em;
 	}
@@ -122,4 +122,9 @@
 			margin-bottom: rhythm-increment(2) + em;
 		}
 	}
+}
+
+.media-component__section__title-block {
+	display: table-cell;
+	vertical-align: bottom;
 }

@@ -19,11 +19,7 @@ in a slider arrangement. */
 	overflow: hidden;
 
 	/* --- child layout --- */
-	.image-block {
-		height: 100%;
-		display: table-cell;
-		vertical-align: middle;
-	}
+	
 }
 
 .slick-list {
@@ -75,7 +71,7 @@ in a slider arrangement. */
 }
 
 .slick-prev {
-	left: 0;
+	left: 1em;
 	&:before {
 		@include icon-arrow-left;
 	}
@@ -85,5 +81,31 @@ in a slider arrangement. */
 	right: 0;
 	&:before {
 		@include icon-arrow-right;
+	}
+}
+
+.slider-block__image-block {
+	height: 100%;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.slider-block__title-block {
+	height: 100%;
+	display: table-cell;
+	vertical-align: middle;
+	.opt-title {
+		margin-bottom: rhythm-increment(0) + em;
+		@respond-to(mobile) {
+			margin-bottom: 0;
+		}
+	}
+	.body {
+		height: 33%;
+		width: 90%;
+		max-width: 14em;
+		@respond-to(mobile) {
+			opacity:0;
+		}
 	}
 }
