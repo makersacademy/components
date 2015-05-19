@@ -77,20 +77,38 @@
         <section class="media-component__section">
           <div class="slider-block">
             <div class="image-block image-block--full image-block--centered slider-block__image-block">
-              <img class="image image--portrait image-block__image" src="images/test-assets/test-grad.png" alt="A test graduate, looking at the camera.">
-              <figcaption class="caption caption--right image-block__caption">
-                <p>Firstname Lastname</p>
-                <p>Cohort of 2015</p>
-                <p>Now a Junior Developer at Companyname</p>
-              </figcaption>
+              <%= partial "components/quarks/image", locals: {
+                  parent: "image-block",
+                  modifiers: ["portrait"],
+                  src: "images/test-assets/test-grad.png",
+                  alt: "A test graduate, looking at the camera."
+                } %>
+              <%= partial "components/quarks/caption", locals: {
+                  parent: "image-block",
+                  modifiers: ["right"],
+                  bodies: [
+                    { text: "Firstname Lastname" },
+                    { text: "Cohort of 2015" },
+                    { text: "Now a Junior Developer at CompanyName" }
+                  ]
+                } %>
             </div>
             <div class="image-block image-block--full image-block--centered slider-block__image-block">
-              <img class="image image--portrait image-block__image" src="http://placehold.it/400x600&text=400x600" alt="A gray box with the text '400x600'">
-              <figcaption class="caption caption--right image-block__caption">
-                <p>Differentname Fooname</p>
-                <p>Cohort of 2014</p>
-                <p>Now a Junior Developer at Othername</p>
-              </figcaption>
+              <%= partial "components/quarks/image", locals: {
+                  parent: "image-block",
+                  modifiers: ["portrait"],
+                  src: "http://placehold.it/400x600&text=400x600",
+                  alt: "A gray box with the text '400x600'"
+                } %>
+              <%= partial "components/quarks/caption", locals: {
+                  parent: "image-block",
+                  modifiers: ["right"],
+                  bodies: [
+                    { text: "Firstname OtherName" },
+                    { text: "Cohort of 2015" },
+                    { text: "Now a Junior Developer at OtherCompanyName" }
+                  ]
+                } %>
             </div>
           </div>
         </section>
