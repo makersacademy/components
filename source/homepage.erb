@@ -63,12 +63,15 @@
           <%= partial 'components/atoms/title-block', locals: {
             parent: "media-component__section",
             modifiers: ["left"],
-            leader: {
-              text: "Meet"
-            },
-            title: {
-              text: "Our Grads"
-            },
+            titles: [
+              {
+                modifiers: ["leader"],
+                text: "Meet"
+              },
+              {
+                text: "Our Grads"
+              }
+            ],
             body: {
               text: "We&rsquo;ve graduated over 300 beginners into their dream jobs as junior developers. Some were looking for a career change, others to define themselves."
             }

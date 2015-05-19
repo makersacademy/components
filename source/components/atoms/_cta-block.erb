@@ -4,14 +4,12 @@
 <div class="<%= component_classes locals.fetch(:parent, nil), component, locals.fetch(:modifiers, []) %>">
 
   <% ctas.each do | cta | %>
-    <%=
-    partial "components/quarks/cta", locals: {
+    <%= partial "components/quarks/cta", locals: {
       parent: component,
       text: cta[:text],
       link: cta[:link],
       modifiers: cta[:modifiers]
-    }
-    %>
+    } %>
   <% end %>
 
 </div>
