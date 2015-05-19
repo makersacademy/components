@@ -33,41 +33,110 @@
 				<!-- BEGIN examples -->
 				
 				<span class="label">Single</span>
-				<div class="cta-block">
-					<a href="#" class="cta cta--horizontal">See more ></a>
-				</div>
+				<%= partial "components/atoms/cta-block", locals: {
+						ctas: [
+							{
+								text: "See more",
+								link: "#",
+								modifiers: ["horizontal"]
+							}
+						]
+					} %>
 
 				<span class="label">Single Left-aligned</span>
-				<div class="cta-block cta-block--left">
-					<a href="#" class="cta cta--horizontal">See more ></a>
-				</div>
+				<%= partial "components/atoms/cta-block", locals: {
+						modifiers: ["left"],
+						ctas: [
+							{
+								text: "See more",
+								link: "#",
+								modifiers: ["horizontal"]
+							}
+						]
+					} %>
 
 				<span class="label">Single Right-aligned</span>
-				<div class="cta-block cta-block--right">
-					<a href="#" class="cta cta--horizontal">See more ></a>
-				</div>
+				<%= partial "components/atoms/cta-block", locals: {
+						modifiers: ["right"],
+						ctas: [
+							{
+								text: "See more",
+								link: "#",
+								modifiers: ["horizontal"]
+							}
+						]
+					} %>
 
 				<span class="label">Inline</span>
-				<div class="cta-block cta-block--inline">
-					<a href="#" class="cta cta--horizontal">See more</a>
-					<a href="#" class="cta cta--vertical">Apply now</a>
-					<a href="#" class="cta cta--horizontal">See more</a>
-				</div>
+				<%= partial "components/atoms/cta-block", locals: {
+					modifiers: ["inline"],
+					ctas: [
+						{
+							text: "See more",
+							link: "#",
+							modifiers: ["horizontal"]
+						},
+						{
+							text: "Apply now",
+							link: "#",
+							modifiers: ["vertical"]
+						},
+						{
+							text: "See more",
+							link: "#",
+							modifiers: ["horizontal"]
+						}
+					]
+				}	%>
 
 				<span class="label">Stacked</span>
-				<div class="cta-block cta-block--stacked">
-					<a href="#" class="cta cta--horizontal">See more</a>
-					<a href="#" class="cta cta--vertical">Apply now</a>
-					<a href="#" class="cta cta--horizontal">See more</a>
-					<a href="#" class="cta cta--horizontal">See more</a>
-				</div>
+				<%= partial "components/atoms/cta-block", locals: {
+					modifiers: ["stacked"],
+					ctas: [
+						{
+							text: "See more",
+							link: "#",
+							modifiers: ["horizontal"]
+						},
+						{
+							text: "Apply now",
+							link: "#",
+							modifiers: ["vertical"]
+						},
+						{
+							text: "See more",
+							link: "#",
+							modifiers: ["horizontal"]
+						},
+						{
+							text: "See more",
+							link: "#",
+							modifiers: ["horizontal"]
+						}
+					]
+				}	%>
 
 				<span class="label">Bar</span>
-				<div class="cta-block cta-block--bar">
-					<a href="#" class="cta cta--horizontal">See more</a>
-					<a href="#" class="cta cta--vertical">Apply now</a>
-					<a href="#" class="cta cta--horizontal">See more</a>
-				</div>
+				<%= partial "components/atoms/cta-block", locals: {
+					modifiers: ["bar"],
+					ctas: [
+						{
+							text: "See more",
+							link: "#",
+							modifiers: ["horizontal"]
+						},
+						{
+							text: "Apply now",
+							link: "#",
+							modifiers: ["vertical"]
+						},
+						{
+							text: "See more",
+							link: "#",
+							modifiers: ["horizontal"]
+						}
+					]
+				}	%>
 
 				<!-- END examples -->
 			</div>
