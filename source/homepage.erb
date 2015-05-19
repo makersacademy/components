@@ -56,7 +56,32 @@
 
     <!-- BEGIN grads -->
 
-    <%= partial "components/molecules/media-component" %>
+    <%= partial "components/molecules/media-component--with-slider", locals: {
+        leader: "Meet",
+        title: "Our Grads",
+        body_copy: "We&rsquo;ve graduated over 300 beginners into their dream jobs as junior developers. Some were looking for a career change, others to define themselves.",
+        cta: {
+          text: "Read Grad Stories",
+          link: "/graduates",
+          type: "horizontal"
+        },
+        slider_content: [
+          {
+            content_type: "image",
+            src: "images/test-assets/test-grad.png",
+            orientation: "portrait",
+            alt: "A test graduate, looking at the camera.",
+            caption: "Firstname Lastname\nCohort of 2015\nNow a Junior Developer at CompanyName"
+          },
+          {
+            content_type: "image",
+            src: "http://placehold.it/400x600&text=400x600",
+            orientation: "portrait",
+            alt: "A gray box with the text '400x600'",
+            caption: "Othername Lastname\nCohort of 2015\nNow a Junior Developer at OtherCompanyName"
+          }
+        ]
+      } %>
 
     <!-- END grads -->
 
