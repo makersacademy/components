@@ -157,20 +157,12 @@ body {
   max-width: 56em;
 }
 
-/* the following class is relevant only
-   if using a small-caps font that does
-   not handle numbers appropriately */
-/* line 38, ../sass/quarks/_title.scss */
-.title__numbers {
-  font-size: 0.7em;
-}
-
-/* Optional Titles, such as subtitles 
-and leader statements. */
-/* line 4, ../sass/quarks/_opt-title.scss */
-.opt-title {
+/* line 34, ../sass/quarks/_title.scss */
+.title--leader {
   /* --- structure --- */
   padding: 0 0.16em;
+  max-width: none;
+  margin-bottom: 0.25em !important;
   /* --- theme --- */
   font-size: 1.618em;
   font-family: "futura-pt", Futura, Helvetica, Arial, sans-serif;
@@ -180,6 +172,32 @@ and leader statements. */
   font-weight: 500;
   line-height: 0.8;
   color: #afafaf;
+}
+
+/* line 46, ../sass/quarks/_title.scss */
+.title--subtitle {
+  /* --- structure --- */
+  padding: 0 0.16em;
+  max-width: none;
+  margin-top: -0.5em !important;
+  margin-bottom: 1em !important;
+  /* --- theme --- */
+  font-size: 1.618em;
+  font-family: "futura-pt", Futura, Helvetica, Arial, sans-serif;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  letter-spacing: 0.15em;
+  font-weight: 500;
+  line-height: 0.8;
+  color: #afafaf;
+}
+
+/* the following class is relevant only
+   if using a small-caps font that does
+   not handle numbers appropriately */
+/* line 63, ../sass/quarks/_title.scss */
+.title__numbers {
+  font-size: 0.7em;
 }
 
 /* Extended written things. */
@@ -1838,7 +1856,7 @@ Modifiers:
   width: 100%;
 }
 
-/* line 46, ../sass/screen.scss */
+/* line 45, ../sass/screen.scss */
 .label {
   display: block;
   font-family: sans-serif;

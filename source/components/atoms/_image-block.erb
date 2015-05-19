@@ -1,0 +1,22 @@
+<% component ||= "image-block" %>
+
+<div class="<%= component_classes locals.fetch(:parent, nil), component, locals.fetch(:modifiers, []) %>">
+  
+  <% images.each do | image | %>
+    <%= partial "components/quarks/image", locals: {
+        parent: component,
+        modifiers: image[:modifiers],
+        src: image[:src],
+        alt: image[:alt]
+      } %>
+  <% end %>
+
+  <% if defined?(caption) %>
+    <%= partial "components/quarks/caption", locals: {
+        parent: component,
+        modifiers: caption[:modifiers],
+        bodies: caption[:bodies]
+      } %>
+  <% end %>
+
+</div>

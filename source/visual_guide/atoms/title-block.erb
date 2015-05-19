@@ -11,55 +11,58 @@
 
 		<span class="label">Center</span>
 		<%= partial 'components/atoms/title-block', locals: {
-			title: {
-				text: lorem.words(2),
-				modifiers: []
-			},
+			titles: [
+				{
+					text: lorem.words(2)
+				}
+			],
 			body: {
-				text: lorem.sentences(4),
-				modifiers: []
+				text: lorem.sentences(4)
 			}
 		} %>
 
 		<span class="label">Left</span>
 		<%= partial 'components/atoms/title-block', locals: {
 			modifiers: ["left"],
-			title: {
-				text: lorem.words(2),
-				modifiers: []
-			},
+			titles: [
+				{
+					text: lorem.words(2)
+				}
+			],
 			body: {
 				text: lorem.sentences(4),
-				modifiers: []
 			}
 		} %>
 
 		<span class="label">Right</span>
 		<%= partial 'components/atoms/title-block', locals: {
 			modifiers: ["right"],
-			title: {
-				text: lorem.words(2),
-				modifiers: []
-			},
+			titles: [
+				{
+					text: lorem.words(2),
+				}
+			],
 			body: {
 				text: lorem.sentences(4),
-				modifiers: []
 			}
 		} %>
 
 		<span class="label">Opt (shown right-aligned)</span>
 		<%= partial 'components/atoms/title-block', locals: {
 			modifiers: ["right"],
-			leader: {
-				text: lorem.words(1)
-			},
-			title: {
-				text: lorem.words(2),
-				modifiers: []
-			},
-			subtitle: {
-				text: lorem.words(3)
-			},
+			titles: [
+				{
+					text: "Eat our",
+					modifiers: ["leader"]
+				},
+				{
+					text: "Meat"
+				},
+				{
+					text: "It's delicious",
+					modifiers: ["subtitle"]
+				}
+			],
 			body: {
 				text: lorem.sentences(4),
 				modifiers: []
