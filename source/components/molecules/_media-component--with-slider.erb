@@ -1,4 +1,6 @@
 <% component ||= "media-component" %>
+<% modifiers ||= [] %>
+<% alignment_modifiers = modifiers.include?("reverse") ? ["right"] : ["left"] %>
 
 <div class="<%= component_classes locals.fetch(:parent, nil), component, locals.fetch(:modifiers, []) %>">
   <div class="container">
@@ -6,7 +8,7 @@
     <section class="media-component__section">
       <%= partial 'components/atoms/title-block', locals: {
         parent: "media-component__section",
-        modifiers: ["left"],
+        modifiers: alignment_modifiers,
         titles: [
           {
             modifiers: ["leader"],
@@ -37,9 +39,11 @@
                 ],
                 caption: {
                   modifiers: ["right"],
-                  bodies: newlines_to_caption_bodies(slider_item.fetch(:caption, "Untitled Image"))
+                  bodies: newlines_to_caption_bodies(slider_item.fetch(:caption, ""))
                 }
               } %>
+          <% elsif slider_item[:content_type] === "title-block" %>
+          
           <% end %>
         <% end %>
         
@@ -49,7 +53,7 @@
     <section class="media-component__section">
       <%= partial "components/atoms/cta-block", locals: {
         parent: "media-component__section",
-        modifiers: ["left"],
+        modifiers: alignment_modifiers,
         ctas: [
           { 
             text: cta.fetch(:text, "Untitled"),

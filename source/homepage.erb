@@ -132,6 +132,32 @@
 
     <!-- BEGIN curriculum -->
 
+    <%= partial "components/molecules/media-component--with-slider", locals: {
+        modifiers: ["reverse"],
+        leader: "A world-leading",
+        title: "Curriculum",
+        body_copy: "We&rsquo;ve graduated over 300 beginners into their dream jobs as junior developers. Some were looking for a career change, others to define themselves.",
+        cta: {
+          text: "Our Education Philosophy",
+          link: "/curriculum",
+          type: "horizontal"
+        },
+        slider_content: [
+          {
+            content_type: "image",
+            src: "images/test-assets/test-curric.jpg",
+            orientation: "portrait",
+            alt: "Rails is a web application framework for large systems."
+          },
+          {
+            content_type: "image",
+            src: "images/test-assets/test-curric.jpg",
+            orientation: "portrait",
+            alt: "Rails is a web application framework for large systems."
+          }
+        ]
+      } %>
+
     <div class="media-component media-component--reverse">
 
       <div class="container">
