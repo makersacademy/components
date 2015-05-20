@@ -16,7 +16,6 @@
 
 /* quarks */
 @import "quarks/_title";
-@import "quarks/_opt-title";
 @import "quarks/_body";
 @import "quarks/_cta";
 @import "quarks/_input";
@@ -24,13 +23,13 @@
 @import "quarks/_caption";
 @import "quarks/_list-item";
 
-/* atoms */
-@import "atoms/_title-block";
-@import "atoms/_cta-block";
-@import "atoms/_input-block";
-@import "atoms/_form-block";
-@import "atoms/_image-block";
-@import "atoms/_list-block";
+/* groups */
+@import "groups/_title-block";
+@import "groups/_cta-block";
+@import "groups/_input-block";
+@import "groups/_form-block";
+@import "groups/_image-block";
+@import "groups/_list-block";
 
 /* molecules */
 @import "molecules/_holler-block";

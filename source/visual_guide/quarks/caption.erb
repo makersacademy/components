@@ -1,0 +1,68 @@
+<div class="container">
+
+  <div class="title-block">
+    <h1 class="title title-block__title">Caption</h1>
+    <h3 class="opt-title opt-title--below title-block__subtitle">quark</h3>
+    <p class="body title-block__body">
+      Captions for beneath Images.
+    </p>
+  </div>
+  
+  <h3>Modules</h3>
+  <div class="example">
+    <!-- BEGIN examples -->
+    
+    <span class="label">Center</span>
+    <%= partial "components/quarks/caption", locals: {
+        bodies: [
+          {
+            text: "Lorem Ipsum Dolor"
+          }
+        ]
+      } %>
+
+    <span class="label">Left</span>
+    <%= partial "components/quarks/caption", locals: {
+        modifiers: ["left"],
+        bodies: [
+          {
+            text: "Lorem Ipsum Dolor"
+          },
+          {
+            text: "I am a multi-line caption"
+          }
+        ]
+      } %>
+
+    <span class="label">Right</span>
+    <%= partial "components/quarks/caption", locals: {
+        modifiers: ["right"],
+        bodies: [
+          {
+            text: "Lorem Ipsum Dolor"
+          },
+          {
+            text: "I too am a multi-line caption"
+          }
+        ]
+      } %>
+
+    <!-- END examples -->
+  </div>
+
+  <div class="content">
+    <div class="usage">
+      
+    </div>
+    <div class="code">
+      <div class="html">
+        <pre></pre>
+      </div>
+      <div class="css">
+        <pre></pre>
+      </div>
+    </div>
+  </div>
+
+</div>
+

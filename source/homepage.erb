@@ -56,52 +56,32 @@
 
     <!-- BEGIN grads -->
 
-    <div class="media-component">
-      <div class="container">
-      
-        <section class="media-component__section">
-          <div class="title-block title-block--left media-component__section__title-block">
-            <h3 class="opt-title opt-title--above title-block__leader">
-              Meet
-            </h3>
-            <h1 class="title title-block__title">
-              Our Grads
-            </h1>
-            <p class="body title-block__body">
-              We&rsquo;ve graduated over 300 beginners into their dream
-              jobs as junior developers. Some were looking for a
-              career change, others to define themselves.
-            </p>
-          </div>
-        </section>
-        <section class="media-component__section">
-          <div class="slider-block">
-            <div class="image-block image-block--full image-block--centered slider-block__image-block">
-              <img class="image image--portrait image-block__image" src="images/test-assets/test-grad.png" alt="A test graduate, looking at the camera.">
-              <figcaption class="caption caption--right image-block__caption">
-                <p>Firstname Lastname</p>
-                <p>Cohort of 2015</p>
-                <p>Now a Junior Developer at Companyname</p>
-              </figcaption>
-            </div>
-            <div class="image-block image-block--full image-block--centered slider-block__image-block">
-              <img class="image image--portrait image-block__image" src="http://placehold.it/400x600&text=400x600" alt="A gray box with the text '400x600'">
-              <figcaption class="caption caption--right image-block__caption">
-                <p>Differentname Fooname</p>
-                <p>Cohort of 2014</p>
-                <p>Now a Junior Developer at Othername</p>
-              </figcaption>
-            </div>
-          </div>
-        </section>
-        <section class="media-component__section">
-          <div class="cta-block cta-block--left">
-            <a href="#" class="cta cta--horizontal">Read Grad Stories</a>
-          </div>
-        </section>
-
-      </div>
-    </div>
+    <%= partial "components/molecules/media-component--with-slider", locals: {
+        leader: "Meet",
+        title: "Our Grads",
+        body_copy: "We&rsquo;ve graduated over 300 beginners into their dream jobs as junior developers. Some were looking for a career change, others to define themselves.",
+        cta: {
+          text: "Read Grad Stories",
+          link: "/graduates",
+          type: "horizontal"
+        },
+        slider_content: [
+          {
+            content_type: "image",
+            src: "images/test-assets/test-grad.png",
+            orientation: "portrait",
+            alt: "A test graduate, looking at the camera.",
+            caption: "Firstname Lastname\nCohort of 2015\nNow a Junior Developer at CompanyName"
+          },
+          {
+            content_type: "image",
+            src: "http://placehold.it/400x600&text=400x600",
+            orientation: "portrait",
+            alt: "A gray box with the text '400x600'",
+            caption: "Othername Lastname\nCohort of 2015\nNow a Junior Developer at OtherCompanyName"
+          }
+        ]
+      } %>
 
     <!-- END grads -->
 

@@ -1,0 +1,60 @@
+<div class="container">
+
+  <div class="title-block">
+    <h1 class="title title-block__title">Image</h1>
+    <h3 class="opt-title opt-title--below title-block__subtitle">quark</h3>
+    <p class="body title-block__body">
+      Images for, uh, looking at.
+    </p>
+  </div>
+
+  <h3>Modules</h3>
+  <div class="example">
+    <!-- BEGIN examples -->
+
+    <span class="label">Portrait</span>
+    <%= partial "components/quarks/image", locals: {
+        modifiers: ["portrait"],
+        src: "http://placehold.it/200x323",
+        alt: "A gray box with the text '200 x 323'"
+      } %>
+
+    <span class="label">Landscape</span>
+    <%= partial "components/quarks/image", locals: {
+        modifiers: ["landscape"],
+        src: "http://placehold.it/323x200",
+        alt: "A gray box with the text '200 x 323'"
+      } %>
+
+    <span class="label">Brand</span>
+    <%= partial "components/quarks/image", locals: {
+      modifiers: ["brand"],
+      src: "http://placehold.it/323x200",
+      alt: "A gray box with the text '323 x 200'"
+    } %>
+
+    <span class="label">Rounded</span>
+    <%= partial "components/quarks/image", locals: {
+      modifiers: ["rounded"],
+      src: "http://placehold.it/200x323",
+      alt: "A gray rounded box with the text '200 x 323'"
+    } %>
+
+    <!-- END examples -->
+  </div>
+
+  <div class="content">
+    <div class="usage">
+
+    </div>
+    <div class="code">
+      <div class="html">
+        <pre></pre>
+      </div>
+      <div class="css">
+        <pre></pre>
+      </div>
+    </div>
+  </div>
+
+</div>

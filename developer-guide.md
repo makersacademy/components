@@ -8,7 +8,7 @@ This is a guide to doing new things, or changing existing things, within the sty
 
 - Sketched the component you need, _including how it will work on mobile_?
 - Checked that there are _definitely no other components you could use_?
-- Figured out whether you need a **quark**, an **atom**, or a **molecule**?
+- Figured out whether you need a **quark**, an **group**, or a **molecule**?
 
 ##### 1. Sketch Component
 
@@ -16,9 +16,9 @@ This is a guide to doing new things, or changing existing things, within the sty
 
 When sketching a component, try to use other components that exist. For example, say you need a two-up Radio Button list/Title and header. Since it's going to be placed directly on a page, it should be a _molecule_. We already have a **two-up block** molecule, so we'll add another _module_ ('public interface') to that.
 
-This module will have an **input block** atom in one side, and a **title block** atom in the other. 
+This module will have an **input block** group in one side, and a **title block** group in the other.
 
-We'll fill this molecule with existing atom components where possible. Pick the appropriate atom modules: for the **input block**, choose a 'list' module, and for the **title block**, choose the 'center' module. If the modules you need don't exist, you will need to create new atoms, made up of quarks.
+We'll fill this molecule with existing group components where possible. Pick the appropriate group modules: for the **input block**, choose a 'list' module, and for the **title block**, choose the 'center' module. If the modules you need don't exist, you will need to create new groups, made up of quarks.
 
 Here's a sketch for the Radio List/Title molecule:
 
@@ -37,7 +37,7 @@ When adding HTML, try to use `Block__Element--Modifier` syntax. For our new Radi
 <div class="two-up-block">
   <!-- two-up blocks always contain two __sections -->
   <section class="two-up-block__section">
-    <!-- the radio list atom -->
+    <!-- the radio list group -->
     <div class="input-block input-block--list">
       <!-- the radio list's 'input--radio' quarks -->
       <input class="input input--radio" type="radio" name="capture-radio" value="Radio 1..." />
@@ -46,7 +46,7 @@ When adding HTML, try to use `Block__Element--Modifier` syntax. For our new Radi
     </div>
   </section>
   <section class="two-up-block__section">
-    <!-- the title block atom -->
+    <!-- the title block group -->
     <div class="title-block">
       <!-- the title block's 'title' quark -->
       <h1 class="title title-block__title">
@@ -65,7 +65,7 @@ Now, whenever we want to reuse a Two-up Radio List/Title module, we can just dro
 
 ##### 3. Add the Component CSS to the Sass files
 
-Care has been taken to ensure that you won't have to write much CSS, but you might have to (especially if you're dropping an atom into a molecule in a way that hasn't been done before).
+Care has been taken to ensure that you won't have to write much CSS, but you might have to (especially if you're dropping an group into a molecule in a way that hasn't been done before).
 
 1. Find the correct `scss` file - in our case, the `molecules/_two-up-block.scss` file.
 2. Add any styling required. There are a few types of styling, which are separated:
