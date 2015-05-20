@@ -2,7 +2,7 @@
 <% modifiers = locals.fetch(:modifiers, []) %>
 <% alignment_modifiers = modifiers.include?("reverse") ? ["right"] : ["left"] %>
 
-<div class="<%= component_classes(locals) %>">
+<div class="<%= component_classes(component, locals) %>">
   <div class="container">
 
     <section class="media-component__section">

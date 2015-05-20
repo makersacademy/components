@@ -1,6 +1,6 @@
 <% component = "caption" %>
 
-<figcaption class="<%= component_classes(locals) %>">
+<figcaption class="<%= component_classes(component, locals) %>">
   <% bodies.each do | body | %>
     <%= partial "components/atoms/body", locals: {
       parent: component,
