@@ -2,9 +2,9 @@
 
 <div class="<%= component_classes locals.fetch(:parent, nil), component, locals.fetch(:modifiers, []) %>">
   <div class="container">
-  
+
     <section class="media-component__section">
-      <%= partial 'components/atoms/title-block', locals: {
+      <%= partial 'components/groups/title-block', locals: {
         parent: "media-component__section",
         modifiers: ["left"],
         titles: [
@@ -22,10 +22,10 @@
       } %>
     </section>
     <section class="media-component__section">
-      <div class="slider-block">  
+      <div class="slider-block">
         <% slider_content.each do | slider_item | %>
           <% if slider_item[:content_type] === "image" %>
-            <%= partial "components/atoms/image-block", locals: {
+            <%= partial "components/groups/image-block", locals: {
                 parent: "slider-block",
                 modifiers: ["full", "centered"],
                 images: [
@@ -42,16 +42,16 @@
               } %>
           <% end %>
         <% end %>
-        
+
       </div>
     </section>
-    
+
     <section class="media-component__section">
-      <%= partial "components/atoms/cta-block", locals: {
+      <%= partial "components/groups/cta-block", locals: {
         parent: "media-component__section",
         modifiers: ["left"],
         ctas: [
-          { 
+          {
             text: cta.fetch(:text, "Untitled"),
             link: cta.fetch(:link, "#"),
             modifiers: [cta.fetch(:type, "horizontal")]

@@ -79,7 +79,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
    declared in _functions.scss */
 /* set on the body only */
 /* --- Color --- */
-/* all colors are from 
+/* all colors are from
    https://drive.google.com/drive/u/0/#folders/0B3zMV1alL-hBREJ3Qjd0ZlVfUm8/0B3zMV1alL-hBVmlHSENfV0FUeWc/0B3zMV1alL-hBX1BOaHNjaDBxV00 */
 /* black */
 /* dark blue */
@@ -224,10 +224,10 @@ body {
   }
 }
 
-/* Calls to Action, designed to get 
-the user moving either horizontally 
-(across content), or to have them 
-complete the vertical path (the 
+/* Calls to Action, designed to get
+the user moving either horizontally
+(across content), or to have them
+complete the vertical path (the
 action goal). */
 /* Modules:
 
@@ -349,7 +349,7 @@ action goal). */
   line-height: 1.5;
   font-weight: 400;
   background: transparent;
-  /* IE hack for input padding 
+  /* IE hack for input padding
   http://stackoverflow.com/questions/607198/padding-a-text-input-in-ie-possible */
   overflow: visible;
 }
@@ -507,8 +507,8 @@ action goal). */
   cursor: pointer;
 }
 
-/* atoms */
-/* Title and some copy. 
+/* groups */
+/* Title and some copy.
 Think 'informative' messages. */
 /* Modules:
 
@@ -520,7 +520,7 @@ Think 'informative' messages. */
 !!! can contain opt-titles !!!
 
 */
-/* line 15, ../sass/atoms/_title-block.scss */
+/* line 15, ../sass/groups/_title-block.scss */
 .title-block {
   /* --- structure --- */
   padding: 0 1em;
@@ -528,47 +528,47 @@ Think 'informative' messages. */
   /* --- child layout --- */
   /* --- mobile --- */
 }
-/* line 22, ../sass/atoms/_title-block.scss */
+/* line 22, ../sass/groups/_title-block.scss */
 .title-block .title, .title-block .body, .title-block .opt-title {
   text-align: center;
   margin: 0 auto;
 }
-/* line 27, ../sass/atoms/_title-block.scss */
+/* line 27, ../sass/groups/_title-block.scss */
 .title-block .opt-title--below {
   margin-bottom: 1em;
 }
-/* line 31, ../sass/atoms/_title-block.scss */
+/* line 31, ../sass/groups/_title-block.scss */
 .title-block .title {
   margin-bottom: 0.5em;
 }
 
-/* line 40, ../sass/atoms/_title-block.scss */
+/* line 40, ../sass/groups/_title-block.scss */
 .title-block__image-block {
   margin-bottom: 1.618em;
 }
-/* line 42, ../sass/atoms/_title-block.scss */
+/* line 42, ../sass/groups/_title-block.scss */
 .title-block__image-block .image--portrait {
   height: auto !important;
 }
 
-/* line 47, ../sass/atoms/_title-block.scss */
+/* line 47, ../sass/groups/_title-block.scss */
 .title-block--left {
   text-align: left;
   /* --- child layout --- */
   /* --- mobile --- */
 }
-/* line 51, ../sass/atoms/_title-block.scss */
+/* line 51, ../sass/groups/_title-block.scss */
 .title-block--left .title, .title-block--left .body, .title-block--left .opt-title {
   text-align: left;
   margin-left: 0;
   margin-right: 0;
 }
-/* line 57, ../sass/atoms/_title-block.scss */
+/* line 57, ../sass/groups/_title-block.scss */
 .title-block--left .body {
   display: inline-block;
 }
 @media only screen and (max-width: 1024px) {
-  /* line 63, ../sass/atoms/_title-block.scss */
+  /* line 63, ../sass/groups/_title-block.scss */
   .title-block--left .title, .title-block--left .body, .title-block--left .opt-title {
     text-align: center;
     margin-left: auto;
@@ -576,7 +576,7 @@ Think 'informative' messages. */
   }
 }
 
-/* line 71, ../sass/atoms/_title-block.scss */
+/* line 71, ../sass/groups/_title-block.scss */
 .title-block--right {
   text-align: right;
   /* --- child layout --- */
@@ -584,28 +584,28 @@ Think 'informative' messages. */
   	 overflowing set container widths */
   /* --- mobile --- */
 }
-/* line 75, ../sass/atoms/_title-block.scss */
+/* line 75, ../sass/groups/_title-block.scss */
 .title-block--right .title, .title-block--right .body, .title-block--right .opt-title {
   text-align: right;
   margin-left: 0;
   margin-right: 0;
 }
-/* line 83, ../sass/atoms/_title-block.scss */
+/* line 83, ../sass/groups/_title-block.scss */
 .title-block--right .title {
   text-indent: -0.15em;
 }
-/* line 87, ../sass/atoms/_title-block.scss */
+/* line 87, ../sass/groups/_title-block.scss */
 .title-block--right .body {
   display: inline-block;
 }
 @media only screen and (max-width: 1024px) {
-  /* line 93, ../sass/atoms/_title-block.scss */
+  /* line 93, ../sass/groups/_title-block.scss */
   .title-block--right .title, .title-block--right .body, .title-block--right .opt-title {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 99, ../sass/atoms/_title-block.scss */
+  /* line 99, ../sass/groups/_title-block.scss */
   .title-block--right .title {
     max-width: 29em;
     text-indent: 0;
@@ -625,7 +625,7 @@ Think 'informative' messages. */
 !!! can contain cta--bigs !!!
 
 */
-/* line 16, ../sass/atoms/_cta-block.scss */
+/* line 16, ../sass/groups/_cta-block.scss */
 .cta-block {
   /* --- structure --- */
   text-align: center;
@@ -635,115 +635,115 @@ Think 'informative' messages. */
   /* --- mobile --- */
 }
 @media only screen and (max-width: 1024px) {
-  /* line 16, ../sass/atoms/_cta-block.scss */
+  /* line 16, ../sass/groups/_cta-block.scss */
   .cta-block {
     padding: 0;
   }
 }
 
-/* line 31, ../sass/atoms/_cta-block.scss */
+/* line 31, ../sass/groups/_cta-block.scss */
 .cta-block--left {
   text-align: left;
   /* --- mobile --- */
 }
 @media only screen and (max-width: 1024px) {
-  /* line 31, ../sass/atoms/_cta-block.scss */
+  /* line 31, ../sass/groups/_cta-block.scss */
   .cta-block--left {
     text-align: center;
   }
 }
 
-/* line 39, ../sass/atoms/_cta-block.scss */
+/* line 39, ../sass/groups/_cta-block.scss */
 .cta-block--right {
   text-align: right;
   /* --- mobile --- */
 }
 @media only screen and (max-width: 1024px) {
-  /* line 39, ../sass/atoms/_cta-block.scss */
+  /* line 39, ../sass/groups/_cta-block.scss */
   .cta-block--right {
     text-align: center;
   }
 }
 
-/* line 47, ../sass/atoms/_cta-block.scss */
+/* line 47, ../sass/groups/_cta-block.scss */
 .cta-block--inline {
   /* --- structure --- */
   /* --- theming --- */
   /* --- child layout --- */
 }
-/* line 54, ../sass/atoms/_cta-block.scss */
+/* line 54, ../sass/groups/_cta-block.scss */
 .cta-block--inline .cta {
   display: inline-block;
   /* margins for central CTAs only */
   /* --- mobile --- */
 }
-/* line 58, ../sass/atoms/_cta-block.scss */
+/* line 58, ../sass/groups/_cta-block.scss */
 .cta-block--inline .cta:nth-child(2n) {
   margin: 0 2.61em;
 }
-/* line 61, ../sass/atoms/_cta-block.scss */
+/* line 61, ../sass/groups/_cta-block.scss */
 .cta-block--inline .cta:last-child {
   margin-right: 0;
 }
 @media only screen and (max-width: 1024px) {
-  /* line 54, ../sass/atoms/_cta-block.scss */
+  /* line 54, ../sass/groups/_cta-block.scss */
   .cta-block--inline .cta {
     display: block;
     max-width: 10em;
     margin: 0 auto 1em auto;
   }
-  /* line 70, ../sass/atoms/_cta-block.scss */
+  /* line 70, ../sass/groups/_cta-block.scss */
   .cta-block--inline .cta:nth-child(2n) {
     margin: 0 auto 1em auto;
   }
-  /* line 73, ../sass/atoms/_cta-block.scss */
+  /* line 73, ../sass/groups/_cta-block.scss */
   .cta-block--inline .cta:last-child {
     margin-right: auto;
   }
 }
 
-/* line 80, ../sass/atoms/_cta-block.scss */
+/* line 80, ../sass/groups/_cta-block.scss */
 .cta-block--stacked {
   /* --- structure --- */
   /* --- theming --- */
   /* --- child layout --- */
 }
-/* line 87, ../sass/atoms/_cta-block.scss */
+/* line 87, ../sass/groups/_cta-block.scss */
 .cta-block--stacked .cta {
   display: block;
   /* margins for central CTAs only */
 }
-/* line 91, ../sass/atoms/_cta-block.scss */
+/* line 91, ../sass/groups/_cta-block.scss */
 .cta-block--stacked .cta:nth-child(2n) {
   margin: 1em 0;
 }
-/* line 94, ../sass/atoms/_cta-block.scss */
+/* line 94, ../sass/groups/_cta-block.scss */
 .cta-block--stacked .cta:last-child {
   margin-bottom: 0;
 }
 
-/* line 101, ../sass/atoms/_cta-block.scss */
+/* line 101, ../sass/groups/_cta-block.scss */
 .cta-block--bar {
   /* --- structure --- */
   /* --- theming --- */
   /* --- child layout --- */
 }
-/* line 108, ../sass/atoms/_cta-block.scss */
+/* line 108, ../sass/groups/_cta-block.scss */
 .cta-block--bar .cta {
   float: left;
-  /* border radii change only for 
+  /* border radii change only for
   inner children */
   border-radius: 0;
   border-left-width: 1px;
   border-right-width: 1px;
 }
-/* line 117, ../sass/atoms/_cta-block.scss */
+/* line 117, ../sass/groups/_cta-block.scss */
 .cta-block--bar .cta:first-child {
   border-left-width: 2px;
   border-top-left-radius: 0.5em;
   border-bottom-left-radius: 0.5em;
 }
-/* line 123, ../sass/atoms/_cta-block.scss */
+/* line 123, ../sass/groups/_cta-block.scss */
 .cta-block--bar .cta:last-child {
   border-right-width: 2px;
   border-top-right-radius: 0.5em;
@@ -758,24 +758,24 @@ Think 'informative' messages. */
 - Inline ('Capture')
 
 */
-/* line 11, ../sass/atoms/_input-block.scss */
+/* line 11, ../sass/groups/_input-block.scss */
 .input-block {
   /* --- structure --- */
   /* --- theming --- */
 }
 
-/* line 17, ../sass/atoms/_input-block.scss */
+/* line 17, ../sass/groups/_input-block.scss */
 .input-block--list {
   /* --- structure --- */
   /* --- theming --- */
   /* --- child layout --- */
 }
-/* line 23, ../sass/atoms/_input-block.scss */
+/* line 23, ../sass/groups/_input-block.scss */
 .input-block--list .input {
   margin-bottom: 1em;
 }
 
-/* line 28, ../sass/atoms/_input-block.scss */
+/* line 28, ../sass/groups/_input-block.scss */
 .input-block--two-up {
   /* --- structure --- */
   /* --- theming --- */
@@ -787,21 +787,21 @@ Think 'informative' messages. */
   display: table;
   clear: both;
 }
-/* line 36, ../sass/atoms/_input-block.scss */
+/* line 36, ../sass/groups/_input-block.scss */
 .input-block--two-up .input {
   width: 46%;
   float: left;
 }
-/* line 39, ../sass/atoms/_input-block.scss */
+/* line 39, ../sass/groups/_input-block.scss */
 .input-block--two-up .input:first-of-type {
   margin-right: 4%;
 }
-/* line 42, ../sass/atoms/_input-block.scss */
+/* line 42, ../sass/groups/_input-block.scss */
 .input-block--two-up .input:last-of-type {
   margin-left: 4%;
 }
 
-/* line 48, ../sass/atoms/_input-block.scss */
+/* line 48, ../sass/groups/_input-block.scss */
 .input-block--inline-submit {
   /* --- structure --- */
   /* --- theming --- */
@@ -813,24 +813,24 @@ Think 'informative' messages. */
   display: table;
   clear: both;
 }
-/* line 56, ../sass/atoms/_input-block.scss */
+/* line 56, ../sass/groups/_input-block.scss */
 .input-block--inline-submit .input, .input-block--inline-submit .cta--submit {
   float: left;
 }
-/* line 60, ../sass/atoms/_input-block.scss */
+/* line 60, ../sass/groups/_input-block.scss */
 .input-block--inline-submit .input {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   border-right-width: 0;
 }
-/* line 66, ../sass/atoms/_input-block.scss */
+/* line 66, ../sass/groups/_input-block.scss */
 .input-block--inline-submit .cta--submit {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   border-color: #444;
 }
 
-/* line 73, ../sass/atoms/_input-block.scss */
+/* line 73, ../sass/groups/_input-block.scss */
 .input-block__label {
   /* --- structure --- */
   /* --- theming --- */
@@ -853,36 +853,36 @@ Think 'informative' messages. */
 !!! can contain __fieldsets !!!
 
 */
-/* line 13, ../sass/atoms/_form-block.scss */
+/* line 13, ../sass/groups/_form-block.scss */
 .form-block {
   /* --- structure --- */
   /* --- theming --- */
   /* --- child layout --- */
 }
-/* line 20, ../sass/atoms/_form-block.scss */
+/* line 20, ../sass/groups/_form-block.scss */
 .form-block .input-block {
   margin-bottom: 1em;
 }
 
-/* line 25, ../sass/atoms/_form-block.scss */
+/* line 25, ../sass/groups/_form-block.scss */
 .form-block--center {
   /* --- structure --- */
   text-align: center;
   /* --- theming --- */
   /* --- child layout --- */
 }
-/* line 33, ../sass/atoms/_form-block.scss */
+/* line 33, ../sass/groups/_form-block.scss */
 .form-block--center .input-block {
   display: inline-block;
 }
 
-/* line 38, ../sass/atoms/_form-block.scss */
+/* line 38, ../sass/groups/_form-block.scss */
 .form-block__fieldset {
   /* --- structure --- */
   /* --- theming --- */
 }
 
-/* line 44, ../sass/atoms/_form-block.scss */
+/* line 44, ../sass/groups/_form-block.scss */
 .form-block__fieldset__opt-title {
   /* --- structure --- */
   margin-bottom: 1em;
@@ -900,7 +900,7 @@ Think 'informative' messages. */
 - 6-up Grid
 
 */
-/* line 14, ../sass/atoms/_image-block.scss */
+/* line 14, ../sass/groups/_image-block.scss */
 .image-block {
   /* --- structure --- */
   box-sizing: border-box;
@@ -908,7 +908,7 @@ Think 'informative' messages. */
   /* --- theming --- */
   /* --- child layout --- */
 }
-/* line 22, ../sass/atoms/_image-block.scss */
+/* line 22, ../sass/groups/_image-block.scss */
 .image-block .caption {
   position: absolute;
   bottom: 1em;
@@ -918,53 +918,53 @@ Think 'informative' messages. */
   /* --- mobile --- */
 }
 @media only screen and (max-width: 1024px) {
-  /* line 22, ../sass/atoms/_image-block.scss */
+  /* line 22, ../sass/groups/_image-block.scss */
   .image-block .caption {
     display: none;
   }
 }
-/* line 36, ../sass/atoms/_image-block.scss */
+/* line 36, ../sass/groups/_image-block.scss */
 .image-block .caption--right {
   right: 1em;
 }
-/* line 40, ../sass/atoms/_image-block.scss */
+/* line 40, ../sass/groups/_image-block.scss */
 .image-block .caption--left {
   left: 1em;
 }
 
-/* line 45, ../sass/atoms/_image-block.scss */
+/* line 45, ../sass/groups/_image-block.scss */
 .image-block--centered {
   /* --- structure --- */
   /* --- theming --- */
   /* --- child layout --- */
 }
-/* line 51, ../sass/atoms/_image-block.scss */
+/* line 51, ../sass/groups/_image-block.scss */
 .image-block--centered .image {
   display: block;
   margin: 0 auto;
 }
 
-/* line 57, ../sass/atoms/_image-block.scss */
+/* line 57, ../sass/groups/_image-block.scss */
 .image-block--full {
   /* --- structure --- */
   /* --- theming --- */
   /* --- child layout --- */
 }
-/* line 63, ../sass/atoms/_image-block.scss */
+/* line 63, ../sass/groups/_image-block.scss */
 .image-block--full .image {
   width: 100%;
 }
-/* line 67, ../sass/atoms/_image-block.scss */
+/* line 67, ../sass/groups/_image-block.scss */
 .image-block--full .image--portrait {
   width: auto;
   height: 100%;
 }
-/* line 72, ../sass/atoms/_image-block.scss */
+/* line 72, ../sass/groups/_image-block.scss */
 .image-block--full .image--landscape {
   height: auto;
 }
 
-/* line 77, ../sass/atoms/_image-block.scss */
+/* line 77, ../sass/groups/_image-block.scss */
 .image-block--grid {
   /* --- structure --- */
   /* --- theming --- */
@@ -977,19 +977,19 @@ Think 'informative' messages. */
   display: table;
   clear: both;
 }
-/* line 84, ../sass/atoms/_image-block.scss */
+/* line 84, ../sass/groups/_image-block.scss */
 .image-block--grid .image {
   float: left;
 }
 
-/* line 94, ../sass/atoms/_image-block.scss */
+/* line 94, ../sass/groups/_image-block.scss */
 .image-block--1grid {
   /* --- structure --- */
   /* --- theming --- */
   /* --- child layout --- */
   /* --- mobile --- */
 }
-/* line 100, ../sass/atoms/_image-block.scss */
+/* line 100, ../sass/groups/_image-block.scss */
 .image-block--1grid .image {
   width: 80%;
   margin: 0 auto;
@@ -997,42 +997,42 @@ Think 'informative' messages. */
   display: block;
 }
 @media only screen and (max-width: 1024px) {
-  /* line 109, ../sass/atoms/_image-block.scss */
+  /* line 109, ../sass/groups/_image-block.scss */
   .image-block--1grid .image {
     width: 50%;
     float: left;
   }
 }
 
-/* line 116, ../sass/atoms/_image-block.scss */
+/* line 116, ../sass/groups/_image-block.scss */
 .image-block--2grid {
   /* --- structure --- */
   /* --- theming --- */
   /* --- child layout --- */
 }
-/* line 122, ../sass/atoms/_image-block.scss */
+/* line 122, ../sass/groups/_image-block.scss */
 .image-block--2grid .image {
   width: 50%;
 }
 
-/* line 127, ../sass/atoms/_image-block.scss */
+/* line 127, ../sass/groups/_image-block.scss */
 .image-block--4grid {
   /* --- structure --- */
   /* --- theming --- */
   /* --- child layout --- */
 }
-/* line 133, ../sass/atoms/_image-block.scss */
+/* line 133, ../sass/groups/_image-block.scss */
 .image-block--4grid .image {
   width: 25%;
 }
 
-/* line 138, ../sass/atoms/_image-block.scss */
+/* line 138, ../sass/groups/_image-block.scss */
 .image-block--6grid {
   /* --- structure --- */
   /* --- theming --- */
   /* --- child layout --- */
 }
-/* line 144, ../sass/atoms/_image-block.scss */
+/* line 144, ../sass/groups/_image-block.scss */
 .image-block--6grid .image {
   width: 16.66%;
 }
@@ -1044,31 +1044,31 @@ Think 'informative' messages. */
 - Inline
 
 */
-/* line 10, ../sass/atoms/_list-block.scss */
+/* line 10, ../sass/groups/_list-block.scss */
 .list-block {
   /* --- structure --- */
   /* --- theming --- */
 }
 
-/* line 16, ../sass/atoms/_list-block.scss */
+/* line 16, ../sass/groups/_list-block.scss */
 .list-block--stacked {
   /* --- structure --- */
   /* --- theming --- */
 }
 
-/* line 22, ../sass/atoms/_list-block.scss */
+/* line 22, ../sass/groups/_list-block.scss */
 .list-block--inline {
   /* --- structure --- */
   /* --- theming --- */
   /* --- child layout --- */
 }
-/* line 28, ../sass/atoms/_list-block.scss */
+/* line 28, ../sass/groups/_list-block.scss */
 .list-block--inline .list-item {
   float: left;
 }
 
 /* molecules */
-/* Large titles and some copy. 
+/* Large titles and some copy.
 Think 'shouty' messages. */
 /* Modules:
 
@@ -1170,7 +1170,7 @@ Think 'shouty' messages. */
 .holler-block__section:last-child {
   height: 38.2%;
   /* --- mobile --- */
-  /* hacky child molecules...this needs 
+  /* hacky child molecules...this needs
   	 re-thinking */
 }
 @media only screen and (max-width: 1024px) {
@@ -1372,7 +1372,7 @@ Think 'shouty' messages. */
   vertical-align: bottom;
 }
 
-/* Any number of horizontal blocks 
+/* Any number of horizontal blocks
 in a slider arrangement. */
 /* Modules:
 
@@ -1503,8 +1503,8 @@ in a slider arrangement. */
     opacity: 0;
   }
 }
-/* Three sets of similarly-structured content. 
-Think 'feature lists', or content too small 
+/* Three sets of similarly-structured content.
+Think 'feature lists', or content too small
 to warrant a slider. */
 /* Modules:
 
