@@ -1,0 +1,19 @@
+<nav class="nav-block">
+  <div class="container">
+    <%= partial(:'groups/image-block', locals: { images: [logo] }) %>
+    <%= partial(:'groups/cta-block', locals: { ctas: [call_to_action] }) %>
+
+
+    <ul class="list-block list-block--inline nav-block__list-block">
+      <li class="list-item">
+        <a href="#">Nav 1</a>
+      </li>
+      <li class="list-item">
+        <a href="#">Nav 2</a>
+      </li>
+      <li class="list-item">
+        <a href="#">Nav 3</a>
+      </li>
+    </ul>
+  </div>
+</nav>

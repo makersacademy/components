@@ -1,8 +1,15 @@
 # Bring in the Singularity Grid
 require 'singularitygs'
 
+require 'middleman-livereload'
+
 # Bring in the helpers
 require 'makers_styles/helpers'
+
+activate :directory_indexes
+set :partials_dir, 'components'
+
+set :relative_links, true
 
 ###
 # Compass
@@ -46,9 +53,9 @@ helpers MakersStyles::Helpers
 # activate :automatic_image_sizes
 
 # Reload the browser automatically whenever files change
-# configure :development do
-#   activate :livereload
-# end
+ configure :development do
+   activate :livereload
+ end
 
 # Methods defined in the helpers block are available in templates
 # helpers do
@@ -57,7 +64,7 @@ helpers MakersStyles::Helpers
 #   end
 # end
 
-set :css_dir, 'stylesheets'
+set :css_dir, 'sass'
 
 set :js_dir, 'javascripts'
 
