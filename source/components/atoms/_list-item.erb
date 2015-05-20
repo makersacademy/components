@@ -1,3 +1,5 @@
-<% component ||= "list-item" %>
+<% component = "list-item" %>
 
-<%= link_to "#{text}", "#{link}", class: component_classes(locals.fetch(:parent, nil), component, locals.fetch(:modifiers, [])) %>
+<li class="<%= component_classes(locals) %>">
+  <%= link_to text, link %>
+</li>

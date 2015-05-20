@@ -5,9 +5,7 @@
 
 
     <ul class="list-block list-block--inline nav-block__list-block">
-      <li class="list-item">
-        <a href="#">Nav 1</a>
-      </li>
+        <%= partial(:'atoms/list-item', locals: { text: text, link: link }) %>
       <li class="list-item">
         <a href="#">Nav 2</a>
       </li>

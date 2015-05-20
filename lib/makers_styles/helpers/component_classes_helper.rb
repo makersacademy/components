@@ -1,8 +1,9 @@
 module ComponentClassesHelper
-  def component_classes parent=nil, component="", modifiers=[]
-    modifier_classes = construct_modifier_classes component, modifiers
-    block_classes = construct_block_classes parent, component
-    combine_classes modifier_classes, block_classes
+  def component_classes(locals)
+    component = locals[:component]
+    modifier_classes = construct_modifier_classes(component, locals.fetch(:modifiers, []))
+    block_classes = construct_block_classes(locals.fetch(:parent, nil), component)
+    combine_classes(modifier_classes, block_classes)
   end
 
   private

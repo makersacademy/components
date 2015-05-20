@@ -1,6 +1,6 @@
 <% component = "image-block" %>
 
-<div class="<%= component_classes locals.fetch(:parent, nil), component, locals.fetch(:modifiers, []) %>">
+<div class="<%= component_classes(locals) %>">
 
   <% images.each do | image | %>
     <%= partial "components/atoms/image", locals: {

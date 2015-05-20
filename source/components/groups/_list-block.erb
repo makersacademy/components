@@ -1,0 +1,7 @@
+<% component = "list-block" %>
+
+<ul class="<%= component_classes(locals) %>">
+  <% list_items.each do |list_item| %>
+    <%= partial(:'atoms/list-item', locals: { text: list_item[:text], link: list_item[:link] }) %>
+  <% end %>
+</ul>

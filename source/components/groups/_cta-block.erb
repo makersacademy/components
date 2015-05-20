@@ -1,7 +1,7 @@
 <% # Includes any number of _cta atoms %>
 <% component = "cta-block" %>
 
-<div class="<%= component_classes locals.fetch(:parent, nil), component, locals.fetch(:modifiers, []) %>">
+<div class="<%= component_classes(locals) %>">
 
   <% ctas.each do | cta | %>
     <%= partial "components/atoms/cta", locals: {

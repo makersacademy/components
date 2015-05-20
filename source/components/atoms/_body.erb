@@ -1,5 +1,5 @@
 <% component = "body" %>
 
-<p class="<%= component_classes locals.fetch(:parent, nil), component, locals.fetch(:modifiers, []) %>">
+<p class="<%= component_classes(locals) %>">
   <%= text %>
 </p>

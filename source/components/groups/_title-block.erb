@@ -1,7 +1,7 @@
 <% # Includes _image-block group, and _title, _body, _opt-title atoms %>
 <% component = "title-block" %>
 
-<div class="<%= component_classes locals.fetch(:parent, nil), component, locals.fetch(:modifiers, []) %>">
+<div class="<%= component_classes(locals) %>">
 
   <% titles.each do | title | %>
 
