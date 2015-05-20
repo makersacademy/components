@@ -14,30 +14,30 @@
 
 @import "typography/typography";
 
-/* quarks */
-@import "quarks/_title";
-@import "quarks/_body";
-@import "quarks/_cta";
-@import "quarks/_input";
-@import "quarks/_image";
-@import "quarks/_caption";
-@import "quarks/_list-item";
-
 /* atoms */
-@import "atoms/_title-block";
-@import "atoms/_cta-block";
-@import "atoms/_input-block";
-@import "atoms/_form-block";
-@import "atoms/_image-block";
-@import "atoms/_list-block";
+@import "atoms/_title";
+@import "atoms/_body";
+@import "atoms/_cta";
+@import "atoms/_input";
+@import "atoms/_image";
+@import "atoms/_caption";
+@import "atoms/_list-item";
 
-/* molecules */
-@import "molecules/_holler-block";
-@import "molecules/_media-component";
-@import "molecules/_slider-block";
-@import "molecules/_three-up-block";
-@import "molecules/_two-up-block";
-@import "molecules/_nav-block";
+/* groups */
+@import "groups/_title-block";
+@import "groups/_cta-block";
+@import "groups/_input-block";
+@import "groups/_form-block";
+@import "groups/_image-block";
+@import "groups/_list-block";
+
+/* templates */
+@import "templates/_holler-block";
+@import "templates/_media-component";
+@import "templates/_slider-block";
+@import "templates/_three-up-block";
+@import "templates/_two-up-block";
+@import "templates/_nav-block";
 
 /* setup */
 @import "layout/_containers";

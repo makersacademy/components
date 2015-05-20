@@ -79,7 +79,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
    declared in _functions.scss */
 /* set on the body only */
 /* --- Color --- */
-/* all colors are from 
+/* all colors are from
    https://drive.google.com/drive/u/0/#folders/0B3zMV1alL-hBREJ3Qjd0ZlVfUm8/0B3zMV1alL-hBVmlHSENfV0FUeWc/0B3zMV1alL-hBX1BOaHNjaDBxV00 */
 /* black */
 /* dark blue */
@@ -119,7 +119,7 @@ body {
   font-size: 16px;
 }
 
-/* quarks */
+/* atoms */
 /* Main site header copy. */
 /* Modules:
 
@@ -129,7 +129,7 @@ body {
 !!! can contain __numbers when using Futura
 
 */
-/* line 13, ../sass/quarks/_title.scss */
+/* line 13, ../sass/atoms/_title.scss */
 .title {
   /* --- structure --- */
   max-width: 29em;
@@ -145,19 +145,19 @@ body {
   /* --- mobile --- */
 }
 @media only screen and (max-width: 1024px) {
-  /* line 13, ../sass/quarks/_title.scss */
+  /* line 13, ../sass/atoms/_title.scss */
   .title {
     font-size: 2.61792em;
   }
 }
 
-/* line 29, ../sass/quarks/_title.scss */
+/* line 29, ../sass/atoms/_title.scss */
 .title--wide {
   /* --- structure --- */
   max-width: 56em;
 }
 
-/* line 34, ../sass/quarks/_title.scss */
+/* line 34, ../sass/atoms/_title.scss */
 .title--leader {
   /* --- structure --- */
   padding: 0 0.16em;
@@ -174,7 +174,7 @@ body {
   color: #afafaf;
 }
 
-/* line 46, ../sass/quarks/_title.scss */
+/* line 46, ../sass/atoms/_title.scss */
 .title--subtitle {
   /* --- structure --- */
   padding: 0 0.16em;
@@ -195,13 +195,13 @@ body {
 /* the following class is relevant only
    if using a small-caps font that does
    not handle numbers appropriately */
-/* line 63, ../sass/quarks/_title.scss */
+/* line 63, ../sass/atoms/_title.scss */
 .title__numbers {
   font-size: 0.7em;
 }
 
 /* Extended written things. */
-/* line 3, ../sass/quarks/_body.scss */
+/* line 3, ../sass/atoms/_body.scss */
 .body {
   /* --- structure --- */
   max-width: 29em;
@@ -212,22 +212,22 @@ body {
   font-weight: 400;
 }
 
-/* line 12, ../sass/quarks/_body.scss */
+/* line 12, ../sass/atoms/_body.scss */
 .body--big {
   font-size: 1.618em;
   /* --- mobile --- */
 }
 @media only screen and (max-width: 1024px) {
-  /* line 12, ../sass/quarks/_body.scss */
+  /* line 12, ../sass/atoms/_body.scss */
   .body--big {
     font-size: 1em;
   }
 }
 
-/* Calls to Action, designed to get 
-the user moving either horizontally 
-(across content), or to have them 
-complete the vertical path (the 
+/* Calls to Action, designed to get
+the user moving either horizontally
+(across content), or to have them
+complete the vertical path (the
 action goal). */
 /* Modules:
 
@@ -237,7 +237,7 @@ action goal). */
 - Vertical Big
 
 */
-/* line 16, ../sass/quarks/_cta.scss */
+/* line 16, ../sass/atoms/_cta.scss */
 .cta {
   /* --- structure --- */
   display: inline-block;
@@ -259,35 +259,35 @@ action goal). */
   /* --- mobile --- */
 }
 @media only screen and (max-width: 1024px) {
-  /* line 16, ../sass/quarks/_cta.scss */
+  /* line 16, ../sass/atoms/_cta.scss */
   .cta {
     background-color: rgba(255, 255, 255, 0.4);
   }
 }
 
-/* line 36, ../sass/quarks/_cta.scss */
+/* line 36, ../sass/atoms/_cta.scss */
 .cta--horizontal {
   /* --- structure --- */
   /* theme */
   color: #00333F;
 }
-/* line 42, ../sass/quarks/_cta.scss */
+/* line 42, ../sass/atoms/_cta.scss */
 .cta--horizontal:hover {
   background: rgba(0, 51, 63, 0.2);
 }
 
-/* line 47, ../sass/quarks/_cta.scss */
+/* line 47, ../sass/atoms/_cta.scss */
 .cta--vertical {
   /* --- structure --- */
   /* theme */
   color: #AA1925;
 }
-/* line 53, ../sass/quarks/_cta.scss */
+/* line 53, ../sass/atoms/_cta.scss */
 .cta--vertical:hover {
   background: rgba(170, 25, 37, 0.2);
 }
 
-/* line 58, ../sass/quarks/_cta.scss */
+/* line 58, ../sass/atoms/_cta.scss */
 .cta--big {
   /* --- structure --- */
   max-width: 11.1em;
@@ -296,13 +296,13 @@ action goal). */
   /* --- mobile --- */
 }
 @media only screen and (max-width: 1024px) {
-  /* line 58, ../sass/quarks/_cta.scss */
+  /* line 58, ../sass/atoms/_cta.scss */
   .cta--big {
     font-size: 1em;
   }
 }
 
-/* line 71, ../sass/quarks/_cta.scss */
+/* line 71, ../sass/atoms/_cta.scss */
 .cta--submit {
   /* --- structure --- */
   cursor: pointer;
@@ -317,11 +317,11 @@ action goal). */
   text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.1);
   font-size: 1em;
 }
-/* line 83, ../sass/quarks/_cta.scss */
+/* line 83, ../sass/atoms/_cta.scss */
 .cta--submit:hover {
   background: rgba(170, 25, 37, 0.2);
 }
-/* line 87, ../sass/quarks/_cta.scss */
+/* line 87, ../sass/atoms/_cta.scss */
 .cta--submit:focus {
   outline: none;
 }
@@ -337,7 +337,7 @@ action goal). */
 - Select Input
 
 */
-/* line 14, ../sass/quarks/_input.scss */
+/* line 14, ../sass/atoms/_input.scss */
 .input {
   /* --- structure --- */
   display: block;
@@ -349,34 +349,34 @@ action goal). */
   line-height: 1.5;
   font-weight: 400;
   background: transparent;
-  /* IE hack for input padding 
+  /* IE hack for input padding
   http://stackoverflow.com/questions/607198/padding-a-text-input-in-ie-possible */
   overflow: visible;
 }
-/* line 28, ../sass/quarks/_input.scss */
+/* line 28, ../sass/atoms/_input.scss */
 .input:focus {
   outline: none;
 }
-/* line 32, ../sass/quarks/_input.scss */
+/* line 32, ../sass/atoms/_input.scss */
 .input::-webkit-input-placeholder {
   color: #afafaf;
 }
-/* line 36, ../sass/quarks/_input.scss */
+/* line 36, ../sass/atoms/_input.scss */
 .input:-moz-placeholder {
   /* Firefox 18- */
   color: #afafaf;
 }
-/* line 40, ../sass/quarks/_input.scss */
+/* line 40, ../sass/atoms/_input.scss */
 .input::-moz-placeholder {
   /* Firefox 19+ */
   color: #afafaf;
 }
-/* line 44, ../sass/quarks/_input.scss */
+/* line 44, ../sass/atoms/_input.scss */
 .input:-ms-input-placeholder {
   color: #afafaf;
 }
 
-/* line 49, ../sass/quarks/_input.scss */
+/* line 49, ../sass/atoms/_input.scss */
 .input--text {
   /* --- structure --- */
   /* theme */
@@ -386,14 +386,14 @@ action goal). */
   border-color: #444;
 }
 
-/* line 57, ../sass/quarks/_input.scss */
+/* line 57, ../sass/atoms/_input.scss */
 .input--radio {
   /* --- structure --- */
   display: inline-block;
   /* theme */
 }
 
-/* line 64, ../sass/quarks/_input.scss */
+/* line 64, ../sass/atoms/_input.scss */
 .input--textarea {
   /* --- structure --- */
   resize: none;
@@ -412,7 +412,7 @@ action goal). */
 - Circle
 
 */
-/* line 11, ../sass/quarks/_image.scss */
+/* line 11, ../sass/atoms/_image.scss */
 .image {
   /* --- structure --- */
   box-sizing: border-box;
@@ -420,7 +420,7 @@ action goal). */
   /* --- theming --- */
 }
 
-/* line 19, ../sass/quarks/_image.scss */
+/* line 19, ../sass/atoms/_image.scss */
 .image--portrait {
   /* --- structure --- */
   max-height: 100%;
@@ -428,14 +428,14 @@ action goal). */
   /* --- theming --- */
 }
 
-/* line 27, ../sass/quarks/_image.scss */
+/* line 27, ../sass/atoms/_image.scss */
 .image--landscape {
   /* --- structure --- */
   max-width: 100%;
   /* --- theming --- */
 }
 
-/* line 34, ../sass/quarks/_image.scss */
+/* line 34, ../sass/atoms/_image.scss */
 .image--brand {
   /* --- structure --- */
   height: 4.2358em;
@@ -443,7 +443,7 @@ action goal). */
   /* --- theming --- */
 }
 
-/* line 42, ../sass/quarks/_image.scss */
+/* line 42, ../sass/atoms/_image.scss */
 .image--rounded {
   /* --- structure --- */
   /* --- theming --- */
@@ -460,7 +460,7 @@ action goal). */
 !!! contains p tags !!!
 
 */
-/* line 13, ../sass/quarks/_caption.scss */
+/* line 13, ../sass/atoms/_caption.scss */
 .caption {
   /* --- structure --- */
   box-sizing: border-box;
@@ -474,20 +474,20 @@ action goal). */
   color: #444;
   /* --- child layout --- */
 }
-/* line 25, ../sass/quarks/_caption.scss */
+/* line 25, ../sass/atoms/_caption.scss */
 .caption .caption__body {
   max-width: none;
   display: block;
 }
 
-/* line 31, ../sass/quarks/_caption.scss */
+/* line 31, ../sass/atoms/_caption.scss */
 .caption--left {
   /* --- structure --- */
   text-align: left;
   /* --- theming --- */
 }
 
-/* line 37, ../sass/quarks/_caption.scss */
+/* line 37, ../sass/atoms/_caption.scss */
 .caption--right {
   /* --- structure --- */
   text-align: right;
@@ -500,15 +500,15 @@ action goal). */
 - Regular
 
 */
-/* line 9, ../sass/quarks/_list-item.scss */
+/* line 9, ../sass/atoms/_list-item.scss */
 .list-item {
   /* --- structure --- */
   /* --- theming --- */
   cursor: pointer;
 }
 
-/* atoms */
-/* Title and some copy. 
+/* groups */
+/* Title and some copy.
 Think 'informative' messages. */
 /* Modules:
 
@@ -520,7 +520,7 @@ Think 'informative' messages. */
 !!! can contain opt-titles !!!
 
 */
-/* line 15, ../sass/atoms/_title-block.scss */
+/* line 15, ../sass/groups/_title-block.scss */
 .title-block {
   /* --- structure --- */
   padding: 0 1em;
@@ -528,47 +528,47 @@ Think 'informative' messages. */
   /* --- child layout --- */
   /* --- mobile --- */
 }
-/* line 22, ../sass/atoms/_title-block.scss */
+/* line 22, ../sass/groups/_title-block.scss */
 .title-block .title, .title-block .body, .title-block .opt-title {
   text-align: center;
   margin: 0 auto;
 }
-/* line 27, ../sass/atoms/_title-block.scss */
+/* line 27, ../sass/groups/_title-block.scss */
 .title-block .opt-title--below {
   margin-bottom: 1em;
 }
-/* line 31, ../sass/atoms/_title-block.scss */
+/* line 31, ../sass/groups/_title-block.scss */
 .title-block .title {
   margin-bottom: 0.5em;
 }
 
-/* line 40, ../sass/atoms/_title-block.scss */
+/* line 40, ../sass/groups/_title-block.scss */
 .title-block__image-block {
   margin-bottom: 1.618em;
 }
-/* line 42, ../sass/atoms/_title-block.scss */
+/* line 42, ../sass/groups/_title-block.scss */
 .title-block__image-block .image--portrait {
   height: auto !important;
 }
 
-/* line 47, ../sass/atoms/_title-block.scss */
+/* line 47, ../sass/groups/_title-block.scss */
 .title-block--left {
   text-align: left;
   /* --- child layout --- */
   /* --- mobile --- */
 }
-/* line 51, ../sass/atoms/_title-block.scss */
+/* line 51, ../sass/groups/_title-block.scss */
 .title-block--left .title, .title-block--left .body, .title-block--left .opt-title {
   text-align: left;
   margin-left: 0;
   margin-right: 0;
 }
-/* line 57, ../sass/atoms/_title-block.scss */
+/* line 57, ../sass/groups/_title-block.scss */
 .title-block--left .body {
   display: inline-block;
 }
 @media only screen and (max-width: 1024px) {
-  /* line 63, ../sass/atoms/_title-block.scss */
+  /* line 63, ../sass/groups/_title-block.scss */
   .title-block--left .title, .title-block--left .body, .title-block--left .opt-title {
     text-align: center;
     margin-left: auto;
@@ -576,7 +576,7 @@ Think 'informative' messages. */
   }
 }
 
-/* line 71, ../sass/atoms/_title-block.scss */
+/* line 71, ../sass/groups/_title-block.scss */
 .title-block--right {
   text-align: right;
   /* --- child layout --- */
@@ -584,28 +584,28 @@ Think 'informative' messages. */
   	 overflowing set container widths */
   /* --- mobile --- */
 }
-/* line 75, ../sass/atoms/_title-block.scss */
+/* line 75, ../sass/groups/_title-block.scss */
 .title-block--right .title, .title-block--right .body, .title-block--right .opt-title {
   text-align: right;
   margin-left: 0;
   margin-right: 0;
 }
-/* line 83, ../sass/atoms/_title-block.scss */
+/* line 83, ../sass/groups/_title-block.scss */
 .title-block--right .title {
   text-indent: -0.15em;
 }
-/* line 87, ../sass/atoms/_title-block.scss */
+/* line 87, ../sass/groups/_title-block.scss */
 .title-block--right .body {
   display: inline-block;
 }
 @media only screen and (max-width: 1024px) {
-  /* line 93, ../sass/atoms/_title-block.scss */
+  /* line 93, ../sass/groups/_title-block.scss */
   .title-block--right .title, .title-block--right .body, .title-block--right .opt-title {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 99, ../sass/atoms/_title-block.scss */
+  /* line 99, ../sass/groups/_title-block.scss */
   .title-block--right .title {
     max-width: 29em;
     text-indent: 0;
@@ -625,7 +625,7 @@ Think 'informative' messages. */
 !!! can contain cta--bigs !!!
 
 */
-/* line 16, ../sass/atoms/_cta-block.scss */
+/* line 16, ../sass/groups/_cta-block.scss */
 .cta-block {
   /* --- structure --- */
   text-align: center;
@@ -635,115 +635,115 @@ Think 'informative' messages. */
   /* --- mobile --- */
 }
 @media only screen and (max-width: 1024px) {
-  /* line 16, ../sass/atoms/_cta-block.scss */
+  /* line 16, ../sass/groups/_cta-block.scss */
   .cta-block {
     padding: 0;
   }
 }
 
-/* line 31, ../sass/atoms/_cta-block.scss */
+/* line 31, ../sass/groups/_cta-block.scss */
 .cta-block--left {
   text-align: left;
   /* --- mobile --- */
 }
 @media only screen and (max-width: 1024px) {
-  /* line 31, ../sass/atoms/_cta-block.scss */
+  /* line 31, ../sass/groups/_cta-block.scss */
   .cta-block--left {
     text-align: center;
   }
 }
 
-/* line 39, ../sass/atoms/_cta-block.scss */
+/* line 39, ../sass/groups/_cta-block.scss */
 .cta-block--right {
   text-align: right;
   /* --- mobile --- */
 }
 @media only screen and (max-width: 1024px) {
-  /* line 39, ../sass/atoms/_cta-block.scss */
+  /* line 39, ../sass/groups/_cta-block.scss */
   .cta-block--right {
     text-align: center;
   }
 }
 
-/* line 47, ../sass/atoms/_cta-block.scss */
+/* line 47, ../sass/groups/_cta-block.scss */
 .cta-block--inline {
   /* --- structure --- */
   /* --- theming --- */
   /* --- child layout --- */
 }
-/* line 54, ../sass/atoms/_cta-block.scss */
+/* line 54, ../sass/groups/_cta-block.scss */
 .cta-block--inline .cta {
   display: inline-block;
   /* margins for central CTAs only */
   /* --- mobile --- */
 }
-/* line 58, ../sass/atoms/_cta-block.scss */
+/* line 58, ../sass/groups/_cta-block.scss */
 .cta-block--inline .cta:nth-child(2n) {
   margin: 0 2.61em;
 }
-/* line 61, ../sass/atoms/_cta-block.scss */
+/* line 61, ../sass/groups/_cta-block.scss */
 .cta-block--inline .cta:last-child {
   margin-right: 0;
 }
 @media only screen and (max-width: 1024px) {
-  /* line 54, ../sass/atoms/_cta-block.scss */
+  /* line 54, ../sass/groups/_cta-block.scss */
   .cta-block--inline .cta {
     display: block;
     max-width: 10em;
     margin: 0 auto 1em auto;
   }
-  /* line 70, ../sass/atoms/_cta-block.scss */
+  /* line 70, ../sass/groups/_cta-block.scss */
   .cta-block--inline .cta:nth-child(2n) {
     margin: 0 auto 1em auto;
   }
-  /* line 73, ../sass/atoms/_cta-block.scss */
+  /* line 73, ../sass/groups/_cta-block.scss */
   .cta-block--inline .cta:last-child {
     margin-right: auto;
   }
 }
 
-/* line 80, ../sass/atoms/_cta-block.scss */
+/* line 80, ../sass/groups/_cta-block.scss */
 .cta-block--stacked {
   /* --- structure --- */
   /* --- theming --- */
   /* --- child layout --- */
 }
-/* line 87, ../sass/atoms/_cta-block.scss */
+/* line 87, ../sass/groups/_cta-block.scss */
 .cta-block--stacked .cta {
   display: block;
   /* margins for central CTAs only */
 }
-/* line 91, ../sass/atoms/_cta-block.scss */
+/* line 91, ../sass/groups/_cta-block.scss */
 .cta-block--stacked .cta:nth-child(2n) {
   margin: 1em 0;
 }
-/* line 94, ../sass/atoms/_cta-block.scss */
+/* line 94, ../sass/groups/_cta-block.scss */
 .cta-block--stacked .cta:last-child {
   margin-bottom: 0;
 }
 
-/* line 101, ../sass/atoms/_cta-block.scss */
+/* line 101, ../sass/groups/_cta-block.scss */
 .cta-block--bar {
   /* --- structure --- */
   /* --- theming --- */
   /* --- child layout --- */
 }
-/* line 108, ../sass/atoms/_cta-block.scss */
+/* line 108, ../sass/groups/_cta-block.scss */
 .cta-block--bar .cta {
   float: left;
-  /* border radii change only for 
+  /* border radii change only for
   inner children */
   border-radius: 0;
   border-left-width: 1px;
   border-right-width: 1px;
 }
-/* line 117, ../sass/atoms/_cta-block.scss */
+/* line 117, ../sass/groups/_cta-block.scss */
 .cta-block--bar .cta:first-child {
   border-left-width: 2px;
   border-top-left-radius: 0.5em;
   border-bottom-left-radius: 0.5em;
 }
-/* line 123, ../sass/atoms/_cta-block.scss */
+/* line 123, ../sass/groups/_cta-block.scss */
 .cta-block--bar .cta:last-child {
   border-right-width: 2px;
   border-top-right-radius: 0.5em;
@@ -758,24 +758,24 @@ Think 'informative' messages. */
 - Inline ('Capture')
 
 */
-/* line 11, ../sass/atoms/_input-block.scss */
+/* line 11, ../sass/groups/_input-block.scss */
 .input-block {
   /* --- structure --- */
   /* --- theming --- */
 }
 
-/* line 17, ../sass/atoms/_input-block.scss */
+/* line 17, ../sass/groups/_input-block.scss */
 .input-block--list {
   /* --- structure --- */
   /* --- theming --- */
   /* --- child layout --- */
 }
-/* line 23, ../sass/atoms/_input-block.scss */
+/* line 23, ../sass/groups/_input-block.scss */
 .input-block--list .input {
   margin-bottom: 1em;
 }
 
-/* line 28, ../sass/atoms/_input-block.scss */
+/* line 28, ../sass/groups/_input-block.scss */
 .input-block--two-up {
   /* --- structure --- */
   /* --- theming --- */
@@ -787,21 +787,21 @@ Think 'informative' messages. */
   display: table;
   clear: both;
 }
-/* line 36, ../sass/atoms/_input-block.scss */
+/* line 36, ../sass/groups/_input-block.scss */
 .input-block--two-up .input {
   width: 46%;
   float: left;
 }
-/* line 39, ../sass/atoms/_input-block.scss */
+/* line 39, ../sass/groups/_input-block.scss */
 .input-block--two-up .input:first-of-type {
   margin-right: 4%;
 }
-/* line 42, ../sass/atoms/_input-block.scss */
+/* line 42, ../sass/groups/_input-block.scss */
 .input-block--two-up .input:last-of-type {
   margin-left: 4%;
 }
 
-/* line 48, ../sass/atoms/_input-block.scss */
+/* line 48, ../sass/groups/_input-block.scss */
 .input-block--inline-submit {
   /* --- structure --- */
   /* --- theming --- */
@@ -813,24 +813,24 @@ Think 'informative' messages. */
   display: table;
   clear: both;
 }
-/* line 56, ../sass/atoms/_input-block.scss */
+/* line 56, ../sass/groups/_input-block.scss */
 .input-block--inline-submit .input, .input-block--inline-submit .cta--submit {
   float: left;
 }
-/* line 60, ../sass/atoms/_input-block.scss */
+/* line 60, ../sass/groups/_input-block.scss */
 .input-block--inline-submit .input {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   border-right-width: 0;
 }
-/* line 66, ../sass/atoms/_input-block.scss */
+/* line 66, ../sass/groups/_input-block.scss */
 .input-block--inline-submit .cta--submit {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   border-color: #444;
 }
 
-/* line 73, ../sass/atoms/_input-block.scss */
+/* line 73, ../sass/groups/_input-block.scss */
 .input-block__label {
   /* --- structure --- */
   /* --- theming --- */
@@ -853,36 +853,36 @@ Think 'informative' messages. */
 !!! can contain __fieldsets !!!
 
 */
-/* line 13, ../sass/atoms/_form-block.scss */
+/* line 13, ../sass/groups/_form-block.scss */
 .form-block {
   /* --- structure --- */
   /* --- theming --- */
   /* --- child layout --- */
 }
-/* line 20, ../sass/atoms/_form-block.scss */
+/* line 20, ../sass/groups/_form-block.scss */
 .form-block .input-block {
   margin-bottom: 1em;
 }
 
-/* line 25, ../sass/atoms/_form-block.scss */
+/* line 25, ../sass/groups/_form-block.scss */
 .form-block--center {
   /* --- structure --- */
   text-align: center;
   /* --- theming --- */
   /* --- child layout --- */
 }
-/* line 33, ../sass/atoms/_form-block.scss */
+/* line 33, ../sass/groups/_form-block.scss */
 .form-block--center .input-block {
   display: inline-block;
 }
 
-/* line 38, ../sass/atoms/_form-block.scss */
+/* line 38, ../sass/groups/_form-block.scss */
 .form-block__fieldset {
   /* --- structure --- */
   /* --- theming --- */
 }
 
-/* line 44, ../sass/atoms/_form-block.scss */
+/* line 44, ../sass/groups/_form-block.scss */
 .form-block__fieldset__opt-title {
   /* --- structure --- */
   margin-bottom: 1em;
@@ -900,7 +900,7 @@ Think 'informative' messages. */
 - 6-up Grid
 
 */
-/* line 14, ../sass/atoms/_image-block.scss */
+/* line 14, ../sass/groups/_image-block.scss */
 .image-block {
   /* --- structure --- */
   box-sizing: border-box;
@@ -908,7 +908,7 @@ Think 'informative' messages. */
   /* --- theming --- */
   /* --- child layout --- */
 }
-/* line 22, ../sass/atoms/_image-block.scss */
+/* line 22, ../sass/groups/_image-block.scss */
 .image-block .caption {
   position: absolute;
   bottom: 1em;
@@ -918,53 +918,53 @@ Think 'informative' messages. */
   /* --- mobile --- */
 }
 @media only screen and (max-width: 1024px) {
-  /* line 22, ../sass/atoms/_image-block.scss */
+  /* line 22, ../sass/groups/_image-block.scss */
   .image-block .caption {
     display: none;
   }
 }
-/* line 36, ../sass/atoms/_image-block.scss */
+/* line 36, ../sass/groups/_image-block.scss */
 .image-block .caption--right {
   right: 1em;
 }
-/* line 40, ../sass/atoms/_image-block.scss */
+/* line 40, ../sass/groups/_image-block.scss */
 .image-block .caption--left {
   left: 1em;
 }
 
-/* line 45, ../sass/atoms/_image-block.scss */
+/* line 45, ../sass/groups/_image-block.scss */
 .image-block--centered {
   /* --- structure --- */
   /* --- theming --- */
   /* --- child layout --- */
 }
-/* line 51, ../sass/atoms/_image-block.scss */
+/* line 51, ../sass/groups/_image-block.scss */
 .image-block--centered .image {
   display: block;
   margin: 0 auto;
 }
 
-/* line 57, ../sass/atoms/_image-block.scss */
+/* line 57, ../sass/groups/_image-block.scss */
 .image-block--full {
   /* --- structure --- */
   /* --- theming --- */
   /* --- child layout --- */
 }
-/* line 63, ../sass/atoms/_image-block.scss */
+/* line 63, ../sass/groups/_image-block.scss */
 .image-block--full .image {
   width: 100%;
 }
-/* line 67, ../sass/atoms/_image-block.scss */
+/* line 67, ../sass/groups/_image-block.scss */
 .image-block--full .image--portrait {
   width: auto;
   height: 100%;
 }
-/* line 72, ../sass/atoms/_image-block.scss */
+/* line 72, ../sass/groups/_image-block.scss */
 .image-block--full .image--landscape {
   height: auto;
 }
 
-/* line 77, ../sass/atoms/_image-block.scss */
+/* line 77, ../sass/groups/_image-block.scss */
 .image-block--grid {
   /* --- structure --- */
   /* --- theming --- */
@@ -977,19 +977,19 @@ Think 'informative' messages. */
   display: table;
   clear: both;
 }
-/* line 84, ../sass/atoms/_image-block.scss */
+/* line 84, ../sass/groups/_image-block.scss */
 .image-block--grid .image {
   float: left;
 }
 
-/* line 94, ../sass/atoms/_image-block.scss */
+/* line 94, ../sass/groups/_image-block.scss */
 .image-block--1grid {
   /* --- structure --- */
   /* --- theming --- */
   /* --- child layout --- */
   /* --- mobile --- */
 }
-/* line 100, ../sass/atoms/_image-block.scss */
+/* line 100, ../sass/groups/_image-block.scss */
 .image-block--1grid .image {
   width: 80%;
   margin: 0 auto;
@@ -997,42 +997,42 @@ Think 'informative' messages. */
   display: block;
 }
 @media only screen and (max-width: 1024px) {
-  /* line 109, ../sass/atoms/_image-block.scss */
+  /* line 109, ../sass/groups/_image-block.scss */
   .image-block--1grid .image {
     width: 50%;
     float: left;
   }
 }
 
-/* line 116, ../sass/atoms/_image-block.scss */
+/* line 116, ../sass/groups/_image-block.scss */
 .image-block--2grid {
   /* --- structure --- */
   /* --- theming --- */
   /* --- child layout --- */
 }
-/* line 122, ../sass/atoms/_image-block.scss */
+/* line 122, ../sass/groups/_image-block.scss */
 .image-block--2grid .image {
   width: 50%;
 }
 
-/* line 127, ../sass/atoms/_image-block.scss */
+/* line 127, ../sass/groups/_image-block.scss */
 .image-block--4grid {
   /* --- structure --- */
   /* --- theming --- */
   /* --- child layout --- */
 }
-/* line 133, ../sass/atoms/_image-block.scss */
+/* line 133, ../sass/groups/_image-block.scss */
 .image-block--4grid .image {
   width: 25%;
 }
 
-/* line 138, ../sass/atoms/_image-block.scss */
+/* line 138, ../sass/groups/_image-block.scss */
 .image-block--6grid {
   /* --- structure --- */
   /* --- theming --- */
   /* --- child layout --- */
 }
-/* line 144, ../sass/atoms/_image-block.scss */
+/* line 144, ../sass/groups/_image-block.scss */
 .image-block--6grid .image {
   width: 16.66%;
 }
@@ -1044,31 +1044,31 @@ Think 'informative' messages. */
 - Inline
 
 */
-/* line 10, ../sass/atoms/_list-block.scss */
+/* line 10, ../sass/groups/_list-block.scss */
 .list-block {
   /* --- structure --- */
   /* --- theming --- */
 }
 
-/* line 16, ../sass/atoms/_list-block.scss */
+/* line 16, ../sass/groups/_list-block.scss */
 .list-block--stacked {
   /* --- structure --- */
   /* --- theming --- */
 }
 
-/* line 22, ../sass/atoms/_list-block.scss */
+/* line 22, ../sass/groups/_list-block.scss */
 .list-block--inline {
   /* --- structure --- */
   /* --- theming --- */
   /* --- child layout --- */
 }
-/* line 28, ../sass/atoms/_list-block.scss */
+/* line 28, ../sass/groups/_list-block.scss */
 .list-block--inline .list-item {
   float: left;
 }
 
-/* molecules */
-/* Large titles and some copy. 
+/* templates */
+/* Large titles and some copy.
 Think 'shouty' messages. */
 /* Modules:
 
@@ -1090,7 +1090,7 @@ Think 'shouty' messages. */
 	|_______________|
 
 */
-/* line 26, ../sass/molecules/_holler-block.scss */
+/* line 26, ../sass/templates/_holler-block.scss */
 .holler-block {
   /* --- structure --- */
   width: 100%;
@@ -1101,125 +1101,125 @@ Think 'shouty' messages. */
   /* --- mobile --- */
 }
 @media only screen and (max-width: 1024px) {
-  /* line 26, ../sass/molecules/_holler-block.scss */
+  /* line 26, ../sass/templates/_holler-block.scss */
   .holler-block {
     height: 100vh;
   }
 }
 @media only screen and (max-height: 768px) {
-  /* line 26, ../sass/molecules/_holler-block.scss */
+  /* line 26, ../sass/templates/_holler-block.scss */
   .holler-block {
     height: 80vh;
   }
 }
 
-/* line 44, ../sass/molecules/_holler-block.scss */
+/* line 44, ../sass/templates/_holler-block.scss */
 .holler-block--full {
   height: 100vh;
 }
 
-/* line 48, ../sass/molecules/_holler-block.scss */
+/* line 48, ../sass/templates/_holler-block.scss */
 .holler-block--small {
   height: 38vh;
 }
 
-/* line 52, ../sass/molecules/_holler-block.scss */
+/* line 52, ../sass/templates/_holler-block.scss */
 .holler-block--backgrounded {
   background-color: #062533;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
-/* line 57, ../sass/molecules/_holler-block.scss */
+/* line 57, ../sass/templates/_holler-block.scss */
 .holler-block--backgrounded * {
   color: #FFFFFF !important;
   border-color: #FFFFFF !important;
 }
 
-/* line 63, ../sass/molecules/_holler-block.scss */
+/* line 63, ../sass/templates/_holler-block.scss */
 .holler-block__section {
   display: table;
   width: 100%;
   margin: 0 auto;
   /* --- child layout --- */
 }
-/* line 70, ../sass/molecules/_holler-block.scss */
+/* line 70, ../sass/templates/_holler-block.scss */
 .holler-block__section > .title-block {
   display: table-cell;
   vertical-align: bottom;
 }
-/* line 75, ../sass/molecules/_holler-block.scss */
+/* line 75, ../sass/templates/_holler-block.scss */
 .holler-block__section > .cta-block, .holler-block__section > .form-block {
   padding-top: 2.61em;
   margin: 0 auto;
 }
 
-/* line 81, ../sass/molecules/_holler-block.scss */
+/* line 81, ../sass/templates/_holler-block.scss */
 .holler-block__section:first-child {
   height: 61.8%;
   /* --- mobile --- */
 }
 @media only screen and (max-width: 1024px) {
-  /* line 81, ../sass/molecules/_holler-block.scss */
+  /* line 81, ../sass/templates/_holler-block.scss */
   .holler-block__section:first-child {
     height: 50%;
   }
 }
 
-/* line 89, ../sass/molecules/_holler-block.scss */
+/* line 89, ../sass/templates/_holler-block.scss */
 .holler-block__section:last-child {
   height: 38.2%;
   /* --- mobile --- */
-  /* hacky child molecules...this needs 
+  /* hacky child templates...this needs
   	 re-thinking */
 }
 @media only screen and (max-width: 1024px) {
-  /* line 89, ../sass/molecules/_holler-block.scss */
+  /* line 89, ../sass/templates/_holler-block.scss */
   .holler-block__section:last-child {
     height: 50%;
   }
 }
-/* line 99, ../sass/molecules/_holler-block.scss */
+/* line 99, ../sass/templates/_holler-block.scss */
 .holler-block__section:last-child .three-up-block__section {
   height: 24vh;
 }
 @media only screen and (max-height: 768px) {
-  /* line 99, ../sass/molecules/_holler-block.scss */
+  /* line 99, ../sass/templates/_holler-block.scss */
   .holler-block__section:last-child .three-up-block__section {
     height: 30.7vh;
   }
 }
 @media only screen and (max-width: 1024px) {
-  /* line 99, ../sass/molecules/_holler-block.scss */
+  /* line 99, ../sass/templates/_holler-block.scss */
   .holler-block__section:last-child .three-up-block__section {
     height: 33%;
   }
 }
-/* line 109, ../sass/molecules/_holler-block.scss */
+/* line 109, ../sass/templates/_holler-block.scss */
 .holler-block__section:last-child .image-block--grid {
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 115, ../sass/molecules/_holler-block.scss */
+/* line 115, ../sass/templates/_holler-block.scss */
 .holler-block--equal .holler-block__section {
   height: 50% !important;
 }
-/* line 117, ../sass/molecules/_holler-block.scss */
+/* line 117, ../sass/templates/_holler-block.scss */
 .holler-block--equal .holler-block__section > .title-block {
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 125, ../sass/molecules/_holler-block.scss */
+/* line 125, ../sass/templates/_holler-block.scss */
 .holler-block--reverse .holler-block__section:first-child {
   height: 38.2%;
 }
-/* line 128, ../sass/molecules/_holler-block.scss */
+/* line 128, ../sass/templates/_holler-block.scss */
 .holler-block--reverse .holler-block__section:last-child {
   height: 61.8%;
 }
-/* line 131, ../sass/molecules/_holler-block.scss */
+/* line 131, ../sass/templates/_holler-block.scss */
 .holler-block--reverse .holler-block__section > .title-block {
   display: table-cell;
   vertical-align: middle;
@@ -1234,7 +1234,7 @@ Think 'shouty' messages. */
 - Text & Content GS Reverse
 
 */
-/* line 12, ../sass/molecules/_media-component.scss */
+/* line 12, ../sass/templates/_media-component.scss */
 .media-component {
   /* --- structure --- */
   width: 100%;
@@ -1245,82 +1245,82 @@ Think 'shouty' messages. */
   /* --- child layout --- */
   /* --- mobile --- */
 }
-/* line 22, ../sass/molecules/_media-component.scss */
+/* line 22, ../sass/templates/_media-component.scss */
 .media-component .slider-block {
   height: 62vh;
 }
 @media only screen and (max-height: 768px) {
-  /* line 22, ../sass/molecules/_media-component.scss */
+  /* line 22, ../sass/templates/_media-component.scss */
   .media-component .slider-block {
     height: 80vh;
   }
 }
 @media only screen and (max-width: 1024px) {
-  /* line 22, ../sass/molecules/_media-component.scss */
+  /* line 22, ../sass/templates/_media-component.scss */
   .media-component .slider-block {
     height: 50vh;
   }
 }
-/* line 30, ../sass/molecules/_media-component.scss */
+/* line 30, ../sass/templates/_media-component.scss */
 .media-component .slider-block .image--portrait {
   height: 62vh;
 }
 @media only screen and (max-height: 768px) {
-  /* line 30, ../sass/molecules/_media-component.scss */
+  /* line 30, ../sass/templates/_media-component.scss */
   .media-component .slider-block .image--portrait {
     height: 80vh;
   }
 }
 @media only screen and (max-width: 1024px) {
-  /* line 30, ../sass/molecules/_media-component.scss */
+  /* line 30, ../sass/templates/_media-component.scss */
   .media-component .slider-block .image--portrait {
     height: 50vh;
   }
 }
 @media only screen and (max-height: 768px) {
-  /* line 12, ../sass/molecules/_media-component.scss */
+  /* line 12, ../sass/templates/_media-component.scss */
   .media-component {
     height: 80vh;
   }
 }
 @media only screen and (max-width: 1024px) {
-  /* line 12, ../sass/molecules/_media-component.scss */
+  /* line 12, ../sass/templates/_media-component.scss */
   .media-component {
     height: 100vh;
   }
 }
 
-/* line 50, ../sass/molecules/_media-component.scss */
+/* line 50, ../sass/templates/_media-component.scss */
 .media-component--gs {
   /* --- structure --- */
   /* --- theming --- */
   /* --- child layout --- */
 }
-/* line 56, ../sass/molecules/_media-component.scss */
+/* line 56, ../sass/templates/_media-component.scss */
 .media-component--gs .media-component__section {
   width: 38.2%;
 }
-/* line 59, ../sass/molecules/_media-component.scss */
+/* line 59, ../sass/templates/_media-component.scss */
 .media-component--gs .media-component__section:first-child, .media-component--gs .media-component__section:last-child {
   width: 61.8%;
 }
 
-/* line 67, ../sass/molecules/_media-component.scss */
+/* line 67, ../sass/templates/_media-component.scss */
 .media-component--reverse {
   /* --- structure --- */
   /* --- theming --- */
   /* --- child layout --- */
 }
-/* line 73, ../sass/molecules/_media-component.scss */
+/* line 73, ../sass/templates/_media-component.scss */
 .media-component--reverse .media-component__section {
   float: left;
 }
-/* line 76, ../sass/molecules/_media-component.scss */
+/* line 76, ../sass/templates/_media-component.scss */
 .media-component--reverse .media-component__section:first-child {
   float: right;
 }
 
-/* line 83, ../sass/molecules/_media-component.scss */
+/* line 83, ../sass/templates/_media-component.scss */
 .media-component__section {
   /* --- structure --- */
   height: 100%;
@@ -1332,54 +1332,54 @@ Think 'shouty' messages. */
   /* --- child layout --- */
   /* --- mobile --- */
 }
-/* line 91, ../sass/molecules/_media-component.scss */
+/* line 91, ../sass/templates/_media-component.scss */
 .media-component__section:first-child {
   display: table;
   height: 61.8%;
   float: left;
 }
-/* line 97, ../sass/molecules/_media-component.scss */
+/* line 97, ../sass/templates/_media-component.scss */
 .media-component__section:last-child {
   height: auto;
 }
-/* line 105, ../sass/molecules/_media-component.scss */
+/* line 105, ../sass/templates/_media-component.scss */
 .media-component__section .cta-block {
   padding-top: 2.61792em;
 }
 @media only screen and (max-width: 1024px) {
-  /* line 83, ../sass/molecules/_media-component.scss */
+  /* line 83, ../sass/templates/_media-component.scss */
   .media-component__section {
     width: 100%;
     height: 50% !important;
     float: none !important;
     padding: 0;
   }
-  /* line 115, ../sass/molecules/_media-component.scss */
+  /* line 115, ../sass/templates/_media-component.scss */
   .media-component__section:last-child {
     height: auto !important;
     position: absolute;
     bottom: 0;
   }
-  /* line 121, ../sass/molecules/_media-component.scss */
+  /* line 121, ../sass/templates/_media-component.scss */
   .media-component__section .cta-block {
     margin-bottom: 2.61792em;
   }
 }
 
-/* line 127, ../sass/molecules/_media-component.scss */
+/* line 127, ../sass/templates/_media-component.scss */
 .media-component__section__title-block {
   display: table-cell;
   vertical-align: bottom;
 }
 
-/* Any number of horizontal blocks 
+/* Any number of horizontal blocks
 in a slider arrangement. */
 /* Modules:
 
 - Slider
 
 */
-/* line 10, ../sass/molecules/_slider-block.scss */
+/* line 10, ../sass/templates/_slider-block.scss */
 .slider-block {
   /* --- structure --- */
   position: relative;
@@ -1387,24 +1387,24 @@ in a slider arrangement. */
   overflow: hidden;
   /* --- child layout --- */
 }
-/* line 14, ../sass/molecules/_slider-block.scss */
+/* line 14, ../sass/templates/_slider-block.scss */
 .slider-block .holler-block, .slider-block .media-component {
   float: left;
 }
 
-/* line 25, ../sass/molecules/_slider-block.scss */
+/* line 25, ../sass/templates/_slider-block.scss */
 .slick-list {
   height: 100%;
 }
 
-/* line 29, ../sass/molecules/_slider-block.scss */
+/* line 29, ../sass/templates/_slider-block.scss */
 .slick-track {
   display: table;
   height: 100%;
 }
 
 /* Slider controls */
-/* line 36, ../sass/molecules/_slider-block.scss */
+/* line 36, ../sass/templates/_slider-block.scss */
 .slick-prev, .slick-next {
   /* --- structure --- */
   position: absolute;
@@ -1418,11 +1418,11 @@ in a slider arrangement. */
   background: transparent;
   /* --- child layout --- */
 }
-/* line 49, ../sass/molecules/_slider-block.scss */
+/* line 49, ../sass/templates/_slider-block.scss */
 .slick-prev:focus, .slick-next:focus {
   outline: none;
 }
-/* line 53, ../sass/molecules/_slider-block.scss */
+/* line 53, ../sass/templates/_slider-block.scss */
 .slick-prev:before, .slick-next:before {
   font-family: "linea-arrows-10" !important;
   content: attr(data-icon);
@@ -1445,66 +1445,66 @@ in a slider arrangement. */
   cursor: pointer;
   font-size: 2.61792em;
 }
-/* line 66, ../sass/molecules/_slider-block.scss */
+/* line 66, ../sass/templates/_slider-block.scss */
 .slick-prev:hover:before, .slick-next:hover:before {
   color: #AA1925;
 }
 
-/* line 73, ../sass/molecules/_slider-block.scss */
+/* line 73, ../sass/templates/_slider-block.scss */
 .slick-prev {
   left: 1em;
 }
-/* line 75, ../sass/molecules/_slider-block.scss */
+/* line 75, ../sass/templates/_slider-block.scss */
 .slick-prev:before {
   content: "\e03f";
 }
 
-/* line 80, ../sass/molecules/_slider-block.scss */
+/* line 80, ../sass/templates/_slider-block.scss */
 .slick-next {
   right: 0;
 }
-/* line 82, ../sass/molecules/_slider-block.scss */
+/* line 82, ../sass/templates/_slider-block.scss */
 .slick-next:before {
   content: "\e04b";
 }
 
-/* line 87, ../sass/molecules/_slider-block.scss */
+/* line 87, ../sass/templates/_slider-block.scss */
 .slider-block__image-block {
   height: 100%;
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 93, ../sass/molecules/_slider-block.scss */
+/* line 93, ../sass/templates/_slider-block.scss */
 .slider-block__title-block {
   height: 100%;
   display: table-cell;
   vertical-align: middle;
 }
-/* line 97, ../sass/molecules/_slider-block.scss */
+/* line 97, ../sass/templates/_slider-block.scss */
 .slider-block__title-block .opt-title {
   margin-bottom: 1em;
 }
 @respond-to (mobile) {
-  /* line 97, ../sass/molecules/_slider-block.scss */
+  /* line 97, ../sass/templates/_slider-block.scss */
   .slider-block__title-block .opt-title {
     margin-bottom: 0;
   }
 }
-/* line 103, ../sass/molecules/_slider-block.scss */
+/* line 103, ../sass/templates/_slider-block.scss */
 .slider-block__title-block .body {
   height: 33%;
   width: 90%;
   max-width: 14em;
 }
 @respond-to (mobile) {
-  /* line 103, ../sass/molecules/_slider-block.scss */
+  /* line 103, ../sass/templates/_slider-block.scss */
   .slider-block__title-block .body {
     opacity: 0;
   }
 }
-/* Three sets of similarly-structured content. 
-Think 'feature lists', or content too small 
+/* Three sets of similarly-structured content.
+Think 'feature lists', or content too small
 to warrant a slider. */
 /* Modules:
 
@@ -1530,7 +1530,7 @@ Modifiers:
   |___________|___________|___________|
 
 */
-/* line 31, ../sass/molecules/_three-up-block.scss */
+/* line 31, ../sass/templates/_three-up-block.scss */
 .three-up-block {
   /* --- structure --- */
   width: 100%;
@@ -1546,18 +1546,18 @@ Modifiers:
   display: table;
   clear: both;
 }
-/* line 43, ../sass/molecules/_three-up-block.scss */
+/* line 43, ../sass/templates/_three-up-block.scss */
 .three-up-block > .title-block, .three-up-block > .cta-block, .three-up-block > .image-block {
   display: table-cell;
   vertical-align: middle;
   padding: 0;
 }
-/* line 49, ../sass/molecules/_three-up-block.scss */
+/* line 49, ../sass/templates/_three-up-block.scss */
 .three-up-block .image {
   max-height: 100%;
 }
 
-/* line 55, ../sass/molecules/_three-up-block.scss */
+/* line 55, ../sass/templates/_three-up-block.scss */
 .three-up-block__section {
   float: left;
   display: table;
@@ -1566,7 +1566,7 @@ Modifiers:
   /* --- mobile --- */
 }
 @media only screen and (max-width: 1024px) {
-  /* line 55, ../sass/molecules/_three-up-block.scss */
+  /* line 55, ../sass/templates/_three-up-block.scss */
   .three-up-block__section {
     float: none;
     width: 100%;
@@ -1574,68 +1574,68 @@ Modifiers:
   }
 }
 
-/* line 68, ../sass/molecules/_three-up-block.scss */
+/* line 68, ../sass/templates/_three-up-block.scss */
 .three-up-block__section__cta-block {
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 73, ../sass/molecules/_three-up-block.scss */
+/* line 73, ../sass/templates/_three-up-block.scss */
 .three-up-block--full {
   /* ---structure --- */
   height: 100vh;
   /* --- child layout --- */
 }
-/* line 78, ../sass/molecules/_three-up-block.scss */
+/* line 78, ../sass/templates/_three-up-block.scss */
 .three-up-block--full > .three-up-block__section {
   height: 100vh;
 }
 @media only screen and (max-width: 1024px) {
-  /* line 78, ../sass/molecules/_three-up-block.scss */
+  /* line 78, ../sass/templates/_three-up-block.scss */
   .three-up-block--full > .three-up-block__section {
     height: 33vh;
   }
 }
-/* line 85, ../sass/molecules/_three-up-block.scss */
+/* line 85, ../sass/templates/_three-up-block.scss */
 .three-up-block--full .image-block {
   height: 100vh;
 }
 
-/* line 90, ../sass/molecules/_three-up-block.scss */
+/* line 90, ../sass/templates/_three-up-block.scss */
 .three-up-block--small {
   /* ---structure --- */
   height: 38vh;
   /* --- child layout --- */
 }
-/* line 95, ../sass/molecules/_three-up-block.scss */
+/* line 95, ../sass/templates/_three-up-block.scss */
 .three-up-block--small > .three-up-block__section {
   height: 38vh;
 }
 @media only screen and (max-width: 1024px) {
-  /* line 95, ../sass/molecules/_three-up-block.scss */
+  /* line 95, ../sass/templates/_three-up-block.scss */
   .three-up-block--small > .three-up-block__section {
     height: 12.7vh;
   }
 }
-/* line 102, ../sass/molecules/_three-up-block.scss */
+/* line 102, ../sass/templates/_three-up-block.scss */
 .three-up-block--small .image-block {
   height: 38vh;
 }
 @media only screen and (max-width: 1024px) {
-  /* line 102, ../sass/molecules/_three-up-block.scss */
+  /* line 102, ../sass/templates/_three-up-block.scss */
   .three-up-block--small .image-block {
     height: 12.7vh;
   }
 }
 
-/* line 110, ../sass/molecules/_three-up-block.scss */
+/* line 110, ../sass/templates/_three-up-block.scss */
 .three-up-block--backgrounded {
   background-color: #AA1925;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
-/* line 115, ../sass/molecules/_three-up-block.scss */
+/* line 115, ../sass/templates/_three-up-block.scss */
 .three-up-block--backgrounded * {
   color: #FFFFFF !important;
   border-color: #FFFFFF !important;
@@ -1670,7 +1670,7 @@ Modifiers:
   |___________|___________|
 
 */
-/* line 33, ../sass/molecules/_two-up-block.scss */
+/* line 33, ../sass/templates/_two-up-block.scss */
 .two-up-block {
   /* --- structure --- */
   width: 100%;
@@ -1686,77 +1686,77 @@ Modifiers:
   display: table;
   clear: both;
 }
-/* line 44, ../sass/molecules/_two-up-block.scss */
+/* line 44, ../sass/templates/_two-up-block.scss */
 .two-up-block > .two-up-block__section {
   float: left;
   display: table;
   height: 100%;
   width: 50%;
 }
-/* line 51, ../sass/molecules/_two-up-block.scss */
+/* line 51, ../sass/templates/_two-up-block.scss */
 .two-up-block .title-block, .two-up-block .cta-block, .two-up-block .image-block, .two-up-block .form-block {
   display: table-cell;
   vertical-align: middle;
   padding: 0;
 }
-/* line 57, ../sass/molecules/_two-up-block.scss */
+/* line 57, ../sass/templates/_two-up-block.scss */
 .two-up-block .image {
   max-height: 100%;
 }
 
-/* line 63, ../sass/molecules/_two-up-block.scss */
+/* line 63, ../sass/templates/_two-up-block.scss */
 .two-up-block--full {
   /* ---structure --- */
   height: 100vh;
   /* --- child layout --- */
 }
-/* line 68, ../sass/molecules/_two-up-block.scss */
+/* line 68, ../sass/templates/_two-up-block.scss */
 .two-up-block--full > .two-up-block__section {
   height: 100vh;
 }
-/* line 72, ../sass/molecules/_two-up-block.scss */
+/* line 72, ../sass/templates/_two-up-block.scss */
 .two-up-block--full .image-block {
   height: 100vh;
 }
 
-/* line 77, ../sass/molecules/_two-up-block.scss */
+/* line 77, ../sass/templates/_two-up-block.scss */
 .two-up-block--small {
   /* ---structure --- */
   height: 38vh;
   /* --- child layout --- */
 }
-/* line 82, ../sass/molecules/_two-up-block.scss */
+/* line 82, ../sass/templates/_two-up-block.scss */
 .two-up-block--small > .two-up-block__section {
   height: 38vh;
 }
-/* line 86, ../sass/molecules/_two-up-block.scss */
+/* line 86, ../sass/templates/_two-up-block.scss */
 .two-up-block--small .image-block {
   height: 38vh;
 }
 
-/* line 91, ../sass/molecules/_two-up-block.scss */
+/* line 91, ../sass/templates/_two-up-block.scss */
 .two-up-block--backgrounded {
   background-color: #AA1925;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
-/* line 96, ../sass/molecules/_two-up-block.scss */
+/* line 96, ../sass/templates/_two-up-block.scss */
 .two-up-block--backgrounded * {
   color: #FFFFFF !important;
   border-color: #FFFFFF !important;
 }
 
-/* line 104, ../sass/molecules/_two-up-block.scss */
+/* line 104, ../sass/templates/_two-up-block.scss */
 .two-up-block--gs > .two-up-block__section:first-child {
   width: 61.8%;
 }
-/* line 107, ../sass/molecules/_two-up-block.scss */
+/* line 107, ../sass/templates/_two-up-block.scss */
 .two-up-block--gs > .two-up-block__section:last-child {
   width: 38.2%;
 }
 
-/* line 114, ../sass/molecules/_two-up-block.scss */
+/* line 114, ../sass/templates/_two-up-block.scss */
 .two-up-block--reverse > .two-up-block__section {
   float: right;
 }
@@ -1768,7 +1768,7 @@ Modifiers:
 - Inline
 
 */
-/* line 10, ../sass/molecules/_nav-block.scss */
+/* line 10, ../sass/templates/_nav-block.scss */
 .nav-block {
   /* --- structure --- */
   height: 4.2358em;
@@ -1789,44 +1789,44 @@ Modifiers:
   display: table;
   clear: both;
 }
-/* line 25, ../sass/molecules/_nav-block.scss */
+/* line 25, ../sass/templates/_nav-block.scss */
 .nav-block .image-block {
   float: left;
 }
 @media only screen and (max-width: 1024px) {
-  /* line 10, ../sass/molecules/_nav-block.scss */
+  /* line 10, ../sass/templates/_nav-block.scss */
   .nav-block {
     display: none;
   }
 }
 
-/* line 35, ../sass/molecules/_nav-block.scss */
+/* line 35, ../sass/templates/_nav-block.scss */
 .nav-block__list-block {
   float: right;
   /* override when first-child (i.e. no brand) */
 }
-/* line 37, ../sass/molecules/_nav-block.scss */
+/* line 37, ../sass/templates/_nav-block.scss */
 .nav-block__list-block .list-item {
   line-height: 4.2358em;
 }
-/* line 40, ../sass/molecules/_nav-block.scss */
+/* line 40, ../sass/templates/_nav-block.scss */
 .nav-block__list-block a {
   margin: 0 1.618em;
   color: #444;
   text-decoration: none;
   font-weight: 500;
 }
-/* line 48, ../sass/molecules/_nav-block.scss */
+/* line 48, ../sass/templates/_nav-block.scss */
 .nav-block__list-block:first-child {
   float: left;
 }
 
-/* line 53, ../sass/molecules/_nav-block.scss */
+/* line 53, ../sass/templates/_nav-block.scss */
 .nav-block__cta-block {
   float: right;
   line-height: 4.2358em;
 }
-/* line 56, ../sass/molecules/_nav-block.scss */
+/* line 56, ../sass/templates/_nav-block.scss */
 .nav-block__cta-block .cta {
   background-color: rgba(255, 255, 255, 0.4);
 }
