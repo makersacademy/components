@@ -5,13 +5,6 @@ class CaptionNewlinesToCaptionBodiesHelperWrapper
 end
 
 describe CaptionNewlinesToCaptionBodiesHelperWrapper do
-  it "translates newline entities to an array of hashes" do
-    caption = "Lorem Ipsum Dolor"
-    subject.newlines_to_caption_bodies(caption).each do | entity |
-      expect(entity).to be_a Hash
-    end
-  end
-
   it "translates newline entities to caption body hashes correctly" do
     caption = "Lorem\nIpsum Dolor\nSit Amet Consectetur"
     expected_caption_bodies = [
