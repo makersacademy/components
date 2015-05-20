@@ -26,8 +26,6 @@
 	@include respond-to(mobile) {
 		padding: 0;
 	}
-
-	@include show-outline;
 }
 
 .cta-block--left {

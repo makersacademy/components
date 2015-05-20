@@ -1,12 +1,14 @@
 <% component = "nav-block" %>
 
 <nav class="<%= component_classes(component) %>">
-<div class="container">
-  <%= partial(:'groups/image-block', locals: {
-    parent: component,
-    images: [logo.merge(modifiers: %w(portrait brand))]
-  }) %>
-  <%= partial(:'groups/cta-block', locals: { parent: component, ctas: [call_to_action.merge(modifiers: "vertical")]}) %>
-  <%= partial(:'groups/list-block', locals: { parent: component, list_items: links, modifiers: "inline" }) %>
-</div>
+  <div class="container">
+    <% if locals[:logo] %>
+      <%= partial(:'groups/image-block', locals: {
+        parent: component,
+        images: [logo.merge(modifiers: %w(portrait brand))]
+      }) %>
+    <% end %>
+    <%= partial(:'groups/cta-block', locals: { parent: component, ctas: [call_to_action.merge(modifiers: "vertical")]}) %>
+    <%= partial(:'groups/list-block', locals: { parent: component, list_items: links, modifiers: "inline" }) %>
+  </div>
 </nav>

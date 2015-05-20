@@ -79,7 +79,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
    declared in _functions.scss */
 /* set on the body only */
 /* --- Color --- */
-/* all colors are from
+/* all colors are from 
    https://drive.google.com/drive/u/0/#folders/0B3zMV1alL-hBREJ3Qjd0ZlVfUm8/0B3zMV1alL-hBVmlHSENfV0FUeWc/0B3zMV1alL-hBX1BOaHNjaDBxV00 */
 /* black */
 /* dark blue */
@@ -224,10 +224,10 @@ body {
   }
 }
 
-/* Calls to Action, designed to get
-the user moving either horizontally
-(across content), or to have them
-complete the vertical path (the
+/* Calls to Action, designed to get 
+the user moving either horizontally 
+(across content), or to have them 
+complete the vertical path (the 
 action goal). */
 /* Modules:
 
@@ -349,7 +349,7 @@ action goal). */
   line-height: 1.5;
   font-weight: 400;
   background: transparent;
-  /* IE hack for input padding
+  /* IE hack for input padding 
   http://stackoverflow.com/questions/607198/padding-a-text-input-in-ie-possible */
   overflow: visible;
 }
@@ -508,7 +508,7 @@ action goal). */
 }
 
 /* groups */
-/* Title and some copy.
+/* Title and some copy. 
 Think 'informative' messages. */
 /* Modules:
 
@@ -1372,7 +1372,7 @@ Think 'shouty' messages. */
   vertical-align: bottom;
 }
 
-/* Any number of horizontal blocks
+/* Any number of horizontal blocks 
 in a slider arrangement. */
 /* Modules:
 
@@ -1503,8 +1503,8 @@ in a slider arrangement. */
     opacity: 0;
   }
 }
-/* Three sets of similarly-structured content.
-Think 'feature lists', or content too small
+/* Three sets of similarly-structured content. 
+Think 'feature lists', or content too small 
 to warrant a slider. */
 /* Modules:
 
@@ -1767,7 +1767,7 @@ Modifiers:
 - Stacked
 - Inline
 
-*/
+ */
 /* line 10, ../sass/templates/_nav-block.scss */
 .nav-block {
   /* --- structure --- */
@@ -1780,7 +1780,6 @@ Modifiers:
   /* --- theming --- */
   background: rgba(255, 255, 255, 0.8);
   box-shadow: 0px 2px 1px 0px rgba(175, 175, 175, 0.2);
-  /* --- child layout --- */
   /* --- mobile --- */
 }
 /* line 83, ../sass/_mixins.scss */
@@ -1789,15 +1788,16 @@ Modifiers:
   display: table;
   clear: both;
 }
-/* line 25, ../sass/templates/_nav-block.scss */
-.nav-block .image-block {
-  float: left;
-}
 @media only screen and (max-width: 1024px) {
   /* line 10, ../sass/templates/_nav-block.scss */
   .nav-block {
     display: none;
   }
+}
+
+/* line 31, ../sass/templates/_nav-block.scss */
+.nav-block__image-block {
+  float: left;
 }
 
 /* line 35, ../sass/templates/_nav-block.scss */
