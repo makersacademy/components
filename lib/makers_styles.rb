@@ -1,4 +1,5 @@
 require "makers_styles/version"
+require "makers_styles/helpers"
 
 module MakersStyles
 
