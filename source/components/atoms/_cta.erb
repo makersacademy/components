@@ -1,3 +1,5 @@
 <% component = "cta" %>
 
-<%= link_to "#{text}", "#{link}", class: component_classes(component, locals) %>
+<a class="<%= component_classes(component, locals) %>" href="<%= link %>">
+  <%= text %>
+</a>
