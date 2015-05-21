@@ -1,0 +1,23 @@
+<% component = "form-block" %>
+
+<div class="<%= component_classes(component, locals) %>">
+<form action="<%= action %>" method="<%= method %>">
+  <% inputs.each do | input | %>
+    <div class="input-block">
+      <% if input[:label] %>
+        <label class="label input-block__label" for="<%= input[:name] %>"><%= input[:label] %></label>
+      <% end %>
+      <%= partial :"atoms/input", locals: {
+        modifiers: input[:input_type],
+        input_type: input[:input_type],
+        name: input[:name],
+        placeholder: input[:placeholder]
+      } %>
+    </div>
+  <% end %>
+
+<div class="input-block">
+  <input class="cta cta--submit" type="submit" />
+</div>
+</form>
+</div>
