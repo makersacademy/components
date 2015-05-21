@@ -31,13 +31,15 @@
       <%= partial :"components/groups/form-block", locals: {
           action: "/",
           method: "post",
-          inputs: [
-            {
-              input_type: "text",
-              name: "capture",
-              placeholder: "Capture something...",
-              label: "Capture:"
-            }
+          input_blocks: [
+            [
+              {
+                input_type: "text",
+                name: "capture",
+                placeholder: "Capture something...",
+                label: "Capture:"
+              }
+            ]
           ]
       } %>
 
