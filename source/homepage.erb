@@ -1,33 +1,30 @@
 <div class="page">
 
-  <nav class="nav-block">
-    <div class="container">
-      <ul class="list-block list-block--inline nav-block__list-block">
-        <li class="list-item">
-          <a href="#">Graduates</a>
-        </li>
-        <li class="list-item">
-          <a href="#">Partners</a>
-        </li>
-        <li class="list-item">
-          <a href="#">Curriculum</a>
-        </li>
-      </ul>
-      <div class="cta-block nav-block__cta-block">
-        <a href="#" class="cta cta--vertical">Apply</a>
-      </div>
-    </div>
-  </nav>
-  
+  <!-- BEGIN nav -->
+
+  <%= partial(:'templates/nav', locals: {
+    call_to_action: {
+      text: "Apply",
+      link: "#"
+    },
+    links: [
+      { text: "Graduates", link: "graduates" },
+      { text: "Partners", link: "partners" },
+      { text: "Curriculum", link: "curriculum" }
+    ]
+  }) %>
+
+  <!-- END nav -->
+
   <div class="container container--full">
-    
+
     <!-- BEGIN top splash -->
 
-    <div class="holler-block holler-block--full holler-block--backgrounded" style="background-image: url('images/test-assets/splash-bg.jpg');">
+    <div class="holler-block holler-block--full holler-block--backgrounded" style="background-image: url('/images/test-assets/splash-bg.jpg');">
       <section class="holler-block__section">
         <div class="title-block">
           <div class="image-block image-block--centered title-block__image-block">
-            <img class="image image--landscape image-block__image" src="images/test-assets/makers-brandmark.png" alt="Makers Academy logo">
+            <img class="image image--landscape image-block__image" src="/images/test-assets/makers-brandmark.png" alt="Makers Academy logo">
           </div>
           <h1 class="title title--wide title-block__title">
             Learn to Code in <span class="title__numbers">12</span> weeks
@@ -56,58 +53,38 @@
 
     <!-- BEGIN grads -->
 
-    <div class="media-component">
-      <div class="container">
-      
-        <section class="media-component__section">
-          <div class="title-block title-block--left media-component__section__title-block">
-            <h3 class="opt-title opt-title--above title-block__leader">
-              Meet
-            </h3>
-            <h1 class="title title-block__title">
-              Our Grads
-            </h1>
-            <p class="body title-block__body">
-              We&rsquo;ve graduated over 300 beginners into their dream
-              jobs as junior developers. Some were looking for a
-              career change, others to define themselves.
-            </p>
-          </div>
-        </section>
-        <section class="media-component__section">
-          <div class="slider-block">
-            <div class="image-block image-block--full image-block--centered slider-block__image-block">
-              <img class="image image--portrait image-block__image" src="images/test-assets/test-grad.png" alt="A test graduate, looking at the camera.">
-              <figcaption class="caption caption--right image-block__caption">
-                <p>Firstname Lastname</p>
-                <p>Cohort of 2015</p>
-                <p>Now a Junior Developer at Companyname</p>
-              </figcaption>
-            </div>
-            <div class="image-block image-block--full image-block--centered slider-block__image-block">
-              <img class="image image--portrait image-block__image" src="http://placehold.it/400x600&text=400x600" alt="A gray box with the text '400x600'">
-              <figcaption class="caption caption--right image-block__caption">
-                <p>Differentname Fooname</p>
-                <p>Cohort of 2014</p>
-                <p>Now a Junior Developer at Othername</p>
-              </figcaption>
-            </div>
-          </div>
-        </section>
-        <section class="media-component__section">
-          <div class="cta-block cta-block--left">
-            <a href="#" class="cta cta--horizontal">Read Grad Stories</a>
-          </div>
-        </section>
-
-      </div>
-    </div>
+    <%= partial "components/templates/media-component--with-slider", locals: {
+        leader: "Meet",
+        title: "Our Grads",
+        body_copy: "We&rsquo;ve graduated over 300 beginners into their dream jobs as junior developers. Some were looking for a career change, others to define themselves.",
+        cta: {
+          text: "Read Grad Stories",
+          link: "/graduates",
+          type: "horizontal"
+        },
+        slider_content: [
+          {
+            content_type: "image",
+            src: "/images/test-assets/test-grad.png",
+            orientation: "portrait",
+            alt: "A test graduate, looking at the camera.",
+            caption: "Firstname Lastname\nCohort of 2015\nNow a Junior Developer at CompanyName"
+          },
+          {
+            content_type: "image",
+            src: "http://placehold.it/400x600&text=400x600",
+            orientation: "portrait",
+            alt: "A gray box with the text '400x600'",
+            caption: "Othername Lastname\nCohort of 2015\nNow a Junior Developer at OtherCompanyName"
+          }
+        ]
+      } %>
 
     <!-- END grads -->
 
     <!-- BEGIN hiring partners -->
 
-    <div class="holler-block holler-block--backgrounded" style="background-image: url('images/test-assets/hiring-bg.jpg');">
+    <div class="holler-block holler-block--backgrounded" style="background-image: url('/images/test-assets/hiring-bg.jpg');">
       <div class="holler-block__section">
         <div class="title-block">
           <h3 class="opt-title opt-title--above title-block__leader">
@@ -128,8 +105,8 @@
           <div class="three-up-block">
             <section class="three-up-block__section">
               <div class="image-block image-block--grid image-block--1grid">
-                <img class="image image--landscape image-block__image" src="images/test-assets/deloitte-logo.png" alt="Deloitte logo" />
-                <img class="image image--landscape image-block__image" src="images/test-assets/springer-logo.png" alt="Springer logo" />
+                <img class="image image--landscape image-block__image" src="/images/test-assets/deloitte-logo.png" alt="Deloitte logo" />
+                <img class="image image--landscape image-block__image" src="/images/test-assets/springer-logo.png" alt="Springer logo" />
               </div>
             </section>
             <section class="three-up-block__section">
@@ -139,8 +116,8 @@
             </section>
             <section class="three-up-block__section">
               <div class="image-block image-block--grid image-block--1grid">
-                <img class="image image--landscape image-block__image" src="images/test-assets/ctm-logo.png" alt="Compare the Market logo" />
-                <img class="image image--landscape image-block__image" src="images/test-assets/thoughtworks-logo.png" alt="Thoughtworks logo" />
+                <img class="image image--landscape image-block__image" src="/images/test-assets/ctm-logo.png" alt="Compare the Market logo" />
+                <img class="image image--landscape image-block__image" src="/images/test-assets/thoughtworks-logo.png" alt="Thoughtworks logo" />
               </div>
             </section>
           </div>
@@ -152,10 +129,36 @@
 
     <!-- BEGIN curriculum -->
 
+    <%= partial "components/templates/media-component--with-slider", locals: {
+        modifiers: ["reverse"],
+        leader: "A world-leading",
+        title: "Curriculum",
+        body_copy: "We&rsquo;ve graduated over 300 beginners into their dream jobs as junior developers. Some were looking for a career change, others to define themselves.",
+        cta: {
+          text: "Our Education Philosophy",
+          link: "/curriculum",
+          type: "horizontal"
+        },
+        slider_content: [
+          {
+            content_type: "image",
+            src: "/images/test-assets/test-curric.jpg",
+            orientation: "portrait",
+            alt: "Rails is a web application framework for large systems."
+          },
+          {
+            content_type: "image",
+            src: "/images/test-assets/test-curric.jpg",
+            orientation: "portrait",
+            alt: "Rails is a web application framework for large systems."
+          }
+        ]
+      } %>
+
     <div class="media-component media-component--reverse">
 
       <div class="container">
-      
+
         <section class="media-component__section">
           <div class="title-block title-block--right media-component__section__title-block">
             <h3 class="opt-title opt-title--above title-block__leader">
@@ -174,11 +177,11 @@
         <section class="media-component__section">
           <div class="slider-block">
             <div class="image-block image-block--centered slider-block__image-block">
-              <img class="image image--portrait image-block__image" src="images/test-assets/test-curric.jpg" alt="Rasterized Ruby on Rails block">
+              <img class="image image--portrait image-block__image" src="/images/test-assets/test-curric.jpg" alt="Rasterized Ruby on Rails block">
             </div>
             <div class="title-block slider-block__title-block">
               <div class="image-block image-block--centered title-block__image-block">
-                <img class="image image--portrait image-block__image" src="images/test-assets/rails-logo.png" alt="Ruby on Rails logo">
+                <img class="image image--portrait image-block__image" src="/images/test-assets/rails-logo.png" alt="Ruby on Rails logo">
               </div>
               <h1 class="opt-title title-block__opt-title">
                 Rails
@@ -203,7 +206,7 @@
 
     <!-- BEGIN apply -->
 
-    <div class="holler-block holler-block--backgrounded" style="background-image: url('images/test-assets/apply-bg.jpg');">
+    <div class="holler-block holler-block--backgrounded" style="background-image: url('/images/test-assets/apply-bg.jpg');">
       <div class="holler-block__section">
         <div class="title-block">
           <h1 class="title title-block__title">
@@ -234,7 +237,7 @@
       </section>
       <section class="three-up-block__section">
         <div class="image-block image-block--centered">
-          <img class="image image--portrait image-block__image" src="images/test-assets/footer-brand.png" alt="Makers Academy Logo">
+          <img class="image image--portrait image-block__image" src="/images/test-assets/footer-brand.png" alt="Makers Academy Logo">
         </div>
       </section>
       <section class="three-up-block__section">

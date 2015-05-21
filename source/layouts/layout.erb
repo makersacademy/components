@@ -25,7 +25,9 @@
   </head>
 
   <body class="<%= page_classes %>">
-    <%= yield %>
+    <div class="page">
+      <%= yield %>
+    </div>
 
     <!-- other scripts -->
     <%= javascript_include_tag  "all" %>

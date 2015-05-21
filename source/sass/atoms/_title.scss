@@ -1,0 +1,65 @@
+/* Main site header copy. */
+
+/* Modules:
+
+- Regular
+- Wide
+
+!!! can contain __numbers when using Futura
+
+*/
+
+
+.title {
+	/* --- structure --- */
+  max-width: 29em;
+
+	/* --- theming --- */
+	@include default-header-font-styling;
+	font-size: $font-size-3;
+  color: $color-6;
+
+  /* --- mobile --- */
+  @include respond-to(mobile) {
+    font-size: $font-size-2;
+  }
+
+}
+
+.title--wide {
+  /* --- structure --- */
+  max-width: 56em;
+}
+
+.title--leader {
+  /* --- structure --- */
+  padding: 0 0.16em;
+  max-width: none;
+  margin-bottom: 0.25em !important;
+
+  /* --- theme --- */
+  font-size: $font-size-1;
+  @include default-header-font-styling;
+  color: $color-7;
+}
+
+.title--subtitle {
+  /* --- structure --- */
+  padding: 0 0.16em;
+  max-width: none;
+  margin-top: -0.5em !important;
+  margin-bottom: 1em !important;
+
+  /* --- theme --- */
+  font-size: $font-size-1;
+  @include default-header-font-styling;
+  color: $color-7;
+}
+
+/* the following class is relevant only
+   if using a small-caps font that does
+   not handle numbers appropriately */
+
+.title__numbers {
+  font-size: 0.7em;
+}
