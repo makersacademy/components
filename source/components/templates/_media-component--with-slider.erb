@@ -6,7 +6,7 @@
   <div class="container">
 
     <section class="media-component__section">
-      <%= partial 'components/groups/title-block', locals: {
+      <%= partial 'groups/title-block', locals: {
         parent: "media-component__section",
         modifiers: alignment_modifiers,
         titles: [
@@ -27,7 +27,7 @@
       <div class="slider-block">
         <% slider_content.each do | slider_item | %>
           <% if slider_item[:content_type] === "image" %>
-            <%= partial "components/groups/image-block", locals: {
+            <%= partial "groups/image-block", locals: {
                 parent: "slider-block",
                 modifiers: ["full", "centered"],
                 images: [
@@ -51,7 +51,7 @@
     </section>
 
     <section class="media-component__section">
-      <%= partial "components/groups/cta-block", locals: {
+      <%= partial "groups/cta-block", locals: {
         parent: "media-component__section",
         modifiers: alignment_modifiers,
         ctas: [

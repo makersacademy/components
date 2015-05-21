@@ -3,7 +3,7 @@
 <div class="<%= component_classes(component, locals) %>">
 
   <% images.each do | image | %>
-    <%= partial "components/atoms/image", locals: {
+    <%= partial "atoms/image", locals: {
         parent: component,
         modifiers: image.fetch(:modifiers, []),
         src: image[:src],
@@ -12,7 +12,7 @@
   <% end %>
 
   <% if defined?(caption) %>
-    <%= partial "components/atoms/caption", locals: {
+    <%= partial "atoms/caption", locals: {
         parent: component,
         modifiers: caption[:modifiers],
         bodies: caption[:bodies]

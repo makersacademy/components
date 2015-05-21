@@ -4,7 +4,7 @@
 <div class="<%= component_classes(component, locals) %>">
 
   <% ctas.each do | cta | %>
-    <%= partial "components/atoms/cta", locals: {
+    <%= partial "atoms/cta", locals: {
       parent: component,
       text: cta[:text],
       link: cta[:link],

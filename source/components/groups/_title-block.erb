@@ -5,7 +5,7 @@
 
   <% titles.each do | title | %>
 
-    <%= partial 'components/atoms/title', locals: {
+    <%= partial 'atoms/title', locals: {
       parent: component,
       text: title[:text],
       modifiers: title[:modifiers]
@@ -14,7 +14,7 @@
   <% end %>
 
 
-  <%= partial 'components/atoms/body', locals: {
+  <%= partial 'atoms/body', locals: {
     parent: component,
     text: body[:text],
     modifiers: body[:modifiers]

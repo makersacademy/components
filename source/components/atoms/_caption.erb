@@ -2,7 +2,7 @@
 
 <figcaption class="<%= component_classes(component, locals) %>">
   <% bodies.each do | body | %>
-    <%= partial "components/atoms/body", locals: {
+    <%= partial "atoms/body", locals: {
       parent: component,
       text: body[:text],
       modifiers: body[:modifiers]
