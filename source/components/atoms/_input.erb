@@ -1,0 +1,32 @@
+<% component = "input" %>
+<% input_type = locals.fetch(:input_type, "text") %>
+
+<% if input_type == "text" %>
+
+<input class="<%= component_classes(component, locals) %>" type="text" name="<%= name %>" placeholder="<%= locals.fetch(:placeholder, "") %>" />
+
+<% elsif input_type == "tel" %>
+
+<input class="<%= component_classes(component, locals) %>" type="tel" name="<%= name %>" placeholder="<%= locals.fetch(:placeholder, "") %>" />
+
+<% elsif input_type == "email" %>
+
+<input class="<%= component_classes(component, locals) %>" type="email" name="<%= name %>" placeholder="<%= locals.fetch(:placeholder, "") %>" />
+
+<% elsif input_type == "textarea" %>
+
+<textarea class="<%= component_classes(component, locals) %>" name="<%= name %>" placeholder="<%= locals.fetch(:placeholder, "") %>"></textarea>
+
+<% elsif input_type == "select" %>
+
+<select class="<%= component_classes(component, locals) %>" name="<%= name %>">
+  <% options.each_with_index do | option, index | %>
+    <% if option[:selected] %>
+      <option value="<%= option[:value] %>" selected><%= option[:label] %></option>
+    <% else %>
+      <option value="<%= option[:value] %>"><%= option[:label] %></option>
+    <% end %>
+  <% end %>
+</select>
+
+<% end %>

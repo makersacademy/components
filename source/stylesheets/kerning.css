@@ -101,3 +101,8 @@
 .kern-z, .kern-Z {
   
 }
+
+/* last letter always has no letter spacing at all */
+span[class^='kern'], span[class*=' kern']{
+    letter-spacing: -999px;
+}
