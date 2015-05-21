@@ -20,6 +20,7 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "middleman", ["~>3.3.12"]
   spec.add_development_dependency "middleman-livereload", ["~>3.1.0"]
+  spec.add_development_dependency "middleman-gh-pages", ["~>0.0.3"]
   spec.add_development_dependency "compass", "~>1.0"
   spec.add_development_dependency "singularitygs", "~>1.4"
   spec.add_development_dependency "sass", "~>3.3"
