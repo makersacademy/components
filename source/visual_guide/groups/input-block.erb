@@ -1,0 +1,123 @@
+<div class="page">
+
+	<div class="container">
+
+		<div class="holler-block holler-block--small">
+			<div class="holler-block__section">
+				<div class="title-block">
+					<h1 class="title title-block__title">Input Block</h1>
+					<h3 class="opt-title opt-title--below title-block__subtitle">group</h3>
+					<p class="body title-block__body">
+						For separating inputs within forms.
+					</p>
+				</div>
+			</div>
+			<div class="holler-block__section"></div>
+		</div>
+
+		<h3>Modules</h3>
+		<div class="example">
+
+			<!-- BEGIN examples -->
+			
+			<hr>
+			<span class="label">Single Input Block</span>
+			<hr>
+			<%= partial :"groups/input-block", locals: {
+					inputs: [
+						{
+							modifiers: "text",
+							input_type: "text",
+							label: "Capture something...",
+							name: "capture",
+							placeholder: "Capture something..."
+						}
+					]
+				} %>
+
+			<hr>
+			<span class="label">Input Block List</span>
+			<hr>
+			<%= partial :"groups/input-block", locals: {
+					modifiers: "list",
+					inputs: [
+						{
+							label: "Capture something (1)...",
+							modifiers: "text",
+							input_type: "text",
+							name: "capture_1",
+							placeholder: "Capture something..."
+							},
+							{
+								label: "Capture something (2)...",
+								modifiers: "text",
+								input_type: "text",
+								name: "capture_2",
+								placeholder: "Capture something else..."
+							}
+					]
+				} %>
+
+			<hr>
+			<span class="label">Two-up Input Block</span>
+			<hr>
+			<%= partial :"groups/input-block", locals: {
+					modifiers: "two-up",
+					inputs: [
+						{
+							label: "Capture something (1)...",
+							modifiers: "text",
+							input_type: "text",
+							name: "capture_1",
+							placeholder: "Capture something..."
+						},
+						{
+							label: "Capture something (2)...",
+							modifiers: "text",
+							input_type: "text",
+							name: "capture_2",
+							placeholder: "Capture something else..."
+						}
+					]
+				} %>
+
+			<hr>
+			<span class="label">Inline (&lsquo;Capture&rsquo;) Input Block</span>
+			<hr>
+			<%= partial :"groups/input-block", locals: {
+					modifiers: "inline-submit",
+					inputs: [
+						{
+							label: "Capture something (1)...",
+							modifiers: "text",
+							input_type: "text",
+							name: "capture_1",
+							placeholder: "Capture something..."
+						},
+						{ input_type: "submit" }
+					]
+				} %>
+
+			<!-- END examples -->
+
+		</div>
+
+		<div class="content">
+			<div class="usage">
+				...How to use...
+			</div>
+			<div class="code">
+				<div class="html">
+					<pre>
+
+					</pre>
+				</div>
+				<div class="css">
+					<pre></pre>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+</div>

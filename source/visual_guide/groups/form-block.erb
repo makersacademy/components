@@ -1,0 +1,103 @@
+<div class="page">
+
+  <div class="container">
+
+    <div class="title-block">
+      <h1 class="title title-block__title">Form Block</h1>
+      <h3 class="opt-title opt-title--below title-block__subtitle">group</h3>
+      <p class="body title-block__body">
+        For collecting content from visitors.
+      </p>
+    </div>
+
+    <h3>Modules</h3>
+    <div class="example">
+
+      <!-- BEGIN examples -->
+
+      <span class="label">Simple Form</span>
+      <div class="form-block">
+        <form action="/" method="post">
+          <div class="input-block">
+            <label class="label input-block__label" for="capture">Capture something...</label>
+            <input class="input input--text" type="text" name="capture" placeholder="Capture something..." />
+          </div>
+          <div class="input-block">
+            <input class="cta cta--submit" type="submit" />
+          </div>
+        </form>
+      </div>
+
+      <%= partial :"components/groups/form-block", locals: {
+          action: "/",
+          method: "post",
+          input_blocks: [
+            [
+              {
+                input_type: "text",
+                name: "capture",
+                placeholder: "Capture something...",
+                label: "Capture:"
+              }
+            ]
+          ]
+      } %>
+
+      <span class="label">Form with Fieldsets</span>
+      <div class="form-block">
+        <form action="/">
+          <fieldset class="form-block__fieldset">
+            <legend class="opt-title form-block__fieldset__opt-title">Fieldset one</legend>
+            <div class="input-block">
+              <label class="label input-block__label" for="capture">Enter some info...</label>
+              <input class="input input--text" type="text" name="capture" placeholder="Enter some info..." />
+            </div>
+            <div class="input-block">
+              <label class="label input-block__label" for="capture">Enter other info...</label>
+              <input class="input input--text" type="text" name="capture" placeholder="Enter other info..." />
+            </div>
+          </fieldset>
+          <fieldset class="form-block__fieldset">
+            <legend class="opt-title form-block__fieldset__opt-title">Fieldset two</legend>
+            <div class="input-block">
+              <label class="label input-block__label" for="capture">Capture something...</label>
+              <input class="input input--text" type="text" name="capture" placeholder="Capture something..." />
+            </div>
+          </fieldset>
+        </form>
+      </div>
+
+      <span class="label">Center-aligning form</span>
+      <div class="form-block form-block--center">
+        <form action="/">
+          <div class="input-block input-block--inline-submit">
+            <label class="label input-block__label" for="capture_3">Capture something...</label>
+            <input class="input input--text" type="text" name="capture_3" placeholder="Capture something..." />
+            <input class="cta cta--submit" type="submit" />
+          </div>
+        </form>
+      </div>
+
+      <!-- END examples -->
+
+    </div>
+
+    <div class="content">
+      <div class="usage">
+        ...How to use...
+      </div>
+      <div class="code">
+        <div class="html">
+          <pre>
+
+          </pre>
+        </div>
+        <div class="css">
+          <pre></pre>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
