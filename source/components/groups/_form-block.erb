@@ -1,14 +1,7 @@
 <% component = "form-block" %>
 
-<div class="<%= component_classes(component, locals) %>">
-  <form action="<%= action %>" method="<%= method %>">
-    <% input_blocks.each do | input_block | %>
-      <%=  partial :"groups/input-block", locals: {
-      inputs: input_block
-      } %>
-    <% end %>
-    <div class="input-block">
-      <input class="cta cta--submit" type="submit" />
-    </div>
-  </form>
-</div>
+<form class="<%= component_classes(component, locals) %>" action="<%= action %>" method="<%= method %>">
+  <% input_blocks.each do | input_block | %>
+    <%=  partial :"groups/input-block", locals: input_block %>
+  <% end %>
+</form>

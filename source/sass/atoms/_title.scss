@@ -63,3 +63,15 @@
 .title__numbers {
   font-size: 0.7em;
 }
+
+.form-block__fieldset__title {
+  /* --- structure --- */
+  padding: 0 0.16em;
+  max-width: none;
+  margin-bottom: 0.5em !important;
+
+  /* --- theme --- */
+  font-size: $font-size-1;
+  @include default-header-font-styling;
+  color: $color-7;
+}

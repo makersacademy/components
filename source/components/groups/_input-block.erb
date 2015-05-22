@@ -1,16 +1,26 @@
 <% component = "input-block" %>
 
-<div class="<%= component_classes(component, locals) %>">
+<fieldset class="<%= component_classes(component, locals) %>">
+
+  <% if defined?(title) %>
+    <legend class="title form-block__fieldset__title"><%= title %></legend>
+  <% end %>
+  
   <% inputs.each do | input | %>
+
     <% if input[:label] %>
-      <label class="label input-block__label" for="<%= input[:name] %>"><%= input[:label] %></label>
+      <label class="label input-block__label" for="<%= input[:name] %>">
+        <%= input[:label] %>
+      </label>
     <% end %>
+
     <%= partial :"atoms/input", locals: {
       modifiers: input[:input_type],
       input_type: input[:input_type],
       name: input[:name],
       placeholder: input[:placeholder]
     } %>
+
   <% end %>
-</div>
+</fieldset>
 
