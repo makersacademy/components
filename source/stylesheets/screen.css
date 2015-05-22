@@ -200,6 +200,23 @@ body {
   font-size: 0.7em;
 }
 
+/* line 67, ../sass/atoms/_title.scss */
+.form-block__fieldset__title {
+  /* --- structure --- */
+  padding: 0 0.16em;
+  max-width: none;
+  margin-bottom: 0.5em !important;
+  /* --- theme --- */
+  font-size: 1.618em;
+  font-family: "futura-pt", Futura, Helvetica, Arial, sans-serif;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  letter-spacing: 0.15em;
+  font-weight: 500;
+  line-height: 0.8;
+  color: #afafaf;
+}
+
 /* Extended written things. */
 /* line 3, ../sass/atoms/_body.scss */
 .body {

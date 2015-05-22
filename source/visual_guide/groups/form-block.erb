@@ -16,67 +16,87 @@
       <!-- BEGIN examples -->
 
       <span class="label">Simple Form</span>
-      <div class="form-block">
-        <form action="/" method="post">
-          <div class="input-block">
-            <label class="label input-block__label" for="capture">Capture something...</label>
-            <input class="input input--text" type="text" name="capture" placeholder="Capture something..." />
-          </div>
-          <div class="input-block">
-            <input class="cta cta--submit" type="submit" />
-          </div>
-        </form>
-      </div>
-
       <%= partial :"components/groups/form-block", locals: {
           action: "/",
           method: "post",
           input_blocks: [
-            [
-              {
-                input_type: "text",
-                name: "capture",
-                placeholder: "Capture something...",
-                label: "Capture:"
-              }
-            ]
+            {
+              inputs: [
+                {
+                  input_type: "text",
+                  name: "capture",
+                  placeholder: "Capture something...",
+                  label: "Capture:"
+                }
+              ]
+            },
+            {
+              inputs: [{ input_type: "submit" }]
+            }
           ]
       } %>
 
       <span class="label">Form with Fieldsets</span>
-      <div class="form-block">
-        <form action="/">
-          <fieldset class="form-block__fieldset">
-            <legend class="opt-title form-block__fieldset__opt-title">Fieldset one</legend>
-            <div class="input-block">
-              <label class="label input-block__label" for="capture">Enter some info...</label>
-              <input class="input input--text" type="text" name="capture" placeholder="Enter some info..." />
-            </div>
-            <div class="input-block">
-              <label class="label input-block__label" for="capture">Enter other info...</label>
-              <input class="input input--text" type="text" name="capture" placeholder="Enter other info..." />
-            </div>
-          </fieldset>
-          <fieldset class="form-block__fieldset">
-            <legend class="opt-title form-block__fieldset__opt-title">Fieldset two</legend>
-            <div class="input-block">
-              <label class="label input-block__label" for="capture">Capture something...</label>
-              <input class="input input--text" type="text" name="capture" placeholder="Capture something..." />
-            </div>
-          </fieldset>
-        </form>
-      </div>
+
+      <%= partial :"groups/form-block", locals: {
+        action: "/",
+        method: "post",
+        input_blocks: [
+          {
+            title: "Fieldset one",
+            inputs: [
+              {
+                input_type: "text", # defaults to "text"
+                label: "Enter some info",
+                name: "capture",
+                placeholder: "Enter some info..."
+              }
+            ]
+          },
+          {
+            title: "Fieldset two",
+            modifiers: "list",
+            inputs: [
+              {
+                input_type: "tel",
+                label: "Enter your telephone number...",
+                name: "telephone_capture",
+                placeholder: "e.g. 07775554444"
+              },
+              {
+                input_type: "text",
+                label: "More info, please...",
+                name: "more_info",
+                placeholder: "Endless info pls"
+              },
+              { input_type: "submit" }
+            ]
+          }
+        ]
+      } %>
 
       <span class="label">Center-aligning form</span>
-      <div class="form-block form-block--center">
-        <form action="/">
-          <div class="input-block input-block--inline-submit">
-            <label class="label input-block__label" for="capture_3">Capture something...</label>
-            <input class="input input--text" type="text" name="capture_3" placeholder="Capture something..." />
-            <input class="cta cta--submit" type="submit" />
-          </div>
-        </form>
-      </div>
+      <%= partial :"groups/form-block", locals: {
+        modifiers: "center",
+        action: "/",
+        method: "get",
+        input_blocks: [
+          {
+            modifiers: "inline-submit",
+            inputs: [
+              {
+                input_type: "text",
+                name: "capture_3",
+                label: "Capture something...",
+                placeholder: "Capture something..."
+              },
+              {
+                input_type: "submit"
+              }
+            ]
+          }
+        ]
+      } %>
 
       <!-- END examples -->
 
