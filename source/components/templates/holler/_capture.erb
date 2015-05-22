@@ -21,10 +21,7 @@
   <div class="holler-block__section">
 
     <%= partial 'components/groups/title-block', locals: {
-      image: {
-        src: locals.fetch(:title_image, ""),
-        alt: title
-      },
+      # image: is optional {src, alt}
       titles: [
         {
           text: title
@@ -35,7 +32,7 @@
       }
     } %>
   </div>
-  
+
   <div class="holler-block__section">
 
     <%= partial :"groups/form-block", locals: {
@@ -47,6 +44,7 @@
           modifiers: "inline-submit",
           inputs: [
             {
+              modifiers: "text",
               input_type: "email",
               name: "email",
               label: capture[:placeholder],
