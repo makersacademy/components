@@ -1,0 +1,62 @@
+<% component = "holler-block" %>
+
+<%  # YAML locals:
+  # holler:
+  #   type: email_capture
+  #   title_image: image.jpg # optional
+  #   background_image: image.jpg # optional
+  #   title: Give me your fucking email
+  #   body: We will definitely not tell the NSA
+  #   capture:
+  #     placeholder: Your email address
+  #     submit_text: Stay Informed
+  #     action: newsletter.mailchimp
+%>
+<% if defined?(background_image) %>
+<div class="holler-block holler-block--backgrounded" style="background-image=url('<%= background_image %>');">
+<% else %>
+<div class="holler-block" style="background-image=url('<%= background_image %>');">
+<% end %>
+
+  <div class="holler-block__section">
+
+    <%= partial 'components/groups/title-block', locals: {
+      # image: is optional {src, alt}
+      titles: [
+        {
+          text: title
+        }
+      ],
+      body: {
+        text: body
+      }
+    } %>
+  </div>
+
+  <div class="holler-block__section">
+
+    <%= partial :"groups/form-block", locals: {
+      modifiers: "center",
+      action: capture[:action],
+      method: "post",
+      input_blocks: [
+        {
+          modifiers: "inline-submit",
+          inputs: [
+            {
+              modifiers: "text",
+              input_type: "email",
+              name: "email",
+              label: capture[:placeholder],
+              placeholder: capture[:placeholder]
+            },
+            {
+              input_type: "submit",
+              text: capture[:submit_text]
+            }
+          ]
+        }
+      ]
+    } %>
+  </div>
+</div>

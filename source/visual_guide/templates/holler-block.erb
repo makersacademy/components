@@ -1,22 +1,4 @@
-<!doctype html>
-<html>
-	<head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="//use.typekit.net/snz4plr.js"></script>
-<script>try{Typekit.load();}catch(e){}</script>
-	  <link href="../../stylesheets/fonts.css" media="all" rel="stylesheet" type="text/css" />
-<link href="../../stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-	  <link href="../../stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
-	  <!--[if IE]>
-	      <link href="stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
-	  <![endif]-->
-	</head>
 
-	<body>
 
 		<div class="page">
 
@@ -56,30 +38,20 @@
 					</section>
 				</div>
 
-				<span class="label">Text &amp; Capture</span>
-				<div class="holler-block">
-					<div class="holler-block__section">
-						<div class="title-block">
-							<h1 class="title title-block__title">
-								Title
-							</h1>
-							<p class="body title-block__body">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, vero, repudiandae, vitae quibusdam eius iure porro facilis esse enim praesentium explicabo perspiciatis quidem quaerat! Necessitatibus, provident eveniet doloremque soluta delectus?
-							</p>
-						</div>
-					</div>
-					<div class="holler-block__section">
-						<div class="form-block form-block--center">
-							<form action="/">
-								<div class="input-block input-block--inline-submit">
-									<label class="label input-block__label" for="capture_3">Capture something...</label>
-									<input class="input input--text" type="text" name="capture_3" placeholder="Capture something..." />
-									<input class="cta cta--submit" type="submit" />
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
+ 				<span class="label">Text &amp; Capture</span>
+
+				<%= partial :"templates/holler-block", locals: {
+					type: "email_capture",
+					title_image: "images/test-assets/makers-brandmark.png", # optional
+					background_image: "images/test-assets/splash-bg.jpg", # optional
+					title: lorem.word,
+					body: lorem.sentences(2),
+					capture: {
+						placeholder: "Your email address",
+						submit_text: "Stay informed",
+						action: "/newsletter.mailchimp"
+					}
+				} %>
 
 				<span class="label">Text &amp; Capture Fullheight</span>
 				<div class="holler-block holler-block--full">
@@ -170,13 +142,3 @@
 
 		</div>
 
-		<!-- BrowserSync -->
-		<script type='text/javascript' id="__bs_script__">//<![CDATA[
-		    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.2.6.1.js'><\/script>".replace("HOST", location.hostname));
-		//]]></script>
-		<!-- END BrowserSync -->
-
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-	</body>
-</html>

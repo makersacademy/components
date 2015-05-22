@@ -2,6 +2,10 @@
 
 <% if type == "showcase" %>
 
-<% partial "templates/holler/showcase", locals: locals %>
+<% partial :"templates/holler/showcase", locals: locals %>
+
+<% elsif type == "email_capture" %>
+
+<%= partial :"templates/holler/capture", locals: locals %>
 
 <% end %>
