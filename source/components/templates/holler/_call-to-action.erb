@@ -1,0 +1,10 @@
+<% component = "holler-block" %>
+
+<div class="<%= component_classes(component, locals) %>">
+  <section class="holler-block__section">
+    <%= partial :"groups/title-block", locals: { titles: [{text: title[:text]}], body: {text: title[:body]}} %>
+  </section>
+  <section class="holler-block__section">
+    <%= partial :"groups/cta-block", locals: {ctas: [{modifiers: ["horizontal"],link: cta[:link], text: cta[:text]}]  } %>
+  </section>
+</div>

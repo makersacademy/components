@@ -2,10 +2,14 @@
 
 <% if type == "showcase" %>
 
-<% partial :"templates/holler/showcase", locals: locals %>
+  <%= partial :"templates/holler/showcase", locals: locals %>
 
 <% elsif type == "email_capture" %>
 
-<%= partial :"templates/holler/capture", locals: locals %>
+  <%= partial :"templates/holler/capture", locals: locals %>
+
+<% elsif type == "call_to_action"%>
+
+  <%= partial :"templates/holler/call-to-action", locals: locals %>
 
 <% end %>
