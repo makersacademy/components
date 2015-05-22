@@ -1,0 +1,44 @@
+<% component = "holler-block" %>
+
+<%  # YAML locals:
+  # holler:
+  #   type: email_capture
+  #   title_image: image.jpg # optional
+  #   background_image: image.jpg # optional
+  #   title: Give me your fucking email
+  #   body: We will definitely not tell the NSA
+  #   capture:
+  #     placeholder: Your email address
+  #     submit_text: Stay Informed
+  #     action: newsletter.mailchimp
+%>
+
+<div class="holler-block">
+  <div class="holler-block__section">
+    <%= partial 'components/groups/title-block', locals: {
+      titles: [
+        {
+          text: lorem.words(2)
+        }
+      ],
+      body: {
+        text: lorem.sentences(4)
+      }
+    } %>
+
+  <div class="holler-block__section">
+    <div class="form-block form-block--center">
+
+
+      <form action="/">
+        <div class="input-block input-block--inline-submit">
+          <label class="label input-block__label" for="capture_3">Capture something...</label>
+          <input class="input input--text" type="text" name="capture_3" placeholder="Capture something..." />
+          <input class="cta cta--submit" type="submit" />
+        </div>
+      </form>
+
+      
+    </div>
+  </div>
+</div>

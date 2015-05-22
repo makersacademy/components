@@ -70,17 +70,22 @@
 		} %>
 
 		<span class="label">With Image</span>
-		<div class="title-block">
-			<div class="image-block image-block--centered title-block__image-block">
-			  <img class="image image--portrait image-block__image" src="http://placehold.it/200x323&text=Hi" alt="A gray box with the text 'Hi'">
-			</div>
-			<h1 class="title title-block__title">
-				Title
-			</h1>
-			<p class="body title-block__body">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, vero, repudiandae, vitae quibusdam eius iure porro facilis esse enim praesentium explicabo perspiciatis quidem quaerat! Necessitatibus, provident eveniet doloremque soluta delectus?
-			</p>
-		</div>
+		<%= partial 'groups/title-block', locals: {
+			image: {
+				modifiers: "portrait",
+				src: "http://placehold.it/200x323&text=Hi",
+				alt: "A gray box with the text 'Hi'"
+			},
+			titles: [
+				{
+					text: lorem.word
+				}
+			],
+			body: {
+				text: lorem.sentences(4),
+				modifiers: []
+			}
+		} %>
 
 		<!-- END examples -->
 

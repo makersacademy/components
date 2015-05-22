@@ -3,6 +3,18 @@
 
 <div class="<%= component_classes(component, locals) %>">
 
+  <% if defined?(image) %>
+
+    <%= partial 'groups/image-block', locals: {
+        parent: component,
+        modifiers: "centered",
+        images: [
+          image.merge(parent: component)
+        ]
+    } %>
+
+  <% end %>
+
   <% titles.each do | title | %>
 
     <%= partial 'atoms/title', locals: {
