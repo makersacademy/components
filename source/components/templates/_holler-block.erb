@@ -4,9 +4,8 @@
 
 <% partial :"templates/holler/showcase", locals: locals %>
 
-<% elsif type == "capture" %>
+<% elsif type == "email_capture" %>
 
-<% partial :"templates/holler/capture", locals: locals %>
-
+<%= partial :"templates/holler/capture", locals: locals %>
 
 <% end %>
