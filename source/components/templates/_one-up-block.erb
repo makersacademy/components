@@ -1,0 +1,47 @@
+<% component = "one-up-block" %>
+
+<div class="one-up-block">
+  <div class="slider-block">
+    <% graduates.each do | graduate | %>
+    <div class="media-component media-component--reverse">
+
+      <div class="container">
+
+        <section class="media-component__section">
+          <div class="title-block media-component__section__title-block">
+            <h1 class="title title-block__title">
+              Title
+            </h1>
+            <p class="body title-block__body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, vero, repudiandae, vitae quibusdam eius iure porro facilis esse enim praesentium explicabo perspiciatis quidem quaerat! Necessitatibus, provident eveniet doloremque soluta delectus?
+            </p>
+            <blockquote class="blockquote title-block__blockquote">
+              Lorem ipsum dolor sit amet
+            </blockquote>
+          </div>
+        </section>
+        <section class="media-component__section">
+          <%= partial "components/groups/image-block", locals: {
+              modifiers: ["full"],
+              images: [
+                {
+                  modifiers: ["portrait"],
+                  src: "http://placehold.it/400x600&text=Hi",
+                  alt: "A gray box with the text 'Hi'"
+                }
+              ]
+            } %>
+        </section>
+        <section class="media-component__section">
+          <div class="cta-block">
+            <a href="#" class="cta cta--horizontal">CTA 1</a>
+            <a href="#" class="cta cta--horizontal">CTA 2</a>
+          </div>
+        </section>
+
+      </div>
+    
+    </div>
+    <% end %>
+  </div>
+</div>
