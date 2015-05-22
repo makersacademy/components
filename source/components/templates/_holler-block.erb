@@ -1,6 +1,6 @@
 <% component = "holler-block" %>
 <% if type == "showcase" %>
-  <% partial :"templates/holler/showcase", locals: locals %>
+  <%= partial :"templates/holler/showcase", locals: locals %>
 <% elsif type == "call_to_action"%>
-  <% partial :"templates/holler/call-to-action", locals: locals %>
+  <%= partial :"templates/holler/call-to-action", locals: locals %>
 <% end %>
