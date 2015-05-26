@@ -7,7 +7,7 @@ in a slider arrangement. */
 
 */
 
-.slider-block {
+.slider {
 	/* --- structure --- */
 	position: relative;
 
@@ -84,13 +84,13 @@ in a slider arrangement. */
 	}
 }
 
-.slider-block__image-block {
+.slider__image-block {
 	height: 100%;
 	display: table-cell;
 	vertical-align: middle;
 }
 
-.slider-block__title-block {
+.slider__title-block {
 	height: 100%;
 	display: table-cell;
 	vertical-align: middle;
