@@ -23,10 +23,10 @@
       <div class="container">
 
         <div class="title-block">
-          <h1 class="title title-block__title">&lsquo;Holler&rsquo; Block</h1>
-          <h3 class="opt-title opt-title--below title-block__subtitle">template</h3>
+          <h1 class="title title-block__title">Blockquote</h1>
+          <h3 class="opt-title opt-title--below title-block__subtitle">atom</h3>
           <p class="body title-block__body">
-            Large titles and some copy. Think 'shouty' messages.
+            Testimonials and quotations, optionally with a citation.
           </p>
         </div>
 
@@ -38,9 +38,9 @@
         <!-- BEGIN examples -->
 
         <span class="label">Regular</span>
-        <blockquote class="blockquote">
-          Lorem ipsum dolor sit amet
-        </blockquote>
+        <%= partial 'atoms/blockquote', locals: {
+          text: lorem.sentences(3)
+        } %>
 
         <!-- END examples -->
 

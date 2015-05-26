@@ -1,0 +1,9 @@
+<% component = "blockquote" %>
+
+<% if locals['cite'] %>
+<blockquote class="<%= component_classes(component, locals) %>" cite="<%= cite %>">
+<% else %>
+<blockquote class="<%= component_classes(component, locals) %>">
+<% end %>
+<%= text %>
+</blockquote>
