@@ -2,7 +2,7 @@
 
 <div class="one-up-block">
   <div class="slider-block">
-    <% graduates.each do | graduate | %>
+    <% content.each do | item | %>
     <div class="media-component media-component--reverse">
 
       <div class="container">
@@ -13,14 +13,14 @@
             modifiers: ["right"],
             titles: [
               {
-                text: graduate[:name]
+                text: item[:name]
               },
               {
                 modifiers: "subtitle",
-                text: "#{graduate[:previous_job]} to #{graduate[:new_job]}, #{graduate[:cohort]}"
+                text: "#{item[:previous_job]} to #{item[:new_job]}, #{item[:cohort]}"
               }
             ],
-            blockquote: { text: graduate[:testimonial] }
+            blockquote: { text: item[:testimonial] }
           } %>
         </section>
         <section class="media-component__section">
@@ -29,8 +29,8 @@
               images: [
                 {
                   modifiers: ["portrait"],
-                  src: graduate[:image],
-                  alt: "A picture of #{graduate[:name]}"
+                  src: item[:image],
+                  alt: "A picture of #{item[:name]}"
                 }
               ]
             } %>
@@ -43,12 +43,12 @@
                 {
                   modifiers: "horizontal",
                   text: "Read more",
-                  link: graduate[:case_study_link]
+                  link: item[:case_study_link]
                 },
                 {
                   modifiers: "horizontal",
                   text: "Read blog",
-                  link: graduate[:blog_link]
+                  link: item[:blog_link]
                 }
               ]
             } %>
