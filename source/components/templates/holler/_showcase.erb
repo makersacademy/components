@@ -1,0 +1,41 @@
+<% image_blocks = images.each_slice((images.count / 2).ceil).to_a %>
+
+<div class="holler-block holler-block--backgrounded" style="background-image: url(<%="'#{background_image}'"%>);">
+      <div class="holler-block__section">
+        <div class="title-block">
+          <h3 class="opt-title opt-title--leader title-block__leader">
+            <%= above %>
+          </h3>
+          <h1 class="title title-block__title"></h1>
+          <p class="body title-block__body">
+            <%= body %>
+
+          </p>
+        </div>
+      </div>
+      <div class="holler-block__section">
+        <div class="container">
+          <div class="three-up-block">
+            <section class="three-up-block__section">
+              <div class="image-block image-block--grid image-block--1grid">
+                <% image_blocks.first.each do |image| %>
+                  <img class="image image--landscape image-block__image" src=<%="'#{image[:url]}'"%> alt=<%="'#{image[:alt]}'"%>>
+                <%end%>
+              </div>
+            </section>
+            <section class="three-up-block__section">
+              <div class="cta-block three-up-block__section__cta-block">
+                <a href="#" class="cta cta--horizontal">See more partners</a>
+              </div>
+            </section>
+            <section class="three-up-block__section">
+              <div class="image-block image-block--grid image-block--1grid">
+                <% image_blocks.last.each do |image| %>
+                  <img class="image image--landscape image-block__image" src=<%="'#{image[:url]}'"%> alt=<%="'#{image[:alt]}'"%>>
+                <%end%>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
