@@ -1,0 +1,33 @@
+<% component = "holler-block" %>
+
+<% if defined?(background_image) && !background_image.nil? %>
+<div class="holler-block holler-block--equal holler-block--backgrounded" style="background-image: url('<%= background_image %>');">
+<% else %>
+<div class="holler-block holler-block--equal">
+<% end %>
+
+  <div class="holler-block__section">
+    <%= partial :'groups/title-block', locals: {
+      titles: [
+        { 
+          modifiers: "leader", 
+          text: locals.fetch(:above_title, "")
+        },
+        {
+          text: title
+        }
+      ],
+      body: {
+        text: locals.fetch(:body, "")
+      }
+    } %>
+  </div>
+
+  <div class="holler-block__section">
+    <%= partial :'groups/image-block', locals: {
+      modifiers: "centered",
+      images: [ image.merge(modifiers: "landscape") ]
+    } %>
+  </div>
+
+</div>
