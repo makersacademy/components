@@ -1,0 +1,21 @@
+{
+  "name": "makers_styles",
+  "version": "0.1.1",
+  "homepage": "https://github.com/makersacademy/style_guide",
+  "authors": [
+    "Sam Morgan <samm@makersacademy.com>",
+    "Leo Allen <leo@makersacademy.com>",
+    "Roi Driscoll <roi@makersacademy.com>",
+    "Stephen Lloyd <stephen@makersacademy.com>",
+    "Nikesh Ashar <nikesh@makersacademy.com>"
+  ],
+  "description": "Global style components for Makers Academy",
+  "main": "source/stylesheets/screen.css",
+  "license": "MIT",
+  "ignore": [
+    "*",
+    "!source/stylesheets/*",
+    "!source/javascripts/*",
+    "!source/sass/*"
+  ]
+}
