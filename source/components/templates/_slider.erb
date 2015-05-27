@@ -1,7 +1,3 @@
 <% component = "slider" %>
 
-<% if type == "media-components" %>
-
-<%= partial "templates/slider/media-components", locals: locals %>
-
-<% end %>
+<%= partial "templates/slider/#{type}", locals: locals %>
