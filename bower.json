@@ -17,6 +17,7 @@
     "!source/stylesheets/*",
     "!source/javascripts/*",
     "!source/images/*",
+    "!source/images/**/*",
     "!source/fonts/*"
   ]
 }

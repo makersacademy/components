@@ -1,109 +1,137 @@
+/* line 1, ../sass/kerning.scss */
 .kern-a, .kern-A {
   letter-spacing: 0.00em;
 }
 
+/* line 5, ../sass/kerning.scss */
 .kern-b, .kern-B {
-  
+  letter-spacing: 0.01em;
 }
 
+/* line 9, ../sass/kerning.scss */
 .kern-c, .kern-C {
   letter-spacing: 0.01em;
 }
 
+/* line 13, ../sass/kerning.scss */
 .kern-d, .kern-D {
   letter-spacing: -0.03em;
 }
 
+/* line 17, ../sass/kerning.scss */
 .kern-e, .kern-E {
   letter-spacing: 0.01em;
 }
 
+/* line 21, ../sass/kerning.scss */
 .kern-f, .kern-F {
-  
+  letter-spacing: 0.03em;
 }
 
+/* line 25, ../sass/kerning.scss */
 .kern-g, .kern-G {
   letter-spacing: 0.00em;
 }
 
+/* line 29, ../sass/kerning.scss */
 .kern-h, .kern-H {
   letter-spacing: 0.02em;
 }
 
+/* line 33, ../sass/kerning.scss */
 .kern-i, .kern-I {
   letter-spacing: 0.06em;
 }
 
+/* line 37, ../sass/kerning.scss */
 .kern-j, .kern-J {
-  
+  letter-spacing: 0.0em;
 }
 
+/* line 41, ../sass/kerning.scss */
 .kern-k, .kern-K {
   letter-spacing: 0.01em;
 }
 
+/* line 45, ../sass/kerning.scss */
 .kern-l, .kern-L {
-  letter-spacing: 0.14em;
+  letter-spacing: 0.04em;
 }
 
+/* line 49, ../sass/kerning.scss */
 .kern-m, .kern-M {
-  letter-spacing: -0.07em;
+  letter-spacing: -0.02em;
 }
 
+/* line 53, ../sass/kerning.scss */
 .kern-n, .kern-N {
-  letter-spacing: -0.05em;
+  letter-spacing: 0.02em;
 }
 
+/* line 57, ../sass/kerning.scss */
 .kern-o, .kern-O {
-  letter-spacing: -0.07em;
+  letter-spacing: -0.00em;
 }
 
+/* line 61, ../sass/kerning.scss */
 .kern-p, .kern-P {
   letter-spacing: 0.01em;
 }
 
+/* line 65, ../sass/kerning.scss */
 .kern-q, .kern-Q {
   letter-spacing: 0.01em;
 }
 
+/* line 69, ../sass/kerning.scss */
 .kern-r, .kern-R {
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
 }
 
+/* line 73, ../sass/kerning.scss */
 .kern-s, .kern-S {
-  
+  letter-spacing: 0.00em;
 }
 
+/* line 77, ../sass/kerning.scss */
 .kern-t, .kern-T {
   letter-spacing: 0.05em;
 }
 
+/* line 81, ../sass/kerning.scss */
 .kern-u, .kern-U {
   letter-spacing: 0.00em;
 }
 
+/* line 85, ../sass/kerning.scss */
 .kern-v, .kern-V {
-  
+  letter-spacing: 0.04em;
 }
 
+/* line 89, ../sass/kerning.scss */
 .kern-w, .kern-W {
   letter-spacing: -0.09em;
 }
 
+/* line 93, ../sass/kerning.scss */
 .kern-x, .kern-X {
-  
+  letter-spacing: 0.05em;
 }
 
+/* line 97, ../sass/kerning.scss */
 .kern-y, .kern-Y {
   letter-spacing: 0.05em;
 }
 
-.kern-z, .kern-Z {
-  
+/* line 105, ../sass/kerning.scss */
+.kern- {
+  letter-spacing: 0.00em;
 }
 
+/* line 109, ../sass/kerning.scss */
 .kern-0, .kern-1, .kern-2, .kern-3, .kern-4, .kern-5, .kern-6, .kern-7, .kern-8, .kern-9 {
   font-size: 0.7em;
+  letter-spacing: 0.02em;
 }
 
 /* last letter always has no letter spacing at all */

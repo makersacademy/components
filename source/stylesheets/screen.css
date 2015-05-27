@@ -524,6 +524,38 @@ action goal). */
   cursor: pointer;
 }
 
+/* Testimonials and quotations, optionally with a citation. */
+/* line 3, ../sass/atoms/_blockquote.scss */
+.blockquote {
+  /* --- structure --- */
+  max-width: 19em;
+  position: relative;
+  /* theme */
+  font-size: 1.618em;
+  font-family: "futura-pt", Futura, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-style: italic;
+  text-indent: 2em;
+}
+/* line 14, ../sass/atoms/_blockquote.scss */
+.blockquote:before, .blockquote:after {
+  display: block;
+  position: absolute;
+  font-size: 2.61792em;
+  height: 0;
+  width: 0;
+  line-height: 0;
+  text-indent: 0;
+}
+/* line 24, ../sass/atoms/_blockquote.scss */
+.blockquote:before {
+  content: "\201C";
+  /* &ldquo; */
+  left: 0.10em;
+  top: 0.28em;
+}
+
 /* groups */
 /* Title and some copy. 
 Think 'informative' messages. */
@@ -569,23 +601,29 @@ Think 'informative' messages. */
 }
 
 /* line 47, ../sass/groups/_title-block.scss */
+.title-block__blockquote {
+  margin: 0 auto;
+  margin-top: 1em;
+}
+
+/* line 52, ../sass/groups/_title-block.scss */
 .title-block--left {
   text-align: left;
   /* --- child layout --- */
   /* --- mobile --- */
 }
-/* line 51, ../sass/groups/_title-block.scss */
-.title-block--left .title, .title-block--left .body, .title-block--left .opt-title {
+/* line 56, ../sass/groups/_title-block.scss */
+.title-block--left .title, .title-block--left .body, .title-block--left .blockquote {
   text-align: left;
   margin-left: 0;
   margin-right: 0;
 }
-/* line 57, ../sass/groups/_title-block.scss */
+/* line 62, ../sass/groups/_title-block.scss */
 .title-block--left .body {
   display: inline-block;
 }
 @media only screen and (max-width: 1024px) {
-  /* line 63, ../sass/groups/_title-block.scss */
+  /* line 68, ../sass/groups/_title-block.scss */
   .title-block--left .title, .title-block--left .body, .title-block--left .opt-title {
     text-align: center;
     margin-left: auto;
@@ -593,7 +631,7 @@ Think 'informative' messages. */
   }
 }
 
-/* line 71, ../sass/groups/_title-block.scss */
+/* line 76, ../sass/groups/_title-block.scss */
 .title-block--right {
   text-align: right;
   /* --- child layout --- */
@@ -601,28 +639,28 @@ Think 'informative' messages. */
   	 overflowing set container widths */
   /* --- mobile --- */
 }
-/* line 75, ../sass/groups/_title-block.scss */
-.title-block--right .title, .title-block--right .body, .title-block--right .opt-title {
+/* line 80, ../sass/groups/_title-block.scss */
+.title-block--right .title, .title-block--right .body, .title-block--right .blockquote {
   text-align: right;
   margin-left: 0;
   margin-right: 0;
 }
-/* line 83, ../sass/groups/_title-block.scss */
+/* line 88, ../sass/groups/_title-block.scss */
 .title-block--right .title {
   text-indent: -0.15em;
 }
-/* line 87, ../sass/groups/_title-block.scss */
+/* line 92, ../sass/groups/_title-block.scss */
 .title-block--right .body {
   display: inline-block;
 }
 @media only screen and (max-width: 1024px) {
-  /* line 93, ../sass/groups/_title-block.scss */
+  /* line 98, ../sass/groups/_title-block.scss */
   .title-block--right .title, .title-block--right .body, .title-block--right .opt-title {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 99, ../sass/groups/_title-block.scss */
+  /* line 104, ../sass/groups/_title-block.scss */
   .title-block--right .title {
     max-width: 29em;
     text-indent: 0;
@@ -1263,34 +1301,34 @@ Think 'shouty' messages. */
   /* --- mobile --- */
 }
 /* line 22, ../sass/templates/_media-component.scss */
-.media-component .slider-block {
+.media-component .slider {
   height: 62vh;
 }
 @media only screen and (max-height: 768px) {
   /* line 22, ../sass/templates/_media-component.scss */
-  .media-component .slider-block {
+  .media-component .slider {
     height: 80vh;
   }
 }
 @media only screen and (max-width: 1024px) {
   /* line 22, ../sass/templates/_media-component.scss */
-  .media-component .slider-block {
+  .media-component .slider {
     height: 50vh;
   }
 }
 /* line 30, ../sass/templates/_media-component.scss */
-.media-component .slider-block .image--portrait {
+.media-component .slider .image--portrait {
   height: 62vh;
 }
 @media only screen and (max-height: 768px) {
   /* line 30, ../sass/templates/_media-component.scss */
-  .media-component .slider-block .image--portrait {
+  .media-component .slider .image--portrait {
     height: 80vh;
   }
 }
 @media only screen and (max-width: 1024px) {
   /* line 30, ../sass/templates/_media-component.scss */
-  .media-component .slider-block .image--portrait {
+  .media-component .slider .image--portrait {
     height: 50vh;
   }
 }
@@ -1396,32 +1434,32 @@ in a slider arrangement. */
 - Slider
 
 */
-/* line 10, ../sass/templates/_slider-block.scss */
-.slider-block {
+/* line 10, ../sass/templates/_slider.scss */
+.slider {
   /* --- structure --- */
   position: relative;
   /* --- theming --- */
   overflow: hidden;
   /* --- child layout --- */
 }
-/* line 14, ../sass/templates/_slider-block.scss */
-.slider-block .holler-block, .slider-block .media-component {
+/* line 14, ../sass/templates/_slider.scss */
+.slider .holler-block, .slider .media-component {
   float: left;
 }
 
-/* line 25, ../sass/templates/_slider-block.scss */
+/* line 25, ../sass/templates/_slider.scss */
 .slick-list {
   height: 100%;
 }
 
-/* line 29, ../sass/templates/_slider-block.scss */
+/* line 29, ../sass/templates/_slider.scss */
 .slick-track {
   display: table;
   height: 100%;
 }
 
 /* Slider controls */
-/* line 36, ../sass/templates/_slider-block.scss */
+/* line 36, ../sass/templates/_slider.scss */
 .slick-prev, .slick-next {
   /* --- structure --- */
   position: absolute;
@@ -1435,11 +1473,11 @@ in a slider arrangement. */
   background: transparent;
   /* --- child layout --- */
 }
-/* line 49, ../sass/templates/_slider-block.scss */
+/* line 49, ../sass/templates/_slider.scss */
 .slick-prev:focus, .slick-next:focus {
   outline: none;
 }
-/* line 53, ../sass/templates/_slider-block.scss */
+/* line 53, ../sass/templates/_slider.scss */
 .slick-prev:before, .slick-next:before {
   font-family: "linea-arrows-10" !important;
   content: attr(data-icon);
@@ -1462,64 +1500,75 @@ in a slider arrangement. */
   cursor: pointer;
   font-size: 2.61792em;
 }
-/* line 66, ../sass/templates/_slider-block.scss */
+/* line 66, ../sass/templates/_slider.scss */
 .slick-prev:hover:before, .slick-next:hover:before {
   color: #AA1925;
 }
 
-/* line 73, ../sass/templates/_slider-block.scss */
+/* line 73, ../sass/templates/_slider.scss */
 .slick-prev {
   left: 1em;
 }
-/* line 75, ../sass/templates/_slider-block.scss */
+/* line 75, ../sass/templates/_slider.scss */
 .slick-prev:before {
   content: "\e03f";
 }
 
-/* line 80, ../sass/templates/_slider-block.scss */
+/* line 80, ../sass/templates/_slider.scss */
 .slick-next {
   right: 0;
 }
-/* line 82, ../sass/templates/_slider-block.scss */
+/* line 82, ../sass/templates/_slider.scss */
 .slick-next:before {
   content: "\e04b";
 }
 
-/* line 87, ../sass/templates/_slider-block.scss */
-.slider-block__image-block {
+/* line 87, ../sass/templates/_slider.scss */
+.slider__image-block {
   height: 100%;
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 93, ../sass/templates/_slider-block.scss */
-.slider-block__title-block {
+/* line 93, ../sass/templates/_slider.scss */
+.slider__title-block {
   height: 100%;
   display: table-cell;
   vertical-align: middle;
 }
-/* line 97, ../sass/templates/_slider-block.scss */
-.slider-block__title-block .opt-title {
+/* line 97, ../sass/templates/_slider.scss */
+.slider__title-block .opt-title {
   margin-bottom: 1em;
 }
 @respond-to (mobile) {
-  /* line 97, ../sass/templates/_slider-block.scss */
-  .slider-block__title-block .opt-title {
+  /* line 97, ../sass/templates/_slider.scss */
+  .slider__title-block .opt-title {
     margin-bottom: 0;
   }
 }
-/* line 103, ../sass/templates/_slider-block.scss */
-.slider-block__title-block .body {
+/* line 103, ../sass/templates/_slider.scss */
+.slider__title-block .body {
   height: 33%;
   width: 90%;
   max-width: 14em;
 }
 @respond-to (mobile) {
-  /* line 103, ../sass/templates/_slider-block.scss */
-  .slider-block__title-block .body {
+  /* line 103, ../sass/templates/_slider.scss */
+  .slider__title-block .body {
     opacity: 0;
   }
 }
+/* line 113, ../sass/templates/_slider.scss */
+.slider__holler-block {
+  height: 68vh;
+}
+@media only screen and (max-width: 1024px) {
+  /* line 113, ../sass/templates/_slider.scss */
+  .slider__holler-block {
+    height: 100vh;
+  }
+}
+
 /* Three sets of similarly-structured content. 
 Think 'feature lists', or content too small 
 to warrant a slider. */
@@ -1848,6 +1897,30 @@ Modifiers:
   background-color: rgba(255, 255, 255, 0.4);
 }
 
+/* Full-width null container, usually with something that
+   initializes to a certain height inside (e.g. a slider) 
+*/
+/* line 5, ../sass/templates/_one-up-block.scss */
+.one-up-block {
+  /* --- structure --- */
+  width: 100%;
+  height: 62vh;
+  position: relative;
+  /* --- theming --- */
+}
+/* line 83, ../sass/_mixins.scss */
+.one-up-block:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media only screen and (max-width: 1024px) {
+  /* line 5, ../sass/templates/_one-up-block.scss */
+  .one-up-block {
+    height: 100vh;
+  }
+}
+
 /* setup */
 /* Constrain components to the central banner */
 /* line 3, ../sass/layout/_containers.scss */
@@ -1873,7 +1946,7 @@ Modifiers:
   width: 100%;
 }
 
-/* line 45, ../sass/screen.scss */
+/* line 47, ../sass/screen.scss */
 .label {
   display: block;
   font-family: sans-serif;
