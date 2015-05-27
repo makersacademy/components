@@ -109,3 +109,10 @@ in a slider arrangement. */
 		}
 	}
 }
+
+.slider__holler-block {
+	height: 68vh;
+	@include respond-to(mobile) {
+		height: 100vh;
+	}
+}

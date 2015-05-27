@@ -1,0 +1,18 @@
+/* Full-width null container, usually with something that
+   initializes to a certain height inside (e.g. a slider) 
+*/
+
+.one-up-block {
+  /* --- structure --- */
+  @include clearfix;
+  width: 100%;
+  height: 62vh;
+  position:relative;
+
+  /* --- theming --- */
+
+  @include respond-to(mobile) {
+    height: 100vh;
+  }
+}
+
