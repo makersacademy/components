@@ -1,19 +1,12 @@
 /* this file is provided by linea-icons */
-
-@charset "UTF-8";
-
 @font-face {
   font-family: "linea-arrows-10";
-  src:url("../fonts/linea-arrows-10.eot");
-  src:url("../fonts/linea-arrows-10.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/linea-arrows-10.woff") format("woff"),
-    url("../fonts/linea-arrows-10.ttf") format("truetype"),
-    url("../fonts/linea-arrows-10.svg#linea-arrows-10") format("svg");
+  src: url("../fonts/linea-arrows-10.eot");
+  src: url("../fonts/linea-arrows-10.eot?#iefix") format("embedded-opentype"), url("../fonts/linea-arrows-10.woff") format("woff"), url("../fonts/linea-arrows-10.ttf") format("truetype"), url("../fonts/linea-arrows-10.svg#linea-arrows-10") format("svg");
   font-weight: normal;
   font-style: normal;
-
 }
-
+/* line 17, ../sass/fonts.scss */
 [data-icon]:before {
   font-family: "linea-arrows-10" !important;
   content: attr(data-icon);
@@ -27,6 +20,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* line 30, ../sass/fonts.scss */
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
   font-family: "linea-arrows-10" !important;
@@ -40,411 +34,682 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* line 43, ../sass/fonts.scss */
 .icon-arrows-anticlockwise:before {
   content: "\e000";
 }
+
+/* line 46, ../sass/fonts.scss */
 .icon-arrows-anticlockwise-dashed:before {
   content: "\e001";
 }
+
+/* line 49, ../sass/fonts.scss */
 .icon-arrows-button-down:before {
   content: "\e002";
 }
+
+/* line 52, ../sass/fonts.scss */
 .icon-arrows-button-off:before {
   content: "\e003";
 }
+
+/* line 55, ../sass/fonts.scss */
 .icon-arrows-button-on:before {
   content: "\e004";
 }
+
+/* line 58, ../sass/fonts.scss */
 .icon-arrows-button-up:before {
   content: "\e005";
 }
+
+/* line 61, ../sass/fonts.scss */
 .icon-arrows-check:before {
   content: "\e006";
 }
+
+/* line 64, ../sass/fonts.scss */
 .icon-arrows-circle-check:before {
   content: "\e007";
 }
+
+/* line 67, ../sass/fonts.scss */
 .icon-arrows-circle-down:before {
   content: "\e008";
 }
+
+/* line 70, ../sass/fonts.scss */
 .icon-arrows-circle-downleft:before {
   content: "\e009";
 }
+
+/* line 73, ../sass/fonts.scss */
 .icon-arrows-circle-downright:before {
   content: "\e00a";
 }
+
+/* line 76, ../sass/fonts.scss */
 .icon-arrows-circle-left:before {
   content: "\e00b";
 }
+
+/* line 79, ../sass/fonts.scss */
 .icon-arrows-circle-minus:before {
   content: "\e00c";
 }
+
+/* line 82, ../sass/fonts.scss */
 .icon-arrows-circle-plus:before {
   content: "\e00d";
 }
+
+/* line 85, ../sass/fonts.scss */
 .icon-arrows-circle-remove:before {
   content: "\e00e";
 }
+
+/* line 88, ../sass/fonts.scss */
 .icon-arrows-circle-right:before {
   content: "\e00f";
 }
+
+/* line 91, ../sass/fonts.scss */
 .icon-arrows-circle-up:before {
   content: "\e010";
 }
+
+/* line 94, ../sass/fonts.scss */
 .icon-arrows-circle-upleft:before {
   content: "\e011";
 }
+
+/* line 97, ../sass/fonts.scss */
 .icon-arrows-circle-upright:before {
   content: "\e012";
 }
+
+/* line 100, ../sass/fonts.scss */
 .icon-arrows-clockwise:before {
   content: "\e013";
 }
+
+/* line 103, ../sass/fonts.scss */
 .icon-arrows-clockwise-dashed:before {
   content: "\e014";
 }
+
+/* line 106, ../sass/fonts.scss */
 .icon-arrows-compress:before {
   content: "\e015";
 }
+
+/* line 109, ../sass/fonts.scss */
 .icon-arrows-deny:before {
   content: "\e016";
 }
+
+/* line 112, ../sass/fonts.scss */
 .icon-arrows-diagonal:before {
   content: "\e017";
 }
+
+/* line 115, ../sass/fonts.scss */
 .icon-arrows-diagonal2:before {
   content: "\e018";
 }
+
+/* line 118, ../sass/fonts.scss */
 .icon-arrows-down:before {
   content: "\e019";
 }
+
+/* line 121, ../sass/fonts.scss */
 .icon-arrows-down-double:before {
   content: "\e01a";
 }
+
+/* line 124, ../sass/fonts.scss */
 .icon-arrows-downleft:before {
   content: "\e01b";
 }
+
+/* line 127, ../sass/fonts.scss */
 .icon-arrows-downright:before {
   content: "\e01c";
 }
+
+/* line 130, ../sass/fonts.scss */
 .icon-arrows-drag-down:before {
   content: "\e01d";
 }
+
+/* line 133, ../sass/fonts.scss */
 .icon-arrows-drag-down-dashed:before {
   content: "\e01e";
 }
+
+/* line 136, ../sass/fonts.scss */
 .icon-arrows-drag-horiz:before {
   content: "\e01f";
 }
+
+/* line 139, ../sass/fonts.scss */
 .icon-arrows-drag-left:before {
   content: "\e020";
 }
+
+/* line 142, ../sass/fonts.scss */
 .icon-arrows-drag-left-dashed:before {
   content: "\e021";
 }
+
+/* line 145, ../sass/fonts.scss */
 .icon-arrows-drag-right:before {
   content: "\e022";
 }
+
+/* line 148, ../sass/fonts.scss */
 .icon-arrows-drag-right-dashed:before {
   content: "\e023";
 }
+
+/* line 151, ../sass/fonts.scss */
 .icon-arrows-drag-up:before {
   content: "\e024";
 }
+
+/* line 154, ../sass/fonts.scss */
 .icon-arrows-drag-up-dashed:before {
   content: "\e025";
 }
+
+/* line 157, ../sass/fonts.scss */
 .icon-arrows-drag-vert:before {
   content: "\e026";
 }
+
+/* line 160, ../sass/fonts.scss */
 .icon-arrows-exclamation:before {
   content: "\e027";
 }
+
+/* line 163, ../sass/fonts.scss */
 .icon-arrows-expand:before {
   content: "\e028";
 }
+
+/* line 166, ../sass/fonts.scss */
 .icon-arrows-expand-diagonal1:before {
   content: "\e029";
 }
+
+/* line 169, ../sass/fonts.scss */
 .icon-arrows-expand-horizontal1:before {
   content: "\e02a";
 }
+
+/* line 172, ../sass/fonts.scss */
 .icon-arrows-expand-vertical1:before {
   content: "\e02b";
 }
+
+/* line 175, ../sass/fonts.scss */
 .icon-arrows-fit-horizontal:before {
   content: "\e02c";
 }
+
+/* line 178, ../sass/fonts.scss */
 .icon-arrows-fit-vertical:before {
   content: "\e02d";
 }
+
+/* line 181, ../sass/fonts.scss */
 .icon-arrows-glide:before {
   content: "\e02e";
 }
+
+/* line 184, ../sass/fonts.scss */
 .icon-arrows-glide-horizontal:before {
   content: "\e02f";
 }
+
+/* line 187, ../sass/fonts.scss */
 .icon-arrows-glide-vertical:before {
   content: "\e030";
 }
+
+/* line 190, ../sass/fonts.scss */
 .icon-arrows-hamburger1:before {
   content: "\e031";
 }
+
+/* line 193, ../sass/fonts.scss */
 .icon-arrows-hamburger-2:before {
   content: "\e032";
 }
+
+/* line 196, ../sass/fonts.scss */
 .icon-arrows-horizontal:before {
   content: "\e033";
 }
+
+/* line 199, ../sass/fonts.scss */
 .icon-arrows-info:before {
   content: "\e034";
 }
+
+/* line 202, ../sass/fonts.scss */
 .icon-arrows-keyboard-alt:before {
   content: "\e035";
 }
+
+/* line 205, ../sass/fonts.scss */
 .icon-arrows-keyboard-cmd:before {
   content: "\e036";
 }
+
+/* line 208, ../sass/fonts.scss */
 .icon-arrows-keyboard-delete:before {
   content: "\e037";
 }
+
+/* line 211, ../sass/fonts.scss */
 .icon-arrows-keyboard-down:before {
   content: "\e038";
 }
+
+/* line 214, ../sass/fonts.scss */
 .icon-arrows-keyboard-left:before {
   content: "\e039";
 }
+
+/* line 217, ../sass/fonts.scss */
 .icon-arrows-keyboard-return:before {
   content: "\e03a";
 }
+
+/* line 220, ../sass/fonts.scss */
 .icon-arrows-keyboard-right:before {
   content: "\e03b";
 }
+
+/* line 223, ../sass/fonts.scss */
 .icon-arrows-keyboard-shift:before {
   content: "\e03c";
 }
+
+/* line 226, ../sass/fonts.scss */
 .icon-arrows-keyboard-tab:before {
   content: "\e03d";
 }
+
+/* line 229, ../sass/fonts.scss */
 .icon-arrows-keyboard-up:before {
   content: "\e03e";
 }
+
+/* line 232, ../sass/fonts.scss */
 .icon-arrows-left:before {
   content: "\e03f";
 }
+
+/* line 235, ../sass/fonts.scss */
 .icon-arrows-left-double-32:before {
   content: "\e040";
 }
+
+/* line 238, ../sass/fonts.scss */
 .icon-arrows-minus:before {
   content: "\e041";
 }
+
+/* line 241, ../sass/fonts.scss */
 .icon-arrows-move:before {
   content: "\e042";
 }
+
+/* line 244, ../sass/fonts.scss */
 .icon-arrows-move2:before {
   content: "\e043";
 }
+
+/* line 247, ../sass/fonts.scss */
 .icon-arrows-move-bottom:before {
   content: "\e044";
 }
+
+/* line 250, ../sass/fonts.scss */
 .icon-arrows-move-left:before {
   content: "\e045";
 }
+
+/* line 253, ../sass/fonts.scss */
 .icon-arrows-move-right:before {
   content: "\e046";
 }
+
+/* line 256, ../sass/fonts.scss */
 .icon-arrows-move-top:before {
   content: "\e047";
 }
+
+/* line 259, ../sass/fonts.scss */
 .icon-arrows-plus:before {
   content: "\e048";
 }
+
+/* line 262, ../sass/fonts.scss */
 .icon-arrows-question:before {
   content: "\e049";
 }
+
+/* line 265, ../sass/fonts.scss */
 .icon-arrows-remove:before {
   content: "\e04a";
 }
+
+/* line 268, ../sass/fonts.scss */
 .icon-arrows-right:before {
   content: "\e04b";
 }
+
+/* line 271, ../sass/fonts.scss */
 .icon-arrows-right-double:before {
   content: "\e04c";
 }
+
+/* line 274, ../sass/fonts.scss */
 .icon-arrows-rotate:before {
   content: "\e04d";
 }
+
+/* line 277, ../sass/fonts.scss */
 .icon-arrows-rotate-anti:before {
   content: "\e04e";
 }
+
+/* line 280, ../sass/fonts.scss */
 .icon-arrows-rotate-anti-dashed:before {
   content: "\e04f";
 }
+
+/* line 283, ../sass/fonts.scss */
 .icon-arrows-rotate-dashed:before {
   content: "\e050";
 }
+
+/* line 286, ../sass/fonts.scss */
 .icon-arrows-shrink:before {
   content: "\e051";
 }
+
+/* line 289, ../sass/fonts.scss */
 .icon-arrows-shrink-diagonal1:before {
   content: "\e052";
 }
+
+/* line 292, ../sass/fonts.scss */
 .icon-arrows-shrink-diagonal2:before {
   content: "\e053";
 }
+
+/* line 295, ../sass/fonts.scss */
 .icon-arrows-shrink-horizonal2:before {
   content: "\e054";
 }
+
+/* line 298, ../sass/fonts.scss */
 .icon-arrows-shrink-horizontal1:before {
   content: "\e055";
 }
+
+/* line 301, ../sass/fonts.scss */
 .icon-arrows-shrink-vertical1:before {
   content: "\e056";
 }
+
+/* line 304, ../sass/fonts.scss */
 .icon-arrows-shrink-vertical2:before {
   content: "\e057";
 }
+
+/* line 307, ../sass/fonts.scss */
 .icon-arrows-sign-down:before {
   content: "\e058";
 }
+
+/* line 310, ../sass/fonts.scss */
 .icon-arrows-sign-left:before {
   content: "\e059";
 }
+
+/* line 313, ../sass/fonts.scss */
 .icon-arrows-sign-right:before {
   content: "\e05a";
 }
+
+/* line 316, ../sass/fonts.scss */
 .icon-arrows-sign-up:before {
   content: "\e05b";
 }
+
+/* line 319, ../sass/fonts.scss */
 .icon-arrows-slide-down1:before {
   content: "\e05c";
 }
+
+/* line 322, ../sass/fonts.scss */
 .icon-arrows-slide-down2:before {
   content: "\e05d";
 }
+
+/* line 325, ../sass/fonts.scss */
 .icon-arrows-slide-left1:before {
   content: "\e05e";
 }
+
+/* line 328, ../sass/fonts.scss */
 .icon-arrows-slide-left2:before {
   content: "\e05f";
 }
+
+/* line 331, ../sass/fonts.scss */
 .icon-arrows-slide-right1:before {
   content: "\e060";
 }
+
+/* line 334, ../sass/fonts.scss */
 .icon-arrows-slide-right2:before {
   content: "\e061";
 }
+
+/* line 337, ../sass/fonts.scss */
 .icon-arrows-slide-up1:before {
   content: "\e062";
 }
+
+/* line 340, ../sass/fonts.scss */
 .icon-arrows-slide-up2:before {
   content: "\e063";
 }
+
+/* line 343, ../sass/fonts.scss */
 .icon-arrows-slim-down:before {
   content: "\e064";
 }
+
+/* line 346, ../sass/fonts.scss */
 .icon-arrows-slim-down-dashed:before {
   content: "\e065";
 }
+
+/* line 349, ../sass/fonts.scss */
 .icon-arrows-slim-left:before {
   content: "\e066";
 }
+
+/* line 352, ../sass/fonts.scss */
 .icon-arrows-slim-left-dashed:before {
   content: "\e067";
 }
+
+/* line 355, ../sass/fonts.scss */
 .icon-arrows-slim-right:before {
   content: "\e068";
 }
+
+/* line 358, ../sass/fonts.scss */
 .icon-arrows-slim-right-dashed:before {
   content: "\e069";
 }
+
+/* line 361, ../sass/fonts.scss */
 .icon-arrows-slim-up:before {
   content: "\e06a";
 }
+
+/* line 364, ../sass/fonts.scss */
 .icon-arrows-slim-up-dashed:before {
   content: "\e06b";
 }
+
+/* line 367, ../sass/fonts.scss */
 .icon-arrows-square-check:before {
   content: "\e06c";
 }
+
+/* line 370, ../sass/fonts.scss */
 .icon-arrows-square-down:before {
   content: "\e06d";
 }
+
+/* line 373, ../sass/fonts.scss */
 .icon-arrows-square-downleft:before {
   content: "\e06e";
 }
+
+/* line 376, ../sass/fonts.scss */
 .icon-arrows-square-downright:before {
   content: "\e06f";
 }
+
+/* line 379, ../sass/fonts.scss */
 .icon-arrows-square-left:before {
   content: "\e070";
 }
+
+/* line 382, ../sass/fonts.scss */
 .icon-arrows-square-minus:before {
   content: "\e071";
 }
+
+/* line 385, ../sass/fonts.scss */
 .icon-arrows-square-plus:before {
   content: "\e072";
 }
+
+/* line 388, ../sass/fonts.scss */
 .icon-arrows-square-remove:before {
   content: "\e073";
 }
+
+/* line 391, ../sass/fonts.scss */
 .icon-arrows-square-right:before {
   content: "\e074";
 }
+
+/* line 394, ../sass/fonts.scss */
 .icon-arrows-square-up:before {
   content: "\e075";
 }
+
+/* line 397, ../sass/fonts.scss */
 .icon-arrows-square-upleft:before {
   content: "\e076";
 }
+
+/* line 400, ../sass/fonts.scss */
 .icon-arrows-square-upright:before {
   content: "\e077";
 }
+
+/* line 403, ../sass/fonts.scss */
 .icon-arrows-squares:before {
   content: "\e078";
 }
+
+/* line 406, ../sass/fonts.scss */
 .icon-arrows-stretch-diagonal1:before {
   content: "\e079";
 }
+
+/* line 409, ../sass/fonts.scss */
 .icon-arrows-stretch-diagonal2:before {
   content: "\e07a";
 }
+
+/* line 412, ../sass/fonts.scss */
 .icon-arrows-stretch-diagonal3:before {
   content: "\e07b";
 }
+
+/* line 415, ../sass/fonts.scss */
 .icon-arrows-stretch-diagonal4:before {
   content: "\e07c";
 }
+
+/* line 418, ../sass/fonts.scss */
 .icon-arrows-stretch-horizontal1:before {
   content: "\e07d";
 }
+
+/* line 421, ../sass/fonts.scss */
 .icon-arrows-stretch-horizontal2:before {
   content: "\e07e";
 }
+
+/* line 424, ../sass/fonts.scss */
 .icon-arrows-stretch-vertical1:before {
   content: "\e07f";
 }
+
+/* line 427, ../sass/fonts.scss */
 .icon-arrows-stretch-vertical2:before {
   content: "\e080";
 }
+
+/* line 430, ../sass/fonts.scss */
 .icon-arrows-switch-horizontal:before {
   content: "\e081";
 }
+
+/* line 433, ../sass/fonts.scss */
 .icon-arrows-switch-vertical:before {
   content: "\e082";
 }
+
+/* line 436, ../sass/fonts.scss */
 .icon-arrows-up:before {
   content: "\e083";
 }
+
+/* line 439, ../sass/fonts.scss */
 .icon-arrows-up-double-33:before {
   content: "\e084";
 }
+
+/* line 442, ../sass/fonts.scss */
 .icon-arrows-upleft:before {
   content: "\e085";
 }
+
+/* line 445, ../sass/fonts.scss */
 .icon-arrows-upright:before {
   content: "\e086";
 }
+
+/* line 448, ../sass/fonts.scss */
 .icon-arrows-vertical:before {
   content: "\e087";
 }
