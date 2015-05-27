@@ -1,4 +1,5 @@
 <% image_blocks = images.each_slice((images.count / 2).ceil).to_a %>
+<% body = body%>
 
 <div class="holler-block holler-block--backgrounded" style="background-image: url(<%="'#{background_image}'"%>);">
       <div class="holler-block__section">
@@ -6,11 +7,7 @@
           <h3 class="opt-title opt-title--leader title-block__leader">
             <%= above %>
           </h3>
-          <h1 class="title title-block__title"></h1>
-          <p class="body title-block__body">
-            <%= body %>
-
-          </p>
+          <%= partial :"groups/title-block", locals: {titles: [{text: ""}], body: {text: body}}%>
         </div>
       </div>
       <div class="holler-block__section">
