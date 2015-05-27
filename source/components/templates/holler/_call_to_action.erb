@@ -23,7 +23,7 @@
     <section class="holler-block__section">
       <%= partial :"groups/cta-block", locals: {
         modifiers: "inline",
-        ctas: ctas
+        ctas: ctas.each { |cta| cta[:modifiers] ? cta : cta[:modifiers] = "horizontal" }
       } %>
     </section>
   </div>
