@@ -46,10 +46,10 @@
 				<%= partial :"templates/holler-block", locals:{
 						type: "showcase",
 						background_image: "/images/test-assets/hiring-bg.jpg", # optional
-						above: "Meet",
-						title: "Our Horing Partners",
+						above: "Meet", #optional
+						title: "Our Hiring Partners",
 						body: lorem.sentences(3),
-						images: [{url: "/images/test-assets/deloitte-logo.png", alt: "Deloitte logo" },{url: "/images/test-assets/springer-logo.png", alt: "Springer logo" },{url: "/images/test-assets/ctm-logo.png", alt: "Compare the Market logo" }, {url: "/images/test-assets/thoughtworks-logo.png", alt: "Thought Works logo" } ],
+						images: [{src: "/images/test-assets/deloitte-logo.png", alt: "Deloitte logo" },{src: "/images/test-assets/springer-logo.png", alt: "Springer logo" },{src: "/images/test-assets/ctm-logo.png", alt: "Compare the Market logo" }, {src: "/images/test-assets/thoughtworks-logo.png", alt: "Thought Works logo" } ],
 						cta: {link: "#", text: "CTA"}
 					} %>
 
