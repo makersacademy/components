@@ -1,10 +1,29 @@
 <% component = "holler-block" %>
 
+<% if defined?(background_image) && !background_image.nil? %>
+
+<% locals[:modifiers] = Array(locals[:modifiers]) << "backgrounded" %>
+
+<div class="<%= component_classes(component, locals) %>" style="background-image: url('<%= background_image %>');">
+<% else %>
 <div class="<%= component_classes(component, locals) %>">
+<% end %>
+
+
   <section class="holler-block__section">
-    <%= partial :"groups/title-block", locals: { titles: [{text: title[:text]}], body: {text: title[:body]}} %>
+    <%= partial :"groups/title-block", locals: 
+    { 
+      titles: [
+        {text: title[:text]},
+        {modifiers: "subtitle", text: subtitle}
+      ], 
+      body: {text: title[:body]}
+    } %>
   </section>
   <section class="holler-block__section">
-    <%= partial :"groups/cta-block", locals: {ctas: [{modifiers: ["horizontal"],link: cta[:link], text: cta[:text]}]  } %>
+    <%= partial :"groups/cta-block", locals: {
+      modifiers: "inline",
+      ctas: ctas.map{ | cta | cta.merge(modifiers: "horizontal") }
+    } %>
   </section>
 </div>

@@ -3,7 +3,7 @@
 }
 
 .kern-b, .kern-B {
-  
+  letter-spacing: 0.01em;
 }
 
 .kern-c, .kern-C {
@@ -19,7 +19,7 @@
 }
 
 .kern-f, .kern-F {
-  
+  letter-spacing: 0.03em
 }
 
 .kern-g, .kern-G {
@@ -35,7 +35,7 @@
 }
 
 .kern-j, .kern-J {
-  
+  letter-spacing: 0.0em;
 }
 
 .kern-k, .kern-K {
@@ -43,19 +43,19 @@
 }
 
 .kern-l, .kern-L {
-  letter-spacing: 0.14em;
+  letter-spacing: 0.04em;
 }
 
 .kern-m, .kern-M {
-  letter-spacing: -0.07em;
+  letter-spacing: -0.02em;
 }
 
 .kern-n, .kern-N {
-  letter-spacing: -0.05em;
+  letter-spacing: 0.02em;
 }
 
 .kern-o, .kern-O {
-  letter-spacing: -0.07em;
+  letter-spacing: -0.00em;
 }
 
 .kern-p, .kern-P {
@@ -67,11 +67,11 @@
 }
 
 .kern-r, .kern-R {
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
 }
 
 .kern-s, .kern-S {
-  
+  letter-spacing: 0.00em;
 }
 
 .kern-t, .kern-T {
@@ -83,7 +83,7 @@
 }
 
 .kern-v, .kern-V {
-  
+  letter-spacing: 0.04em;
 }
 
 .kern-w, .kern-W {
@@ -91,7 +91,7 @@
 }
 
 .kern-x, .kern-X {
-  
+  letter-spacing: 0.05em;
 }
 
 .kern-y, .kern-Y {
@@ -102,8 +102,13 @@
   
 }
 
+.kern- {
+  letter-spacing: 0.00em;
+}
+
 .kern-0, .kern-1, .kern-2, .kern-3, .kern-4, .kern-5, .kern-6, .kern-7, .kern-8, .kern-9 {
   font-size: 0.7em;
+  letter-spacing: 0.02em;
 }
 
 /* last letter always has no letter spacing at all */

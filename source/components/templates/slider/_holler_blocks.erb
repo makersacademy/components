@@ -1,0 +1,16 @@
+<% component = "slider" %>
+
+<div class="one-up-block">
+  <div class="slider">
+    <% content.each do | item | %>
+      <%= partial :"templates/holler-block", locals: {
+        parent: "slider",
+        type: "call_to_action",
+        background_image: item[:background_image],
+        ctas: item[:ctas],
+        title: {text: item[:title], body: item[:text]},
+        subtitle: item.fetch(:subtitle, "")
+      } %>
+    <% end %>
+  </div>
+</div>

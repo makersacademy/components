@@ -1,7 +1,5 @@
 <div class="page">
 
-	<div class="container">
-
 		<div class="title-block">
 			<h1 class="title title-block__title">Slider</h1>
 			<h3 class="opt-title opt-title--below title-block__subtitle">group</h3>
@@ -43,9 +41,46 @@
 					]
 				} %>
 
-			<!-- END examples -->
+				<span class="label">Slider Containing Holler Blocks</span>
 
-		</div>
+				<%= partial :"templates/slider", locals: {
+					type: "holler_blocks",
+					content: [
+						{
+							background_image: "http://placeholdit.com/1920.1080",
+							title: "Project Name",
+							subtitle: "Gabe, Alan, and Dave, April 2015",
+							text: lorem.sentences(2),
+							ctas: [
+								{
+									text: "See it live",
+									link: "#"
+								},
+								{
+									text: "View code",
+									link: "#"
+								}
+							]
+						},
+						{
+							title: "Funky Name",
+							subtitle: "Dave, Martin, and Lauren, May 2015",
+							text: lorem.sentences(2),
+							ctas: [
+								{
+									text: "See it live",
+									link: "#"
+								},
+								{
+									text: "View code",
+									link: "#"
+								}
+							]
+						}
+					]
+				} %>
+
+			<!-- END examples -->
 
 	</div>
 
