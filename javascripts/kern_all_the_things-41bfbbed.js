@@ -1,0 +1,1 @@
+$(document).ready(function(){var n=function(n){for(var t=n.text(),a=t.split(""),e=a.length-1;e>=0;e--)a[e]="<span class='kern-"+a[e]+"'>"+a[e]+"</span>";n.html(a.join(""))};$(".title").each(function(t,a){n($(a))})});
