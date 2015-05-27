@@ -20,23 +20,11 @@
 				<!-- BEGIN examples -->
 
 				<span class="label">Text &amp; CTA</span>
-				<div class="holler-block">
-					<section class="holler-block__section">
-						<div class="title-block">
-							<h1 class="title title-block__title">
-								Title
-							</h1>
-							<p class="body title-block__body">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, vero, repudiandae, vitae quibusdam eius iure porro facilis esse enim praesentium explicabo perspiciatis quidem quaerat! Necessitatibus, provident eveniet doloremque soluta delectus?
-							</p>
-						</div>
-					</section>
-					<section class="holler-block__section">
-						<div class="cta-block">
-							<a href="#" class="cta cta--horizontal">CTA</a>
-						</div>
-					</section>
-				</div>
+
+				<%= partial :"templates/holler-block", locals: {
+					type: "call_to_action",
+					cta: {link: "#", text: "CTA"},
+					title: {text: "Title", body: lorem.sentences(4)} } %>
 
  				<span class="label">Text &amp; Capture</span>
 
@@ -52,6 +40,19 @@
 						action: "/newsletter.mailchimp"
 					}
 				} %>
+
+				<span class="label">Showcase</span>
+
+				<%= partial :"templates/holler-block", locals:{
+						type: "showcase",
+						background_image: "/images/test-assets/hiring-bg.jpg", # optional
+						above_title: "Meet", #optional
+						title: "Our Hiring Partners",
+						body: lorem.sentences(3),
+						images: [{src: "/images/test-assets/deloitte-logo.png", alt: "Deloitte logo" },{src: "/images/test-assets/springer-logo.png", alt: "Springer logo" },{src: "/images/test-assets/ctm-logo.png", alt: "Compare the Market logo" }, {src: "/images/test-assets/thoughtworks-logo.png", alt: "Thought Works logo" } ],
+						call_to_action: {link: "#", text: "CTA"}
+					} %>
+
 
 				<span class="label">Text &amp; Capture Fullheight</span>
 				<div class="holler-block holler-block--full">

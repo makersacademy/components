@@ -1,0 +1,26 @@
+<% image_blocks = images.each_slice((images.count / 2).ceil).to_a %>
+
+<% if defined?(background_image) %>
+<div class="holler-block holler-block--backgrounded" style="background-image: url(<%="'#{background_image}'"%>);">
+<% else %>
+<div class="holler-block">
+<% end %>
+  <div class="holler-block__section">
+    <%= partial :"groups/title-block", locals: {parent: "holler-block__section", titles: [{modifiers: ["leader"],text: locals.fetch(:above_title, "")},{text: title}], body: {text: body}}%>
+  </div>
+  <div class="holler-block__section">
+    <div class="container">
+      <div class="three-up-block">
+        <section class="three-up-block__section">
+          <%= partial :"groups/image-block", locals: {parent: "three-up-block__section", modifiers: [ "grid", "1grid"], images: image_blocks.first } %>
+        </section>
+        <section class="three-up-block__section">
+          <%= partial :"groups/cta-block", locals: { parent: "three-up-block__section", ctas: [call_to_action.merge(modifiers: "horizontal")] }  %>
+        </section>
+        <section class="three-up-block__section">
+          <%= partial :"groups/image-block", locals: {parent: "three-up-block__section", modifiers: [ "grid", "1grid"], images: image_blocks.last } %>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
