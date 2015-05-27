@@ -1,0 +1,135 @@
+<!-- BEGIN nav -->
+
+<%= partial(:'templates/nav', locals: {
+  call_to_action: {
+    text: "Apply",
+    link: "#"
+  },
+  links: [
+    { text: "Home", link: "homepage" },
+    { text: "Partners", link: "partners" },
+    { text: "Curriculum", link: "curriculum" }
+  ]
+}) %>
+
+<!-- END nav -->
+
+<!-- BEGIN grad splash -->
+
+<%= partial :"templates/holler-block", locals: {
+  type: "email_capture",
+  background_image: "images/test-assets/splash-bg.jpg",
+  leader: "Meet our",
+  title: "Graduates",
+  body: lorem.sentences(2),
+  capture: {
+    placeholder: "Your email address",
+    submit_text: "Stay informed",
+    action: "/newsletter.mailchimp"
+  }
+} %>
+
+<!-- END grad splash -->
+
+<!-- BEGIN graduates slider -->
+
+<%= partial :"templates/slider", locals: {
+  type: "media_components",
+  content: [
+    {
+      name: "Sam Joseph",
+      previous_job: "Master of Ceremonies",
+      new_job: "Lead Developer",
+      cohort: "April 2015",
+      testimonial: "The best web development course in the world, hands down. An amazing experience that I'm planning on telling all my friends about.",
+      image: "/images/test-assets/test-grad.png",
+      case_study_link: "http://google.com",
+      blog_link: "http://blog.com"
+    },
+    {
+      name: "Pam Joseph",
+      previous_job: "Mistress of Ceremonies",
+      new_job: "Head Developer",
+      cohort: "May 2015",
+      testimonial: "The best web development course in the world, hands down. An amazing experience that I'm planning on telling all my friends about.",
+      image: "http://placehold.it/400x600",
+      case_study_link: "http://google.com",
+      blog_link: "http://blog.com"
+    }
+  ]
+} %>
+
+<!-- END graduates slider -->
+
+<!-- BEGIN projects slider -->
+
+<%= partial :"templates/slider", locals: {
+  type: "holler_blocks",
+  content: [
+    {
+      background_image: "/images/test-assets/test-project.jpg",
+      title: "Project Name",
+      subtitle: "Gabe, Alan, and Dave, April 2015",
+      text: lorem.sentences(2),
+      ctas: [
+        {
+          text: "See it live",
+          link: "#"
+        },
+        {
+          text: "View code",
+          link: "#"
+        }
+      ]
+    },
+    {
+      title: "Funky Name",
+      subtitle: "Dave, Martin, and Lauren, May 2015",
+      text: lorem.sentences(2),
+      ctas: [
+        {
+          text: "See it live",
+          link: "#"
+        },
+        {
+          text: "View code",
+          link: "#"
+        }
+      ]
+    }
+  ]
+} %>
+
+<!-- END projects slider -->
+
+<!-- BEGIN apply block -->
+
+<%= partial :"templates/holler-block", locals: {
+  type: "call_to_action",
+  background_image: "/images/test-assets/apply-bg.jpg",
+  ctas: [
+    {link: "#", text: "Payment Options", modifiers: "horizontal"},
+    {link: "#", text: "Apply", modifiers: ["vertical", "big"]},
+    {link: "#", text: "Learn More", modifiers: "horizontal"}
+  ],
+  title: {text: "Apply Now", body: "The full 16-week programme costs just &pound;8,000.
+      We run cohorts every 6 weeks, and applications
+      are highly competitive. We offer numerous payment options."} } %>
+
+<!-- END apply block -->
+
+<!-- BEGIN footer -->
+
+<div class="three-up-block three-up-block--small three-up-block--backgrounded">
+  <section class="three-up-block__section">
+  </section>
+  <section class="three-up-block__section">
+    <div class="image-block image-block--centered">
+      <%= image_tag "/images/test-assets/footer-brand.png", alt: "Makers Academy Logo", class: "image image--portrait image-block__image" %>
+    </div>
+  </section>
+  <section class="three-up-block__section">
+  </section>
+</div>
+
+<!-- END footer -->
