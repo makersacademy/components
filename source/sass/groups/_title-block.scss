@@ -47,6 +47,11 @@ Think 'informative' messages. */
 .title-block__blockquote {
 	margin: 0 auto;
 	margin-top: rhythm-increment(0) + em;
+
+	@include respond-to(mobile) {
+		font-size: $font-size-base;
+		text-align: center !important;
+	}
 }
 
 .title-block--left {
