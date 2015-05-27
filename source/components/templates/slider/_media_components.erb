@@ -3,7 +3,7 @@
 <div class="one-up-block">
   <div class="slider">
     <% content.each do | item | %>
-    <div class="media-component media-component--reverse">
+    <div class="media-component media-component--reverse media-component--gs">
 
       <div class="container">
 
@@ -12,6 +12,10 @@
             parent: "media-component__section",
             modifiers: ["right"],
             titles: [
+              {
+                modifiers: "leader",
+                text: item.fetch(:leader, "")
+              },
               {
                 text: item[:name]
               },

@@ -8,6 +8,7 @@
         type: "call_to_action",
         background_image: item[:background_image],
         ctas: item[:ctas],
+        leader: item.fetch(:leader, ""),
         title: {text: item[:title], body: item[:text]},
         subtitle: item.fetch(:subtitle, "")
       } %>
