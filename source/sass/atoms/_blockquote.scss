@@ -1,0 +1,30 @@
+/* Testimonials and quotations, optionally with a citation. */
+
+.blockquote {
+  /* --- structure --- */
+  max-width: 19em;
+  position: relative;
+
+  /* theme */
+  font-size: $font-size-1;
+  @include default-body-font-styling;
+  font-style: italic;
+  text-indent: 2em;
+
+  &:before, &:after {
+    display: block;
+    position: absolute;
+    font-size: $font-size-2;
+    height: 0;
+    width: 0;
+    line-height: 0;
+    text-indent: 0;
+  }
+
+  &:before {
+    content: "\201C"; /* &ldquo; */
+    left: 0.10em;
+    top: 0.28em;
+  }
+
+}

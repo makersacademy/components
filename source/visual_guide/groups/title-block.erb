@@ -87,6 +87,17 @@
 			}
 		} %>
 
+		<span class="label">With Blockquote</span>
+		<%= partial "groups/title-block", locals: {
+			titles: [
+				{ 
+					text: lorem.words(1)
+				}
+			],
+			body: { text: lorem.sentences(3) },
+			blockquote: { text: lorem.sentences(3) }
+		} %>
+
 		<!-- END examples -->
 
 	</div>

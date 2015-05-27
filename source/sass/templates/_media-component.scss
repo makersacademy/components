@@ -19,7 +19,7 @@
 	overflow: hidden;
 
 	/* --- child layout --- */
-	.slider-block {
+	.slider {
 		height: 62vh;
 		@include respond-to(shallow-screen) {
 			height: 80vh;

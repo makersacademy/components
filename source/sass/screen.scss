@@ -22,6 +22,7 @@
 @import "atoms/_image";
 @import "atoms/_caption";
 @import "atoms/_list-item";
+@import "atoms/_blockquote";
 
 /* groups */
 @import "groups/_title-block";
@@ -34,7 +35,7 @@
 /* templates */
 @import "templates/_holler-block";
 @import "templates/_media-component";
-@import "templates/_slider-block";
+@import "templates/_slider";
 @import "templates/_three-up-block";
 @import "templates/_two-up-block";
 @import "templates/_nav-block";

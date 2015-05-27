@@ -44,11 +44,16 @@ Think 'informative' messages. */
 	}
 }
 
+.title-block__blockquote {
+	margin: 0 auto;
+	margin-top: rhythm-increment(0) + em;
+}
+
 .title-block--left {
 	text-align: left;
 
 	/* --- child layout --- */
-	.title, .body, .opt-title {
+	.title, .body, .blockquote {
 		text-align: left;
 		margin-left: 0;
 		margin-right: 0;
@@ -72,7 +77,7 @@ Think 'informative' messages. */
 	text-align: right;
 
 	/* --- child layout --- */
-	.title, .body, .opt-title {
+	.title, .body, .blockquote {
 		text-align: right;
 		margin-left: 0;
 		margin-right: 0;

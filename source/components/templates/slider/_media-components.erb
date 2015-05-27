@@ -1,0 +1,62 @@
+<% component = "slider" %>
+
+<div class="one-up-block">
+  <div class="slider">
+    <% content.each do | item | %>
+    <div class="media-component media-component--reverse">
+
+      <div class="container">
+
+        <section class="media-component__section">
+          <%= partial :"groups/title-block", locals: {
+            parent: "media-component__section",
+            modifiers: ["right"],
+            titles: [
+              {
+                text: item[:name]
+              },
+              {
+                modifiers: "subtitle",
+                text: "#{item[:previous_job]} to #{item[:new_job]}, #{item[:cohort]}"
+              }
+            ],
+            blockquote: { text: item[:testimonial] }
+          } %>
+        </section>
+        <section class="media-component__section">
+          <%= partial :"groups/image-block", locals: {
+              modifiers: "full",
+              images: [
+                {
+                  modifiers: ["portrait"],
+                  src: item[:image],
+                  alt: "A picture of #{item[:name]}"
+                }
+              ]
+            } %>
+        </section>
+        <section class="media-component__section">
+          <%= partial :"groups/cta-block", locals: {
+              parent: "media-component__section",
+              modifiers: ["right", "inline"],
+              ctas: [
+                {
+                  modifiers: "horizontal",
+                  text: "Read more",
+                  link: item[:case_study_link]
+                },
+                {
+                  modifiers: "horizontal",
+                  text: "Read blog",
+                  link: item[:blog_link]
+                }
+              ]
+            } %>
+        </section>
+
+      </div>
+    
+    </div>
+    <% end %>
+  </div>
+</div>

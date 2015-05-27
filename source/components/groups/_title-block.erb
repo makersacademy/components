@@ -25,12 +25,25 @@
 
   <% end %>
 
+  <% if defined?(body) %>
 
-  <%= partial 'atoms/body', locals: {
-    parent: component,
-    text: body[:text],
-    modifiers: body[:modifiers]
-  } %>
+    <%= partial 'atoms/body', locals: {
+      parent: component,
+      text: body[:text],
+      modifiers: body[:modifiers]
+    } %>
+
+  <% end %>
+
+  <% if defined?(blockquote) %>
+
+    <%= partial 'atoms/blockquote', locals: {
+      parent: component,
+      text: blockquote[:text],
+      modifiers: blockquote[:modifiers]
+    } %>
+
+  <% end %>
 
 </div>
 
