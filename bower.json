@@ -14,10 +14,6 @@
   "license": "MIT",
   "ignore": [
     "*",
-    "!source/stylesheets/*",
-    "!source/javascripts/*",
-    "!source/javascripts/**/*",
-    "!source/images/test-assets/*",
-    "!source/sass/*"
+    "!source/**"
   ]
 }
