@@ -14,5 +14,5 @@ If so, submit a PR and let's get ready to QA it! QA time is max. a week, and we'
 
 Thank you again for contributing!
 
-Once your contribution has been merged to master, please don't forget to run
+> Once your contribution has been merged to master, please don't forget to run
 `rake deploy` to bump up the version number and deploy to github pages and bower
