@@ -1,8 +1,20 @@
 require "middleman-gh-pages"
+require "json"
 
-desc 'Bumps bower version and deploys.'
+desc "Bumps bower version and deploys."
 task :deploy_to_bower do
-  puts "Please enter a version number, e.g. '0.1.3':"
+  deploy_to_bower
+end
+
+desc "Publishes to github pages and deploys to bower"
+task :deploy do
+  deploy_to_bower
+  # This runs GitHub pages publish method
+  Rake::Task["publish"].invoke
+end
+
+def deploy_to_bower
+  puts "Please enter a version number, previous version was #{bower["version"]}:"
   new_version = $stdin.gets
   puts "Compiling Sass files into CSS"
   `compass compile`
@@ -15,3 +27,6 @@ task :deploy_to_bower do
   puts "Done!"
 end
 
+def bower
+  JSON.load(File.new("bower.json"))
+end

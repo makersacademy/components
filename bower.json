@@ -1,6 +1,6 @@
 {
   "name": "makers_styles",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "homepage": "https://github.com/makersacademy/style_guide",
   "authors": [
     "Sam Morgan <samm@makersacademy.com>",
@@ -14,10 +14,6 @@
   "license": "MIT",
   "ignore": [
     "*",
-    "!source/stylesheets/*",
-    "!source/javascripts/*",
-    "!source/images/*",
-    "!source/images/**/*",
-    "!source/fonts/*"
+    "!source/**"
   ]
 }
