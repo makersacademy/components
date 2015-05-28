@@ -1,18 +1,18 @@
 <div class="page">
 
-  <!-- BEGIN nav -->
+<!-- BEGIN nav -->
 
-  <%= partial(:'templates/nav', locals: {
-    call_to_action: {
-      text: "Apply",
-      link: "#"
-    },
-    links: [
-      { text: "Graduates", link: "graduates" },
-      { text: "Partners", link: "partners" },
-      { text: "Curriculum", link: "curriculum" }
-    ]
-  }) %>
+<%= partial(:'templates/nav', locals: {
+  call_to_action: {
+    text: "Apply",
+    link: "#"
+  },
+  links: [
+    { text: "Graduates", link: "graduates" },
+    { text: "Partners", link: "partners" },
+    { text: "Curriculum", link: "curriculum" }
+  ]
+}) %>
 
   <!-- END nav -->
 
@@ -20,19 +20,19 @@
 
     <!-- BEGIN top splash -->
 
-    <div class="holler-block holler-block--full holler-block--backgrounded" style="background-image: url('/images/test-assets/splash-bg.jpg');">
+    <div class="holler-block holler-block--full holler-block--backgrounded" style="background-image: url(<%= url_for('/images/test-assets/splash-bg.jpg') %>);">
       <section class="holler-block__section">
         <div class="title-block">
           <div class="image-block image-block--centered title-block__image-block">
-            <img class="image image--landscape image-block__image" src="/images/test-assets/makers-brandmark.png" alt="Makers Academy logo">
+            <%= image_tag "/images/test-assets/makers-brandmark.png", alt: "Makers Academy logo", class: "image image--landscape image-block__image" %>
           </div>
           <h1 class="title title--wide title-block__title">
             Learn to Code in <span class="title__numbers">12</span> weeks
           </h1>
           <p class="body body--big title-block__body">
-            Makers Academy is Europe&rsquo;s leading developer bootcamp.
-            Learn the principles of software craftsmanship under
-            the guidance of top industry professionals.
+          Makers Academy is Europe&rsquo;s leading developer bootcamp.
+          Learn the principles of software craftsmanship under
+          the guidance of top industry professionals.
           </p>
         </div>
       </section>
@@ -53,198 +53,170 @@
 
     <!-- BEGIN grads -->
 
-    <%= partial "components/templates/media-component--with-slider", locals: {
-        leader: "Meet",
-        title: "Our Grads",
-        body_copy: "We&rsquo;ve graduated over 300 beginners into their dream jobs as junior developers. Some were looking for a career change, others to define themselves.",
-        cta: {
-          text: "Read Grad Stories",
-          link: "/graduates",
-          type: "horizontal"
+    <%= partial :"templates/slider", locals: {
+      type: "media_components",
+      content: [
+        {
+          name: "Sam Joseph",
+          previous_job: "Master of Ceremonies",
+          new_job: "Lead Developer",
+          cohort: "April 2015",
+          testimonial: "The best web development course in the world, hands down. An amazing experience that I'm planning on telling all my friends about.",
+          image: "http://placehold.it/400x600",
+          case_study_link: "http://google.com",
+          blog_link: "http://blog.com"
         },
-        slider_content: [
-          {
-            content_type: "image",
-            src: "/images/test-assets/test-grad.png",
-            orientation: "portrait",
-            alt: "A test graduate, looking at the camera.",
-            caption: "Firstname Lastname\nCohort of 2015\nNow a Junior Developer at CompanyName"
-          },
-          {
-            content_type: "image",
-            src: "http://placehold.it/400x600&text=400x600",
-            orientation: "portrait",
-            alt: "A gray box with the text '400x600'",
-            caption: "Othername Lastname\nCohort of 2015\nNow a Junior Developer at OtherCompanyName"
-          }
-        ]
-      } %>
+        {
+          name: "Pam Joseph",
+          previous_job: "Mistress of Ceremonies",
+          new_job: "Head Developer",
+          cohort: "May 2015",
+          testimonial: "The best web development course in the world, hands down. An amazing experience that I'm planning on telling all my friends about.",
+          image: "http://placehold.it/400x600",
+          case_study_link: "http://google.com",
+          blog_link: "http://blog.com"
+        }
+      ]
+    } %>
+  <!-- END grads -->
 
-    <!-- END grads -->
+  <!-- BEGIN hiring partners -->
 
-    <!-- BEGIN hiring partners -->
-
-    <div class="holler-block holler-block--backgrounded" style="background-image: url('/images/test-assets/hiring-bg.jpg');">
-      <div class="holler-block__section">
-        <div class="title-block">
-          <h3 class="opt-title opt-title--above title-block__leader">
-            Meet
-          </h3>
-          <h1 class="title title-block__title">
-            Our Hiring Partners
-          </h1>
-          <p class="body title-block__body">
-            We&rsquo;ve graduated over 300 beginners into their dream
-            jobs as junior developers. Some were looking for a
-            career change, others to define themselves.
-          </p>
-        </div>
-      </div>
-      <div class="holler-block__section">
-        <div class="container">
-          <div class="three-up-block">
-            <section class="three-up-block__section">
-              <div class="image-block image-block--grid image-block--1grid">
-                <img class="image image--landscape image-block__image" src="/images/test-assets/deloitte-logo.png" alt="Deloitte logo" />
-                <img class="image image--landscape image-block__image" src="/images/test-assets/springer-logo.png" alt="Springer logo" />
-              </div>
-            </section>
-            <section class="three-up-block__section">
-              <div class="cta-block three-up-block__section__cta-block">
-                <a href="#" class="cta cta--horizontal">See more partners</a>
-              </div>
-            </section>
-            <section class="three-up-block__section">
-              <div class="image-block image-block--grid image-block--1grid">
-                <img class="image image--landscape image-block__image" src="/images/test-assets/ctm-logo.png" alt="Compare the Market logo" />
-                <img class="image image--landscape image-block__image" src="/images/test-assets/thoughtworks-logo.png" alt="Thoughtworks logo" />
-              </div>
-            </section>
-          </div>
-        </div>
+  <div class="holler-block holler-block--backgrounded" style="background-image: url(<%= url_for('images/test-assets/hiring-bg.jpg') %>);">
+    <div class="holler-block__section">
+      <div class="title-block">
+        <h3 class="opt-title opt-title--above title-block__leader">
+          Meet
+        </h3>
+        <h1 class="title title-block__title">
+          Our Hiring Partners
+        </h1>
+        <p class="body title-block__body">
+        We&rsquo;ve graduated over 300 beginners into their dream
+        jobs as junior developers. Some were looking for a
+        career change, others to define themselves.
+        </p>
       </div>
     </div>
-
-    <!-- END hiring partners -->
-
-    <!-- BEGIN curriculum -->
-
-    <%= partial "components/templates/media-component--with-slider", locals: {
-        modifiers: ["reverse"],
-        leader: "A world-leading",
-        title: "Curriculum",
-        body_copy: "We&rsquo;ve graduated over 300 beginners into their dream jobs as junior developers. Some were looking for a career change, others to define themselves.",
-        cta: {
-          text: "Our Education Philosophy",
-          link: "/curriculum",
-          type: "horizontal"
-        },
-        slider_content: [
-          {
-            content_type: "image",
-            src: "/images/test-assets/test-curric.jpg",
-            orientation: "portrait",
-            alt: "Rails is a web application framework for large systems."
-          },
-          {
-            content_type: "image",
-            src: "/images/test-assets/test-curric.jpg",
-            orientation: "portrait",
-            alt: "Rails is a web application framework for large systems."
-          }
-        ]
-      } %>
-
-    <div class="media-component media-component--reverse">
-
+    <div class="holler-block__section">
       <div class="container">
-
-        <section class="media-component__section">
-          <div class="title-block title-block--right media-component__section__title-block">
-            <h3 class="opt-title opt-title--above title-block__leader">
-              A world-leading
-            </h3>
-            <h1 class="title title-block__title">
-              Curriculum
-            </h1>
-            <p class="body title-block__body">
-              We&rsquo;ve graduated over 300 beginners into their dream
-              jobs as junior developers. Some were looking for a
-              career change, others to define themselves.
-            </p>
-          </div>
-        </section>
-        <section class="media-component__section">
-          <div class="slider">
-            <div class="image-block image-block--centered slider__image-block">
-              <img class="image image--portrait image-block__image" src="/images/test-assets/test-curric.jpg" alt="Rasterized Ruby on Rails block">
+        <div class="three-up-block">
+          <section class="three-up-block__section">
+            <div class="image-block image-block--grid image-block--1grid">
+              <%= image_tag "/images/test-assets/deloitte-logo.png", alt: "Deloitte logo", class: "image image--landscape image-block__image" %>
+              <%= image_tag "/images/test-assets/springer-logo.png", alt: "Springer logo", class: "image image--landscape image-block__image" %>
             </div>
-            <div class="title-block slider__title-block">
-              <div class="image-block image-block--centered title-block__image-block">
-                <img class="image image--portrait image-block__image" src="/images/test-assets/rails-logo.png" alt="Ruby on Rails logo">
-              </div>
-              <h1 class="title title-block__title">
-                Rails
-              </h1>
-              <p class="body title-block__body">
-                A web application framework for large systems. We'll help you understand Rails conventions, build your first Rails app, and deploy it.
-              </p>
+          </section>
+          <section class="three-up-block__section">
+            <div class="cta-block three-up-block__section__cta-block">
+              <a href="#" class="cta cta--horizontal">See more partners</a>
             </div>
-          </div>
-        </section>
-        <section class="media-component__section">
-          <div class="cta-block cta-block--right">
-            <a href="#" class="cta cta--horizontal">Our Education Philosophy</a>
-          </div>
-        </section>
-
+          </section>
+          <section class="three-up-block__section">
+            <div class="image-block image-block--grid image-block--1grid">
+              <%= image_tag "/images/test-assets/ctm-logo.png", alt: "Compare the Market logo", class: "image image--landscape image-block__image" %>
+              <%= image_tag "/images/test-assets/thoughtworks-logo.png", alt: "Thoughtworks logo", class: "image image--landscape image-block__image" %>
+            </div>
+          </section>
+        </div>
       </div>
-
     </div>
+  </div>
 
-    <!-- END curriculum -->
+  <!-- END hiring partners -->
 
-    <!-- BEGIN apply -->
+  <!-- BEGIN curriculum -->
 
-    <div class="holler-block holler-block--backgrounded" style="background-image: url('/images/test-assets/apply-bg.jpg');">
-      <div class="holler-block__section">
-        <div class="title-block">
+<div class="media-component media-component--reverse">
+
+  <div class="container">
+
+    <section class="media-component__section">
+      <div class="title-block title-block--right media-component__section__title-block">
+        <h3 class="opt-title opt-title--above title-block__leader">
+          A world-leading
+        </h3>
+        <h1 class="title title-block__title">
+          Curriculum
+        </h1>
+        <p class="body title-block__body">
+        We&rsquo;ve graduated over 300 beginners into their dream
+        jobs as junior developers. Some were looking for a
+        career change, others to define themselves.
+        </p>
+      </div>
+    </section>
+    <section class="media-component__section">
+      <div class="slider">
+        <div class="image-block image-block--centered slider__image-block">
+          <%= image_tag "/images/test-assets/test-curric.jpg", alt: "Rasterized Ruby on Rails block", class: "image image--portrait image-block__image" %>
+        </div>
+        <div class="title-block slider__title-block">
+          <div class="image-block image-block--centered title-block__image-block">
+            <%= image_tag "/images/test-assets/rails-logo.png", alt: "Ruby on Rails logo", class: "image image--portrait image-block__image" %>
+          </div>
           <h1 class="title title-block__title">
-            Apply Now
+            Rails
           </h1>
           <p class="body title-block__body">
-            The full 16-week programme costs just &pound;8,000.
-            We run cohorts every 6 weeks, and applications
-            are highly competitive. We offer numerous payment options.
+          A web application framework for large systems. We'll help you understand Rails conventions, build your first Rails app, and deploy it.
           </p>
         </div>
       </div>
-      <div class="holler-block__section">
-        <div class="cta-block cta-block--inline">
-          <a href="#" class="cta cta--horizontal">Payment Options</a>
-          <a href="#" class="cta cta--vertical cta--big">Apply</a>
-          <a href="#" class="cta cta--horizontal">Learn More</a>
-        </div>
+    </section>
+    <section class="media-component__section">
+      <div class="cta-block cta-block--right">
+        <a href="#" class="cta cta--horizontal">Our Education Philosophy</a>
       </div>
+    </section>
+
+  </div>
+
+</div>
+
+<!-- END curriculum -->
+
+<!-- BEGIN apply -->
+
+<div class="holler-block holler-block--backgrounded" style="background-image: url(<%= url_for('images/test-assets/apply-bg.jpg') %>);">
+  <div class="holler-block__section">
+    <div class="title-block">
+      <h1 class="title title-block__title">
+        Apply Now
+      </h1>
+      <p class="body title-block__body">
+      The full 16-week programme costs just &pound;8,000.
+      We run cohorts every 6 weeks, and applications
+      are highly competitive. We offer numerous payment options.
+      </p>
     </div>
-
-    <!-- END apply -->
-
-    <!-- BEGIN footer -->
-
-    <div class="three-up-block three-up-block--small three-up-block--backgrounded">
-      <section class="three-up-block__section">
-      </section>
-      <section class="three-up-block__section">
-        <div class="image-block image-block--centered">
-          <img class="image image--portrait image-block__image" src="/images/test-assets/footer-brand.png" alt="Makers Academy Logo">
-        </div>
-      </section>
-      <section class="three-up-block__section">
-      </section>
+  </div>
+  <div class="holler-block__section">
+    <div class="cta-block cta-block--inline">
+      <a href="#" class="cta cta--horizontal">Payment Options</a>
+      <a href="#" class="cta cta--vertical cta--big">Apply</a>
+      <a href="#" class="cta cta--horizontal">Learn More</a>
     </div>
+  </div>
+</div>
 
-    <!-- END footer -->
+<!-- END apply -->
+
+<!-- BEGIN footer -->
+
+<div class="three-up-block three-up-block--small three-up-block--backgrounded">
+  <section class="three-up-block__section">
+  </section>
+  <section class="three-up-block__section">
+    <div class="image-block image-block--centered">
+      <%= image_tag "/images/test-assets/footer-brand.png", alt: "Makers Academy Logo", class: "image image--portrait image-block__image" %>
+    </div>
+  </section>
+  <section class="three-up-block__section">
+  </section>
+</div>
+
+<!-- END footer -->
 
   </div>
 

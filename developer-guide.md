@@ -119,4 +119,4 @@ We do this mainly to avoid issues of specificity, but also to keep our CSS as ma
 
 ##### 4. Make a new release
 
-You've updated the CSS, so you need to [create a release](https://help.github.com/articles/about-releases/) following [semantic versioning](https://github.com/makersacademy/style_guide/compare/semver.org?expand=1) rules. Once you have released your changes, you can include your new component in the app you were building.
+You've updated the CSS, so you need to create a release. Fortunately there is a rake task for this, so you just need `rake deploy` which will create a new tag (you'll need to add a tag following the [semantic versioning convention](http://semver.org/)), update bower, and update the [main docs](http://makersacademy.github.io/style_guide/) hosted on GitHub pages.

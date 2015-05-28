@@ -2,16 +2,22 @@
 
 [![forthebadge](http://forthebadge.com/images/badges/powered-by-electricity.svg)](https://www.google.co.uk/search?q=electricity&source=lnms&tbm=isch&sa=X&ei=zmk6VdqmC--P7AbrsoHgCA&ved=0CAcQ_AUoAQ&biw=1440&bih=805#imgrc=_)
 
-A living document of styles at Makers Academy, with example HTML and CSS for constructing new parts of the website. Explore from [the main page](http://makersacademy.github.io/style_guide).
+A living document of styles at Makers Academy, with example HTML and CSS for constructing new parts of the website. 
 
-### What's the rationale?
+### Quick Links
+
+* If you're looking for documentation on the different templates/components available, go to [the main page](http://makersacademy.github.io/style_guide)
+* If you want to know how to build a new component, you'll need the [developer guide](developer-guide.md)
+* If you want an overview of what this guide is all about, read on below!
+
+### What's the rationale of this style guide?
 
 It's component-based. That means that any given interface (including e.g. print interfaces) can be constructed from components.
 
 Components can have huge numbers of different layouts, thematic variations, and so on. Only some of these variations are available to be used inside other components, or within pages. These 'public interfaces' are called _modules_. There is a hierarchy to modules:
 
-- **Atoms** are the most basic modules. They exist to perform a single function. For example, the [Call to Action](components/components/atoms/cta.html). Multiple Atoms can be combined to create Groups.
-- **Groups** are intermediate modules. These are collections of atoms in abstract, but often useful, combinations. For example, the [Call to Action Block](components/components/atoms/cta-block.html). Multiple groups can be combined to create templates.
+- **Atoms** are the most basic modules. They exist to perform a single function. For example, the [Call to Action](http://makersacademy.github.io/style_guide/visual_guide/atoms/cta/). Multiple Atoms can be combined to create Groups.
+- **Groups** are intermediate modules. These are collections of atoms in abstract, but often useful, combinations. For example, the [Call to Action Block](http://makersacademy.github.io/style_guide/visual_guide/groups/cta-block/). Multiple groups can be combined to create templates.
 - **Templates** are high-level modules. These are collections of groups in a template format, and are designed to be placed straight in to pages. They are generally full-pagewidth, and are designed to maintain a vertical (downwards) flow. You should use Templates to build new pages. There are few templates by design: this keeps styling consistent and on-brand.
 
 #### Some rules
@@ -35,11 +41,11 @@ HTML classes are structured using a [Block-Element-Modifier (BEM)](http://csswiz
 </div>
 ```
 
-Thus, a `.title-block` class can have modifiers - in this case, aligning its contents to the left with the `--left` class modifier - and elements within it can be specifically styled - in this case, the `.title` [Title atom](components/atoms/title.html) can be addressed with the `.title-block__title` class, and the `.body` [Body atom](components/atoms/body.html) can be addressed with the `.title-block__body` class. This class naming helps to avoid issues of Specificity when certain combinations are especially common, by avoiding the use of CSS inheritance selectors.
+Thus, a `.title-block` class can have modifiers - in this case, aligning its contents to the left with the `--left` class modifier - and elements within it can be specifically styled - in this case, the `.title` [Title atom](http://makersacademy.github.io/style_guide/visual_guide/atoms/title/) can be addressed with the `.title-block__title` class, and the `.body` [Body atom](http://makersacademy.github.io/style_guide/visual_guide/atoms/body/) can be addressed with the `.title-block__body` class. This class naming helps to avoid issues of Specificity when certain combinations are especially common, by avoiding the use of CSS inheritance selectors.
 
 > CSS inheritance selectors are not to be totally avoided - for example, templates can sometimes set specific `display` properties for their child atoms. In general, though, this should be refactored out to avoid selector chains.
 
-This style of doing the HTML is extremely amenable to a conventional template structure for views server-side. One could easily imagine doing something like this to quickly spin up a flexible CTA block:
+This style of doing the HTML is extremely amenable to a conventional template structure for views server-side, such as the follow partials:
 
 ```erb
 <%= render partial: "atoms/cta-block", locals: {
@@ -59,6 +65,8 @@ And in the cta-block.erb file:
 <% end %>
 ```
 
+If this style guide is installed as a gem and set-up properly, these partials can then be accessed from whatever website you're working from. You can see a full summary of all available partials from the [main site documentation](http://makersacademy.github.io/style_guide/).
+
 ### What's the CSS like?
 
 Since we're using BEM syntax, the CSS is quite legible. It is also highly amenable to component-izing. In this example repository, a CSS structure is suggested: Sass files are arranged in the same way as HTML partials.
@@ -69,7 +77,7 @@ Each class in the SCSS source files separates the concerns of:
 2. _theming_, which is the presentational aspect of a components, and
 3. _child layout_, which is the arrangement of child components within the class.
 
-Components are designed to stand alone, so _structure_ and _child layout_ are rarely abstracted. However, _theming_ is highly abstracted. Almost all theming can occur via mixins, which are `include`d inside CSS classes. Almost all mixins should take as their argument a Sass variable. This way, the entire site can be 're-skinned' from the suggested _variables.scss file (layout is broadly unaffected). For example, the animation mixin (declared in [_mixins.scss](components/sass/_mixins.scss):
+Components are designed to stand alone, so _structure_ and _child layout_ are rarely abstracted. However, _theming_ is highly abstracted. Almost all theming can occur via mixins, which are `include`d inside CSS classes. Almost all mixins should take as their argument a Sass variable. This way, the entire site can be 're-skinned' from the suggested _variables.scss file (layout is broadly unaffected). For example, the animation mixin (declared in [_mixins.scss](https://github.com/makersacademy/style_guide/blob/master/source/sass/_mixins.scss):
 
 ```scss
 @mixin transition($transition) {
@@ -78,7 +86,7 @@ Components are designed to stand alone, so _structure_ and _child layout_ are ra
 }
 ```
 
-is only included in classes with one of three `$transition` variables, declared in [_variables.scss](components/sass/_variables.scss):
+is only included in classes with one of three `$transition` variables, declared in [_variables.scss](https://github.com/makersacademy/style_guide/blob/master/source/sass/_variables.scss):
 
 ```scss
 $transition-standard: all 0.3s ease-in-out;
@@ -111,7 +119,6 @@ To achieve the main UX aims, Design:
 
 ### How do I contribute?
 
-1. Fork this repo
-2. Try to obey the style guides set out in this README and elsewhere in the repo: if you want to break a guide, do so with good reason
-3. If you need to make a new component, read [this](developer-guide.md)
-4. Submit a PR for revision by the Makers Academy team.
+1. Try to obey the style guides set out in this README and elsewhere in the repo: if you want to break a guide, do so with good reason
+2. If you need to make a new component, read [this](developer-guide.md)
+3. Submit a PR for revision by the Makers Academy team.

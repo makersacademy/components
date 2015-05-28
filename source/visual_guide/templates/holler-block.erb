@@ -23,7 +23,7 @@
 
 				<%= partial :"templates/holler-block", locals: {
 					type: "call_to_action",
-					cta: {link: "#", text: "CTA"},
+					ctas: [{link: "#", text: "CTA"}],
 					title: {text: "Title", body: lorem.sentences(4)} } %>
 
  				<span class="label">Text &amp; Capture</span>
@@ -53,6 +53,18 @@
 						call_to_action: {link: "#", text: "CTA"}
 					} %>
 
+				<span class="label">Feature Image</span>
+				<%= partial :"templates/holler-block", locals: {
+					type: "feature_image",
+					background_image: nil, # optional
+					above_title: lorem.words(1), # optional
+					title: lorem.words(2),
+					body: lorem.sentences(3), # optional
+					image: {
+						src: "http://placehold.it/1080x600",
+						alt: "A gray box with '1080x600' in it"
+					}
+				} %>
 
 				<span class="label">Text &amp; Capture Fullheight</span>
 				<div class="holler-block holler-block--full">
