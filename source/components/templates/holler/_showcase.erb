@@ -2,7 +2,7 @@
 
 <% image_blocks = images.each_slice((images.count / 2).ceil).to_a %>
 
-<% if defined?(background_image) %>
+<% if locals[:background_image] %>
 <div class="holler-block holler-block--backgrounded" style="background-image: url(<%="'#{background_image}'"%>);">
 <% else %>
 <div class="holler-block">

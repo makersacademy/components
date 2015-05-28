@@ -1,6 +1,6 @@
 <% component = "holler-block" %>
 
-<% if defined?(background_image) && !background_image.nil? %>
+<% if locals[:background_image] %>
 <div class="holler-block holler-block--equal holler-block--backgrounded" style="background-image: url('<%= background_image %>');">
 <% else %>
 <div class="holler-block holler-block--equal">
@@ -9,8 +9,8 @@
   <div class="holler-block__section">
     <%= partial :'groups/title-block', locals: {
       titles: [
-        { 
-          modifiers: "leader", 
+        {
+          modifiers: "leader",
           text: locals.fetch(:above_title, "")
         },
         {

@@ -3,7 +3,7 @@
 
 <div class="<%= component_classes(component, locals) %>">
 
-  <% if defined?(image) %>
+  <% if locals[:image] %>
 
     <%= partial 'groups/image-block', locals: {
         parent: component,
@@ -25,7 +25,7 @@
 
   <% end %>
 
-  <% if defined?(body) && !body.nil? %>
+  <% if locals[:body] %>
 
     <%= partial 'atoms/body', locals: {
       parent: component,
@@ -35,7 +35,7 @@
 
   <% end %>
 
-  <% if defined?(blockquote) && !blockquote.nil? %>
+  <% if locals[:blockquote] %>
 
     <%= partial 'atoms/blockquote', locals: {
       parent: component,
