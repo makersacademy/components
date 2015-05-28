@@ -3,8 +3,8 @@ require 'compass/import-once/activate'
 require 'singularitygs'
 
 # Set this to the root of your project when deployed:
-http_path = "/source/"
-css_dir = "/source/stylesheets"
+http_path = "/"
+css_dir = "source/stylesheets"
 sass_dir = "source/sass"
 images_dir = "source/images"
 javascripts_dir = "source/javascripts"
