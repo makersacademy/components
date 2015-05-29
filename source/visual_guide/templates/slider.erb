@@ -14,73 +14,72 @@
   <!-- BEGIN examples -->
 
   <span class="label">Slider Containing Media Components</span>
-
-  <%= partial :"templates/slider", locals: {
-    type: "media_components",
-    content: [
-      {
-        name: "Sam Joseph",
-        previous_job: "Master of Ceremonies",
-        new_job: "Lead Developer",
-        cohort: "April 2015",
-        testimonial: "The best web development course in the world, hands down. An amazing experience that I'm planning on telling all my friends about.",
-        image: "http://placehold.it/400x600",
-        case_study_link: "http://google.com",
-        blog_link: "http://blog.com"
-      },
-      {
-        name: "Pam Joseph",
-        previous_job: "Mistress of Ceremonies",
-        new_job: "Head Developer",
-        cohort: "May 2015",
-        testimonial: "The best web development course in the world, hands down. An amazing experience that I'm planning on telling all my friends about.",
-        image: "http://placehold.it/400x600",
-        case_study_link: "http://google.com",
-        blog_link: "http://blog.com"
-      }
-    ]
-  } %>
+  	<%= partial :"templates/slider", locals: {
+  			type: "media_components",
+  			content: [
+  			  {
+  			    name: "Sam Joseph",
+  			    previous_job: "Master of Ceremonies",
+  			    new_job: "Lead Developer",
+  			    cohort: "April 2015",
+  			    testimonial: "The best web development course in the world, hands down. An amazing experience that I'm planning on telling all my friends about.",
+  			    image: "/images/test-assets/test-grad.png",
+  			    case_study_link: "http://google.com",
+  			    blog_link: "http://blog.com"
+  			  },
+  			  {
+  			    name: "Pam Joseph",
+  			    previous_job: "Mistress of Ceremonies",
+  			    new_job: "Head Developer",
+  			    cohort: "May 2015",
+  			    testimonial: "The best web development course in the world, hands down. An amazing experience that I'm planning on telling all my friends about.",
+  			    image: "http://placehold.it/400x600",
+  			    case_study_link: "http://google.com",
+  			    blog_link: "http://blog.com"
+  			  }
+  			]
+  		} %>
 
 <span class="label">Slider Containing Holler Blocks</span>
 
-<%= partial :"templates/slider", locals: {
-  type: "holler_blocks",
-  content: [
-    {
-      background_image: "http://placeholdit.com/1920.1080",
-      title: "Project Name",
-      subtitle: "Gabe, Alan, and Dave, April 2015",
-      text: lorem.sentences(2),
-      ctas: [
-        {
-          text: "See it live",
-          link: "#"
-        },
-        {
-          text: "View code",
-          link: "#"
-        }
-      ]
-    },
-    {
-      title: "Funky Name",
-      subtitle: "Dave, Martin, and Lauren, May 2015",
-      text: lorem.sentences(2),
-      ctas: [
-        {
-          text: "See it live",
-          link: "#"
-        },
-        {
-          text: "View code",
-          link: "#"
-        }
-      ]
-    }
-  ]
-} %>
+	<%= partial :"templates/slider", locals: {
+		type: "holler_blocks",
+		content: [
+			{
+				background_image: "http://placehold.it/1920x1080",
+				title: "Project Name",
+				subtitle: "Gabe, Alan, and Dave, April 2015",
+				text: lorem.sentences(2),
+				ctas: [
+					{
+						text: "See it live",
+						link: "#"
+					},
+					{
+						text: "View code",
+						link: "#"
+					}
+				]
+			},
+			{
+				title: "Funky Name",
+				subtitle: "Dave, Martin, and Lauren, May 2015",
+				text: lorem.sentences(2),
+				ctas: [
+					{
+						text: "See it live",
+						link: "#"
+					},
+					{
+						text: "View code",
+						link: "#"
+					}
+				]
+			}
+		]
+	} %>
 
-      <!-- END examples -->
+<!-- END examples -->
 
 </div>
 
