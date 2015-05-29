@@ -24,10 +24,19 @@
       # image: is optional {src, alt}
       titles: [
         {
+          modifiers: "leader",
+          text: locals.fetch(:leader, "")
+        },
+        {
           text: title
+        },
+        {
+          modifiers: "subtitle",
+          text: locals.fetch(:subtitle, "")
         }
       ],
       body: {
+        modifiers: "big",
         text: body
       }
     } %>

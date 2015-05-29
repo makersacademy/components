@@ -12,6 +12,7 @@
     <section class="holler-block__section">
       <%= partial :"groups/title-block", locals: {
         titles: [
+          {modifiers: "leader", text: locals.fetch(:leader, "")},
           {text: title[:text]},
           {modifiers: "subtitle", text: locals.fetch(:subtitle, "")}
         ],
@@ -22,7 +23,7 @@
     <section class="holler-block__section">
       <%= partial :"groups/cta-block", locals: {
         modifiers: "inline",
-        ctas: ctas.map{ | cta | cta.merge(modifiers: "horizontal") }
+        ctas: ctas
       } %>
     </section>
   </div>

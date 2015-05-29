@@ -2,7 +2,7 @@
 
 .blockquote {
   /* --- structure --- */
-  max-width: 19em;
+  max-width: 29em;
   position: relative;
 
   /* theme */
@@ -25,6 +25,10 @@
     content: "\201C"; /* &ldquo; */
     left: 0.10em;
     top: 0.28em;
+  }
+
+  @include respond-to(mobile) {
+    font-size: $font-size-base;
   }
 
 }

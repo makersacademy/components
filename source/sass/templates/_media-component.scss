@@ -62,6 +62,13 @@
 
 	}
 
+	@include respond-to(mobile) {
+		width: 100%;
+		.media-component__section {
+			width: 100% !important;
+		}
+	}
+
 }
 
 .media-component--reverse {

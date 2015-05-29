@@ -65,7 +65,7 @@ Think 'informative' messages. */
 
 	/* --- mobile --- */
 	@include respond-to(mobile) {
-		.title, .body, .opt-title {
+		.title, .body, .blockquote {
 			text-align: center;
 			margin-left: auto;
 			margin-right: auto;
@@ -95,7 +95,7 @@ Think 'informative' messages. */
 
 	/* --- mobile --- */
 	@include respond-to(mobile) {
-		.title, .body, .opt-title {
+		.title, .body, .blockquote {
 			text-align: center;
 			margin-left: auto;
 			margin-right: auto;

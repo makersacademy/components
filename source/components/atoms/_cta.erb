@@ -1,4 +1,5 @@
 <% component = "cta" %>
+<% locals[:modifiers] ||= "horizontal" %>
 
 <a class="<%= component_classes(component, locals) %>" href="<%= link %>">
   <%= text %>
