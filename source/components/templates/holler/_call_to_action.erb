@@ -1,6 +1,6 @@
 <% component = "holler-block" %>
 
-<% if defined?(background_image) && !background_image.nil? %>
+<% if locals[:background_image] %>
 
   <% locals[:modifiers] = Array(locals[:modifiers]) << "backgrounded" %>
 

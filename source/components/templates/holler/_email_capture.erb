@@ -12,7 +12,7 @@
   #     submit_text: Stay Informed
   #     action: newsletter.mailchimp
 %>
-<% if defined?(background_image) %>
+<% if locals[:background_image] %>
 <div class="holler-block holler-block--backgrounded" style="background-image=url('<%= background_image %>');">
 <% else %>
 <div class="holler-block" style="background-image=url('<%= background_image %>');">
