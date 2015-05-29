@@ -18,6 +18,16 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
+  # TODO this should be split out into it's own gem
+  spec.add_dependency "sinatra"
+  spec.add_dependency "sinatra-contrib"
+  spec.add_dependency "sinatra-partial"
+  spec.add_dependency "sinatra-asset-pipeline"
+  spec.add_dependency "sinatra-static-assets"
+  spec.add_dependency "hashie"
+  spec.add_dependency "uglifier"
+  spec.add_dependency "sass"
+  spec.add_dependency "tilt", ["~>1.4.1"]
   spec.add_development_dependency "middleman", ["~>3.3.12"]
   spec.add_development_dependency "middleman-livereload", ["~>3.1.0"]
   spec.add_development_dependency "middleman-gh-pages", ["~>0.0.3"]
@@ -26,5 +36,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "sass", "~>3.3"
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
-  spec.add_development_dependency 'rspec'
+  spec.add_development_dependency "rspec"
+  spec.add_development_dependency "pry"
 end
