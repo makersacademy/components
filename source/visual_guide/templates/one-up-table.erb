@@ -1,0 +1,94 @@
+
+
+<div class="page">
+
+  <div class="container">
+
+    <div class="title-block">
+      <h1 class="title title-block__title">One-up table</h1>
+      <h3 class="opt-title opt-title--below title-block__subtitle">template</h3>
+      <p class="body title-block__body">
+        A full-width table block.
+      </p>
+    </div>
+
+  </div>
+
+  <h3>Modules</h3>
+  <div class="example">
+
+    <!-- BEGIN examples -->
+
+    <span class="label">Regular</span>
+
+    <%= partial :"templates/one-up-table", locals: {
+      columns: [
+        {
+          header: "variable",
+          rows: [
+            "modifiers",
+            "parent",
+            "titles"
+          ]
+        },
+        {
+          header: "description",
+          rows: [
+            "Any modifiers (see modifiers)",
+            "The element's parent",
+            "Any titles to be rendered"
+          ]
+        }
+      ]
+    } %>
+
+    <span class="label">Striped</span>
+
+    <%= partial :"templates/one-up-table", locals: {
+      modifiers: "striped",
+      columns: [
+        {
+          header: "variable",
+          rows: [
+            "modifiers",
+            "parent",
+            "titles"
+          ]
+        },
+        {
+          header: "description",
+          rows: [
+            "Any modifiers (see modifiers)",
+            "The element's parent",
+            "Any titles to be rendered"
+          ]
+        }
+      ]
+    } %>
+
+    <!-- END examples -->
+
+  </div>
+
+  <div class="container">
+
+    <div class="content">
+      <div class="usage">
+        ...How to use...
+      </div>
+      <div class="code">
+        <div class="html">
+          <pre>
+
+          </pre>
+        </div>
+        <div class="css">
+          <pre></pre>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+

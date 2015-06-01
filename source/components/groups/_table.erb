@@ -1,0 +1,29 @@
+<% component = "table" %>
+
+<table class="<%= component_classes(component, locals) %>">
+
+  <thead>
+    <tr>
+    <% columns.each do | column | %>
+      <th><%= column[:header] %></th>
+    <% end %>
+    </tr>
+  </thead>
+
+  <tbody>
+  <% # We need an iterator that does the following %>
+    <tr>
+      <td><%= columns[0][:rows][0] %></td>
+      <td><%= columns[1][:rows][0] %></td>
+    </tr>
+    <tr>
+      <td><%= columns[0][:rows][1] %></td>
+      <td><%= columns[1][:rows][1] %></td>
+    </tr>
+    <tr>
+      <td><%= columns[0][:rows][2] %></td>
+      <td><%= columns[1][:rows][2] %></td>
+    </tr>
+  </tbody>
+
+</table>
