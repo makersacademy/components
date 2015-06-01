@@ -1,8 +1,9 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, ../../../../.rvm/gems/ruby-2.2.2/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* Import all screen styles here. */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, ../sass/vendor/_reset.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -19,52 +20,44 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font: inherit;
   font-size: 100%;
+  font: inherit;
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../.rvm/gems/ruby-2.2.2/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-html {
+/* HTML5 display-role reset for older browsers */
+/* line 27, ../sass/vendor/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 31, ../sass/vendor/_reset.scss */
+body {
   line-height: 1;
 }
 
-/* line 24, ../../../../.rvm/gems/ruby-2.2.2/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 34, ../sass/vendor/_reset.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../.rvm/gems/ruby-2.2.2/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* line 28, ../../../../.rvm/gems/ruby-2.2.2/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-/* line 30, ../../../../.rvm/gems/ruby-2.2.2/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-q, blockquote {
+/* line 37, ../sass/vendor/_reset.scss */
+blockquote, q {
   quotes: none;
 }
-/* line 103, ../../../../.rvm/gems/ruby-2.2.2/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
+
+/* line 40, ../sass/vendor/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
   content: none;
 }
 
-/* line 32, ../../../../.rvm/gems/ruby-2.2.2/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-a img {
-  border: none;
-}
-
-/* line 116, ../../../../.rvm/gems/ruby-2.2.2/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-  display: block;
+/* line 45, ../sass/vendor/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /*@import "../singularitygs"; */
@@ -528,7 +521,7 @@ action goal). */
 /* line 3, ../sass/atoms/_blockquote.scss */
 .blockquote {
   /* --- structure --- */
-  max-width: 19em;
+  max-width: 29em;
   position: relative;
   /* theme */
   font-size: 1.618em;
@@ -554,6 +547,12 @@ action goal). */
   /* &ldquo; */
   left: 0.10em;
   top: 0.28em;
+}
+@media only screen and (max-width: 1024px) {
+  /* line 3, ../sass/atoms/_blockquote.scss */
+  .blockquote {
+    font-size: 1em;
+  }
 }
 
 /* groups */
@@ -605,33 +604,40 @@ Think 'informative' messages. */
   margin: 0 auto;
   margin-top: 1em;
 }
+@media only screen and (max-width: 1024px) {
+  /* line 47, ../sass/groups/_title-block.scss */
+  .title-block__blockquote {
+    font-size: 1em;
+    text-align: center !important;
+  }
+}
 
-/* line 52, ../sass/groups/_title-block.scss */
+/* line 57, ../sass/groups/_title-block.scss */
 .title-block--left {
   text-align: left;
   /* --- child layout --- */
   /* --- mobile --- */
 }
-/* line 56, ../sass/groups/_title-block.scss */
+/* line 61, ../sass/groups/_title-block.scss */
 .title-block--left .title, .title-block--left .body, .title-block--left .blockquote {
   text-align: left;
   margin-left: 0;
   margin-right: 0;
 }
-/* line 62, ../sass/groups/_title-block.scss */
+/* line 67, ../sass/groups/_title-block.scss */
 .title-block--left .body {
   display: inline-block;
 }
 @media only screen and (max-width: 1024px) {
-  /* line 68, ../sass/groups/_title-block.scss */
-  .title-block--left .title, .title-block--left .body, .title-block--left .opt-title {
+  /* line 73, ../sass/groups/_title-block.scss */
+  .title-block--left .title, .title-block--left .body, .title-block--left .blockquote {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
   }
 }
 
-/* line 76, ../sass/groups/_title-block.scss */
+/* line 81, ../sass/groups/_title-block.scss */
 .title-block--right {
   text-align: right;
   /* --- child layout --- */
@@ -639,28 +645,28 @@ Think 'informative' messages. */
   	 overflowing set container widths */
   /* --- mobile --- */
 }
-/* line 80, ../sass/groups/_title-block.scss */
+/* line 85, ../sass/groups/_title-block.scss */
 .title-block--right .title, .title-block--right .body, .title-block--right .blockquote {
   text-align: right;
   margin-left: 0;
   margin-right: 0;
 }
-/* line 88, ../sass/groups/_title-block.scss */
+/* line 93, ../sass/groups/_title-block.scss */
 .title-block--right .title {
   text-indent: -0.15em;
 }
-/* line 92, ../sass/groups/_title-block.scss */
+/* line 97, ../sass/groups/_title-block.scss */
 .title-block--right .body {
   display: inline-block;
 }
 @media only screen and (max-width: 1024px) {
-  /* line 98, ../sass/groups/_title-block.scss */
-  .title-block--right .title, .title-block--right .body, .title-block--right .opt-title {
+  /* line 103, ../sass/groups/_title-block.scss */
+  .title-block--right .title, .title-block--right .body, .title-block--right .blockquote {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 104, ../sass/groups/_title-block.scss */
+  /* line 109, ../sass/groups/_title-block.scss */
   .title-block--right .title {
     max-width: 29em;
     text-indent: 0;
@@ -1011,7 +1017,7 @@ Think 'informative' messages. */
 }
 /* line 67, ../sass/groups/_image-block.scss */
 .image-block--full .image--portrait {
-  width: auto;
+  width: 100%;
   height: 100%;
 }
 /* line 72, ../sass/groups/_image-block.scss */
@@ -1120,6 +1126,108 @@ Think 'informative' messages. */
 /* line 28, ../sass/groups/_list-block.scss */
 .list-block--inline .list-item {
   float: left;
+}
+
+/* Display data in multiple dimensions. %>
+
+/* Modules:
+
+- Regular
+- Striped
+
+*/
+/* line 10, ../sass/groups/_table.scss */
+.table {
+  /* --- structure --- */
+  border-collapse: collapse;
+  /* --- theming --- */
+  /* --- mobile --- */
+}
+
+/* line 20, ../sass/groups/_table.scss */
+.table--striped .table__header, .table--striped tr:nth-child(2) {
+  background-color: rgba(175, 175, 175, 0.2);
+}
+
+/* line 25, ../sass/groups/_table.scss */
+.one-up-table__table {
+  width: 61.8%;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 1024px) {
+  /* line 25, ../sass/groups/_table.scss */
+  .one-up-table__table {
+    width: 100%;
+  }
+}
+
+/* line 34, ../sass/groups/_table.scss */
+.table__header, .table__cell {
+  height: 2.61792em;
+  padding: 0 1em;
+  vertical-align: middle;
+  border: 1px solid #afafaf;
+}
+
+@media only screen and (max-width: 1024px) {
+  /* line 41, ../sass/groups/_table.scss */
+  .table__row {
+    border-bottom: 1px solid #afafaf;
+  }
+  /* line 44, ../sass/groups/_table.scss */
+  .table__row:first-child {
+    border-top: 1px solid #afafaf;
+  }
+}
+
+/* line 50, ../sass/groups/_table.scss */
+.table__header {
+  font-family: "futura-pt", Futura, Helvetica, Arial, sans-serif;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  letter-spacing: 0.15em;
+  font-weight: 500;
+  line-height: 0.8;
+}
+@media only screen and (max-width: 1024px) {
+  /* line 50, ../sass/groups/_table.scss */
+  .table__header {
+    display: none;
+  }
+}
+
+/* line 57, ../sass/groups/_table.scss */
+.table__cell {
+  font-family: "futura-pt", Futura, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+@media only screen and (max-width: 1024px) {
+  /* line 57, ../sass/groups/_table.scss */
+  .table__cell {
+    width: 70%;
+    float: right;
+    border: none;
+    line-height: 2.61792em;
+    white-space: nowrap;
+  }
+  /* line 65, ../sass/groups/_table.scss */
+  .table__cell:before {
+    font-family: "futura-pt", Futura, Helvetica, Arial, sans-serif;
+    text-transform: lowercase;
+    font-variant: small-caps;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+    line-height: 0.8;
+    content: attr(data-header) ":";
+    display: block;
+    position: absolute;
+    width: 20%;
+    text-align: right;
+    padding-right: 2em;
+    left: 0;
+    line-height: 2.61792em;
+  }
 }
 
 /* templates */
@@ -1359,23 +1467,33 @@ Think 'shouty' messages. */
 .media-component--gs .media-component__section:first-child, .media-component--gs .media-component__section:last-child {
   width: 61.8%;
 }
+@media only screen and (max-width: 1024px) {
+  /* line 50, ../sass/templates/_media-component.scss */
+  .media-component--gs {
+    width: 100%;
+  }
+  /* line 67, ../sass/templates/_media-component.scss */
+  .media-component--gs .media-component__section {
+    width: 100% !important;
+  }
+}
 
-/* line 67, ../sass/templates/_media-component.scss */
+/* line 74, ../sass/templates/_media-component.scss */
 .media-component--reverse {
   /* --- structure --- */
   /* --- theming --- */
   /* --- child layout --- */
 }
-/* line 73, ../sass/templates/_media-component.scss */
+/* line 80, ../sass/templates/_media-component.scss */
 .media-component--reverse .media-component__section {
   float: left;
 }
-/* line 76, ../sass/templates/_media-component.scss */
+/* line 83, ../sass/templates/_media-component.scss */
 .media-component--reverse .media-component__section:first-child {
   float: right;
 }
 
-/* line 83, ../sass/templates/_media-component.scss */
+/* line 90, ../sass/templates/_media-component.scss */
 .media-component__section {
   /* --- structure --- */
   height: 100%;
@@ -1387,41 +1505,41 @@ Think 'shouty' messages. */
   /* --- child layout --- */
   /* --- mobile --- */
 }
-/* line 91, ../sass/templates/_media-component.scss */
+/* line 98, ../sass/templates/_media-component.scss */
 .media-component__section:first-child {
   display: table;
   height: 61.8%;
   float: left;
 }
-/* line 97, ../sass/templates/_media-component.scss */
+/* line 104, ../sass/templates/_media-component.scss */
 .media-component__section:last-child {
   height: auto;
 }
-/* line 105, ../sass/templates/_media-component.scss */
+/* line 112, ../sass/templates/_media-component.scss */
 .media-component__section .cta-block {
   padding-top: 2.61792em;
 }
 @media only screen and (max-width: 1024px) {
-  /* line 83, ../sass/templates/_media-component.scss */
+  /* line 90, ../sass/templates/_media-component.scss */
   .media-component__section {
     width: 100%;
     height: 50% !important;
     float: none !important;
     padding: 0;
   }
-  /* line 115, ../sass/templates/_media-component.scss */
+  /* line 122, ../sass/templates/_media-component.scss */
   .media-component__section:last-child {
     height: auto !important;
     position: absolute;
     bottom: 0;
   }
-  /* line 121, ../sass/templates/_media-component.scss */
+  /* line 128, ../sass/templates/_media-component.scss */
   .media-component__section .cta-block {
     margin-bottom: 2.61792em;
   }
 }
 
-/* line 127, ../sass/templates/_media-component.scss */
+/* line 134, ../sass/templates/_media-component.scss */
 .media-component__section__title-block {
   display: table-cell;
   vertical-align: bottom;
@@ -1921,6 +2039,25 @@ Modifiers:
   }
 }
 
+/* A full-width table block. */
+/* Modules:
+
+- Regular
+- Striped
+
+*/
+/* line 10, ../sass/templates/_one-up-table.scss */
+.one-up-table {
+  /* --- structure --- */
+  padding-top: 1.618em;
+  padding-bottom: 1.618em;
+  max-width: 1140px;
+  margin: 0 auto;
+  width: 100%;
+  /* --- theming --- */
+  /* --- mobile --- */
+}
+
 /* setup */
 /* Constrain components to the central banner */
 /* line 3, ../sass/layout/_containers.scss */
@@ -1946,7 +2083,7 @@ Modifiers:
   width: 100%;
 }
 
-/* line 47, ../sass/screen.scss */
+/* line 46, ../sass/screen.scss */
 .label {
   display: block;
   font-family: sans-serif;
