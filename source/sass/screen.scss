@@ -31,6 +31,7 @@
 @import "groups/_form-block";
 @import "groups/_image-block";
 @import "groups/_list-block";
+@import "groups/_table";
 
 /* templates */
 @import "templates/_holler-block";
@@ -40,6 +41,7 @@
 @import "templates/_two-up-block";
 @import "templates/_nav-block";
 @import "templates/_one-up-block";
+@import "templates/_one-up-table";
 
 /* setup */
 @import "layout/_containers";

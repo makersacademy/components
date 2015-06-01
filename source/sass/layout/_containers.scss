@@ -2,7 +2,7 @@
 
 .container {
 	margin: 0 auto;
-	max-width: 1140px;
+	max-width: $max-container-width;
   height: 100%;
 
 	& > .title-block {

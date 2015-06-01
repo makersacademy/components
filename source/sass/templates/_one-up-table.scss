@@ -1,0 +1,21 @@
+/* A full-width table block. */
+
+/* Modules:
+
+- Regular
+- Striped
+
+*/
+
+.one-up-table {
+  /* --- structure --- */
+  padding-top: rhythm-increment(1) + em;
+  padding-bottom: rhythm-increment(1) + em;
+  max-width: $max-container-width;
+  margin: 0 auto;
+  width: 100%;
+
+  /* --- theming --- */
+
+  /* --- mobile --- */
+}
