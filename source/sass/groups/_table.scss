@@ -22,6 +22,15 @@
   }
 }
 
+.one-up-table__table {
+  width: 61.8%;
+  margin: 0 auto;
+
+  @respond-to(mobile) {
+    width: 100%;
+  }
+}
+
 .table__header, .table__cell {
   height: rhythm-increment(2) + em;
   padding: 0 1em;
