@@ -4,26 +4,21 @@
 
   <thead>
     <tr>
-    <% columns.each do | column | %>
+      <% columns.each do | column | %>
       <th><%= column[:header] %></th>
-    <% end %>
+      <% end %>
     </tr>
   </thead>
 
   <tbody>
-  <% # We need an iterator that does the following %>
+    <% # This iterator relies on the same number of rows per column %>
+    <% columns[0][:rows].each_with_index do | row, index | %>
     <tr>
-      <td><%= columns[0][:rows][0] %></td>
-      <td><%= columns[1][:rows][0] %></td>
+      <% columns.each do | column | %>
+      <td><%= column[:rows][index] %></td>
+      <% end %>
     </tr>
-    <tr>
-      <td><%= columns[0][:rows][1] %></td>
-      <td><%= columns[1][:rows][1] %></td>
-    </tr>
-    <tr>
-      <td><%= columns[0][:rows][2] %></td>
-      <td><%= columns[1][:rows][2] %></td>
-    </tr>
+    <% end %>
   </tbody>
 
 </table>
