@@ -13,9 +13,9 @@
   <tbody>
     <% # This iterator relies on the same number of rows per column %>
     <% columns[0][:rows].each_with_index do | row, index | %>
-    <tr>
+    <tr class="table__row">
       <% columns.each do | column | %>
-      <td class="table__cell"><%= column[:rows][index] %></td>
+      <td data-header="<%= column[:header] %>" class="table__cell"><%= column[:rows][index] %></td>
       <% end %>
     </tr>
     <% end %>

@@ -26,7 +26,7 @@
   width: 61.8%;
   margin: 0 auto;
 
-  @respond-to(mobile) {
+  @include respond-to(mobile) {
     width: 100%;
   }
 }
@@ -38,10 +38,40 @@
   border: 1px solid $color-7;
 }
 
+.table__row {
+  @include respond-to(mobile) {
+    border-bottom: 1px solid $color-7;
+    &:first-child {
+      border-top: 1px solid $color-7;
+    }
+  }
+}
+
 .table__header {
   @include default-header-font-styling;
+  @include respond-to(mobile) {
+    display: none;
+  }
 }
 
 .table__cell {
   @include default-body-font-styling;
+  @include respond-to(mobile) {
+    width: 70%;
+    float: right;
+    border: none;
+    line-height: rhythm-increment(2) + em;
+    white-space: nowrap;
+    &:before {
+      @include default-header-font-styling;
+      content: attr(data-header) ":";
+      display: block;
+      position: absolute;
+      width: 20%;
+      text-align:right;
+      padding-right: 2em;
+      left: 0;
+      line-height: rhythm-increment(2) + em;
+    }
+  }
 }
