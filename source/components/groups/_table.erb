@@ -5,7 +5,7 @@
   <thead>
     <tr>
       <% columns.each do | column | %>
-      <th><%= column[:header] %></th>
+      <th class="table__header"><%= column[:header] %></th>
       <% end %>
     </tr>
   </thead>
@@ -15,7 +15,7 @@
     <% columns[0][:rows].each_with_index do | row, index | %>
     <tr>
       <% columns.each do | column | %>
-      <td><%= column[:rows][index] %></td>
+      <td class="table__cell"><%= column[:rows][index] %></td>
       <% end %>
     </tr>
     <% end %>

@@ -1,0 +1,38 @@
+/* Display data in multiple dimensions. %>
+
+/* Modules:
+
+- Regular
+- Striped
+
+*/
+
+.table {
+  /* --- structure --- */
+  border-collapse: collapse;
+  /* --- theming --- */
+
+  /* --- mobile --- */
+
+}
+
+.table--striped {
+  .table__header, tr:nth-child(2) {
+    background-color: rgba($color-7, 0.2);
+  }
+}
+
+.table__header, .table__cell {
+  height: rhythm-increment(2) + em;
+  padding: 0 1em;
+  vertical-align: middle;
+  border: 1px solid $color-7;
+}
+
+.table__header {
+  @include default-header-font-styling;
+}
+
+.table__cell {
+  @include default-body-font-styling;
+}
