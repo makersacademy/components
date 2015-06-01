@@ -2,7 +2,7 @@
 
 <fieldset class="<%= component_classes(component, locals) %>">
 
-  <% if defined?(title) %>
+  <% if locals[:title] %>
     <legend class="title form-block__fieldset__title"><%= title %></legend>
   <% end %>
 

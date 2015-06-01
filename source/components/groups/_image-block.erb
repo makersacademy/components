@@ -11,7 +11,7 @@
       } %>
   <% end %>
 
-  <% if defined?(caption) %>
+  <% if locals[:caption] %>
     <%= partial "atoms/caption", locals: {
         parent: component,
         modifiers: caption[:modifiers],
