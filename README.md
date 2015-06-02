@@ -1,8 +1,8 @@
-# Makers Academy Style Guide
+# Makers Academy Components
 
 [![forthebadge](http://forthebadge.com/images/badges/powered-by-electricity.svg)](https://www.google.co.uk/search?q=electricity&source=lnms&tbm=isch&sa=X&ei=zmk6VdqmC--P7AbrsoHgCA&ved=0CAcQ_AUoAQ&biw=1440&bih=805#imgrc=_)
 
-A living document of styles at Makers Academy, with example HTML and CSS for constructing new parts of the website. 
+All the HTML components, CSS styles, and JavaScript interactions to build new things for Makers Academy. 
 
 ### Quick Links
 
@@ -10,19 +10,24 @@ A living document of styles at Makers Academy, with example HTML and CSS for con
 * If you want to know how to build a new component, you'll need the [developer guide](developer-guide.md)
 * If you want an overview of what this guide is all about, read on below!
 
-### What's the rationale of this style guide?
+### What's the rationale for these components?
 
-It's component-based. That means that any given interface (including e.g. print interfaces) can be constructed from components.
+Any given interface (including e.g. email or print interfaces) can be constructed from components.
 
 Components can have huge numbers of different layouts, thematic variations, and so on. Only some of these variations are available to be used inside other components, or within pages. These 'public interfaces' are called _modules_. There is a hierarchy to modules:
 
 - **Atoms** are the most basic modules. They exist to perform a single function. For example, the [Call to Action](http://makersacademy.github.io/style_guide/visual_guide/atoms/cta/). Multiple Atoms can be combined to create Groups.
 - **Groups** are intermediate modules. These are collections of atoms in abstract, but often useful, combinations. For example, the [Call to Action Block](http://makersacademy.github.io/style_guide/visual_guide/groups/cta-block/). Multiple groups can be combined to create templates.
-- **Templates** are high-level modules. These are collections of groups in a template format, and are designed to be placed straight in to pages. They are generally full-pagewidth, and are designed to maintain a vertical (downwards) flow. You should use Templates to build new pages. There are few templates by design: this keeps styling consistent and on-brand.
+- **Templates** are high-level modules. These are collections of groups (and sometimes other templates) in a 'fill in the blanks' format, and are designed to be placed straight in to pages. They are generally full-pagewidth, and are designed to maintain a vertical (downwards) flow. You should use Templates to build new pages. There are few templates by design: this keeps styling consistent and on-brand.
 
 #### Some rules
 - Templates can have fixed heights, all other patterns cannot.
 - Layout (such as height and alignment) is set by the 'parent' module. For example, the CTA atom is laid out by the CTA block group. The CTA block group's layout is determined by parent templates, such as the Three-up block.
+
+```ruby
+# Layout direction
+Templates -- lay out --> Groups -- lay out --> Atom
+```
 
 ### What's the HTML like?
 
