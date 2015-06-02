@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["dev@makersacademy.com"]
   spec.description   = %q{Makers styles}
   spec.summary       = %q{Central repo for Makers styles}
-  spec.homepage      = "http://github.com/makersacademy/style_guide"
+  spec.homepage      = "http://github.com/makersacademy/components"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
