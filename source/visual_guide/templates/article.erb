@@ -1,0 +1,71 @@
+<div class="page">
+
+  <div class="container">
+
+    <div class="title-block">
+      <h1 class="title title-block__title">Article</h1>
+      <h3 class="opt-title opt-title--below title-block__subtitle">template</h3>
+      <p class="body title-block__body">
+        Long-form copy, with optional titles, subtitles, and blockquotes.
+      </p>
+    </div>
+
+  </div>
+
+  <h3>Modules</h3>
+  <div class="example">
+
+    <!-- BEGIN examples -->
+
+    <span class="label">Left-aligned</span>
+    <%= partial :"template/article", locals: {
+      title: "My Title", # optional
+      subtitle: "My Subtitle", # optional
+      body: "Lorem ipsum dolor sit amet, consectetur adipscing elit.",
+      blockquote: "This is just the best." # optional
+    } %>
+
+    <span class="label">Center-aligned</span>
+    <%= partial :"template/article", locals: {
+      modifiers: "center", # optional
+      title: "My Title", # optional
+      subtitle: "My Subtitle", # optional
+      body: "Lorem ipsum dolor sit amet, consectetur adipscing elit.",
+      blockquote: "This is just the best." # optional
+    } %>
+
+    <span class="label">Right-aligned</span>
+    <%= partial :"template/article", locals: {
+      modifiers: "right", # optional
+      title: "My Title", # optional
+      subtitle: "My Subtitle", # optional
+      body: "Lorem ipsum dolor sit amet, consectetur adipscing elit.",
+      blockquote: "This is just the best." # optional
+    } %>
+
+    <!-- END examples -->
+
+  </div>
+
+  <div class="container">
+
+    <div class="content">
+      <div class="usage">
+        ...How to use...
+      </div>
+      <div class="code">
+        <div class="html">
+          <pre>
+
+          </pre>
+        </div>
+        <div class="css">
+          <pre></pre>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
