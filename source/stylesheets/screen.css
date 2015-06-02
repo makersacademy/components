@@ -234,6 +234,13 @@ body {
   }
 }
 
+/* line 20, ../sass/atoms/_body.scss */
+.article__body {
+  max-width: 480px;
+  padding-bottom: 1.618em;
+  padding-left: 1.2em;
+}
+
 /* Calls to Action, designed to get 
 the user moving either horizontally 
 (across content), or to have them 
@@ -553,6 +560,14 @@ action goal). */
   .blockquote {
     font-size: 1em;
   }
+}
+
+/* line 36, ../sass/atoms/_blockquote.scss */
+.article__blockquote {
+  max-width: 480px;
+  padding-bottom: 1em;
+  padding-left: 0.618em;
+  /* 1.618em * 0.618em = 16px/1em */
 }
 
 /* groups */
@@ -2058,6 +2073,43 @@ Modifiers:
   /* --- mobile --- */
 }
 
+/* Long-form copy, with optional titles,
+   subtitles, and blockquotes. */
+/* Modules:
+
+- Left-aligned
+- Center-aligned
+- Right-aligned
+
+*/
+/* line 12, ../sass/templates/_article.scss */
+.article {
+  /* --- structure --- */
+  width: 100%;
+  text-align: left;
+  /* --- theming --- */
+}
+
+/* line 21, ../sass/templates/_article.scss */
+.article--center {
+  text-align: center;
+}
+/* line 24, ../sass/templates/_article.scss */
+.article--center .article__body, .article--center .article__blockquote {
+  margin: 0 auto;
+}
+
+/* line 29, ../sass/templates/_article.scss */
+.article--right {
+  text-align: right;
+}
+/* line 32, ../sass/templates/_article.scss */
+.article--right .article__body, .article--right .article__blockquote {
+  float: right;
+  clear: right;
+  padding-right: 1em;
+}
+
 /* setup */
 /* Constrain components to the central banner */
 /* line 3, ../sass/layout/_containers.scss */
@@ -2066,7 +2118,13 @@ Modifiers:
   max-width: 1140px;
   height: 100%;
 }
-/* line 8, ../sass/layout/_containers.scss */
+/* line 83, ../sass/_mixins.scss */
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 9, ../sass/layout/_containers.scss */
 .container > .title-block {
   margin: 0 auto;
 }
@@ -2077,13 +2135,13 @@ Modifiers:
   }
 }
 
-/* line 18, ../sass/layout/_containers.scss */
+/* line 19, ../sass/layout/_containers.scss */
 .container--full {
   max-width: none;
   width: 100%;
 }
 
-/* line 46, ../sass/screen.scss */
+/* line 47, ../sass/screen.scss */
 .label {
   display: block;
   font-family: sans-serif;
