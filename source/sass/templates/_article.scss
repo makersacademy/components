@@ -1,0 +1,37 @@
+/* Long-form copy, with optional titles,
+   subtitles, and blockquotes. */
+
+/* Modules:
+
+- Left-aligned
+- Center-aligned
+- Right-aligned
+
+*/
+
+.article {
+  /* --- structure --- */
+  width: 100%;
+  text-align: left;
+
+  /* --- theming --- */
+
+}
+
+.article--center {
+  text-align: center;
+
+  .article__body, .article__blockquote {
+    margin: 0 auto;
+  }
+}
+
+.article--right {
+  text-align: right;
+
+  .article__body, .article__blockquote {
+    float: right;
+    clear: right;
+    padding-right: 1em;
+  }
+}

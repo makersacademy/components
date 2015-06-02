@@ -1,0 +1,32 @@
+<% component = "article" %>
+
+<article class="<%= component_classes(component, locals) %>">
+
+  <div class="container">
+  
+    <% if locals[:title] || locals[:subtitle] %>
+      <%= partial :"groups/title-block", locals: {
+        parent: component,
+        modifiers: locals.fetch(:modifiers, "left"),
+        titles: [
+          { text: locals[:title] },
+          { modifiers: "subtitle", text: locals[:subtitle] }
+        ]
+      } %>
+    <% end %>
+
+    <%= partial :"atoms/body", locals: {
+      parent: component,
+      text: body
+    } %>
+
+    <% if locals[:blockquote] %>
+      <%= partial :"atoms/blockquote", locals: {
+        parent: component,
+        text: blockquote
+      } %>
+    <% end %>
+
+  </div>
+
+</article>

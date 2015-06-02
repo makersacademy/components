@@ -3,6 +3,7 @@
 .container {
 	margin: 0 auto;
 	max-width: $max-container-width;
+  @include clearfix;
   height: 100%;
 
 	& > .title-block {

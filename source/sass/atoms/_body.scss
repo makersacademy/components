@@ -16,3 +16,9 @@
     font-size: $font-size-base;
   }
 }
+
+.article__body {
+  max-width: 480px;
+  padding-bottom: rhythm-increment(1) + em;
+  padding-left: 1.2em;
+}
