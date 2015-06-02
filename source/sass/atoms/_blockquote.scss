@@ -36,5 +36,5 @@
 .article__blockquote {
   max-width: 480px;
   padding-bottom: rhythm-increment(0) + em;
-  padding-left: 0.618em;
+  padding-left: 0.618em; /* 1.618em * 0.618em = 16px/1em */
 }
