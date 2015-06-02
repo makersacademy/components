@@ -32,3 +32,9 @@
   }
 
 }
+
+.article__blockquote {
+  max-width: 480px;
+  padding-bottom: rhythm-increment(0) + em;
+  padding-left: 0.618em;
+}
