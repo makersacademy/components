@@ -31,6 +31,6 @@
 
 <% elsif input_type == "submit" %>
 
-<input class="cta cta--submit" type="submit" />
+<input class="cta cta--submit" type="submit" value="<%= locals.fetch(:text, "Submit") %>"/>
 
 <% end %>

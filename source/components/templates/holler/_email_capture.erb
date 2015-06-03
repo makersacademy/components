@@ -13,15 +13,17 @@
   #     action: newsletter.mailchimp
 %>
 <% if locals[:background_image] %>
-<div class="holler-block holler-block--backgrounded" style="background-image=url('<%= background_image %>');">
+<div class="<%= component_classes(component, locals) %> holler-block--backgrounded" style="background-image: url('<%= background_image %>');">
 <% else %>
-<div class="holler-block" style="background-image=url('<%= background_image %>');">
+<div class="<%= component_classes(component, locals) %>" style="background-image: url('<%= background_image %>');">
 <% end %>
 
   <div class="holler-block__section">
 
-    <%= partial 'components/groups/title-block', locals: {
-      # image: is optional {src, alt}
+    <% locals.merge!(image: {src: locals[:title_image], alt: "bloo"}) if locals[:title_image]  %>
+
+    <%= partial 'groups/title-block', locals: {
+      image: locals[:image],
       titles: [
         {
           modifiers: "leader",

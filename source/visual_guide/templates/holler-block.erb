@@ -30,13 +30,14 @@
 
 				<%= partial :"templates/holler-block", locals: {
 					type: "email_capture",
-					title_image: "images/test-assets/makers-brandmark.png", # optional
+					modifiers: "full",
+					title_image: "/images/test-assets/makers-brandmark.png", # optional
 					background_image: "images/test-assets/splash-bg.jpg", # optional
 					title: lorem.word,
 					body: lorem.sentences(2),
 					capture: {
 						placeholder: "Your email address",
-						submit_text: "Stay informed",
+						submit_text: "Monkeys",
 						action: "/newsletter.mailchimp"
 					}
 				} %>
