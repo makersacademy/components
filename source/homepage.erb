@@ -53,28 +53,29 @@
 
     <!-- BEGIN grads -->
 
-    <%= partial :"templates/slider", locals: {
-      type: "media_components",
-      content: [
+    <%= partial :"templates/media-component--with-slider", locals: {
+      leader: "Meet",
+      title: "Our Grads",
+      body_copy: "We&rsquo;ve graduated over 300 beginners into their dream jobs as junior developers. Some were looking for a career change, others to define themselves.",
+      cta: {
+        text: "Read Grad Stories",
+        link: "/graduates",
+        type: "horizontal"
+      },
+      slider_content: [
         {
-          name: "Sam Joseph",
-          previous_job: "Master of Ceremonies",
-          new_job: "Lead Developer",
-          cohort: "April 2015",
-          testimonial: "The best web development course in the world, hands down. An amazing experience that I'm planning on telling all my friends about.",
-          image: "http://placehold.it/400x600",
-          case_study_link: "http://google.com",
-          blog_link: "http://blog.com"
+          content_type: "image",
+          src: "/images/test-assets/test-grad.png",
+          orientation: "portrait",
+          alt: "A test graduate, looking at the camera.",
+          caption: "Firstname Lastname\nCohort of 2015\nNow a Junior Developer at CompanyName"
         },
         {
-          name: "Pam Joseph",
-          previous_job: "Mistress of Ceremonies",
-          new_job: "Head Developer",
-          cohort: "May 2015",
-          testimonial: "The best web development course in the world, hands down. An amazing experience that I'm planning on telling all my friends about.",
-          image: "http://placehold.it/400x600",
-          case_study_link: "http://google.com",
-          blog_link: "http://blog.com"
+          content_type: "image",
+          src: "http://placehold.it/400x600&text=400x600",
+          orientation: "portrait",
+          alt: "A gray box with the text '400x600'",
+          caption: "Othername Lastname\nCohort of 2015\nNow a Junior Developer at OtherCompanyName"
         }
       ]
     } %>

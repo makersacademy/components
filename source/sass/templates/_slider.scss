@@ -29,6 +29,13 @@ in a slider arrangement. */
 .slick-track {
 	@include vertical-holder;
 	height: 100%;
+
+	.image-block {
+		float: left;
+		img {
+			width: auto;
+		}
+	}
 }
 
 /* Slider controls */
