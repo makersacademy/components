@@ -1590,9 +1590,17 @@ in a slider arrangement. */
   display: table;
   height: 100%;
 }
+/* line 33, ../sass/templates/_slider.scss */
+.slick-track .image-block {
+  float: left;
+}
+/* line 35, ../sass/templates/_slider.scss */
+.slick-track .image-block img {
+  width: auto;
+}
 
 /* Slider controls */
-/* line 36, ../sass/templates/_slider.scss */
+/* line 43, ../sass/templates/_slider.scss */
 .slick-prev, .slick-next {
   /* --- structure --- */
   position: absolute;
@@ -1606,11 +1614,11 @@ in a slider arrangement. */
   background: transparent;
   /* --- child layout --- */
 }
-/* line 49, ../sass/templates/_slider.scss */
+/* line 56, ../sass/templates/_slider.scss */
 .slick-prev:focus, .slick-next:focus {
   outline: none;
 }
-/* line 53, ../sass/templates/_slider.scss */
+/* line 60, ../sass/templates/_slider.scss */
 .slick-prev:before, .slick-next:before {
   font-family: "linea-arrows-10" !important;
   content: attr(data-icon);
@@ -1633,70 +1641,70 @@ in a slider arrangement. */
   cursor: pointer;
   font-size: 2.61792em;
 }
-/* line 66, ../sass/templates/_slider.scss */
+/* line 73, ../sass/templates/_slider.scss */
 .slick-prev:hover:before, .slick-next:hover:before {
   color: #AA1925;
 }
 
-/* line 73, ../sass/templates/_slider.scss */
+/* line 80, ../sass/templates/_slider.scss */
 .slick-prev {
   left: 1em;
 }
-/* line 75, ../sass/templates/_slider.scss */
+/* line 82, ../sass/templates/_slider.scss */
 .slick-prev:before {
   content: "\e03f";
 }
 
-/* line 80, ../sass/templates/_slider.scss */
+/* line 87, ../sass/templates/_slider.scss */
 .slick-next {
   right: 0;
 }
-/* line 82, ../sass/templates/_slider.scss */
+/* line 89, ../sass/templates/_slider.scss */
 .slick-next:before {
   content: "\e04b";
 }
 
-/* line 87, ../sass/templates/_slider.scss */
+/* line 94, ../sass/templates/_slider.scss */
 .slider__image-block {
   height: 100%;
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 93, ../sass/templates/_slider.scss */
+/* line 100, ../sass/templates/_slider.scss */
 .slider__title-block {
   height: 100%;
   display: table-cell;
   vertical-align: middle;
 }
-/* line 97, ../sass/templates/_slider.scss */
+/* line 104, ../sass/templates/_slider.scss */
 .slider__title-block .opt-title {
   margin-bottom: 1em;
 }
 @respond-to (mobile) {
-  /* line 97, ../sass/templates/_slider.scss */
+  /* line 104, ../sass/templates/_slider.scss */
   .slider__title-block .opt-title {
     margin-bottom: 0;
   }
 }
-/* line 103, ../sass/templates/_slider.scss */
+/* line 110, ../sass/templates/_slider.scss */
 .slider__title-block .body {
   height: 33%;
   width: 90%;
   max-width: 14em;
 }
 @respond-to (mobile) {
-  /* line 103, ../sass/templates/_slider.scss */
+  /* line 110, ../sass/templates/_slider.scss */
   .slider__title-block .body {
     opacity: 0;
   }
 }
-/* line 113, ../sass/templates/_slider.scss */
+/* line 120, ../sass/templates/_slider.scss */
 .slider__holler-block {
   height: 68vh;
 }
 @media only screen and (max-width: 1024px) {
-  /* line 113, ../sass/templates/_slider.scss */
+  /* line 120, ../sass/templates/_slider.scss */
   .slider__holler-block {
     height: 100vh;
   }
